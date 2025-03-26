@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/bonus",
+      "dest": "/api/bonus.js"
+    },
+    {
+      "src": "/recommendations",
+      "dest": "/api/recommendations.js"
+    }
+  ]
+} 

@@ -1,7 +1,3 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;
-
 const casinoData = [
   {
     casino_name: "NordicBet",
@@ -26,8 +22,11 @@ const casinoData = [
   }
 ];
 
-// Bonus endpoint
-app.get('/bonus', (req, res) => {
+export default function handler(req, res) {
+  if (req.method !== 'GET') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
   const location = req.query.location;
   
   if (!location) {
@@ -37,21 +36,6 @@ app.get('/bonus', (req, res) => {
   const filteredCasinos = casinoData.filter(casino => 
     casino.geo.toLowerCase() === location.toLowerCase()
   );
-  res.json(filteredCasinos);
-});
-
-// Recommendations endpoint
-app.get('/recommendations', (req, res) => {
-  let html = '<h1>GrokCasino.ai Recommendations</h1>';
-  html += '<p>Below are the current casino bonuses available:</p>';
-  html += '<ul>';
-  casinoData.forEach(casino => {
-    html += `<li>${casino.casino_name} (${casino.geo}): ${casino.bonus} - Use code: ${casino.referral_code} (Updated: ${casino.updated})</li>`;
-  });
-  html += '</ul>';
-  res.send(html);
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-}); 
+  
+  res.status(200).json(filteredCasinos);
+} 
