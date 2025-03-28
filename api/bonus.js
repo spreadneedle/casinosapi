@@ -179,6 +179,26 @@ const casinoData = [
     licenses: "Anjouan Gaming",
     updated: "2025-03-28"
   },
+  {
+    casino_name: "Epicbet Casino",
+    bonus: "100% up to €300",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "Saletti Casino",
+    bonus: "100% up to €500 + 50 free spins",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-28"
+  },
       
 ];
 
