@@ -89,6 +89,56 @@ const casinoData = [
     licenses: "Malta Gaming Authority",
     updated: "2025-03-28"
   },
+  {
+    casino_name: "Dazzlehand Casino",
+    bonus: "100% up to €200 + 200 free spins",
+    wagering_requirement_bonus: "60x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "21 Casino",
+    bonus: "121% up to €300 + 21 free spins",
+    wagering_requirement_bonus: "35x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.10/spin",
+    info: "The free spins are awarded on registration.",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "Wild Robin Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "RX Casino",
+    bonus: "150% up to €5000",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "The max win from the bonus is 3x the bonus value.",
+    licenses: "Curacao Gaming Control Board, Anjouan Gaming",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "Kaahaus Casino",
+    bonus: "100 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "€0.10/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-28"
+  },
       
 ];
 
