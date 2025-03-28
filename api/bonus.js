@@ -115,7 +115,7 @@ const casinoData = [
     wagering_requirement_bonus: "70x",
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
-    info: "n/a",
+    info: "20 free spins per day are handed out over 10 days.",
     licenses: "Curacao Gaming Control Board",
     updated: "2025-03-28"
   },
@@ -137,6 +137,46 @@ const casinoData = [
     free_spin_value: "€0.10/spin",
     info: "n/a",
     licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "Betizy Casino",
+    bonus: "100% up to €250 + 50 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.10/spin",
+    info: "n/a",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "Slot it Casino",
+    bonus: "100% up to €500",
+    wagering_requirement_bonus: "36x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "Casumo Casino",
+    bonus: "100% up to €300 + 20 free spins",
+    wagering_requirement_bonus: "60x",
+    wagering_requirement_free_spins: "30x",
+    free_spin_value: "€0.10/spin",
+    info: "n/a",
+    licenses: "H.M. Government of Gibraltar",
+    updated: "2025-03-28"
+  },
+  {
+    casino_name: "Lunubet Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "20 free spins per day are handed out over 10 days.",
+    licenses: "Anjouan Gaming",
     updated: "2025-03-28"
   },
       
