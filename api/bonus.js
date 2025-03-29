@@ -199,6 +199,67 @@ const casinoData = [
     licenses: "Malta Gaming Authority",
     updated: "2025-03-28"
   },
+  {
+    casino_name: "Possu Casino",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-29"
+  },
+  {
+    casino_name: "Winz.io Casino",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-29"
+  },
+  {
+    casino_name: "Reipas Casino",
+    bonus: "100% up to €500 + 50 free spins",
+    wagering_requirement_bonus: "80x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.25/spin",
+    info: "Max win from free spins €20.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-29"
+  },
+  {
+    casino_name: "Kingpalace Casino",
+    bonus: "100% up to €2000 + 200 free spins",
+    wagering_requirement_bonus: "60x",
+    wagering_requirement_free_spins: "30x",
+    free_spin_value: "€0.10/spin",
+    info: "The first deposit bonus depends on the deposit amount. A €20 deposit will give 200% bonus up to €50 with a 50x wagering requirement. A €50 deposit will give 150% bonus up to €350 with a 40x wagering requirement. A €500 deposit will give 100% up to €2000 with a 60x wagering requirement.",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-29"
+  },
+  {
+    casino_name: "Arctic Casino",
+    bonus: "10 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€1/spin",
+    info: "n/a",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-29"
+  },
+  {
+    casino_name: "Lucky Nordic Casino",
+    bonus: "50 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "€1/spin",
+    info: "The spin value of the free spins depend on the first deposit amount. A €20 deposit gives a €0.10 spin value. A €100 deposit gives a €0.50 spin value. A €200 deposit gives a €1 spin value.",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-03-29"
+  },
+  
       
 ];
 
