@@ -268,6 +268,17 @@ const casinoData = [
     info: "200 free spins per day are handed out over 4 days in different games where the spin value ranges from €0.10 to €0.20.",
     licenses: "Estonian Tax and Customs Board",
     updated: "2025-03-29"
+   },
+   {
+    casino_name: "Dynabet Casino",
+    bonus: "100% up to €2000",
+    wagering_requirement_bonus: "30x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-29"
+   }, 
   
       
 ];
