@@ -259,6 +259,15 @@ const casinoData = [
     licenses: "Estonian Tax and Customs Board",
     updated: "2025-03-29"
   },
+  {
+    casino_name: "Fruta Casino",
+    bonus: "200 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "€0.20/spin",
+    info: "200 free spins per day are handed out over 4 days in different games where the spin value ranges from €0.10 to €0.20.",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-03-29"
   
       
 ];
