@@ -429,6 +429,37 @@ const casinoData = [
     licenses: "Malta Gaming Authority",
     updated: "2025-03-30"
    }, 
+   {
+    casino_name: "AllySpin Casino",
+    bonus: "100% up to €500",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "Anjouan Gaming",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Spinaro Casino",
+    bonus: "100% up to €1000 + 50 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Anjouan Gaming",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Impressario Casino",
+    bonus: "100% up to €1000 + 100 free spins",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Kahnawake Gaming Commission",
+    updated: "2025-03-30"
+   }, 
+  
   
       
 ];
