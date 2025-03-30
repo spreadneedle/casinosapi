@@ -349,6 +349,86 @@ const casinoData = [
     licenses: "Curacao Gaming Control Board",
     updated: "2025-03-30"
    }, 
+   {
+    casino_name: "Casino Joy",
+    bonus: "200% up to €1000 + 100 free spins",
+    wagering_requirement_bonus: "80x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Wildsino Casino",
+    bonus: "100% up to €1000 + 300 free spins",
+    wagering_requirement_bonus: "80x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Anjouan Gaming",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Be On Bet Casino",
+    bonus: "150% up to €450 + 100 free spins",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Be On Bet Casino",
+    bonus: "100% up to €250 + 50 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.10/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Bet Label Casino",
+    bonus: "100% up to €300 + 30 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "PrimeBetz Casino",
+    bonus: "100% up to €500 + 100 free spins",
+    wagering_requirement_bonus: "50x",
+    wagering_requirement_free_spins: "50x",
+    free_spin_value: "€0.10/spin",
+    info: "20 free spins per day are handed out over 5 days in different games.",
+    licenses: "Kahnawake Gaming Commission",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Paripesa Casino",
+    bonus: "100% up to €300 + 30 free spins",
+    wagering_requirement_bonus: "35x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.10/spin",
+    info: "20 free spins per day are handed out over 5 days in different games.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Betrix Casino",
+    bonus: "100% up to €250 + 50 free spins",
+    wagering_requirement_bonus: "35x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.10/spin",
+    info: "20 free spins per day are handed out over 5 days in different games.",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-30"
+   }, 
   
       
 ];
