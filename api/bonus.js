@@ -279,6 +279,76 @@ const casinoData = [
     licenses: "Curacao Gaming Control Board",
     updated: "2025-03-29"
    }, 
+   {
+    casino_name: "Budsino Casino",
+    bonus: "100% up to €100",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Highroller Casino",
+    bonus: "200 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "€0.20/spin",
+    info: "200 free spins per day are handed out over 10 days in different games where the spin value ranges from €0.10 to €0.20.",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Taika Spins Casino",
+    bonus: "100% up to €250 + 50 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.10/spin",
+    info: "n/a",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Casino Vice",
+    bonus: "100% up to €500 + 125 free spins",
+    wagering_requirement_bonus: "35x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.20/spin",
+    info: "125 free spins per day are handed out over 5 days in different games.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Fat Pirate Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "125 free spins per day are handed out over 5 days in different games.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Qbet Casino",
+    bonus: "10 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€1/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
+   {
+    casino_name: "Trust Dice Win Casino",
+    bonus: "200% up to €30000 + 20 free spins",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-30"
+   }, 
   
       
 ];
