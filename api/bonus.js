@@ -479,6 +479,36 @@ const casinoData = [
     licenses: "Estonian Tax and Customs Board",
     updated: "2025-03-31"
    }, 
+   {
+    casino_name: "Fun Bet Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "20 free spins per day are handed out over 10 days in different games.",
+    licenses: "n/a",
+    updated: "2025-03-31"
+   }, 
+   {
+    casino_name: "Hotbet Casino",
+    bonus: "100% up to €200 + 100 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "25 free spins per day are handed out over 4 days in different games.",
+    licenses: "n/a",
+    updated: "2025-03-31"
+   }, 
+   {
+    casino_name: "Casino Vibes",
+    bonus: "100% up to €300 + 50 free spins",
+    wagering_requirement_bonus: "35x",
+    wagering_requirement_free_spins: "35x",
+    free_spin_value: "€0.10/spin",
+    info: "25 free spins per day are handed out over 4 days in different games.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-31"
+   }, 
   
       
 ];
