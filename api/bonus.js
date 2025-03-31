@@ -522,11 +522,31 @@ const casinoData = [
    {
     casino_name: "Tuohi Casino",
     bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
+    wagering_requirement_bonus: "0x",
+    wagering_requirement_free_spins: "0x",
     free_spin_value: "n/a",
     info: "The first deposit awards 1 spin on a prize wheel. No guaranteed wins but a max win of €5000.",
     licenses: "Gambling Supervision Commission Isle of Man",
+    updated: "2025-03-31"
+   }, 
+   {
+    casino_name: "Pelikioski Casino",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "The first deposit awards a mystery prize. No guaranteed wins but a max win of €500.",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-03-31"
+   }, 
+   {
+    casino_name: "Zip Casino",
+    bonus: "100% up to €1000 + 50 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "n/a",
+    licenses: "Anjouan Gaming",
     updated: "2025-03-31"
    }, 
   
