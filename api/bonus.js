@@ -491,11 +491,11 @@ const casinoData = [
    }, 
    {
     casino_name: "Hotbet Casino",
-    bonus: "100% up to €200 + 100 free spins",
+    bonus: "100% up to €200",
     wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "25 free spins per day are handed out over 4 days in different games.",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
     licenses: "n/a",
     updated: "2025-03-31"
    }, 
@@ -505,8 +505,28 @@ const casinoData = [
     wagering_requirement_bonus: "35x",
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
-    info: "25 free spins per day are handed out over 4 days in different games.",
+    info: "n/a",
     licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-31"
+   }, 
+   {
+    casino_name: "Gemobet Casino",
+    bonus: "100 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "30x",
+    free_spin_value: "€0.10/spin",
+    info: "20 free spins per day are handed out over 5 days.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-03-31"
+   }, 
+   {
+    casino_name: "Tuohi Casino",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "The first deposit awards 1 spin on a prize wheel. No guaranteed wins.",
+    licenses: "Gambling Supervision Commission Isle of Man",
     updated: "2025-03-31"
    }, 
   
