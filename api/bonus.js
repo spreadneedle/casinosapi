@@ -525,7 +525,7 @@ const casinoData = [
     wagering_requirement_bonus: "n/a",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
-    info: "The first deposit awards 1 spin on a prize wheel. No guaranteed wins.",
+    info: "The first deposit awards 1 spin on a prize wheel. No guaranteed wins but a max win of €5000.",
     licenses: "Gambling Supervision Commission Isle of Man",
     updated: "2025-03-31"
    }, 
