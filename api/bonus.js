@@ -459,7 +459,26 @@ const casinoData = [
     licenses: "Kahnawake Gaming Commission",
     updated: "2025-03-30"
    }, 
-  
+   {
+    casino_name: "Trivelabet Casino",
+    bonus: "200% up to €1000",
+    wagering_requirement_bonus: "30x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-03-31"
+   }, 
+   {
+    casino_name: "Magius Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "20 free spins per day are handed out over 10 days in different games.",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-03-31"
+   }, 
   
       
 ];
