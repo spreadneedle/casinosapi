@@ -549,6 +549,36 @@ const casinoData = [
     licenses: "Anjouan Gaming",
     updated: "2025-03-31"
    }, 
+   {
+    casino_name: "NetBet Casino",
+    bonus: "100% up to €500 + 500 free spins",
+    wagering_requirement_bonus: "30x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.05/spin",
+    info: "500 free spins are handed out in varying amounts over 7 days, with 50 on day one.",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-04-01"
+   }, 
+   {
+    casino_name: "Spin247 Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.05/spin",
+    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    licenses: "Anjouan Gaming",
+    updated: "2025-04-01"
+   }, 
+   {
+    casino_name: "Huikee Casino",
+    bonus: "150% up to €400 + 50 free spins",
+    wagering_requirement_bonus: "80x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.20/spin",
+    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-04-01"
+   }, 
   
       
 ];
