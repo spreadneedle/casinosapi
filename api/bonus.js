@@ -609,6 +609,56 @@ const casinoData = [
     licenses: "Malta Gaming Authority",
     updated: "2025-04-02"
    }, 
+   {
+    casino_name: "Pistolo Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    licenses: "Anjouan Gaming",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Legiano Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    licenses: "Anjouan Gaming",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Mr Punter",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    licenses: "Anjouan Gaming",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Lunubet Casino",
+    bonus: "100% up to €500 + 200 free spins",
+    wagering_requirement_bonus: "70x",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€0.10/spin",
+    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    licenses: "Anjouan Gaming",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Lysti Casino",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "No bonus on offer.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-04-02"
+   }, 
   
       
 ];
