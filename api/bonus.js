@@ -661,7 +661,7 @@ const casinoData = [
    }, 
    {
     casino_name: "Bally Bet Casino, USA",
-    bonus: "Up to $100 in bonus back + $50 bonus bet tokens.",
+    bonus: "Up to $100 in bonus back + $50 bonus bet tokens",
     wagering_requirement_bonus: "5x",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
@@ -671,11 +671,31 @@ const casinoData = [
    }, 
    {
     casino_name: "Bet365, USA",
-    bonus: "Up to 500 bonus spins.",
+    bonus: "Up to 500 bonus spins",
     wagering_requirement_bonus: "5x",
     wagering_requirement_free_spins: "0x",
     free_spin_value: "$0.20",
     info: "Take a spin on the New Player Offer reels for the chance to win five, 10, or 15 bonus spins. You will need to do this 10 out of the next 20 days, and a maximum of 500 spins are up for grabs.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "BetMGM, USA",
+    bonus: "$25 registration bonus + 100% up to $1025",
+    wagering_requirement_bonus: "15x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "The registration bonus has a 1x wagering requirement.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "BetRivers Casino, USA",
+    bonus: "Up to $500 loss rebate",
+    wagering_requirement_bonus: "1x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Rebate of up to $500 on any losses you sustain in your first 24 hours. The rebate will be paid in bonus credits, and you just need to satisfy a simple 1x playthrough requirement before they convert to withdrawable cash.",
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-02"
    }, 
