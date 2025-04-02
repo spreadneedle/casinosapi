@@ -659,6 +659,26 @@ const casinoData = [
     licenses: "Curacao Gaming Control Board",
     updated: "2025-04-02"
    }, 
+   {
+    casino_name: "Bally Bet Casino, USA",
+    bonus: "Up to $100 in bonus back + $50 bonus bet tokens.",
+    wagering_requirement_bonus: "5x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "One of the following applies: (1) Net Loss exceeds 90% of the first Deposit at any time within seven (7) calendar days after placing the first Deposit and first Wager, the value of their first Deposit, up to a maximum of $100 in Bonus Money is awarded, or (2) if the Net Loss does not exceed 90% of the first Deposit after the conclusion of the seven (7) calendar days after placing the first Deposit and first Wager, the value of the Net Loss, up to a maximum of $100 in Bonus Money is awarded. Bonus bet tokens are non-withdrawable. Only winnings generated from wagers with bonus bet tokens are withdrawable",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Bet365, USA",
+    bonus: "Up to 500 bonus spins.",
+    wagering_requirement_bonus: "5x",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "$0.20",
+    info: "Take a spin on the New Player Offer reels for the chance to win five, 10, or 15 bonus spins. You will need to do this 10 out of the next 20 days, and a maximum of 500 spins are up for grabs.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-02"
+   }, 
   
       
 ];
