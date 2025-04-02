@@ -181,7 +181,7 @@ const casinoData = [
   },
   {
     casino_name: "Epicbet Casino",
-    bonus: "100% up to €300",
+    bonus: "Up to €300",
     wagering_requirement_bonus: "40x",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
@@ -578,6 +578,36 @@ const casinoData = [
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     licenses: "Malta Gaming Authority",
     updated: "2025-04-01"
+   }, 
+   {
+    casino_name: "ReSpin Casino",
+    bonus: "Up to €300",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
+    licenses: "Estonian Tax and Customs Board",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Slotti Casino",
+    bonus: "100 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "50x",
+    free_spin_value: "€0.20/spin",
+    info: "100 free spins are handed out in batches of 50 on the first day, 25 free spins on the second day, and 25 free spins on the third day.",
+    licenses: "Curacao Gaming Control Board",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "iBet Casino",
+    bonus: "10 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "40x",
+    free_spin_value: "€1/spin",
+    info: "n/a",
+    licenses: "Malta Gaming Authority",
+    updated: "2025-04-02"
    }, 
   
       
