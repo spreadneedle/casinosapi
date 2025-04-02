@@ -681,7 +681,7 @@ const casinoData = [
    }, 
    {
     casino_name: "BetMGM, USA",
-    bonus: "$25 registration bonus + 100% up to $1025",
+    bonus: "$25 registration bonus + 100% up to $1000",
     wagering_requirement_bonus: "15x",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
@@ -696,6 +696,36 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Rebate of up to $500 on any losses you sustain in your first 24 hours. The rebate will be paid in bonus credits, and you just need to satisfy a simple 1x playthrough requirement before they convert to withdrawable cash.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Borgata Online Casino, USA",
+    bonus: "$20 registration bonus + 100% up to $1000",
+    wagering_requirement_bonus: "15x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Any winnings you earn from your $20 bonus can’t be withdrawn until you (1) make a deposit, and (2) meet a 1x playthrough requirement on the winnings.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Caesars Palace Online Casino, USA",
+    bonus: "100% up to $2500",
+    wagering_requirement_bonus: "30x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Wagering requirement applies to both deposit + bonus.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "DraftKings Casino, USA",
+    bonus: "$35 bonus + 500 free spins + $1000 bonus",
+    wagering_requirement_bonus: "10x",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "n/a",
+    info: "1x wagering requirement on the $35 first deposit bonus. Wager $5 and get 500 free spins. Wager another $1000 and get $1000 in bonus with a 10x wagering requirement.",
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-02"
    }, 
