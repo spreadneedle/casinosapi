@@ -724,10 +724,50 @@ const casinoData = [
     bonus: "$35 bonus + 500 free spins + $1000 bonus",
     wagering_requirement_bonus: "10x",
     wagering_requirement_free_spins: "0x",
-    free_spin_value: "n/a",
+    free_spin_value: "$0.08/spin",
     info: "1x wagering requirement on the $35 first deposit bonus. Wager $5 and get 500 free spins. Wager another $1000 and get $1000 in bonus with a 10x wagering requirement.",
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-02"
+   }, 
+   {
+    casino_name: "Fanatics Casino, USA",
+    bonus: "$100 bonus",
+    wagering_requirement_bonus: "1x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Wager $10 and get $100 casino bonus with x1 wagering requirement.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   }, 
+   {
+    casino_name: "FanDuel Casino, USA",
+    bonus: "$40 bonus + 350 free spins",
+    wagering_requirement_bonus: "1x",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "$0.20/spin",
+    info: "Free spins are given out in batches of 50 over a span of 7 days.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   }, 
+   {
+    casino_name: "Golden Nugget Casino, USA",
+    bonus: "250 free spins + lossback up to $1000",
+    wagering_requirement_bonus: "1x",
+    wagering_requirement_free_spins: "1x",
+    free_spin_value: "$0.08/spin",
+    info: "Free spins are given out in batches of 50 over a span of 7 days. Lossback up to $1000 for the first 24 hours.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   }, 
+   {
+    casino_name: "Hard Rock Bet, USA",
+    bonus: "100% up to $1000 + 500 free spins",
+    wagering_requirement_bonus: "20x",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "$0.25/spin",
+    info: "n/a",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
    }, 
   
       
