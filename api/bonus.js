@@ -769,6 +769,16 @@ const casinoData = [
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-04"
    }, 
+   {
+    casino_name: "Horseshoe Casino, USA",
+    bonus: "100% up to $1250",
+    wagering_requirement_bonus: "15x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   }, 
   
       
 ];
