@@ -829,6 +829,16 @@ const casinoData = [
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-04"
    },    
+   {
+    casino_name: "Wheel of Fortune Casino, USA",
+    bonus: "100% up to $40",
+    wagering_requirement_bonus: "15x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "n/a",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   },    
 ];
 
 export default function handler(req, res) {
