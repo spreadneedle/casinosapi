@@ -740,6 +740,26 @@ const casinoData = [
     "updated": "2025-04-05"
   },  
   {
+    "casino_name": "Power Up Casino",
+    "bonus": "100% up to €1000 + 100 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "n/a",
+    "licenses": "Anjouan Gaming",
+    "updated": "2025-04-05"
+  },  
+  {
+    "casino_name": "N1 Casino",
+    "bonus": "100% up to €1000 + 150 free spins",
+    "wagering_requirement_bonus": "50x",
+    "wagering_requirement_free_spins": "50x",
+    "free_spin_value": "€0.10/spin",
+    "info": "n/a",
+    "licenses": "Malta Gaming Authority",
+    "updated": "2025-04-05"
+  },  
+  {
     "casino_name": "Bally Bet Casino, USA",
     "bonus": "Up to $100 in bonus back + $50 bonus bet tokens",
     "wagering_requirement_bonus": "5x",
