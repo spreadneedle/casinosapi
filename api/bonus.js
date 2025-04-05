@@ -819,6 +819,16 @@ const casinoData = [
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-04"
    },    
+   {
+    casino_name: "Spin Palace, USA",
+    bonus: "50% up to $1000 + 20 free spins",
+    wagering_requirement_bonus: "30x",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "$0.10/spin",
+    info: "20 free spins on sign-up. Note that both the deposit amount and bonus amount has a 30x wagering requirement, thus resulting in the real wagering requirement being higher than 30x.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   },    
 ];
 
 export default function handler(req, res) {
