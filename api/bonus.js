@@ -660,6 +660,86 @@ const casinoData = [
     "updated": "2025-04-02"
   },
   {
+    "casino_name": "Spinfest Casino",
+    "bonus": "100% up to €500 + 200 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    "licenses": "n/a",
+    "updated": "2025-04-05"
+  },
+  {
+    "casino_name": "Slot it Casino",
+    "bonus": "100% up to €500",
+    "wagering_requirement_bonus": "36x",
+    "wagering_requirement_free_spins": "n/a",
+    "free_spin_value": "n/a",
+    "info": "n/a",
+    "licenses": "Curacao Gaming Control Board",
+    "updated": "2025-04-05"
+  },  
+  {
+    "casino_name": "Roby Casino",
+    "bonus": "100% up to €500 + 200 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    "licenses": "Anjouan Gaming",
+    "updated": "2025-04-05"
+  },  
+  {
+    "casino_name": "BassBet Casino",
+    "bonus": "100% up to €500 + 200 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
+    "licenses": "Anjouan Gaming",
+    "updated": "2025-04-05"
+  },  
+  {
+    "casino_name": "Mammona Casino",
+    "bonus": "100% up to €500 + 50 free spins",
+    "wagering_requirement_bonus": "40x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.20/spin",
+    "info": "n/a",
+    "licenses": "Malta Gaming Authority",
+    "updated": "2025-04-05"
+  },  
+  {
+    "casino_name": "Wheelz Casino",
+    "bonus": "100% up to €300 + 100 free spins",
+    "wagering_requirement_bonus": "35x",
+    "wagering_requirement_free_spins": "35x",
+    "free_spin_value": "€0.10/spin",
+    "info": "Free spins are given out in batches of 10 per day over a span of 10 days.",
+    "licenses": "Malta Gaming Authority",
+    "updated": "2025-04-05"
+  },  
+  {
+    "casino_name": "Kruuna Casino",
+    "bonus": "n/a",
+    "wagering_requirement_bonus": "n/a",
+    "wagering_requirement_free_spins": "n/a",
+    "free_spin_value": "n/a",
+    "info": "No bonus on offer.",
+    "licenses": "Malta Gaming Authority",
+    "updated": "2025-04-05"
+  },  
+  {
+    "casino_name": "Ninja Casino",
+    "bonus": "n/a",
+    "wagering_requirement_bonus": "n/a",
+    "wagering_requirement_free_spins": "n/a",
+    "free_spin_value": "n/a",
+    "info": "No bonus on offer.",
+    "licenses": "Malta Gaming Authority",
+    "updated": "2025-04-05"
+  },  
+  {
     "casino_name": "Bally Bet Casino, USA",
     "bonus": "Up to $100 in bonus back + $50 bonus bet tokens",
     "wagering_requirement_bonus": "5x",
