@@ -6,7 +6,7 @@ const casinoData = [
     "wagering_requirement_free_spins": "no wagering requirement",
     "free_spin_value": "€0.10/spin",
     "info": "This is a 'wager first' bonus, where the bonus is paid out in 10% increments as the deposit is wagered",
-    "licenses": "Malta Gaming Authority, UK Gambling Commission, Swedish Gambling Authority, Alcohol and Gaming Commission of Ontario",
+    "licenses": "Malta Gaming Authority, UK Gambling Commission, Swedish Gambling Authority, Spillemyndigheden, Alcohol and Gaming Commission of Ontario",
     "updated": "2025-03-27"
   },
   {
@@ -106,7 +106,7 @@ const casinoData = [
     "wagering_requirement_free_spins": "35x",
     "free_spin_value": "€0.10/spin",
     "info": "The free spins are awarded on registration.",
-    "licenses": "Malta Gaming Authority",
+    "licenses": "Malta Gaming Authority, UK Gambling Commission",
     "updated": "2025-03-28"
   },
   {
