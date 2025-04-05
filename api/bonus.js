@@ -779,6 +779,26 @@ const casinoData = [
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-04"
    }, 
+   {
+    casino_name: "Jackpot City Casino, USA",
+    bonus: "100% up to $1000 + 20 free spins",
+    wagering_requirement_bonus: "25x",
+    wagering_requirement_free_spins: "30x",
+    free_spin_value: "$0.10/spin",
+    info: "n/a",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   }, 
+   {
+    casino_name: "Monopoly Casino, USA",
+    bonus: "Up to $100 loss back",
+    wagering_requirement_bonus: "1x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Refund up to $100 on the first deposit.",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   }, 
   
       
 ];
