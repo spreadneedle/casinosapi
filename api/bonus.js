@@ -799,8 +799,26 @@ const casinoData = [
     licenses: "New Jersey Division of Gaming Enforcement",
     updated: "2025-04-04"
    }, 
-  
-      
+   {
+    casino_name: "PartyCasino, USA",
+    bonus: "200% up to $100",
+    wagering_requirement_bonus: "10x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "$0.10/spin",
+    info: "n/a",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   }, 
+   {
+    casino_name: "PlayStar Casino, USA",
+    bonus: "100% up to $500 + 100 free spins",
+    wagering_requirement_bonus: "30x",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "$0.10/spin",
+    info: "n/a",
+    licenses: "New Jersey Division of Gaming Enforcement",
+    updated: "2025-04-04"
+   },    
 ];
 
 export default function handler(req, res) {
