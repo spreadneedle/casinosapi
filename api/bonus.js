@@ -2,7 +2,27 @@ const casinoLicenses = [
   {
     id: 1,
     name: "Malta Gaming Authority",
-    validCountries: ["MT", "CA", "FI", "NO", "JP", "IN", "NZ", "BR"],
+    validCountries: [
+      "MT",
+      "CA",
+      "FI",
+      "NO",
+      "JP",
+      "IN",
+      "NZ",
+      "BR",
+      "DE",
+      "FR",
+      "ES",
+      "IT",
+      "NL",
+      "BE",
+      "AT",
+      "CH",
+      "IE",
+      "AU",
+      "ZA",
+    ],
   },
   {
     id: 2,
@@ -12,27 +32,123 @@ const casinoLicenses = [
   {
     id: 3,
     name: "Gibraltar Gambling Commissioner",
-    validCountries: ["GI", "CA", "FI", "NO", "JP", "IN", "NZ", "BR"],
+    validCountries: [
+      "GI",
+      "CA",
+      "FI",
+      "NO",
+      "JP",
+      "IN",
+      "NZ",
+      "BR",
+      "DE",
+      "FR",
+      "ES",
+      "IT",
+      "NL",
+      "BE",
+      "AT",
+      "CH",
+      "IE",
+      "AU",
+      "ZA",
+    ],
   },
   {
     id: 4,
     name: "Kahnawake Gaming Commission",
-    validCountries: ["CA", "MX", "BR", "JP", "IN", "NZ"],
+    validCountries: [
+      "CA",
+      "MX",
+      "BR",
+      "JP",
+      "IN",
+      "NZ",
+      "DE",
+      "FR",
+      "ES",
+      "IT",
+      "NL",
+      "BE",
+      "AT",
+      "CH",
+      "IE",
+      "AU",
+      "ZA",
+    ],
   },
   {
     id: 5,
     name: "Isle of Man Gambling Supervision Commission",
-    validCountries: ["IM", "CA", "FI", "NO", "JP", "IN", "NZ", "BR"],
+    validCountries: [
+      "IM",
+      "CA",
+      "FI",
+      "NO",
+      "JP",
+      "IN",
+      "NZ",
+      "BR",
+      "DE",
+      "FR",
+      "ES",
+      "IT",
+      "NL",
+      "BE",
+      "AT",
+      "CH",
+      "IE",
+      "AU",
+      "ZA",
+    ],
   },
   {
     id: 6,
     name: "Alderney Gambling Control Commission",
-    validCountries: ["GG", "CA", "FI", "NO", "JP", "IN", "NZ"],
+    validCountries: [
+      "GG",
+      "CA",
+      "FI",
+      "NO",
+      "JP",
+      "IN",
+      "NZ",
+      "DE",
+      "FR",
+      "ES",
+      "IT",
+      "NL",
+      "BE",
+      "AT",
+      "CH",
+      "IE",
+      "AU",
+      "ZA",
+    ],
   },
   {
     id: 7,
     name: "Antigua and Barbuda Financial Services Regulatory Commission – Division of Gaming",
-    validCountries: ["AG", "CA", "MX", "BR", "JP", "IN", "NZ"],
+    validCountries: [
+      "AG",
+      "CA",
+      "MX",
+      "BR",
+      "JP",
+      "IN",
+      "NZ",
+      "DE",
+      "FR",
+      "ES",
+      "IT",
+      "NL",
+      "BE",
+      "AT",
+      "CH",
+      "IE",
+      "AU",
+      "ZA",
+    ],
   },
   { id: 8, name: "UK Gambling Commission", validCountries: ["GB"] },
   {
@@ -183,12 +299,17 @@ const casinoLicenses = [
     id: 53,
     name: "Costa Rica Ministry of Finance – Data Processing License (unregulated)",
     validCountries: [],
-  }, // Informative only, not a valid casino license
+  },
   {
     id: 54,
     name: "Anjouan Gaming Board",
     validCountries: ["IN", "BR", "MX", "ZA", "FI", "NO", "NZ", "JP"],
-  }, // excludes: US, UK, DE, NL, FR, etc.
+  },
+  {
+    id: 55,
+    name: "Tobique Gaming Commission",
+    validCountries: ["CA", "FI", "NO", "JP", "IN", "NZ", "BR", "MX"],
+  },
 ];
 
 const casinoData = [
@@ -1157,14 +1278,18 @@ function filterCasinosByCountry(country) {
   const licenses = casinoLicenses.filter((l) =>
     l.validCountries.includes(country.toUpperCase())
   );
-  return casinoData.filter((casino) => {
-    // filter casino that has at least one license that is valid in the country
-    return casino.licenses.some((id) => licenses.some((l) => l.id === id));
-  }).map(casino => ({
-    ...casino,
-    licenses: casino.licenses.map(id => {
-      const license = casinoLicenses.find(l => l.id === id);
-      return license ? license.name : null;
-    }).filter(Boolean) // Remove any null values in case a license ID wasn't found
-  }));
+  return casinoData
+    .filter((casino) => {
+      // filter casino that has at least one license that is valid in the country
+      return casino.licenses.some((id) => licenses.some((l) => l.id === id));
+    })
+    .map((casino) => ({
+      ...casino,
+      licenses: casino.licenses
+        .map((id) => {
+          const license = casinoLicenses.find((l) => l.id === id);
+          return license ? license.name : null;
+        })
+        .filter(Boolean), // Remove any null values in case a license ID wasn't found
+    }));
 }
