@@ -1145,15 +1145,11 @@ export default function handler(req, res) {
     return res.status(400).json({ error: "Location parameter is required" });
   }
 
-  // Normalize license input (remove spaces for matching)
-  const normalizedLocation = location.toLowerCase();
-
   // Find matching license in casinoData
   const filteredCasinos = filterCasinosByCountry(location);
 
   res.status(200).json({
     casinos: filteredCasinos,
-    regions: regions,
   });
 }
 
