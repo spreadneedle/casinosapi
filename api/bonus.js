@@ -998,7 +998,7 @@ const casinoData = [
     wagering_requirement_bonus: "15x",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
-    info: "Any winnings you earn from your $20 bonus can’t be withdrawn until you (1) make a deposit, and (2) meet a 1x playthrough requirement on the winnings.",
+    info: "Any winnings you earn from your $20 bonus can't be withdrawn until you (1) make a deposit, and (2) meet a 1x playthrough requirement on the winnings.",
     licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
@@ -1160,5 +1160,11 @@ function filterCasinosByCountry(country) {
   return casinoData.filter((casino) => {
     // filter casino that has at least one license that is valid in the country
     return casino.licenses.some((id) => licenses.some((l) => l.id === id));
-  });
+  }).map(casino => ({
+    ...casino,
+    licenses: casino.licenses.map(id => {
+      const license = casinoLicenses.find(l => l.id === id);
+      return license ? license.name : null;
+    }).filter(Boolean) // Remove any null values in case a license ID wasn't found
+  }));
 }
