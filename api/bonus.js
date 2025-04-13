@@ -1,3 +1,196 @@
+const casinoLicenses = [
+  {
+    id: 1,
+    name: "Malta Gaming Authority",
+    validCountries: ["MT", "CA", "FI", "NO", "JP", "IN", "NZ", "BR"],
+  },
+  {
+    id: 2,
+    name: "Curaçao eGaming",
+    validCountries: ["CW", "CA", "FI", "NO", "JP", "IN", "NZ", "BR", "MX"],
+  },
+  {
+    id: 3,
+    name: "Gibraltar Gambling Commissioner",
+    validCountries: ["GI", "CA", "FI", "NO", "JP", "IN", "NZ", "BR"],
+  },
+  {
+    id: 4,
+    name: "Kahnawake Gaming Commission",
+    validCountries: ["CA", "MX", "BR", "JP", "IN", "NZ"],
+  },
+  {
+    id: 5,
+    name: "Isle of Man Gambling Supervision Commission",
+    validCountries: ["IM", "CA", "FI", "NO", "JP", "IN", "NZ", "BR"],
+  },
+  {
+    id: 6,
+    name: "Alderney Gambling Control Commission",
+    validCountries: ["GG", "CA", "FI", "NO", "JP", "IN", "NZ"],
+  },
+  {
+    id: 7,
+    name: "Antigua and Barbuda Financial Services Regulatory Commission – Division of Gaming",
+    validCountries: ["AG", "CA", "MX", "BR", "JP", "IN", "NZ"],
+  },
+  { id: 8, name: "UK Gambling Commission", validCountries: ["GB"] },
+  {
+    id: 9,
+    name: "New Jersey Division of Gaming Enforcement",
+    validCountries: ["US"],
+  },
+  { id: 10, name: "Pennsylvania Gaming Control Board", validCountries: ["US"] },
+  { id: 11, name: "Michigan Gaming Control Board", validCountries: ["US"] },
+  { id: 12, name: "Delaware Lottery", validCountries: ["US"] },
+  { id: 13, name: "West Virginia Lottery Commission", validCountries: ["US"] },
+  {
+    id: 14,
+    name: "Connecticut Department of Consumer Protection",
+    validCountries: ["US"],
+  },
+  {
+    id: 15,
+    name: "Alcohol and Gaming Commission of Ontario",
+    validCountries: ["CA"],
+  },
+  { id: 16, name: "Swedish Gambling Authority", validCountries: ["SE"] },
+  { id: 17, name: "Danish Gambling Authority", validCountries: ["DK"] },
+  {
+    id: 18,
+    name: "Italian Customs and Monopolies Agency",
+    validCountries: ["IT"],
+  },
+  {
+    id: 19,
+    name: "Directorate General for the Regulation of Gambling",
+    validCountries: ["ES"],
+  },
+  { id: 20, name: "National Gambling Authority", validCountries: ["FR"] },
+  { id: 21, name: "Netherlands Gambling Authority", validCountries: ["NL"] },
+  { id: 22, name: "Belgian Gaming Commission", validCountries: ["BE"] },
+  {
+    id: 23,
+    name: "Joint Gambling Authority of the Federal States",
+    validCountries: ["DE"],
+  },
+  { id: 24, name: "Hellenic Gaming Commission", validCountries: ["GR"] },
+  {
+    id: 25,
+    name: "Gaming Regulation and Inspection Service",
+    validCountries: ["PT"],
+  },
+  { id: 26, name: "National Gambling Office", validCountries: ["RO"] },
+  { id: 27, name: "Coljuegos", validCountries: ["CO"] },
+  {
+    id: 28,
+    name: "Philippine Amusement and Gaming Corporation",
+    validCountries: ["PH"],
+  },
+  {
+    id: 29,
+    name: "Betting Control and Licensing Board",
+    validCountries: ["KE"],
+  },
+  {
+    id: 30,
+    name: "National Lottery Regulatory Commission",
+    validCountries: ["NG"],
+  },
+  { id: 31, name: "Estonian Tax and Customs Board", validCountries: ["EE"] },
+  {
+    id: 32,
+    name: "Lotteries and Gambling Supervisory Inspection of Latvia",
+    validCountries: ["LV"],
+  },
+  {
+    id: 33,
+    name: "Gambling Supervisory Authority of Lithuania",
+    validCountries: ["LT"],
+  },
+  {
+    id: 34,
+    name: "Czech Ministry of Finance – Gambling and Lottery Department",
+    validCountries: ["CZ"],
+  },
+  { id: 35, name: "Slovak Gambling Regulatory Office", validCountries: ["SK"] },
+  { id: 36, name: "Swiss Federal Gaming Board", validCountries: ["CH"] },
+  {
+    id: 37,
+    name: "Ukrainian Commission for Regulation of Gambling and Lotteries",
+    validCountries: ["UA"],
+  },
+  {
+    id: 38,
+    name: "Belarus Ministry of Taxes and Levies",
+    validCountries: ["BY"],
+  },
+  {
+    id: 39,
+    name: "Georgian Revenue Service – Gambling Division",
+    validCountries: ["GE"],
+  },
+  {
+    id: 40,
+    name: "Ministry of Finance of Armenia – Gambling Licensing Department",
+    validCountries: ["AM"],
+  },
+  {
+    id: 41,
+    name: "Serbian Games of Chance Administration",
+    validCountries: ["RS"],
+  },
+  {
+    id: 42,
+    name: "Montenegrin Games of Chance Administration",
+    validCountries: ["ME"],
+  },
+  {
+    id: 43,
+    name: "Hungarian Supervisory Authority for Regulatory Affairs",
+    validCountries: ["HU"],
+  },
+  { id: 44, name: "Gaming Board of Tanzania", validCountries: ["TZ"] },
+  { id: 45, name: "Gaming Commission of Ghana", validCountries: ["GH"] },
+  { id: 46, name: "Barbados Gaming Authority", validCountries: ["BB"] },
+  {
+    id: 47,
+    name: "Jamaica Betting, Gaming & Lotteries Commission",
+    validCountries: ["JM"],
+  },
+  {
+    id: 48,
+    name: "Sierra Leone Gaming, Lottery and Sports Betting Control Board",
+    validCountries: ["SL"],
+  },
+  { id: 49, name: "Panama Gaming Control Board", validCountries: ["PA"] },
+  {
+    id: 50,
+    name: "Ministry of Foreign Trade and Tourism of Peru",
+    validCountries: ["PE"],
+  },
+  {
+    id: 51,
+    name: "Lotería de la Ciudad de Buenos Aires (LOTBA)",
+    validCountries: ["AR"],
+  },
+  {
+    id: 52,
+    name: "Buenos Aires Provincial Institute of Lottery and Casinos (IPLyC)",
+    validCountries: ["AR"],
+  },
+  {
+    id: 53,
+    name: "Costa Rica Ministry of Finance – Data Processing License (unregulated)",
+    validCountries: [],
+  }, // Informative only, not a valid casino license
+  {
+    id: 54,
+    name: "Anjouan Gaming Board",
+    validCountries: ["IN", "BR", "MX", "ZA", "FI", "NO", "NZ", "JP"],
+  }, // excludes: US, UK, DE, NL, FR, etc.
+];
+
 const casinoData = [
   {
     casino_name: "Videoslots",
@@ -6,8 +199,7 @@ const casinoData = [
     wagering_requirement_free_spins: "no wagering requirement",
     free_spin_value: "€0.10/spin",
     info: "This is a 'wager first' bonus, where the bonus is paid out in 10% increments as the deposit is wagered",
-    licenses:
-      "Malta Gaming Authority, UK Gambling Commission, Swedish Gambling Authority, Spillemyndigheden, Alcohol and Gaming Commission of Ontario",
+    licenses: [1, 8, 16, 17, 15], // Malta Gaming Authority, UK Gambling Commission, Swedish Gambling Authority, Spillemyndigheden (Danish Gambling Authority), Alcohol and Gaming Commission of Ontario
     updated: "2025-03-27",
   },
   {
@@ -17,7 +209,7 @@ const casinoData = [
     wagering_requirement_free_spins: "30x",
     free_spin_value: "€0.10/spin",
     info: "Deposited funds are used first. The bonus is 'non-sticky'.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-27",
   },
   {
@@ -27,7 +219,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Pommi Casino offers no sign-up bonus.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board (mapped to Curaçao eGaming as closest match)
     updated: "2025-03-27",
   },
   {
@@ -37,7 +229,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "€0.10/spin",
     info: "100 free spins per day are handed out over 3 days.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-27",
   },
   {
@@ -47,7 +239,7 @@ const casinoData = [
     wagering_requirement_free_spins: "10x",
     free_spin_value: "€0.20/spin",
     info: "",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-28",
   },
   {
@@ -57,7 +249,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Pommi Casino offers no sign-up bonus.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-28",
   },
   {
@@ -67,7 +259,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "Pommi Casino offers no sign-up bonus.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-28",
   },
   {
@@ -77,7 +269,7 @@ const casinoData = [
     wagering_requirement_free_spins: "50x",
     free_spin_value: "€0.20/spin",
     info: "50 free spins per day are handed out over 2 days.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-28",
   },
   {
@@ -87,7 +279,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "The bonus is 'sticky'.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-28",
   },
   {
@@ -97,7 +289,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-28",
   },
   {
@@ -107,7 +299,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "The free spins are awarded on registration.",
-    licenses: "Malta Gaming Authority, UK Gambling Commission",
+    licenses: [1, 8], // Malta Gaming Authority, UK Gambling Commission
     updated: "2025-03-28",
   },
   {
@@ -117,7 +309,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 10 days.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-28",
   },
   {
@@ -127,7 +319,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "The max win from the bonus is 3x the bonus value.",
-    licenses: "Curacao Gaming Control Board, Anjouan Gaming",
+    licenses: [2, 54], // Curacao Gaming Control Board, Anjouan Gaming
     updated: "2025-03-28",
   },
   {
@@ -137,7 +329,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-28",
   },
   {
@@ -147,7 +339,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-28",
   },
   {
@@ -157,7 +349,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-28",
   },
   {
@@ -167,7 +359,7 @@ const casinoData = [
     wagering_requirement_free_spins: "30x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "H.M. Government of Gibraltar",
+    licenses: [3], // H.M. Government of Gibraltar (mapped to Gibraltar Gambling Commissioner)
     updated: "2025-03-28",
   },
   {
@@ -177,7 +369,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-03-28",
   },
   {
@@ -187,7 +379,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-28",
   },
   {
@@ -197,7 +389,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-28",
   },
   {
@@ -207,7 +399,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-29",
   },
   {
@@ -217,7 +409,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-29",
   },
   {
@@ -227,7 +419,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.25/spin",
     info: "Max win from free spins €20.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-29",
   },
   {
@@ -237,7 +429,7 @@ const casinoData = [
     wagering_requirement_free_spins: "30x",
     free_spin_value: "€0.10/spin",
     info: "The first deposit bonus depends on the deposit amount. A €20 deposit will give 200% bonus up to €50 with a 50x wagering requirement. A €50 deposit will give 150% bonus up to €350 with a 40x wagering requirement. A €500 deposit will give 100% up to €2000 with a 60x wagering requirement.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-29",
   },
   {
@@ -247,7 +439,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€1/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-29",
   },
   {
@@ -257,7 +449,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "€1/spin",
     info: "The spin value of the free spins depend on the first deposit amount. A €20 deposit gives a €0.10 spin value. A €100 deposit gives a €0.50 spin value. A €200 deposit gives a €1 spin value.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-29",
   },
   {
@@ -267,7 +459,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "€0.20/spin",
     info: "200 free spins per day are handed out over 4 days in different games where the spin value ranges from €0.10 to €0.20.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-29",
   },
   {
@@ -277,7 +469,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-29",
   },
   {
@@ -287,7 +479,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-30",
   },
   {
@@ -297,7 +489,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "€0.20/spin",
     info: "200 free spins per day are handed out over 10 days in different games where the spin value ranges from €0.10 to €0.20.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-30",
   },
   {
@@ -307,7 +499,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-30",
   },
   {
@@ -317,7 +509,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.20/spin",
     info: "125 free spins per day are handed out over 5 days in different games.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -327,7 +519,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "125 free spins per day are handed out over 5 days in different games.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -337,7 +529,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€1/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -347,7 +539,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -357,7 +549,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -367,7 +559,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-03-30",
   },
   {
@@ -377,7 +569,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -387,7 +579,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -397,7 +589,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -407,7 +599,7 @@ const casinoData = [
     wagering_requirement_free_spins: "50x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 5 days in different games.",
-    licenses: "Kahnawake Gaming Commission",
+    licenses: [4], // Kahnawake Gaming Commission
     updated: "2025-03-30",
   },
   {
@@ -417,7 +609,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 5 days in different games.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-30",
   },
   {
@@ -427,7 +619,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 5 days in different games.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-03-30",
   },
   {
@@ -437,7 +629,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-03-30",
   },
   {
@@ -447,7 +639,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-03-30",
   },
   {
@@ -457,7 +649,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Kahnawake Gaming Commission",
+    licenses: [4], // Kahnawake Gaming Commission
     updated: "2025-03-30",
   },
   {
@@ -467,7 +659,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-31",
   },
   {
@@ -477,7 +669,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 10 days in different games.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-31",
   },
   {
@@ -487,7 +679,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 10 days in different games.",
-    licenses: "n/a",
+    licenses: [], // "n/a" mapped to empty array
     updated: "2025-03-31",
   },
   {
@@ -497,7 +689,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "n/a",
+    licenses: [], // "n/a" mapped to empty array
     updated: "2025-03-31",
   },
   {
@@ -507,7 +699,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-31",
   },
   {
@@ -517,7 +709,7 @@ const casinoData = [
     wagering_requirement_free_spins: "30x",
     free_spin_value: "€0.10/spin",
     info: "20 free spins per day are handed out over 5 days.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-03-31",
   },
   {
@@ -527,7 +719,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "n/a",
     info: "The first deposit awards 1 spin on a prize wheel. No guaranteed wins but a max win of €5000.",
-    licenses: "Gambling Supervision Commission Isle of Man",
+    licenses: [5], // Gambling Supervision Commission Isle of Man
     updated: "2025-03-31",
   },
   {
@@ -537,7 +729,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "The first deposit awards a mystery prize. No guaranteed wins but a max win of €500.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-03-31",
   },
   {
@@ -547,7 +739,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-03-31",
   },
   {
@@ -557,7 +749,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.05/spin",
     info: "500 free spins are handed out in varying amounts over 7 days, with 50 on day one.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-01",
   },
   {
@@ -567,7 +759,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.05/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-01",
   },
   {
@@ -577,7 +769,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-01",
   },
   {
@@ -587,7 +779,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
-    licenses: "Estonian Tax and Customs Board",
+    licenses: [31], // Estonian Tax and Customs Board
     updated: "2025-04-02",
   },
   {
@@ -597,7 +789,7 @@ const casinoData = [
     wagering_requirement_free_spins: "50x",
     free_spin_value: "€0.20/spin",
     info: "100 free spins are handed out in batches of 50 on the first day, 25 free spins on the second day, and 25 free spins on the third day.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -607,7 +799,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€1/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-02",
   },
   {
@@ -617,7 +809,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-02",
   },
   {
@@ -627,7 +819,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-02",
   },
   {
@@ -637,7 +829,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-02",
   },
   {
@@ -647,7 +839,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-02",
   },
   {
@@ -657,7 +849,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "No bonus on offer.",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -667,7 +859,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "n/a",
+    licenses: [], // "n/a" mapped to empty array
     updated: "2025-04-05",
   },
   {
@@ -677,7 +869,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "Curacao Gaming Control Board",
+    licenses: [2], // Curacao Gaming Control Board
     updated: "2025-04-05",
   },
   {
@@ -687,7 +879,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-05",
   },
   {
@@ -697,7 +889,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-05",
   },
   {
@@ -707,7 +899,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-05",
   },
   {
@@ -717,7 +909,7 @@ const casinoData = [
     wagering_requirement_free_spins: "35x",
     free_spin_value: "€0.10/spin",
     info: "Free spins are given out in batches of 10 per day over a span of 10 days.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-05",
   },
   {
@@ -727,7 +919,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "No bonus on offer.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-05",
   },
   {
@@ -737,7 +929,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "No bonus on offer.",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-05",
   },
   {
@@ -747,7 +939,7 @@ const casinoData = [
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Anjouan Gaming",
+    licenses: [54], // Anjouan Gaming
     updated: "2025-04-05",
   },
   {
@@ -757,7 +949,7 @@ const casinoData = [
     wagering_requirement_free_spins: "50x",
     free_spin_value: "€0.10/spin",
     info: "n/a",
-    licenses: "Malta Gaming Authority",
+    licenses: [1], // Malta Gaming Authority
     updated: "2025-04-05",
   },
   {
@@ -767,8 +959,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "One of the following applies: (1) Net Loss exceeds 90% of the first Deposit at any time within seven (7) calendar days after placing the first Deposit and first Wager, the value of their first Deposit, up to a maximum of $100 in Bonus Money is awarded, or (2) if the Net Loss does not exceed 90% of the first Deposit after the conclusion of the seven (7) calendar days after placing the first Deposit and first Wager, the value of the Net Loss, up to a maximum of $100 in Bonus Money is awarded. Bonus bet tokens are non-withdrawable. Only winnings generated from wagers with bonus bet tokens are withdrawable",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -778,8 +969,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "$0.20",
     info: "Take a spin on the New Player Offer reels for the chance to win five, 10, or 15 bonus spins. You will need to do this 10 out of the next 20 days, and a maximum of 500 spins are up for grabs.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -789,8 +979,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "The registration bonus has a 1x wagering requirement.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -800,8 +989,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Rebate of up to $500 on any losses you sustain in your first 24 hours. The rebate will be paid in bonus credits, and you just need to satisfy a simple 1x playthrough requirement before they convert to withdrawable cash.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -811,8 +999,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Any winnings you earn from your $20 bonus can’t be withdrawn until you (1) make a deposit, and (2) meet a 1x playthrough requirement on the winnings.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -822,8 +1009,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Wagering requirement applies to both deposit + bonus.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -833,8 +1019,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "$0.08/spin",
     info: "1x wagering requirement on the $35 first deposit bonus. Wager $5 and get 500 free spins. Wager another $1000 and get $1000 in bonus with a 10x wagering requirement.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-02",
   },
   {
@@ -844,7 +1029,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Wager $10 and get $100 casino bonus with x1 wagering requirement.",
-    licenses: "New Jersey Division of Gaming Enforcement",
+    licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
   {
@@ -854,8 +1039,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "$0.20/spin",
     info: "Free spins are given out in batches of 50 over a span of 7 days.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-04",
   },
   {
@@ -865,8 +1049,7 @@ const casinoData = [
     wagering_requirement_free_spins: "1x",
     free_spin_value: "$0.08/spin",
     info: "Free spins are given out in batches of 50 over a span of 7 days. Lossback up to $1000 for the first 24 hours.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-04",
   },
   {
@@ -876,7 +1059,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "$0.25/spin",
     info: "n/a",
-    licenses: "New Jersey Division of Gaming Enforcement",
+    licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
   {
@@ -886,7 +1069,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "New Jersey Division of Gaming Enforcement",
+    licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
   {
@@ -896,7 +1079,7 @@ const casinoData = [
     wagering_requirement_free_spins: "30x",
     free_spin_value: "$0.10/spin",
     info: "n/a",
-    licenses: "New Jersey Division of Gaming Enforcement",
+    licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
   {
@@ -906,7 +1089,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "Refund up to $100 on the first deposit.",
-    licenses: "New Jersey Division of Gaming Enforcement",
+    licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
   {
@@ -916,8 +1099,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "$0.10/spin",
     info: "n/a",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-04",
   },
   {
@@ -927,7 +1109,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "$0.10/spin",
     info: "n/a",
-    licenses: "New Jersey Division of Gaming Enforcement",
+    licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
   {
@@ -937,8 +1119,7 @@ const casinoData = [
     wagering_requirement_free_spins: "0x",
     free_spin_value: "$0.10/spin",
     info: "20 free spins on sign-up. Note that both the deposit amount and bonus amount has a 30x wagering requirement, thus resulting in the real wagering requirement being higher than 30x.",
-    licenses:
-      "New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board",
+    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
     updated: "2025-04-04",
   },
   {
@@ -948,7 +1129,7 @@ const casinoData = [
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
     info: "n/a",
-    licenses: "New Jersey Division of Gaming Enforcement",
+    licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
 ];
@@ -958,17 +1139,30 @@ export default function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  res.status(200).json(casinoData);
+  const location = req.query.location;
 
-  //const location = req.query.location;
-  //
-  //if (!location) {
-  //  return res.status(400).json({ error: 'Location parameter is required' });
-  //}
+  if (!location) {
+    return res.status(400).json({ error: "Location parameter is required" });
+  }
 
-  //const filteredCasinos = casinoData.filter(casino =>
-  //  casino.geo.toLowerCase() === location.toLowerCase()
-  //);
+  // Normalize license input (remove spaces for matching)
+  const normalizedLocation = location.toLowerCase();
 
-  //res.status(200).json(filteredCasinos);
+  // Find matching license in casinoData
+  const filteredCasinos = filterCasinosByCountry(location);
+
+  res.status(200).json({
+    casinos: filteredCasinos,
+    regions: regions,
+  });
+}
+
+function filterCasinosByCountry(country) {
+  const licenses = casinoLicenses.filter((l) =>
+    l.validCountries.includes(country.toUpperCase())
+  );
+  return casinoData.filter((casino) => {
+    // filter casino that has at least one license that is valid in the country
+    return casino.licenses.some((id) => licenses.some((l) => l.id === id));
+  });
 }
