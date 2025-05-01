@@ -1396,6 +1396,16 @@ const casinoData = [
     licenses: [2], // Curacao Gaming Control Board
     updated: "2025-05-01",
   },
+  {
+    casino_name: "Stake.com",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Cryptocurrency casino. Offers daily and weekly races.",
+    licenses: [2], // Curacao Gaming Control Board
+    updated: "2025-05-01",
+  },
 ];
 
 export default function handler(req, res) {
