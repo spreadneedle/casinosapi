@@ -1346,6 +1346,56 @@ const casinoData = [
     licenses: [9], // New Jersey Division of Gaming Enforcement
     updated: "2025-04-04",
   },
+  {
+    casino_name: "Duelbits",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "50% rakeback offered but requires the player to progress up the Ace's VIP Lounge levels.",
+    licenses: [2], // Curacao Gaming Control Board
+    updated: "2025-05-01",
+  },
+  {
+    casino_name: "Sportsbet.io",
+    bonus: "100% up to 300 USDT",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Cryptocurrency casino",
+    licenses: [2], // Curacao Gaming Control Board
+    updated: "2025-05-01",
+  },
+  {
+    casino_name: "Bitcasino.io",
+    bonus: "100% up to 1500 USDT",
+    wagering_requirement_bonus: "40x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Cryptocurrency casino",
+    licenses: [2], // Curacao Gaming Control Board
+    updated: "2025-05-01",
+  },
+  {
+    casino_name: "PVP.money",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Fully decentralized cryptocurrency casino. No KYC, just connect cryptowallet and play.",
+    licenses: [2], // Curacao Gaming Control Board
+    updated: "2025-05-01",
+  },
+  {
+    casino_name: "Dexbet.win",
+    bonus: "n/a",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "Fully decentralized cryptocurrency casino. No KYC, just connect cryptowallet and play.",
+    licenses: [2], // Curacao Gaming Control Board
+    updated: "2025-05-01",
+  },
 ];
 
 export default function handler(req, res) {
