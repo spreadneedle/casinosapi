@@ -14,7 +14,7 @@
     },
     {
       "source": "/api-docs",
-      "destination": "/api-docs/",
+      "destination": "/api-docs/openapi.yaml",
       "permanent": true
     }
   ],
@@ -49,14 +49,6 @@
     {
       "source": "/api/index.json",
       "destination": "/public/api/index.json"
-    },
-    {
-      "source": "/api-docs/",
-      "destination": "/public/api-docs/openapi.yaml"
-    },
-    {
-      "source": "/api-docs/openapi.yaml",
-      "destination": "/public/api-docs/openapi.yaml"
     }
   ]
 }
