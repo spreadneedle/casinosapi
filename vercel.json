@@ -27,6 +27,17 @@
       "permanent": true
     }
   ],
+  "headers": [
+    {
+      "source": "/api-docs/openapi.yaml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/yaml"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/",
@@ -47,6 +58,10 @@
     {
       "source": "/api/index.json",
       "destination": "/public/api/index.json"
+    },
+    {
+      "source": "/api-docs",
+      "destination": "/public/api-docs/openapi.yaml"
     },
     {
       "source": "/api-docs/openapi.yaml",
