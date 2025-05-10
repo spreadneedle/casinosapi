@@ -23,18 +23,18 @@
       "permanent": true
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/public/index.html"
+      "source": "/",
+      "destination": "/public/index.html"
     },
     {
-      "src": "/bonus",
-      "dest": "/api/bonus.js"
+      "source": "/bonus",
+      "destination": "/api/bonus.js"
     },
     {
-      "src": "/recommendations",
-      "dest": "/api/recommendations.js"
+      "source": "/recommendations",
+      "destination": "/api/recommendations.js"
     }
   ]
-} 
+}
