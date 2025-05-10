@@ -12,14 +12,14 @@
   ],
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
           "value": "www.grokcasino.online"
         }
       ],
-      "destination": "https://grokcasino.online/:1",
+      "destination": "https://grokcasino.online/:path*",
       "permanent": true
     }
   ],
