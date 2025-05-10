@@ -1,5 +1,70 @@
 const casinoLicenses = [
   {
+    id: 0,
+    name: "Sweepstakes Casino (No License Required)",
+    validCountries: [
+      "US", // United States
+      "CA", // Canada
+      "GB", // United Kingdom
+      "AU", // Australia
+      "NZ", // New Zealand
+      "DE", // Germany
+      "FR", // France
+      "IT", // Italy
+      "ES", // Spain
+      "PT", // Portugal
+      "NL", // Netherlands
+      "BE", // Belgium
+      "SE", // Sweden
+      "NO", // Norway
+      "DK", // Denmark
+      "FI", // Finland
+      "IE", // Ireland
+      "AT", // Austria
+      "CH", // Switzerland
+      "PL", // Poland
+      "CZ", // Czech Republic
+      "SK", // Slovakia
+      "HU", // Hungary
+      "RO", // Romania
+      "BG", // Bulgaria
+      "GR", // Greece
+      "HR", // Croatia
+      "SI", // Slovenia
+      "RS", // Serbia
+      "ME", // Montenegro
+      "MK", // North Macedonia
+      "AL", // Albania
+      "BA", // Bosnia and Herzegovina
+      "UA", // Ukraine
+      "BY", // Belarus
+      "RU", // Russia
+      "TR", // Turkey
+      "IL", // Israel
+      "ZA", // South Africa
+      "NG", // Nigeria
+      "KE", // Kenya
+      "GH", // Ghana
+      "EG", // Egypt
+      "MA", // Morocco
+      "BR", // Brazil
+      "AR", // Argentina
+      "CL", // Chile
+      "CO", // Colombia
+      "PE", // Peru
+      "MX", // Mexico
+      "JP", // Japan
+      "KR", // South Korea
+      "IN", // India
+      "ID", // Indonesia
+      "MY", // Malaysia
+      "SG", // Singapore
+      "TH", // Thailand
+      "VN", // Vietnam
+      "PH", // Philippines
+    ],
+  },
+  {
     id: 1,
     name: "Malta Gaming Authority",
     validCountries: [
