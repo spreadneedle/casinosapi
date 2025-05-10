@@ -10,6 +10,30 @@
       "use": "@vercel/static"
     }
   ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.grokcasino.online"
+        }
+      ],
+      "destination": "https://grokcasino.online/:1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "protocol",
+          "value": "http"
+        }
+      ],
+      "destination": "https://grokcasino.online/:1",
+      "permanent": true
+    }
+  ],
   "routes": [
     {
       "src": "/",
