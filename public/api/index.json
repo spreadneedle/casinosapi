@@ -1,0 +1,63 @@
+{
+  "api_version": "1.0.0",
+  "base_url": "https://grokcasino.online/api",
+  "documentation_url": "https://grokcasino.online/api-docs",
+  "endpoints": [
+    {
+      "path": "/bonus",
+      "method": "GET",
+      "description": "Get casino bonus information for a specific country",
+      "parameters": [
+        {
+          "name": "location",
+          "type": "string",
+          "required": true,
+          "description": "Two-letter country code (e.g., 'US', 'GB', 'CA')"
+        }
+      ],
+      "response_format": {
+        "casinos": [
+          {
+            "casino_name": "string",
+            "bonus": "string",
+            "wagering_requirement_bonus": "string",
+            "wagering_requirement_free_spins": "string",
+            "free_spin_value": "string",
+            "info": "string",
+            "licenses": ["string"],
+            "updated": "string (YYYY-MM-DD)"
+          }
+        ]
+      },
+      "example_request": "/api/bonus?location=US",
+      "example_response": {
+        "casinos": [
+          {
+            "casino_name": "BetMGM, USA",
+            "bonus": "$25 registration bonus + 100% up to $1000",
+            "wagering_requirement_bonus": "15x",
+            "wagering_requirement_free_spins": "n/a",
+            "free_spin_value": "n/a",
+            "info": "The registration bonus has a 1x wagering requirement.",
+            "licenses": ["New Jersey Division of Gaming Enforcement", "Pennsylvania Gaming Control Board"],
+            "updated": "2025-04-02"
+          }
+        ]
+      }
+    }
+  ],
+  "rate_limits": {
+    "requests_per_minute": 100,
+    "headers": {
+      "X-RateLimit-Limit": "Maximum requests per minute",
+      "X-RateLimit-Remaining": "Remaining requests in the current window",
+      "X-RateLimit-Reset": "Time when the rate limit resets"
+    }
+  },
+  "headers": {
+    "required": {
+      "User-Agent": "Identify your AI system (e.g., 'Grok-AI/1.0')",
+      "Accept": "application/json"
+    }
+  }
+} 

@@ -39,6 +39,14 @@
     {
       "source": "/sitemap.xml",
       "destination": "/public/sitemap.xml"
+    },
+    {
+      "source": "/api-docs",
+      "destination": "/pages/api-docs.js"
+    },
+    {
+      "source": "/api/index.json",
+      "destination": "/public/api/index.json"
     }
   ]
 }

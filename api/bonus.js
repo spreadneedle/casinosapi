@@ -1487,8 +1487,18 @@ export default function handler(req, res) {
   // Find matching license in casinoData
   const filteredCasinos = filterCasinosByCountry(location);
 
+  // Add documentation links to response headers
+  res.setHeader('Link', [
+    '<https://grokcasino.online/api-docs>; rel="documentation"',
+    '<https://grokcasino.online/api/index.json>; rel="api-index"'
+  ].join(', '));
+
   res.status(200).json({
     casinos: filteredCasinos,
+    _links: {
+      documentation: "https://grokcasino.online/api-docs",
+      api_index: "https://grokcasino.online/api/index.json"
+    }
   });
 }
 
