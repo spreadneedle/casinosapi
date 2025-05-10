@@ -21,17 +21,6 @@
       ],
       "destination": "https://grokcasino.online/:1",
       "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "protocol",
-          "value": "http"
-        }
-      ],
-      "destination": "https://grokcasino.online/:1",
-      "permanent": true
     }
   ],
   "routes": [
