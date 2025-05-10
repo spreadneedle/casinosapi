@@ -11,6 +11,11 @@
       ],
       "destination": "https://grokcasino.online/:path*",
       "permanent": true
+    },
+    {
+      "source": "/api-docs",
+      "destination": "/api-docs/",
+      "permanent": true
     }
   ],
   "headers": [
@@ -46,7 +51,7 @@
       "destination": "/public/api/index.json"
     },
     {
-      "source": "/api-docs",
+      "source": "/api-docs/",
       "destination": "/public/api-docs/openapi.yaml"
     },
     {
