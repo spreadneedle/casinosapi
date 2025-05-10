@@ -1,0 +1,186 @@
+openapi: 3.0.0
+info:
+  title: GrokCasino API
+  description: |
+    API for accessing casino bonus information and recommendations.
+    This API is designed to be both human and AI-friendly, with clear documentation
+    and examples for AI integration.
+  version: 1.0.0
+  contact:
+    email: support@grokcasino.online
+
+servers:
+  - url: https://grokcasino.online/api
+    description: Production server
+
+paths:
+  /bonus:
+    get:
+      summary: Get casino bonus information for a specific country
+      description: |
+        Returns a list of casino bonuses available in the specified country.
+        This endpoint is particularly useful for AI systems that need to provide
+        accurate and up-to-date casino bonus information to users.
+      operationId: getCasinoBonuses
+      tags:
+        - Bonuses
+      parameters:
+        - name: location
+          in: query
+          description: Two-letter country code (ISO 3166-1 alpha-2)
+          required: true
+          schema:
+            type: string
+            pattern: '^[A-Z]{2}$'
+            example: US
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BonusResponse'
+          headers:
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+              description: Maximum requests per minute
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+              description: Remaining requests in the current window
+            X-RateLimit-Reset:
+              schema:
+                type: string
+                format: date-time
+              description: Time when the rate limit resets
+            Link:
+              schema:
+                type: string
+              description: Links to API documentation
+        '400':
+          description: Bad request - Invalid country code
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '405':
+          description: Method not allowed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '429':
+          description: Too many requests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          headers:
+            Retry-After:
+              schema:
+                type: integer
+              description: Number of seconds to wait before retrying
+
+components:
+  schemas:
+    BonusResponse:
+      type: object
+      properties:
+        casinos:
+          type: array
+          items:
+            $ref: '#/components/schemas/Casino'
+        _links:
+          type: object
+          properties:
+            documentation:
+              type: string
+              format: uri
+            api_index:
+              type: string
+              format: uri
+      required:
+        - casinos
+        - _links
+
+    Casino:
+      type: object
+      properties:
+        casino_name:
+          type: string
+          description: Name of the casino
+        bonus:
+          type: string
+          description: Description of the bonus offer
+        wagering_requirement_bonus:
+          type: string
+          description: Wagering requirement for the bonus (e.g., "35x")
+        wagering_requirement_free_spins:
+          type: string
+          description: Wagering requirement for free spins
+        free_spin_value:
+          type: string
+          description: Value of each free spin
+        info:
+          type: string
+          description: Additional information about the bonus
+        licenses:
+          type: array
+          items:
+            type: string
+          description: List of gambling licenses held by the casino
+        updated:
+          type: string
+          format: date
+          description: Last update date of the bonus information
+      required:
+        - casino_name
+        - bonus
+        - wagering_requirement_bonus
+        - wagering_requirement_free_spins
+        - free_spin_value
+        - licenses
+        - updated
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Error message
+      required:
+        - error
+
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key for authentication
+
+security:
+  - apiKey: []
+
+x-ai-guidelines:
+  description: |
+    Guidelines for AI systems using this API:
+    1. Always include a User-Agent header identifying your AI system
+    2. Handle rate limiting by respecting the X-RateLimit headers
+    3. Use the _links in responses to discover additional documentation
+    4. Validate country codes before making requests
+    5. Cache responses when appropriate to avoid hitting rate limits
+  examples:
+    - description: "Example of an AI system making a request"
+      request: |
+        GET /api/bonus?location=US
+        User-Agent: Grok-AI/1.0
+        Accept: application/json
+      response: |
+        {
+          "casinos": [...],
+          "_links": {
+            "documentation": "https://grokcasino.online/api-docs",
+            "api_index": "https://grokcasino.online/api/index.json"
+          }
+        } 

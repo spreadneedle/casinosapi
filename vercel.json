@@ -47,6 +47,10 @@
     {
       "source": "/api/index.json",
       "destination": "/public/api/index.json"
+    },
+    {
+      "source": "/api-docs/openapi.yaml",
+      "destination": "/public/api-docs/openapi.yaml"
     }
   ]
 }
