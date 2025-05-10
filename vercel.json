@@ -8,10 +8,6 @@
     {
       "src": "public/**",
       "use": "@vercel/static"
-    },
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
     }
   ],
   "redirects": [
