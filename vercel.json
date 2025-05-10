@@ -8,6 +8,10 @@
     {
       "src": "public/**",
       "use": "@vercel/static"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
     }
   ],
   "redirects": [
@@ -39,10 +43,6 @@
     {
       "source": "/sitemap.xml",
       "destination": "/public/sitemap.xml"
-    },
-    {
-      "source": "/api-docs",
-      "destination": "/pages/api-docs.js"
     },
     {
       "source": "/api/index.json",
