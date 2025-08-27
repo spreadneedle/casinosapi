@@ -592,6 +592,126 @@ const casinoData = [
     updated: "2025-03-28",
   },
   {
+    "casino_name": "CaZeus Casino",
+    "bonus": "100% up to €500 + 200 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "Exclusive for new players. Minimitalletus 20 €.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "Pelataan Kasino",
+    "bonus": "100% up to €300 + 100 free spins",
+    "wagering_requirement_bonus": "80x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "No registration required. Minimitalletus 20 €.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "Big Lucky Casino",
+    "bonus": "n/a",
+    "wagering_requirement_bonus": "n/a",
+    "wagering_requirement_free_spins": "0x",
+    "free_spin_value": "€0.10/spin",
+    "info": "225 free spins + 20% cashback. Exclusive bonus. No registration required. Minimitalletus 30 €.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "Lunar Spins Casino",
+    "bonus": "100% up to €1500 + 500 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "35x",
+    "free_spin_value": "€0.10/spin",
+    "info": "No registration required. Minimitalletus 25 €. 50 free spins per day over 10 days.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "Pelikaani Casino",
+    "bonus": "n/a",
+    "wagering_requirement_bonus": "n/a",
+    "wagering_requirement_free_spins": "0x",
+    "free_spin_value": "€0.10/spin",
+    "info": "100 free spins + up to 1000 more. No registration required. Minimitalletus 10 €.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "BetHall Casino",
+    "bonus": "100% up to €500 + 200 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "LaraBet Casino",
+    "bonus": "100% up to €500 + 200 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "Exclusive for new players. Minimitalletus 20 €. 20 free spins per day over 10 days.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "Valhalla Wins Casino",
+    "bonus": "100% up to €1500 + 500 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "35x",
+    "free_spin_value": "€0.10/spin",
+    "info": "No registration required. Minimitalletus 25 €. 50 free spins per day over 10 days.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "KingMaker",
+    "bonus": "100% up to €500 + 25 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "Minimitalletus 20 €.",
+    "licenses": [2],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "ViperWin",
+    "bonus": "100% up to €500 + 200 free spins",
+    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
+    "licenses": [2],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "Red Dice",
+    "bonus": "200% up to €1000",
+    "wagering_requirement_bonus": "30x",
+    "wagering_requirement_free_spins": "n/a",
+    "free_spin_value": "n/a",
+    "info": "Minimitalletus 20 €. Wagering on bonus only.",
+    "licenses": [31],
+    "updated": "2025-08-27"
+  },
+  {
+    "casino_name": "Lempi",
+    "bonus": "100% up to €400 + 50 free spins",
+    "wagering_requirement_bonus": "80x",
+    "wagering_requirement_free_spins": "40x",
+    "free_spin_value": "€0.10/spin",
+    "info": "Minimitalletus 20 €.",
+    "licenses": [1],
+    "updated": "2025-08-27"
+  },
+  {
     casino_name: "RX Casino",
     bonus: "150% up to €5000",
     wagering_requirement_bonus: "40x",
