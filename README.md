@@ -1,4 +1,4 @@
-# GrokCasino.ai
+# GrokCasino.online
 
 A simple Node.js Express application that provides casino bonus information and recommendations.
 
