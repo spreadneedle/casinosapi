@@ -1591,6 +1591,36 @@ const casinoData = [
     licenses: [2], // Curacao Gaming Control Board
     updated: "2025-05-01",
   },
+  {
+    casino_name: "Huippu Casino",
+    bonus: "100% up to €300 + 30 free spins",
+    wagering_requirement_bonus: "80x",
+    wagering_requirement_free_spins: "0x",
+    free_spin_value: "€0.05",
+    info: "Cryptocurrency casino. Offers daily and weekly races.",
+    licenses: [2], // Malta Gaming Authority
+    updated: "2025-09-29",
+  },
+  {
+    casino_name: "Jellona Casino",
+    bonus: "200 free spins",
+    wagering_requirement_bonus: "n/a",
+    wagering_requirement_free_spins: "1x",
+    free_spin_value: "€0.05",
+    info: "Deposit needs to be wagered 5x before free spins are released.",
+    licenses: [2], // Curacao Gaming Control Board
+    updated: "2025-09-29",
+  },
+  {
+    casino_name: "Lyrabet Casino",
+    bonus: "200% up to €1000",
+    wagering_requirement_bonus: "30x",
+    wagering_requirement_free_spins: "n/a",
+    free_spin_value: "n/a",
+    info: "This is a 'wager first' bonus, where the bonus if paid out after the full wagering required has been reached with deposited money. More than one deposit is allowed.",
+    licenses: [2], // Estonian Tax and Customs Board
+    updated: "2025-09-29",
+  },
 ];
 
 export default function handler(req, res) {
