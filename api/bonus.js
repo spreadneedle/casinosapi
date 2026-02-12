@@ -86,8 +86,7 @@ const casinoLicenses = [
       "CH",
       "IE",
       "AU",
-      "ZA",
-    ],
+      "ZA"],
   },
   {
     id: 2,
@@ -122,8 +121,7 @@ const casinoLicenses = [
       "RO",
       "SK",
       "SI",
-      "SE",
-    ],
+      "SE"],
   },
   {
     id: 3,
@@ -147,8 +145,7 @@ const casinoLicenses = [
       "CH",
       "IE",
       "AU",
-      "ZA",
-    ],
+      "ZA"],
   },
   {
     id: 4,
@@ -170,8 +167,7 @@ const casinoLicenses = [
       "CH",
       "IE",
       "AU",
-      "ZA",
-    ],
+      "ZA"],
   },
   {
     id: 5,
@@ -195,8 +191,7 @@ const casinoLicenses = [
       "CH",
       "IE",
       "AU",
-      "ZA",
-    ],
+      "ZA"],
   },
   {
     id: 6,
@@ -219,8 +214,7 @@ const casinoLicenses = [
       "CH",
       "IE",
       "AU",
-      "ZA",
-    ],
+      "ZA"],
   },
   {
     id: 7,
@@ -243,8 +237,7 @@ const casinoLicenses = [
       "CH",
       "IE",
       "AU",
-      "ZA",
-    ],
+      "ZA"],
   },
   { id: 8, name: "UK Gambling Commission", validCountries: ["GB"] },
   {
@@ -339,8 +332,7 @@ const casinoLicenses = [
       "SK",
       "SI",
       "ES",
-      "SE",
-    ],
+      "SE"],
   },
   {
     id: 32,
@@ -460,15 +452,13 @@ const casinoLicenses = [
       "RO",
       "SK",
       "SI",
-      "SE",
-    ],
+      "SE"],
   },
   {
     id: 55,
     name: "Tobique Gaming Commission",
     validCountries: ["CA", "FI", "NO", "JP", "IN", "NZ", "BR", "MX"],
-  },
-];
+  }];
 
 const casinoData = [
   {
@@ -611,25 +601,7 @@ const casinoData = [
     "licenses": [31],
     "updated": "2025-08-27"
   },
-  {
-    "casino_name": "Big Lucky Casino",
-    "bonus": "n/a",
-    "wagering_requirement_bonus": "n/a",
-    "wagering_requirement_free_spins": "0x",
-    "free_spin_value": "€0.10/spin",
-    "info": "225 free spins + 20% cashback. Exclusive bonus. No registration required. Minimitalletus 30 €.",
-    "licenses": [31],
-    "updated": "2025-08-27"
   },
-  {
-    "casino_name": "Lunar Spins Casino",
-    "bonus": "100% up to €1500 + 500 free spins",
-    "wagering_requirement_bonus": "70x",
-    "wagering_requirement_free_spins": "35x",
-    "free_spin_value": "€0.10/spin",
-    "info": "No registration required. Minimitalletus 25 €. 50 free spins per day over 10 days.",
-    "licenses": [31],
-    "updated": "2025-08-27"
   },
   {
     "casino_name": "Pelikaani Casino",
@@ -841,15 +813,6 @@ const casinoData = [
     licenses: [1], // Malta Gaming Authority
     updated: "2025-03-29",
   },
-  {
-    casino_name: "Lucky Nordic Casino",
-    bonus: "50 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "€1/spin",
-    info: "The spin value of the free spins depend on the first deposit amount. A €20 deposit gives a €0.10 spin value. A €100 deposit gives a €0.50 spin value. A €200 deposit gives a €1 spin value.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-29",
   },
   {
     casino_name: "Fruta Casino",
@@ -1620,8 +1583,7 @@ const casinoData = [
     info: "This is a 'wager first' bonus, where the bonus if paid out after the full wagering required has been reached with deposited money. More than one deposit is allowed.",
     licenses: [2], // Estonian Tax and Customs Board
     updated: "2025-09-29",
-  },
-];
+  }];
 
 export default function handler(req, res) {
   if (req.method !== "GET") {
