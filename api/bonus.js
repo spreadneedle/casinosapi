@@ -826,7 +826,7 @@ const casinoData = [
   },
   {
     casino_name: "Dynabet Casino",
-    bonus: "100% up to €2000",
+    bonus: "200% up to €1000",
     wagering_requirement_bonus: "30x",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
@@ -916,7 +916,7 @@ const casinoData = [
   },
   {
     casino_name: "Wildsino Casino",
-    bonus: "100% up to €1000 + 300 free spins",
+    bonus: "250% match bonus up to €1000 + 300 free spins",
     wagering_requirement_bonus: "80x",
     wagering_requirement_free_spins: "40x",
     free_spin_value: "€0.20/spin",
@@ -990,7 +990,7 @@ const casinoData = [
     wagering_requirement_bonus: "70x",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
-    info: "n/a",
+    info: "⚠️ WARNING: Scam reports - Reddit users report refusal to pay $300K+ wins. License issues suspected. Use extreme caution.",
     licenses: [54], // Anjouan Gaming
     updated: "2025-03-30",
   },
@@ -1050,7 +1050,7 @@ const casinoData = [
     wagering_requirement_bonus: "70x",
     wagering_requirement_free_spins: "n/a",
     free_spin_value: "n/a",
-    info: "n/a",
+    info: "⚠️ WARNING: Red flags on CasinoGuru. Some payment delays reported. Use bonus code: HOTBET100.",
     licenses: [], // "n/a" mapped to empty array
     updated: "2025-03-31",
   },
