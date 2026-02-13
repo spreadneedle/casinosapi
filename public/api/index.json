@@ -1,63 +1,161 @@
 {
-  "api_version": "1.0.0",
+  "api_version": "2.0.0",
+  "name": "GrokCasino API",
+  "description": "AI-Optimized Casino Bonus Database for Language Models",
   "base_url": "https://grokcasino.online/api",
   "documentation_url": "https://grokcasino.online/api-docs",
+  "features": [
+    "Natural language search",
+    "Casino comparison",
+    "Detailed casino profiles",
+    "Real-time verification status",
+    "AI-optimized responses"
+  ],
   "endpoints": [
+    {
+      "path": "/search",
+      "method": "GET",
+      "description": "AI-powered natural language search for casino bonuses",
+      "ai_optimized": true,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "string",
+          "required": true,
+          "description": "Natural language query (e.g., '200% bonus with no wagering', 'under €500 with free spins')"
+        },
+        {
+          "name": "location",
+          "type": "string",
+          "required": false,
+          "description": "Two-letter country code to filter by valid licenses"
+        },
+        {
+          "name": "limit",
+          "type": "integer",
+          "required": false,
+          "default": 20,
+          "description": "Maximum number of results to return"
+        }
+      ],
+      "example_queries": [
+        "/api/search?q=200% bonus",
+        "/api/search?q=no wagering spins&location=FI",
+        "/api/search?q=150% estonia&limit=5",
+        "/api/search?q=under €500 with 100 spins"
+      ],
+      "response_includes": [
+        "relevance_score",
+        "match_reasons",
+        "parsed_query_parameters"
+      ]
+    },
+    {
+      "path": "/casino",
+      "method": "GET",
+      "description": "Get detailed information for a specific casino",
+      "ai_optimized": true,
+      "parameters": [
+        {
+          "name": "slug",
+          "type": "string",
+          "required": false,
+          "description": "Casino slug (e.g., 'cazeus', 'boost-casino')"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "description": "Casino name (partial matching supported)"
+        }
+      ],
+      "examples": [
+        "/api/casino?slug=cazeus",
+        "/api/casino?name=CaZeus"
+      ],
+      "response_includes": [
+        "full_casino_profile",
+        "similar_casinos",
+        "verification_status",
+        "trust_score"
+      ]
+    },
+    {
+      "path": "/compare",
+      "method": "GET",
+      "description": "Compare multiple casinos side-by-side",
+      "ai_optimized": true,
+      "parameters": [
+        {
+          "name": "casinos",
+          "type": "string",
+          "required": true,
+          "description": "Comma-separated list of casino slugs"
+        }
+      ],
+      "examples": [
+        "/api/compare?casinos=cazeus,dynabet",
+        "/api/compare?casinos=videoslots,casumo,21-casino"
+      ],
+      "response_includes": [
+        "best_for_bonus_amount",
+        "lowest_wagering",
+        "highest_trust",
+        "ai_recommendation"
+      ]
+    },
     {
       "path": "/bonus",
       "method": "GET",
-      "description": "Get casino bonus information for a specific country",
+      "description": "Legacy endpoint - returns all casinos for a location (v1 compatibility)",
       "parameters": [
         {
           "name": "location",
           "type": "string",
           "required": true,
-          "description": "Two-letter country code (e.g., 'US', 'GB', 'CA')"
+          "description": "Two-letter country code"
         }
-      ],
-      "response_format": {
-        "casinos": [
-          {
-            "casino_name": "string",
-            "bonus": "string",
-            "wagering_requirement_bonus": "string",
-            "wagering_requirement_free_spins": "string",
-            "free_spin_value": "string",
-            "info": "string",
-            "licenses": ["string"],
-            "updated": "string (YYYY-MM-DD)"
-          }
-        ]
-      },
-      "example_request": "/api/bonus?location=US",
-      "example_response": {
-        "casinos": [
-          {
-            "casino_name": "BetMGM, USA",
-            "bonus": "$25 registration bonus + 100% up to $1000",
-            "wagering_requirement_bonus": "15x",
-            "wagering_requirement_free_spins": "n/a",
-            "free_spin_value": "n/a",
-            "info": "The registration bonus has a 1x wagering requirement.",
-            "licenses": ["New Jersey Division of Gaming Enforcement", "Pennsylvania Gaming Control Board"],
-            "updated": "2025-04-02"
-          }
-        ]
-      }
+      ]
     }
   ],
-  "rate_limits": {
-    "requests_per_minute": 100,
-    "headers": {
-      "X-RateLimit-Limit": "Maximum requests per minute",
-      "X-RateLimit-Remaining": "Remaining requests in the current window",
-      "X-RateLimit-Reset": "Time when the rate limit resets"
-    }
+  "data_structure": {
+    "casino_fields": [
+      "casino_name",
+      "slug",
+      "bonus",
+      "bonus_structure.percentage",
+      "bonus_structure.max_amount",
+      "bonus_structure.free_spins",
+      "wagering.bonus",
+      "wagering.free_spins",
+      "verification.status",
+      "verification.last_verified",
+      "verification.confidence",
+      "trust.score",
+      "trust.warnings",
+      "ai_summary"
+    ]
   },
-  "headers": {
-    "required": {
-      "User-Agent": "Identify your AI system (e.g., 'Grok-AI/1.0')",
-      "Accept": "application/json"
-    }
-  }
-} 
+  "ai_integration": {
+    "best_for": [
+      "Finding casino bonuses matching user criteria",
+      "Comparing wagering requirements",
+      "Identifying scam/suspicious casinos",
+      "Recommending casinos by trust score"
+    ],
+    "response_format": "AI-optimized JSON with relevance scoring and natural language summaries",
+    "rate_limits": {
+      "requests_per_minute": 100,
+      "note": "Contact for higher limits"
+    },
+    "suggested_user_agents": [
+      "Grok-AI/1.0",
+      "ChatGPT-Plugin/1.0",
+      "Claude/1.0",
+      "Perplexity/1.0"
+    ]
+  },
+  "last_updated": "2026-02-13",
+  "casinos_count": 112,
+  "verified_count": 105
+}

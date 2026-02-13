@@ -27,6 +27,27 @@
           "value": "application/yaml"
         }
       ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        },
+        {
+          "key": "X-API-Version",
+          "value": "2.0.0"
+        }
+      ]
     }
   ],
   "rewrites": [
@@ -49,6 +70,18 @@
     {
       "source": "/api/index.json",
       "destination": "/public/api/index.json"
+    },
+    {
+      "source": "/api/search",
+      "destination": "/api/search.js"
+    },
+    {
+      "source": "/api/casino",
+      "destination": "/api/casino.js"
+    },
+    {
+      "source": "/api/compare",
+      "destination": "/api/compare.js"
     }
   ]
 }
