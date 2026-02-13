@@ -583,21 +583,21 @@ const casinoData = [
   },
   {
     "casino_name": "CaZeus Casino",
-    "bonus": "100% up to €500 + 200 free spins",
-    "wagering_requirement_bonus": "70x",
+    "bonus": "200% up to €1750 + 150 free spins",
+    "wagering_requirement_bonus": "35x",
     "wagering_requirement_free_spins": "40x",
     "free_spin_value": "€0.10/spin",
-    "info": "Exclusive for new players. Minimitalletus 20 €.",
+    "info": "Updated 2026. Spins released 20 per day, expire in 24h if not claimed.",
     "licenses": [31],
     "updated": "2025-08-27"
   },
   {
     "casino_name": "Pelataan Kasino",
-    "bonus": "100% up to €300 + 100 free spins",
+    "bonus": "150% up to €300 + 100 free spins",
     "wagering_requirement_bonus": "80x",
     "wagering_requirement_free_spins": "40x",
     "free_spin_value": "€0.10/spin",
-    "info": "No registration required. Minimitalletus 20 €.",
+    "info": "No registration required. Minimitalletus $20. Spins on Bonanza. Winnings capped at €20.",
     "licenses": [31],
     "updated": "2025-08-27"
   },
@@ -615,8 +615,8 @@ const casinoData = [
   },
   {
     "casino_name": "BetHall Casino",
-    "bonus": "100% up to €500 + 200 free spins",
-    "wagering_requirement_bonus": "70x",
+    "bonus": "200% up to €1750 + 150 free spins",
+    "wagering_requirement_bonus": "35x",
     "wagering_requirement_free_spins": "40x",
     "free_spin_value": "€0.10/spin",
     "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
@@ -625,8 +625,8 @@ const casinoData = [
   },
   {
     "casino_name": "LaraBet Casino",
-    "bonus": "100% up to €500 + 200 free spins",
-    "wagering_requirement_bonus": "70x",
+    "bonus": "200% up to €1750 + 150 free spins",
+    "wagering_requirement_bonus": "35x",
     "wagering_requirement_free_spins": "40x",
     "free_spin_value": "€0.10/spin",
     "info": "Exclusive for new players. Minimitalletus 20 €. 20 free spins per day over 10 days.",
@@ -636,7 +636,7 @@ const casinoData = [
   {
     "casino_name": "Valhalla Wins Casino",
     "bonus": "100% up to €1500 + 500 free spins",
-    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_bonus": "35x",
     "wagering_requirement_free_spins": "35x",
     "free_spin_value": "€0.10/spin",
     "info": "No registration required. Minimitalletus 25 €. 50 free spins per day over 10 days.",
@@ -646,7 +646,7 @@ const casinoData = [
   {
     "casino_name": "KingMaker",
     "bonus": "100% up to €500 + 25 free spins",
-    "wagering_requirement_bonus": "70x",
+    "wagering_requirement_bonus": "35x",
     "wagering_requirement_free_spins": "40x",
     "free_spin_value": "€0.10/spin",
     "info": "Minimitalletus 20 €.",
@@ -655,8 +655,8 @@ const casinoData = [
   },
   {
     "casino_name": "ViperWin",
-    "bonus": "100% up to €500 + 200 free spins",
-    "wagering_requirement_bonus": "70x",
+    "bonus": "200% up to €1750 + 150 free spins",
+    "wagering_requirement_bonus": "35x",
     "wagering_requirement_free_spins": "40x",
     "free_spin_value": "€0.10/spin",
     "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
