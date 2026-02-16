@@ -1,6 +1,6 @@
 // Enhanced GrokCasino API - AI-Optimized Data
 // Generated: 2026-02-13T17:15:23.585540
-// Casinos: 112
+// Casinos: 122
 
 const casinoDataEnhanced = [
   {
@@ -3362,6 +3362,306 @@ const casinoDataEnhanced = [
     "info": "This is a 'wager first' bonus, where the bonus if paid out after the full wagering required has been reached with deposited money. More than one deposit is allowed.",
     "ai_summary": "Lyrabet Casino: 200% up to €1000...",
     "last_updated": "2026-02-13"
+  },
+  {
+    "casino_name": "Playzee Casino",
+    "slug": "playzee-casino",
+    "bonus": "100% up to €1,500 + 150 free spins",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 1500,
+      "free_spins": 150
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "35x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8.0,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "3-deposit package. MGA licensed. Zee Spins loyalty program.",
+    "ai_summary": "Playzee Casino: 100% up to €1,500 + 150 free spins. MGA licensed with Zee Spins loyalty program.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Casoola Casino",
+    "slug": "casoola-casino",
+    "bonus": "100% up to €500 + 200 free spins",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 500,
+      "free_spins": 200
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "35x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 7.5,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Robot theme 4-deposit welcome package. MGA licensed with tournaments.",
+    "ai_summary": "Casoola Casino: 100% up to €500 + 200 free spins. Cyber-themed MGA casino with tournaments.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Boom Casino",
+    "slug": "boom-casino",
+    "bonus": "100% up to €100 + 100 FS",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 100,
+      "free_spins": 100
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "0x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8.5,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "PayNPlay zero wager FS. Estonian licensed. Finnish no-account fast payouts.",
+    "ai_summary": "Boom Casino: 100% up to €100 + 100 wager-free spins. PayNPlay with fast Finnish payouts.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Caxino Casino",
+    "slug": "caxino-casino",
+    "bonus": "€500 + 500 FS",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": 500,
+      "free_spins": 500
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "35x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8.0,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Rootz smart bonuses platform. 500 FS welcome. MGA licensed.",
+    "ai_summary": "Caxino Casino: €500 + 500 free spins welcome. Rootz platform with smart bonuses.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Simple Casino",
+    "slug": "simple-casino",
+    "bonus": "100% up to €500 + 50 FS",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 500,
+      "free_spins": 50
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "35x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 7.5,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "No-account since 2001. MGA licensed instant play.",
+    "ai_summary": "Simple Casino: 100% up to €500 + 50 free spins. No-account MGA casino since 2001.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Miami Dice Casino",
+    "slug": "miami-dice-casino",
+    "bonus": "200% up to €100 + 50 FS",
+    "bonus_structure": {
+      "percentage": 200,
+      "max_amount": 100,
+      "free_spins": 50
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "35x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 7.5,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Miami luxury jackpots theme. MGA licensed with 200% match.",
+    "ai_summary": "Miami Dice Casino: 200% up to €100 + 50 free spins. Miami-themed MGA casino.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Jackpot Village Casino",
+    "slug": "jackpot-village-casino",
+    "bonus": "100% up to €500",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 500,
+      "free_spins": 0
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "n/a"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 7.5,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Premium slots jackpots. MGA licensed. Award-winning progressive jackpots.",
+    "ai_summary": "Jackpot Village Casino: 100% up to €500. Premium MGA slots with progressive jackpots.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Spinz Casino",
+    "slug": "spinz-casino",
+    "bonus": "100% up to €300 + 100 FS",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 300,
+      "free_spins": 100
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "0x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8.0,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Wager-free FS. Estonian licensed. Finnish popular casino established 2004.",
+    "ai_summary": "Spinz Casino: 100% up to €300 + 100 wager-free spins. Estonian licensed Finnish favorite.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "Spin Casino",
+    "slug": "spin-casino",
+    "bonus": "100% up to €400",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 400,
+      "free_spins": 0
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "n/a"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 7.0,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Classic casino. MGA licensed. Reliable and established operator.",
+    "ai_summary": "Spin Casino: 100% up to €400. Classic reliable MGA casino.",
+    "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "10Bet Casino",
+    "slug": "10bet-casino",
+    "bonus": "100% up to €100",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 100,
+      "free_spins": 0
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "n/a"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-02-16",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 7.5,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Sports + casino hybrid. MGA licensed sportsbook and casino.",
+    "ai_summary": "10Bet Casino: 100% up to €100. Sportsbook casino hybrid with MGA license.",
+    "last_updated": "2026-02-16"
   }
 ];
 
