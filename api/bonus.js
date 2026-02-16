@@ -474,7 +474,7 @@ const casinoData = [
   "licenses": [
     31
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "Pelataan Kasino",
@@ -486,7 +486,7 @@ const casinoData = [
   "licenses": [
     31
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "Pelikaani Casino",
@@ -498,7 +498,7 @@ const casinoData = [
   "licenses": [
     31
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "BetHall Casino",
@@ -510,7 +510,7 @@ const casinoData = [
   "licenses": [
     31
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "LaraBet Casino",
@@ -522,7 +522,7 @@ const casinoData = [
   "licenses": [
     31
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "Valhalla Wins Casino",
@@ -534,7 +534,7 @@ const casinoData = [
   "licenses": [
     31
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "KingMaker",
@@ -546,7 +546,7 @@ const casinoData = [
   "licenses": [
     2
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "ViperWin",
@@ -558,7 +558,7 @@ const casinoData = [
   "licenses": [
     2
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "Red Dice",
@@ -570,7 +570,7 @@ const casinoData = [
   "licenses": [
     31
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "Lempi",
@@ -582,7 +582,7 @@ const casinoData = [
   "licenses": [
     1
   ],
-  "updated": "2025-08-27"
+  "updated": "2026-02-16"
 },
   {
   "casino_name": "Playzee Casino",
