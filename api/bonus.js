@@ -1,4 +1,5 @@
 const casinoLicenses = [
+
   {
     id: 0,
     name: "Sweepstakes Casino (No License Required)",
@@ -458,1134 +459,284 @@ const casinoLicenses = [
     id: 55,
     name: "Tobique Gaming Commission",
     validCountries: ["CA", "FI", "NO", "JP", "IN", "NZ", "BR", "MX"],
-  }];
+  }
+];
+
 
 const casinoData = [
   {
-    casino_name: "Videoslots",
-    bonus: "100% up to €200 + 11 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "no wagering requirement",
-    free_spin_value: "€0.10/spin",
-    info: "This is a 'wager first' bonus, where the bonus is paid out in 10% increments as the deposit is wagered",
-    licenses: [1, 8, 16, 17, 15], // Malta Gaming Authority, UK Gambling Commission, Swedish Gambling Authority, Spillemyndigheden (Danish Gambling Authority), Alcohol and Gaming Commission of Ontario
-    updated: "2025-03-27",
-  },
-  {
-    casino_name: "Boost Casino",
-    bonus: "100% 250 € asti + 50 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "30x",
-    free_spin_value: "€0.10/spin",
-    info: "Deposited funds are used first. The bonus is 'non-sticky'.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-27",
-  },
-  {
-    casino_name: "Pommi Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Pommi Casino offers no sign-up bonus.",
-    licenses: [2], // Curacao Gaming Control Board (mapped to Curaçao eGaming as closest match)
-    updated: "2025-03-27",
-  },
-  {
-    casino_name: "Paratiisi Casino",
-    bonus: "300 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "€0.10/spin",
-    info: "100 free spins per day are handed out over 3 days.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-27",
-  },
-  {
-    casino_name: "Bethard",
-    bonus: "100% up to €50 + 20 free spins",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "10x",
-    free_spin_value: "€0.20/spin",
-    info: "",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Shokki Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Pommi Casino offers no sign-up bonus.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Lucky Trunk Casino",
-    bonus: "100% up to €250 + 50 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "Pommi Casino offers no sign-up bonus.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Hillo Casino",
-    bonus: "100 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "50x",
-    free_spin_value: "€0.20/spin",
-    info: "50 free spins per day are handed out over 2 days.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Teho Casino",
-    bonus: "150% up to €600",
-    wagering_requirement_bonus: "80x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "The bonus is 'sticky'.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Dazzlehand Casino",
-    bonus: "100% up to €200 + 200 free spins",
-    wagering_requirement_bonus: "60x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "21 Casino",
-    bonus: "121% up to €300 + 21 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "The free spins are awarded on registration.",
-    licenses: [1, 8], // Malta Gaming Authority, UK Gambling Commission
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Wild Robin Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 10 days.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-28",
-  },
-  {
-    "casino_name": "CaZeus Casino",
-    "bonus": "200% up to €1750 + 150 free spins",
-    "wagering_requirement_bonus": "35x",
-    "wagering_requirement_free_spins": "40x",
-    "free_spin_value": "€0.10/spin",
-    "info": "Updated 2026. Spins released 20 per day, expire in 24h if not claimed.",
-    "licenses": [31],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "Pelataan Kasino",
-    "bonus": "150% up to €300 + 100 free spins",
-    "wagering_requirement_bonus": "80x",
-    "wagering_requirement_free_spins": "40x",
-    "free_spin_value": "€0.10/spin",
-    "info": "No registration required. Minimitalletus $20. Spins on Bonanza. Winnings capped at €20.",
-    "licenses": [31],
-    "updated": "2025-08-27"
-  },
-  },
-  },
-  {
-    "casino_name": "Pelikaani Casino",
-    "bonus": "n/a",
-    "wagering_requirement_bonus": "n/a",
-    "wagering_requirement_free_spins": "0x",
-    "free_spin_value": "€0.10/spin",
-    "info": "100 free spins + up to 1000 more. No registration required. Minimitalletus 10 €.",
-    "licenses": [31],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "BetHall Casino",
-    "bonus": "200% up to €1750 + 150 free spins",
-    "wagering_requirement_bonus": "35x",
-    "wagering_requirement_free_spins": "40x",
-    "free_spin_value": "€0.10/spin",
-    "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
-    "licenses": [31],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "LaraBet Casino",
-    "bonus": "200% up to €1750 + 150 free spins",
-    "wagering_requirement_bonus": "35x",
-    "wagering_requirement_free_spins": "40x",
-    "free_spin_value": "€0.10/spin",
-    "info": "Exclusive for new players. Minimitalletus 20 €. 20 free spins per day over 10 days.",
-    "licenses": [31],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "Valhalla Wins Casino",
-    "bonus": "100% up to €1500 + 500 free spins",
-    "wagering_requirement_bonus": "35x",
-    "wagering_requirement_free_spins": "35x",
-    "free_spin_value": "€0.10/spin",
-    "info": "No registration required. Minimitalletus 25 €. 50 free spins per day over 10 days.",
-    "licenses": [31],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "KingMaker",
-    "bonus": "100% up to €500 + 25 free spins",
-    "wagering_requirement_bonus": "35x",
-    "wagering_requirement_free_spins": "40x",
-    "free_spin_value": "€0.10/spin",
-    "info": "Minimitalletus 20 €.",
-    "licenses": [2],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "ViperWin",
-    "bonus": "200% up to €1750 + 150 free spins",
-    "wagering_requirement_bonus": "35x",
-    "wagering_requirement_free_spins": "40x",
-    "free_spin_value": "€0.10/spin",
-    "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
-    "licenses": [2],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "Red Dice",
-    "bonus": "200% up to €1000",
-    "wagering_requirement_bonus": "30x",
-    "wagering_requirement_free_spins": "n/a",
-    "free_spin_value": "n/a",
-    "info": "Minimitalletus 20 €. Wagering on bonus only.",
-    "licenses": [31],
-    "updated": "2025-08-27"
-  },
-  {
-    "casino_name": "Lempi",
-    "bonus": "100% up to €400 + 50 free spins",
-    "wagering_requirement_bonus": "80x",
-    "wagering_requirement_free_spins": "40x",
-    "free_spin_value": "€0.10/spin",
-    "info": "Minimitalletus 20 €.",
-    "licenses": [1],
-    "updated": "2025-08-27"
-  },
-  {
-    casino_name: "RX Casino",
-    bonus: "150% up to €5000",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "The max win from the bonus is 3x the bonus value.",
-    licenses: [2, 54], // Curacao Gaming Control Board, Anjouan Gaming
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Kaahaus Casino",
-    bonus: "100 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Betizy Casino",
-    bonus: "100% up to €250 + 50 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Slot it Casino",
-    bonus: "100% up to €500",
-    wagering_requirement_bonus: "36x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Casumo Casino",
-    bonus: "100% up to €300 + 20 free spins",
-    wagering_requirement_bonus: "60x",
-    wagering_requirement_free_spins: "30x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [3], // H.M. Government of Gibraltar (mapped to Gibraltar Gambling Commissioner)
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Lunubet Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Epicbet Casino",
-    bonus: "Up to €300",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Saletti Casino",
-    bonus: "100% up to €500 + 50 free spins",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-28",
-  },
-  {
-    casino_name: "Possu Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-29",
-  },
-  {
-    casino_name: "Winz.io Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-29",
-  },
-  {
-    casino_name: "Reipas Casino",
-    bonus: "100% up to €500 + 50 free spins",
-    wagering_requirement_bonus: "80x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.25/spin",
-    info: "Max win from free spins €20.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-29",
-  },
-  {
-    casino_name: "Kingpalace Casino",
-    bonus: "100% up to €2000 + 200 free spins",
-    wagering_requirement_bonus: "60x",
-    wagering_requirement_free_spins: "30x",
-    free_spin_value: "€0.10/spin",
-    info: "The first deposit bonus depends on the deposit amount. A €20 deposit will give 200% bonus up to €50 with a 50x wagering requirement. A €50 deposit will give 150% bonus up to €350 with a 40x wagering requirement. A €500 deposit will give 100% up to €2000 with a 60x wagering requirement.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-29",
-  },
-  {
-    casino_name: "Arctic Casino",
-    bonus: "10 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€1/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-29",
-  },
-  },
-  {
-    casino_name: "Fruta Casino",
-    bonus: "200 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "€0.20/spin",
-    info: "200 free spins per day are handed out over 4 days in different games where the spin value ranges from €0.10 to €0.20.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-29",
-  },
-  {
-    casino_name: "Dynabet Casino",
-    bonus: "200% up to €1000",
-    wagering_requirement_bonus: "30x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-29",
-  },
-  {
-    casino_name: "Budsino Casino",
-    bonus: "100% up to €100",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Highroller Casino",
-    bonus: "200 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "€0.20/spin",
-    info: "200 free spins per day are handed out over 10 days in different games where the spin value ranges from €0.10 to €0.20.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Taika Spins Casino",
-    bonus: "100% up to €250 + 50 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Casino Vice",
-    bonus: "100% up to €500 + 125 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.20/spin",
-    info: "125 free spins per day are handed out over 5 days in different games.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Fat Pirate Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "125 free spins per day are handed out over 5 days in different games.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Qbet Casino",
-    bonus: "10 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€1/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Trust Dice Win Casino",
-    bonus: "200% up to €30000 + 20 free spins",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Casino Joy",
-    bonus: "200% up to €1000 + 100 free spins",
-    wagering_requirement_bonus: "80x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Wildsino Casino",
-    bonus: "250% match bonus up to €1000 + 300 free spins",
-    wagering_requirement_bonus: "80x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Be On Bet Casino",
-    bonus: "150% up to €450 + 100 free spins",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Be On Bet Casino",
-    bonus: "100% up to €250 + 50 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Bet Label Casino",
-    bonus: "100% up to €300 + 30 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "PrimeBetz Casino",
-    bonus: "100% up to €500 + 100 free spins",
-    wagering_requirement_bonus: "50x",
-    wagering_requirement_free_spins: "50x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 5 days in different games.",
-    licenses: [4], // Kahnawake Gaming Commission
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Paripesa Casino",
-    bonus: "100% up to €300 + 30 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 5 days in different games.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Betrix Casino",
-    bonus: "100% up to €250 + 50 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 5 days in different games.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "AllySpin Casino",
-    bonus: "100% up to €500",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "⚠️ WARNING: Scam reports - Reddit users report refusal to pay $300K+ wins. License issues suspected. Use extreme caution.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Spinaro Casino",
-    bonus: "100% up to €1000 + 50 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Impressario Casino",
-    bonus: "100% up to €1000 + 100 free spins",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [4], // Kahnawake Gaming Commission
-    updated: "2025-03-30",
-  },
-  {
-    casino_name: "Trivelabet Casino",
-    bonus: "200% up to €1000",
-    wagering_requirement_bonus: "30x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Magius Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 10 days in different games.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Fun Bet Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 10 days in different games.",
-    licenses: [], // "n/a" mapped to empty array
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Hotbet Casino",
-    bonus: "100% up to €200",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "⚠️ WARNING: Red flags on CasinoGuru. Some payment delays reported. Use bonus code: HOTBET100.",
-    licenses: [], // "n/a" mapped to empty array
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Casino Vibes",
-    bonus: "100% up to €300 + 50 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Gemobet Casino",
-    bonus: "100 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "30x",
-    free_spin_value: "€0.10/spin",
-    info: "20 free spins per day are handed out over 5 days.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Tuohi Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "0x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "n/a",
-    info: "The first deposit awards 1 spin on a prize wheel. No guaranteed wins but a max win of €5000.",
-    licenses: [5], // Gambling Supervision Commission Isle of Man
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Pelikioski Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "The first deposit awards a mystery prize. No guaranteed wins but a max win of €500.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "Zip Casino",
-    bonus: "100% up to €1000 + 50 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-03-31",
-  },
-  {
-    casino_name: "NetBet Casino",
-    bonus: "100% up to €500 + 500 free spins",
-    wagering_requirement_bonus: "30x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.05/spin",
-    info: "500 free spins are handed out in varying amounts over 7 days, with 50 on day one.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-01",
-  },
-  {
-    casino_name: "Spin247 Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.05/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-01",
-  },
-  {
-    casino_name: "Huikee Casino",
-    bonus: "150% up to €400 + 50 free spins",
-    wagering_requirement_bonus: "80x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-01",
-  },
-  {
-    casino_name: "ReSpin Casino",
-    bonus: "Up to €300",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
-    licenses: [31], // Estonian Tax and Customs Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Slotti Casino",
-    bonus: "100 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "50x",
-    free_spin_value: "€0.20/spin",
-    info: "100 free spins are handed out in batches of 50 on the first day, 25 free spins on the second day, and 25 free spins on the third day.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "iBet Casino",
-    bonus: "10 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€1/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Pistolo Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Legiano Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Mr Punter",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Lunubet Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Lysti Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "No bonus on offer.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Spinfest Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [], // "n/a" mapped to empty array
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Slot it Casino",
-    bonus: "100% up to €500",
-    wagering_requirement_bonus: "36x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Roby Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "BassBet Casino",
-    bonus: "100% up to €500 + 200 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Mammona Casino",
-    bonus: "100% up to €500 + 50 free spins",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.20/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Wheelz Casino",
-    bonus: "100% up to €300 + 100 free spins",
-    wagering_requirement_bonus: "35x",
-    wagering_requirement_free_spins: "35x",
-    free_spin_value: "€0.10/spin",
-    info: "Free spins are given out in batches of 10 per day over a span of 10 days.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Kruuna Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "No bonus on offer.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Ninja Casino",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "No bonus on offer.",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Power Up Casino",
-    bonus: "100% up to €1000 + 100 free spins",
-    wagering_requirement_bonus: "70x",
-    wagering_requirement_free_spins: "40x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [54], // Anjouan Gaming
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "N1 Casino",
-    bonus: "100% up to €1000 + 150 free spins",
-    wagering_requirement_bonus: "50x",
-    wagering_requirement_free_spins: "50x",
-    free_spin_value: "€0.10/spin",
-    info: "n/a",
-    licenses: [1], // Malta Gaming Authority
-    updated: "2025-04-05",
-  },
-  {
-    casino_name: "Bally Bet Casino, USA",
-    bonus: "Up to $100 in bonus back + $50 bonus bet tokens",
-    wagering_requirement_bonus: "5x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "One of the following applies: (1) Net Loss exceeds 90% of the first Deposit at any time within seven (7) calendar days after placing the first Deposit and first Wager, the value of their first Deposit, up to a maximum of $100 in Bonus Money is awarded, or (2) if the Net Loss does not exceed 90% of the first Deposit after the conclusion of the seven (7) calendar days after placing the first Deposit and first Wager, the value of the Net Loss, up to a maximum of $100 in Bonus Money is awarded. Bonus bet tokens are non-withdrawable. Only winnings generated from wagers with bonus bet tokens are withdrawable",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Bet365, USA",
-    bonus: "Up to 500 bonus spins",
-    wagering_requirement_bonus: "5x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "$0.20",
-    info: "Take a spin on the New Player Offer reels for the chance to win five, 10, or 15 bonus spins. You will need to do this 10 out of the next 20 days, and a maximum of 500 spins are up for grabs.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "BetMGM, USA",
-    bonus: "$25 registration bonus + 100% up to $1000",
-    wagering_requirement_bonus: "15x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "The registration bonus has a 1x wagering requirement.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "BetRivers Casino, USA",
-    bonus: "Up to $500 loss rebate",
-    wagering_requirement_bonus: "1x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Rebate of up to $500 on any losses you sustain in your first 24 hours. The rebate will be paid in bonus credits, and you just need to satisfy a simple 1x playthrough requirement before they convert to withdrawable cash.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Borgata Online Casino, USA",
-    bonus: "$20 registration bonus + 100% up to $1000",
-    wagering_requirement_bonus: "15x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Any winnings you earn from your $20 bonus can't be withdrawn until you (1) make a deposit, and (2) meet a 1x playthrough requirement on the winnings.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Caesars Palace Online Casino, USA",
-    bonus: "100% up to $2500",
-    wagering_requirement_bonus: "30x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Wagering requirement applies to both deposit + bonus.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "DraftKings Casino, USA",
-    bonus: "$35 bonus + 500 free spins + $1000 bonus",
-    wagering_requirement_bonus: "10x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "$0.08/spin",
-    info: "1x wagering requirement on the $35 first deposit bonus. Wager $5 and get 500 free spins. Wager another $1000 and get $1000 in bonus with a 10x wagering requirement.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-02",
-  },
-  {
-    casino_name: "Fanatics Casino, USA",
-    bonus: "$100 bonus",
-    wagering_requirement_bonus: "1x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Wager $10 and get $100 casino bonus with x1 wagering requirement.",
-    licenses: [9], // New Jersey Division of Gaming Enforcement
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "FanDuel Casino, USA",
-    bonus: "$40 bonus + 350 free spins",
-    wagering_requirement_bonus: "1x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "$0.20/spin",
-    info: "Free spins are given out in batches of 50 over a span of 7 days.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Golden Nugget Casino, USA",
-    bonus: "250 free spins + lossback up to $1000",
-    wagering_requirement_bonus: "1x",
-    wagering_requirement_free_spins: "1x",
-    free_spin_value: "$0.08/spin",
-    info: "Free spins are given out in batches of 50 over a span of 7 days. Lossback up to $1000 for the first 24 hours.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Hard Rock Bet, USA",
-    bonus: "100% up to $1000 + 500 free spins",
-    wagering_requirement_bonus: "20x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "$0.25/spin",
-    info: "n/a",
-    licenses: [9], // New Jersey Division of Gaming Enforcement
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Horseshoe Casino, USA",
-    bonus: "100% up to $1250",
-    wagering_requirement_bonus: "15x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [9], // New Jersey Division of Gaming Enforcement
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Jackpot City Casino, USA",
-    bonus: "100% up to $1000 + 20 free spins",
-    wagering_requirement_bonus: "25x",
-    wagering_requirement_free_spins: "30x",
-    free_spin_value: "$0.10/spin",
-    info: "n/a",
-    licenses: [9], // New Jersey Division of Gaming Enforcement
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Monopoly Casino, USA",
-    bonus: "Up to $100 loss back",
-    wagering_requirement_bonus: "1x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Refund up to $100 on the first deposit.",
-    licenses: [9], // New Jersey Division of Gaming Enforcement
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "PartyCasino, USA",
-    bonus: "200% up to $100",
-    wagering_requirement_bonus: "10x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "$0.10/spin",
-    info: "n/a",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "PlayStar Casino, USA",
-    bonus: "100% up to $500 + 100 free spins",
-    wagering_requirement_bonus: "30x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "$0.10/spin",
-    info: "n/a",
-    licenses: [9], // New Jersey Division of Gaming Enforcement
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Spin Palace, USA",
-    bonus: "50% up to $1000 + 20 free spins",
-    wagering_requirement_bonus: "30x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "$0.10/spin",
-    info: "20 free spins on sign-up. Note that both the deposit amount and bonus amount has a 30x wagering requirement, thus resulting in the real wagering requirement being higher than 30x.",
-    licenses: [9, 10], // New Jersey Division of Gaming Enforcement, Pennsylvania Gaming Control Board
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Wheel of Fortune Casino, USA",
-    bonus: "100% up to $40",
-    wagering_requirement_bonus: "15x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "n/a",
-    licenses: [9], // New Jersey Division of Gaming Enforcement
-    updated: "2025-04-04",
-  },
-  {
-    casino_name: "Duelbits",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "50% rakeback offered but requires the player to progress up the Ace's VIP Lounge levels.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-05-01",
-  },
-  {
-    casino_name: "Sportsbet.io",
-    bonus: "100% up to 300 USDT",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Cryptocurrency casino",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-05-01",
-  },
-  {
-    casino_name: "Bitcasino.io",
-    bonus: "100% up to 1500 USDT",
-    wagering_requirement_bonus: "40x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Cryptocurrency casino",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-05-01",
-  },
-  {
-    casino_name: "PVP.money",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Fully decentralized cryptocurrency casino. No KYC, just connect cryptowallet and play.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-05-01",
-  },
-  {
-    casino_name: "Dexbet.win",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Fully decentralized cryptocurrency casino. No KYC, just connect cryptowallet and play.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-05-01",
-  },
-  {
-    casino_name: "Stake.com",
-    bonus: "n/a",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "Cryptocurrency casino. Offers daily and weekly races.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-05-01",
-  },
-  {
-    casino_name: "Huippu Casino",
-    bonus: "100% up to €300 + 30 free spins",
-    wagering_requirement_bonus: "80x",
-    wagering_requirement_free_spins: "0x",
-    free_spin_value: "€0.05",
-    info: "Cryptocurrency casino. Offers daily and weekly races.",
-    licenses: [2], // Malta Gaming Authority
-    updated: "2025-09-29",
-  },
-  {
-    casino_name: "Jellona Casino",
-    bonus: "200 free spins",
-    wagering_requirement_bonus: "n/a",
-    wagering_requirement_free_spins: "1x",
-    free_spin_value: "€0.05",
-    info: "Deposit needs to be wagered 5x before free spins are released.",
-    licenses: [2], // Curacao Gaming Control Board
-    updated: "2025-09-29",
-  },
-  {
-    casino_name: "Lyrabet Casino",
-    bonus: "200% up to €1000",
-    wagering_requirement_bonus: "30x",
-    wagering_requirement_free_spins: "n/a",
-    free_spin_value: "n/a",
-    info: "This is a 'wager first' bonus, where the bonus if paid out after the full wagering required has been reached with deposited money. More than one deposit is allowed.",
-    licenses: [2], // Estonian Tax and Customs Board
-    updated: "2025-09-29",
-  }];
+  "casino_name": "CaZeus Casino",
+  "bonus": "200% up to €1750 + 150 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "40x",
+  "free_spin_value": "€0.10/spin",
+  "info": "Updated 2026. Spins released 20 per day, expire in 24h if not claimed.",
+  "licenses": [
+    31
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "Pelataan Kasino",
+  "bonus": "150% up to €300 + 100 free spins",
+  "wagering_requirement_bonus": "80x",
+  "wagering_requirement_free_spins": "40x",
+  "free_spin_value": "€0.10/spin",
+  "info": "No registration required. Minimitalletus $20. Spins on Bonanza. Winnings capped at €20.",
+  "licenses": [
+    31
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "Pelikaani Casino",
+  "bonus": "n/a",
+  "wagering_requirement_bonus": "n/a",
+  "wagering_requirement_free_spins": "0x",
+  "free_spin_value": "€0.10/spin",
+  "info": "100 free spins + up to 1000 more. No registration required. Minimitalletus 10 €.",
+  "licenses": [
+    31
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "BetHall Casino",
+  "bonus": "200% up to €1750 + 150 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "40x",
+  "free_spin_value": "€0.10/spin",
+  "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
+  "licenses": [
+    31
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "LaraBet Casino",
+  "bonus": "200% up to €1750 + 150 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "40x",
+  "free_spin_value": "€0.10/spin",
+  "info": "Exclusive for new players. Minimitalletus 20 €. 20 free spins per day over 10 days.",
+  "licenses": [
+    31
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "Valhalla Wins Casino",
+  "bonus": "100% up to €1500 + 500 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "35x",
+  "free_spin_value": "€0.10/spin",
+  "info": "No registration required. Minimitalletus 25 €. 50 free spins per day over 10 days.",
+  "licenses": [
+    31
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "KingMaker",
+  "bonus": "100% up to €500 + 25 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "40x",
+  "free_spin_value": "€0.10/spin",
+  "info": "Minimitalletus 20 €.",
+  "licenses": [
+    2
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "ViperWin",
+  "bonus": "200% up to €1750 + 150 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "40x",
+  "free_spin_value": "€0.10/spin",
+  "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
+  "licenses": [
+    2
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "Red Dice",
+  "bonus": "200% up to €1000",
+  "wagering_requirement_bonus": "30x",
+  "wagering_requirement_free_spins": "n/a",
+  "free_spin_value": "n/a",
+  "info": "Minimitalletus 20 €. Wagering on bonus only.",
+  "licenses": [
+    31
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "Lempi",
+  "bonus": "100% up to €400 + 50 free spins",
+  "wagering_requirement_bonus": "80x",
+  "wagering_requirement_free_spins": "40x",
+  "free_spin_value": "€0.10/spin",
+  "info": "Minimitalletus 20 €.",
+  "licenses": [
+    1
+  ],
+  "updated": "2025-08-27"
+},
+  {
+  "casino_name": "Playzee Casino",
+  "bonus": "100% up to €1,500 + 150 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "35x",
+  "free_spin_value": "€0.10",
+  "info": "3-deposit package",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 8,
+  "verification": "verified",
+  "ai_summary": "MGA Zee Spins loyalty"
+},
+  {
+  "casino_name": "Casoola Casino",
+  "bonus": "100% up to €500 + 200 free spins",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "35x",
+  "free_spin_value": "€0.10",
+  "info": "Robot theme 4-deposit",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 7.5,
+  "verification": "verified",
+  "ai_summary": "Cyber MGA with tournaments"
+},
+  {
+  "casino_name": "Boom Casino",
+  "bonus": "100% up to €100 + 100 FS",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "0x",
+  "free_spin_value": "€0.10",
+  "info": "PayNPlay zero wager FS",
+  "licenses": [
+    31
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 8.5,
+  "verification": "verified",
+  "ai_summary": "Finnish no-account fast payouts"
+},
+  {
+  "casino_name": "Caxino Casino",
+  "bonus": "€500 + 500 FS",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "35x",
+  "free_spin_value": "€0.10",
+  "info": "Rootz smart bonuses",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 8,
+  "verification": "verified",
+  "ai_summary": "500 FS welcome Rootz platform"
+},
+  {
+  "casino_name": "Simple Casino",
+  "bonus": "100% up to €500 + 50 FS",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "35x",
+  "free_spin_value": "€0.10",
+  "info": "No-account since 2001",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 7.5,
+  "verification": "verified",
+  "ai_summary": "Instant MGA play"
+},
+  {
+  "casino_name": "Miami Dice Casino",
+  "bonus": "200% up to €100 + 50 FS",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "35x",
+  "free_spin_value": "€0.10",
+  "info": "Miami luxury jackpots",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 7.5,
+  "verification": "verified",
+  "ai_summary": "200% match Miami theme"
+},
+  {
+  "casino_name": "Jackpot Village Casino",
+  "bonus": "100% up to €500",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "n/a",
+  "free_spin_value": "n/a",
+  "info": "Premium slots jackpots",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 7.5,
+  "verification": "verified",
+  "ai_summary": "Award-winning slots progressive JP"
+},
+  {
+  "casino_name": "Spinz Casino",
+  "bonus": "100% up to €300 + 100 FS",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "0x",
+  "free_spin_value": "€0.10",
+  "info": "Wager-free FS Finnish popular",
+  "licenses": [
+    31
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 8,
+  "verification": "verified",
+  "ai_summary": "Established 2004 wager-free spins"
+},
+  {
+  "casino_name": "Spin Casino",
+  "bonus": "100% up to €400",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "n/a",
+  "free_spin_value": "n/a",
+  "info": "Classic casino",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 7,
+  "verification": "verified",
+  "ai_summary": "Reliable classic casino"
+},
+  {
+  "casino_name": "10Bet Casino",
+  "bonus": "100% up to €100",
+  "wagering_requirement_bonus": "35x",
+  "wagering_requirement_free_spins": "n/a",
+  "free_spin_value": "n/a",
+  "info": "Sports + casino",
+  "licenses": [
+    1
+  ],
+  "updated": "2026-02-16",
+  "trust_score": 7.5,
+  "verification": "verified",
+  "ai_summary": "Sportsbook casino hybrid"
+}
+];
 
-export default function handler(req, res) {
+(req, res) {
   if (req.method !== "GET") {
     return res.status(405).json({ error: "Method not allowed" });
   }
