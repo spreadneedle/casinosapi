@@ -216,7 +216,7 @@ const casinoDataEnhanced = [
   {
     "casino_name": "Hillo Casino",
     "slug": "hillo-casino",
-    "bonus": "100 free spins",
+    "bonus": "100 free spins + up to 15% cashback",
     "bonus_structure": {
       "percentage": null,
       "max_amount": null,
@@ -228,8 +228,8 @@ const casinoDataEnhanced = [
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -239,9 +239,9 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "50 free spins per day are handed out over 2 days.",
-    "ai_summary": "Hillo Casino: 100 free spins...",
-    "last_updated": "2026-02-13"
+    "info": "100 free spins (50 immediately + 50 next day on €20+ deposit) with 50x wagering. Also offers up to 15% daily cashback with 10x wagering.",
+    "ai_summary": "Hillo Casino: 100 free spins + up to 15% cashback...",
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Teho Casino",
@@ -696,11 +696,11 @@ const casinoDataEnhanced = [
   {
     "casino_name": "Kaahaus Casino",
     "slug": "kaahaus-casino",
-    "bonus": "100 free spins",
+    "bonus": "200 free spins + 10% cashback",
     "bonus_structure": {
       "percentage": null,
       "max_amount": null,
-      "free_spins": 100
+      "free_spins": 200
     },
     "wagering": {
       "bonus": "n/a",
@@ -708,8 +708,8 @@ const casinoDataEnhanced = [
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -719,9 +719,9 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "n/a",
-    "ai_summary": "Kaahaus Casino: 100 free spins...",
-    "last_updated": "2026-02-13"
+    "info": "200 free spins (40 per day over 5 days) with no wagering requirements. Also offers 10% daily cashback on net losses.",
+    "ai_summary": "Kaahaus Casino: 200 free spins + 10% cashback...",
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Betizy Casino",
@@ -1026,20 +1026,20 @@ const casinoDataEnhanced = [
   {
     "casino_name": "Arctic Casino",
     "slug": "arctic-casino",
-    "bonus": "10 free spins",
+    "bonus": "Up to 50% instant cashback",
     "bonus_structure": {
       "percentage": null,
-      "max_amount": null,
-      "free_spins": 10
+      "max_amount": 500,
+      "free_spins": 0
     },
     "wagering": {
-      "bonus": "n/a",
-      "free_spins": "35x"
+      "bonus": "0x",
+      "free_spins": "n/a"
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -1049,9 +1049,9 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "n/a",
-    "ai_summary": "Arctic Casino: 10 free spins...",
-    "last_updated": "2026-02-13"
+    "info": "50% instant cashback (rakeback) on all spins with no wagering requirements. Cashback is credited as real money. Max cashback €500.",
+    "ai_summary": "Arctic Casino: Up to 50% instant cashback...",
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Fruta Casino",
@@ -1068,8 +1068,8 @@ const casinoDataEnhanced = [
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -1079,14 +1079,14 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "200 free spins per day are handed out over 4 days in different games where the spin value ranges from €0.10 to €0.20.",
+    "info": "200 free spins (50 per day over 4 days) on different games: Day 1 Book of Dead, Day 2 Gates of Olympus, Day 3 Big Bass Bonanza, Day 4 Sweet Bonanza. No wagering but €100 max withdrawal on winnings.",
     "ai_summary": "Fruta Casino: 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Dynabet Casino",
     "slug": "dynabet-casino",
-    "bonus": "200% up to €1000",
+    "bonus": "200% up to €1000 + 10% cashback",
     "bonus_structure": {
       "percentage": 200,
       "max_amount": 1000,
@@ -1098,8 +1098,8 @@ const casinoDataEnhanced = [
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -1109,9 +1109,9 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "n/a",
-    "ai_summary": "Dynabet Casino: 200% up to €1000...",
-    "last_updated": "2026-02-13"
+    "info": "200% welcome bonus up to €1000 with 30x wagering on bonus. Also offers 10% daily cashback with no wagering requirements.",
+    "ai_summary": "Dynabet Casino: 200% up to €1000 + 10% cashback...",
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Budsino Casino",
@@ -1176,20 +1176,20 @@ const casinoDataEnhanced = [
   {
     "casino_name": "Taika Spins Casino",
     "slug": "taika-spins-casino",
-    "bonus": "100% up to €250 + 50 free spins",
+    "bonus": "150% up to €2000",
     "bonus_structure": {
-      "percentage": 100,
-      "max_amount": 250,
-      "free_spins": 50
+      "percentage": 150,
+      "max_amount": 2000,
+      "free_spins": 0
     },
     "wagering": {
-      "bonus": "70x",
-      "free_spins": "35x"
+      "bonus": "35x",
+      "free_spins": "n/a"
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -1199,9 +1199,9 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "n/a",
-    "ai_summary": "Taika Spins Casino: 100% up to €250 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "info": "Single deposit welcome bonus. 35x wagering applies to bonus and deposit amount. Multi-tier welcome package also available.",
+    "ai_summary": "Taika Spins Casino: 150% up to €2000...",
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Casino Vice",
@@ -1266,7 +1266,7 @@ const casinoDataEnhanced = [
   {
     "casino_name": "Qbet Casino",
     "slug": "qbet-casino",
-    "bonus": "10 free spins",
+    "bonus": "10 free spins no deposit",
     "bonus_structure": {
       "percentage": null,
       "max_amount": null,
@@ -1278,8 +1278,8 @@ const casinoDataEnhanced = [
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -1289,9 +1289,9 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "n/a",
-    "ai_summary": "Qbet Casino: 10 free spins...",
-    "last_updated": "2026-02-13"
+    "info": "10 free spins no deposit on Gates of QBet 1000 upon registration. Winnings must be wagered 35x.",
+    "ai_summary": "Qbet Casino: 10 free spins no deposit...",
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Trust Dice Win Casino",
@@ -1356,20 +1356,20 @@ const casinoDataEnhanced = [
   {
     "casino_name": "Wildsino Casino",
     "slug": "wildsino-casino",
-    "bonus": "250% match bonus up to €1000 + 300 free spins",
+    "bonus": "100% up to €1000 + 300 free spins + 1 bonus crab",
     "bonus_structure": {
-      "percentage": 250,
+      "percentage": 100,
       "max_amount": 1000,
       "free_spins": 300
     },
     "wagering": {
-      "bonus": "80x",
+      "bonus": "35x",
       "free_spins": "40x"
     },
     "verification": {
       "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "last_verified": "2026-02-16",
+      "confidence": "high"
     },
     "trust": {
       "score": 6.0,
@@ -1379,9 +1379,9 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "n/a",
-    "ai_summary": "Wildsino Casino: 250% match bonus up to €1000 + 300 free spins...",
-    "last_updated": "2026-02-13"
+    "info": "Welcome package includes 300 free spins on Gates of Olympus and 1 bonus crab feature. 35x wagering on bonus+deposit, 40x on free spins.",
+    "ai_summary": "Wildsino Casino: 100% up to €1000 + 300 free spins + 1 bonus crab...",
+    "last_updated": "2026-02-16"
   },
   {
     "casino_name": "Be On Bet Casino",
