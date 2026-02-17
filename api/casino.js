@@ -60,6 +60,10 @@ module.exports = function handler(req, res) {
     })
     .slice(0, 3);
   
+  // Edge caching: 1 hour max-age, 24h stale-while-revalidate
+  res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
+  res.setHeader('Vercel-CDN-Cache-Control', 'max-age=3600');
+  
   res.status(200).json({
     casino: casino,
     similar_casinos: similar,

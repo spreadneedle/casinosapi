@@ -159,6 +159,10 @@ module.exports = function handler(req, res) {
   
   const processingTime = Date.now() - startTime;
   
+  // Edge caching: 1 hour max-age, 24h stale-while-revalidate
+  res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
+  res.setHeader('Vercel-CDN-Cache-Control', 'max-age=3600');
+  
   res.status(200).json({
     meta: {
       query: q,
