@@ -1,3 +1,5 @@
+const { requireApiKey } = require('./_auth');
+
 const casinoLicenses = [
 
   {
@@ -736,10 +738,12 @@ const casinoData = [
 }
 ];
 
-(req, res) {
+module.exports = function handler(req, res) {
   if (req.method !== "GET") {
     return res.status(405).json({ error: "Method not allowed" });
   }
+
+  if (!requireApiKey(req, res)) return;
 
   const location = req.query.location;
 

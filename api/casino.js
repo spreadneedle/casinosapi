@@ -2,11 +2,14 @@
 // GET /api/casino/:slug   or   /api/casino?name=caZeus
 
 const { casinoDataEnhanced } = require('./bonus_enhanced');
+const { requireApiKey } = require('./_auth');
 
 module.exports = function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
+
+  if (!requireApiKey(req, res)) return;
   
   const { name, slug } = req.query;
   

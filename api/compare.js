@@ -2,6 +2,7 @@
 // GET /api/compare?casinos=cazeus,dynabet,betrz
 
 const { casinoDataEnhanced } = require('./bonus_enhanced');
+const { requireApiKey } = require('./_auth');
 
 function getNumericWagering(wageringStr) {
   if (!wageringStr || wageringStr === 'n/a') return 999;
@@ -13,6 +14,8 @@ module.exports = function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
+
+  if (!requireApiKey(req, res)) return;
   
   const { casinos: casinosParam } = req.query;
   

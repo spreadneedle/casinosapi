@@ -2,6 +2,7 @@
 // GET /api/search?q=200% bonus&location=FI&limit=10
 
 const { casinoDataEnhanced } = require('./bonus_enhanced');
+const { requireApiKey } = require('./_auth');
 
 // License mapping for location filtering
 const casinoLicenses = [
@@ -115,6 +116,8 @@ module.exports = function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
+
+  if (!requireApiKey(req, res)) return;
   
   const { q, location, limit = 20 } = req.query;
   
