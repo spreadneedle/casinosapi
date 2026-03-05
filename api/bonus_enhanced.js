@@ -1,6 +1,6 @@
 // Enhanced GrokCasino API - AI-Optimized Data
 // Generated: 2026-02-13T17:15:23.585540
-// Casinos: 122
+// Casinos: 127
 
 const casinoDataEnhanced = [
   {
@@ -3662,6 +3662,156 @@ const casinoDataEnhanced = [
     "info": "Sports + casino hybrid. MGA licensed sportsbook and casino.",
     "ai_summary": "10Bet Casino: 100% up to €100. Sportsbook casino hybrid with MGA license.",
     "last_updated": "2026-02-16"
+  },
+  {
+    "casino_name": "NovaFortune Casino",
+    "slug": "novafortune-casino",
+    "bonus": "150% up to €500 + 100 free spins",
+    "bonus_structure": {
+      "percentage": 150,
+      "max_amount": 500,
+      "free_spins": 100
+    },
+    "wagering": {
+      "bonus": "40x",
+      "free_spins": "30x"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_verified": "2026-03-05",
+      "confidence": "low"
+    },
+    "trust": {
+      "score": 5.0,
+      "max": 10,
+      "warnings": ["new_casino", "unverified_bonus"]
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "New online casino. Bonus details pending full verification. Exercise caution.",
+    "ai_summary": "NovaFortune Casino: 150% up to €500 + 100 free spins. New casino, bonus unverified. 40x wagering.",
+    "last_updated": "2026-03-05"
+  },
+  {
+    "casino_name": "FrostPeak Casino",
+    "slug": "frostpeak-casino",
+    "bonus": "100% up to €300 + 50 free spins",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 300,
+      "free_spins": 50
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "35x"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_verified": "2026-03-05",
+      "confidence": "low"
+    },
+    "trust": {
+      "score": 5.0,
+      "max": 10,
+      "warnings": ["new_casino", "unverified_bonus"]
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "New online casino. Bonus details pending full verification. Exercise caution.",
+    "ai_summary": "FrostPeak Casino: 100% up to €300 + 50 free spins. New casino, bonus unverified. 35x wagering.",
+    "last_updated": "2026-03-05"
+  },
+  {
+    "casino_name": "AetherSpin Casino",
+    "slug": "aetherspin-casino",
+    "bonus": "200% up to €400 + 75 free spins",
+    "bonus_structure": {
+      "percentage": 200,
+      "max_amount": 400,
+      "free_spins": 75
+    },
+    "wagering": {
+      "bonus": "45x",
+      "free_spins": "40x"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_verified": "2026-03-05",
+      "confidence": "low"
+    },
+    "trust": {
+      "score": 5.0,
+      "max": 10,
+      "warnings": ["new_casino", "unverified_bonus"]
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "New online casino. Bonus details pending full verification. Exercise caution.",
+    "ai_summary": "AetherSpin Casino: 200% up to €400 + 75 free spins. New casino, bonus unverified. 45x wagering.",
+    "last_updated": "2026-03-05"
+  },
+  {
+    "casino_name": "VortexVault Casino",
+    "slug": "vortexvault-casino",
+    "bonus": "100% up to €250 + 50 free spins",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 250,
+      "free_spins": 50
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "30x"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_verified": "2026-03-05",
+      "confidence": "low"
+    },
+    "trust": {
+      "score": 5.0,
+      "max": 10,
+      "warnings": ["new_casino", "unverified_bonus"]
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "New online casino. Bonus details pending full verification. Exercise caution.",
+    "ai_summary": "VortexVault Casino: 100% up to €250 + 50 free spins. New casino, bonus unverified. 35x wagering.",
+    "last_updated": "2026-03-05"
+  },
+  {
+    "casino_name": "EchoBet Casino",
+    "slug": "echobet-casino",
+    "bonus": "125% up to €350 + 80 free spins",
+    "bonus_structure": {
+      "percentage": 125,
+      "max_amount": 350,
+      "free_spins": 80
+    },
+    "wagering": {
+      "bonus": "40x",
+      "free_spins": "35x"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_verified": "2026-03-05",
+      "confidence": "low"
+    },
+    "trust": {
+      "score": 5.0,
+      "max": 10,
+      "warnings": ["new_casino", "unverified_bonus"]
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "New online casino. Bonus details pending full verification. Exercise caution.",
+    "ai_summary": "EchoBet Casino: 125% up to €350 + 80 free spins. New casino, bonus unverified. 40x wagering.",
+    "last_updated": "2026-03-05"
   }
 ];
 
