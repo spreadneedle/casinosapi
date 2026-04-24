@@ -1,6 +1,6 @@
 // Enhanced GrokCasino API - AI-Optimized Data
-// Generated: 2026-02-13T17:15:23.585540
-// Casinos: 127
+// Generated: 2026-03-25T12:57:16.493Z
+// Casinos: 128
 
 const casinoDataEnhanced = [
   {
@@ -22,7 +22,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -31,7 +31,8 @@ const casinoDataEnhanced = [
     },
     "info": "This is a 'wager first' bonus, where the bonus is paid out in 10% increments as the deposit is wagered",
     "ai_summary": "Videoslots: 100% up to €200 + 11 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.videoslots.com"
   },
   {
     "casino_name": "Boost Casino",
@@ -52,7 +53,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -61,7 +62,8 @@ const casinoDataEnhanced = [
     },
     "info": "Deposited funds are used first. The bonus is 'non-sticky'.",
     "ai_summary": "Boost Casino: 100% 250 € asti + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.boostcasino.net"
   },
   {
     "casino_name": "Pommi Casino",
@@ -82,7 +84,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -91,37 +93,8 @@ const casinoDataEnhanced = [
     },
     "info": "Pommi Casino offers no sign-up bonus.",
     "ai_summary": "Pommi Casino: n/a...",
-    "last_updated": "2026-02-13"
-  },
-  {
-    "casino_name": "Paratiisi Casino",
-    "slug": "paratiisi-casino",
-    "bonus": "300 free spins",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": 300
-    },
-    "wagering": {
-      "bonus": "n/a",
-      "free_spins": "n/a"
-    },
-    "verification": {
-      "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
-    },
-    "trust": {
-      "score": 6.0,
-      "max": 10,
-      "warnings": []
-    },
-    "geo_restriction": {
-      "vpn_friendly": true
-    },
-    "info": "100 free spins per day are handed out over 3 days.",
-    "ai_summary": "Paratiisi Casino: 300 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://pommicasino.com"
   },
   {
     "casino_name": "Bethard",
@@ -142,7 +115,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -151,7 +124,8 @@ const casinoDataEnhanced = [
     },
     "info": "",
     "ai_summary": "Bethard: 100% up to €50 + 20 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.bethard.com"
   },
   {
     "casino_name": "Shokki Casino",
@@ -172,7 +146,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -181,67 +155,8 @@ const casinoDataEnhanced = [
     },
     "info": "Pommi Casino offers no sign-up bonus.",
     "ai_summary": "Shokki Casino: n/a...",
-    "last_updated": "2026-02-13"
-  },
-  {
-    "casino_name": "Lucky Trunk Casino",
-    "slug": "lucky-trunk-casino",
-    "bonus": "100% up to €250 + 50 free spins",
-    "bonus_structure": {
-      "percentage": 100,
-      "max_amount": 250,
-      "free_spins": 50
-    },
-    "wagering": {
-      "bonus": "70x",
-      "free_spins": "35x"
-    },
-    "verification": {
-      "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
-    },
-    "trust": {
-      "score": 6.0,
-      "max": 10,
-      "warnings": []
-    },
-    "geo_restriction": {
-      "vpn_friendly": true
-    },
-    "info": "Pommi Casino offers no sign-up bonus.",
-    "ai_summary": "Lucky Trunk Casino: 100% up to €250 + 50 free spins...",
-    "last_updated": "2026-02-13"
-  },
-  {
-    "casino_name": "Hillo Casino",
-    "slug": "hillo-casino",
-    "bonus": "100 free spins + up to 15% cashback",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": 100
-    },
-    "wagering": {
-      "bonus": "n/a",
-      "free_spins": "50x"
-    },
-    "verification": {
-      "status": "verified",
-      "last_verified": "2026-02-16",
-      "confidence": "high"
-    },
-    "trust": {
-      "score": 6.0,
-      "max": 10,
-      "warnings": []
-    },
-    "geo_restriction": {
-      "vpn_friendly": true
-    },
-    "info": "100 free spins (50 immediately + 50 next day on €20+ deposit) with 50x wagering. Also offers up to 15% daily cashback with 10x wagering.",
-    "ai_summary": "Hillo Casino: 100 free spins + up to 15% cashback...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-13",
+    "url": "https://shokki.casino"
   },
   {
     "casino_name": "Teho Casino",
@@ -262,7 +177,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -271,7 +186,8 @@ const casinoDataEnhanced = [
     },
     "info": "The bonus is 'sticky'.",
     "ai_summary": "Teho Casino: 150% up to €600...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.tehokasino.com"
   },
   {
     "casino_name": "Dazzlehand Casino",
@@ -292,7 +208,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -301,7 +217,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Dazzlehand Casino: 100% up to €200 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://dazzlehand.net"
   },
   {
     "casino_name": "21 Casino",
@@ -322,7 +239,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -331,7 +248,8 @@ const casinoDataEnhanced = [
     },
     "info": "The free spins are awarded on registration.",
     "ai_summary": "21 Casino: 121% up to €300 + 21 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.21casino.com"
   },
   {
     "casino_name": "Wild Robin Casino",
@@ -352,7 +270,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -361,7 +279,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 10 days.",
     "ai_summary": "Wild Robin Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://wildrobin.com"
   },
   {
     "casino_name": "CaZeus Casino",
@@ -382,7 +301,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -391,7 +310,8 @@ const casinoDataEnhanced = [
     },
     "info": "Updated 2026. Spins released 20 per day, expire in 24h if not claimed.",
     "ai_summary": "CaZeus Casino: 200% up to €1750 + 150 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://cazeus.com"
   },
   {
     "casino_name": "Pelataan Kasino",
@@ -412,7 +332,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -421,7 +341,8 @@ const casinoDataEnhanced = [
     },
     "info": "No registration required. Minimitalletus $20. Spins on Bonanza. Winnings capped at €20.",
     "ai_summary": "Pelataan Kasino: 150% up to €300 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.pelataan.com"
   },
   {
     "casino_name": "Pelikaani Casino",
@@ -442,7 +363,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -451,7 +372,8 @@ const casinoDataEnhanced = [
     },
     "info": "100 free spins + up to 1000 more. No registration required. Minimitalletus 10 €.",
     "ai_summary": "Pelikaani Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://pelikaani.com"
   },
   {
     "casino_name": "BetHall Casino",
@@ -472,7 +394,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -481,7 +403,8 @@ const casinoDataEnhanced = [
     },
     "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
     "ai_summary": "BetHall Casino: 200% up to €1750 + 150 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://bethallcasino.com"
   },
   {
     "casino_name": "LaraBet Casino",
@@ -502,7 +425,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -511,7 +434,8 @@ const casinoDataEnhanced = [
     },
     "info": "Exclusive for new players. Minimitalletus 20 €. 20 free spins per day over 10 days.",
     "ai_summary": "LaraBet Casino: 200% up to €1750 + 150 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://larabetcasino.com"
   },
   {
     "casino_name": "Valhalla Wins Casino",
@@ -532,7 +456,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -541,7 +465,8 @@ const casinoDataEnhanced = [
     },
     "info": "No registration required. Minimitalletus 25 €. 50 free spins per day over 10 days.",
     "ai_summary": "Valhalla Wins Casino: 100% up to €1500 + 500 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://valhallawins.com"
   },
   {
     "casino_name": "KingMaker",
@@ -562,7 +487,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -571,7 +496,8 @@ const casinoDataEnhanced = [
     },
     "info": "Minimitalletus 20 €.",
     "ai_summary": "KingMaker: 100% up to €500 + 25 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://kingmaker.com"
   },
   {
     "casino_name": "ViperWin",
@@ -592,7 +518,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -601,7 +527,8 @@ const casinoDataEnhanced = [
     },
     "info": "Minimitalletus 20 €. 20 free spins per day over 10 days.",
     "ai_summary": "ViperWin: 200% up to €1750 + 150 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://viperwin3.com"
   },
   {
     "casino_name": "Red Dice",
@@ -622,7 +549,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -631,7 +558,8 @@ const casinoDataEnhanced = [
     },
     "info": "Minimitalletus 20 €. Wagering on bonus only.",
     "ai_summary": "Red Dice: 200% up to €1000...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.reddice.com"
   },
   {
     "casino_name": "Lempi",
@@ -652,7 +580,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -661,7 +589,8 @@ const casinoDataEnhanced = [
     },
     "info": "Minimitalletus 20 €.",
     "ai_summary": "Lempi: 100% up to €400 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://lempicasino-fi.com"
   },
   {
     "casino_name": "RX Casino",
@@ -682,7 +611,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -691,7 +620,8 @@ const casinoDataEnhanced = [
     },
     "info": "The max win from the bonus is 3x the bonus value.",
     "ai_summary": "RX Casino: 150% up to €5000...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://rx.games"
   },
   {
     "casino_name": "Kaahaus Casino",
@@ -712,7 +642,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -721,7 +651,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins (40 per day over 5 days) with no wagering requirements. Also offers 10% daily cashback on net losses.",
     "ai_summary": "Kaahaus Casino: 200 free spins + 10% cashback...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://kaahaus.com"
   },
   {
     "casino_name": "Betizy Casino",
@@ -742,7 +673,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -751,7 +682,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Betizy Casino: 100% up to €250 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://betizy.io"
   },
   {
     "casino_name": "Slot it Casino",
@@ -772,7 +704,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -781,7 +713,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Slot it Casino: 100% up to €500...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://slotit.casino"
   },
   {
     "casino_name": "Casumo Casino",
@@ -802,7 +735,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -811,7 +744,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Casumo Casino: 100% up to €300 + 20 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.casumo.com"
   },
   {
     "casino_name": "Lunubet Casino",
@@ -832,7 +766,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -841,7 +775,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 10 days.",
     "ai_summary": "Lunubet Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://lunu-bet-casino.com"
   },
   {
     "casino_name": "Epicbet Casino",
@@ -862,7 +797,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -871,7 +806,8 @@ const casinoDataEnhanced = [
     },
     "info": "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
     "ai_summary": "Epicbet Casino: Up to €300...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://epicbet.com"
   },
   {
     "casino_name": "Saletti Casino",
@@ -892,7 +828,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -901,7 +837,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Saletti Casino: 100% up to €500 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.saletti.com"
   },
   {
     "casino_name": "Possu Casino",
@@ -922,7 +859,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -931,7 +868,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Possu Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://possu-fi.com"
   },
   {
     "casino_name": "Winz.io Casino",
@@ -952,7 +890,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -961,7 +899,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Winz.io Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://winz.io"
   },
   {
     "casino_name": "Reipas Casino",
@@ -982,7 +921,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -991,37 +930,8 @@ const casinoDataEnhanced = [
     },
     "info": "Max win from free spins €20.",
     "ai_summary": "Reipas Casino: 100% up to €500 + 50 free spins...",
-    "last_updated": "2026-02-13"
-  },
-  {
-    "casino_name": "Kingpalace Casino",
-    "slug": "kingpalace-casino",
-    "bonus": "100% up to €2000 + 200 free spins",
-    "bonus_structure": {
-      "percentage": 100,
-      "max_amount": 2000,
-      "free_spins": 200
-    },
-    "wagering": {
-      "bonus": "60x",
-      "free_spins": "30x"
-    },
-    "verification": {
-      "status": "verified",
-      "last_verified": "2026-02-13",
-      "confidence": "medium"
-    },
-    "trust": {
-      "score": 6.0,
-      "max": 10,
-      "warnings": []
-    },
-    "geo_restriction": {
-      "vpn_friendly": true
-    },
-    "info": "The first deposit bonus depends on the deposit amount. A €20 deposit will give 200% bonus up to €50 with a 50x wagering requirement. A €50 deposit will give 150% bonus up to €350 with a 40x wagering requirement. A €500 deposit will give 100% up to €2000 with a 60x wagering requirement.",
-    "ai_summary": "Kingpalace Casino: 100% up to €2000 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://reipas-casino.com"
   },
   {
     "casino_name": "Arctic Casino",
@@ -1042,7 +952,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1051,7 +961,8 @@ const casinoDataEnhanced = [
     },
     "info": "50% instant cashback (rakeback) on all spins with no wagering requirements. Cashback is credited as real money. Max cashback €500.",
     "ai_summary": "Arctic Casino: Up to 50% instant cashback...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.arcticcasino.com"
   },
   {
     "casino_name": "Fruta Casino",
@@ -1072,7 +983,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1081,7 +992,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins (50 per day over 4 days) on different games: Day 1 Book of Dead, Day 2 Gates of Olympus, Day 3 Big Bass Bonanza, Day 4 Sweet Bonanza. No wagering but €100 max withdrawal on winnings.",
     "ai_summary": "Fruta Casino: 200 free spins...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.fruta.com"
   },
   {
     "casino_name": "Dynabet Casino",
@@ -1102,7 +1014,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1111,7 +1023,8 @@ const casinoDataEnhanced = [
     },
     "info": "200% welcome bonus up to €1000 with 30x wagering on bonus. Also offers 10% daily cashback with no wagering requirements.",
     "ai_summary": "Dynabet Casino: 200% up to €1000 + 10% cashback...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.dynabet.com"
   },
   {
     "casino_name": "Budsino Casino",
@@ -1132,7 +1045,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1141,7 +1054,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Budsino Casino: 100% up to €100...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.budsino.com"
   },
   {
     "casino_name": "Highroller Casino",
@@ -1162,7 +1076,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1171,7 +1085,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins per day are handed out over 10 days in different games where the spin value ranges from €0.10 to €0.20.",
     "ai_summary": "Highroller Casino: 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.thehighroller.com"
   },
   {
     "casino_name": "Taika Spins Casino",
@@ -1192,7 +1107,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1201,7 +1116,8 @@ const casinoDataEnhanced = [
     },
     "info": "Single deposit welcome bonus. 35x wagering applies to bonus and deposit amount. Multi-tier welcome package also available.",
     "ai_summary": "Taika Spins Casino: 150% up to €2000...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://taikaspins.com"
   },
   {
     "casino_name": "Casino Vice",
@@ -1222,7 +1138,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1231,7 +1147,8 @@ const casinoDataEnhanced = [
     },
     "info": "125 free spins per day are handed out over 5 days in different games.",
     "ai_summary": "Casino Vice: 100% up to €500 + 125 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.casinovice.com"
   },
   {
     "casino_name": "Fat Pirate Casino",
@@ -1252,7 +1169,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1261,7 +1178,8 @@ const casinoDataEnhanced = [
     },
     "info": "125 free spins per day are handed out over 5 days in different games.",
     "ai_summary": "Fat Pirate Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://fatpirate.com"
   },
   {
     "casino_name": "Qbet Casino",
@@ -1282,7 +1200,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1291,7 +1209,8 @@ const casinoDataEnhanced = [
     },
     "info": "10 free spins no deposit on Gates of QBet 1000 upon registration. Winnings must be wagered 35x.",
     "ai_summary": "Qbet Casino: 10 free spins no deposit...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.qbet.com"
   },
   {
     "casino_name": "Trust Dice Win Casino",
@@ -1312,7 +1231,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1321,7 +1240,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Trust Dice Win Casino: 200% up to €30000 + 20 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://trustdice.win"
   },
   {
     "casino_name": "Casino Joy",
@@ -1342,7 +1262,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1351,7 +1271,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Casino Joy: 200% up to €1000 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://joycasino.com"
   },
   {
     "casino_name": "Wildsino Casino",
@@ -1372,7 +1293,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1381,7 +1302,8 @@ const casinoDataEnhanced = [
     },
     "info": "Welcome package includes 300 free spins on Gates of Olympus and 1 bonus crab feature. 35x wagering on bonus+deposit, 40x on free spins.",
     "ai_summary": "Wildsino Casino: 100% up to €1000 + 300 free spins + 1 bonus crab...",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://wildsino.com"
   },
   {
     "casino_name": "Be On Bet Casino",
@@ -1402,7 +1324,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1411,7 +1333,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Be On Bet Casino: 150% up to €450 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://beonbetcasino.nl"
   },
   {
     "casino_name": "Be On Bet Casino",
@@ -1432,7 +1355,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1441,7 +1364,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Be On Bet Casino: 100% up to €250 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://beonbetcasino.nl"
   },
   {
     "casino_name": "Bet Label Casino",
@@ -1462,7 +1386,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1471,7 +1395,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Bet Label Casino: 100% up to €300 + 30 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://betlabelcasino.com"
   },
   {
     "casino_name": "PrimeBetz Casino",
@@ -1492,7 +1417,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1501,7 +1426,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 5 days in different games.",
     "ai_summary": "PrimeBetz Casino: 100% up to €500 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "DEFUNCT"
   },
   {
     "casino_name": "Paripesa Casino",
@@ -1522,7 +1448,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1531,7 +1457,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 5 days in different games.",
     "ai_summary": "Paripesa Casino: 100% up to €300 + 30 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://paripesa.com"
   },
   {
     "casino_name": "Betrix Casino",
@@ -1552,7 +1479,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1561,7 +1488,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 5 days in different games.",
     "ai_summary": "Betrix Casino: 100% up to €250 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casinobetrix.de"
   },
   {
     "casino_name": "AllySpin Casino",
@@ -1582,7 +1510,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1591,7 +1519,8 @@ const casinoDataEnhanced = [
     },
     "info": "⚠️ WARNING: Scam reports - Reddit users report refusal to pay $300K+ wins. License issues suspected. Use extreme caution.",
     "ai_summary": "AllySpin Casino: 100% up to €500...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://allyspin.net"
   },
   {
     "casino_name": "Spinaro Casino",
@@ -1612,7 +1541,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1621,7 +1550,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Spinaro Casino: 100% up to €1000 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.spinaro.casino"
   },
   {
     "casino_name": "Impressario Casino",
@@ -1642,7 +1572,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1651,7 +1581,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Impressario Casino: 100% up to €1000 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://impressariocasino.com"
   },
   {
     "casino_name": "Trivelabet Casino",
@@ -1672,7 +1603,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1681,7 +1612,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Trivelabet Casino: 200% up to €1000...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.trivelabet.com"
   },
   {
     "casino_name": "Magius Casino",
@@ -1702,7 +1634,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1711,7 +1643,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 10 days in different games.",
     "ai_summary": "Magius Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://magius.casino"
   },
   {
     "casino_name": "Fun Bet Casino",
@@ -1732,7 +1665,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1741,7 +1674,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 10 days in different games.",
     "ai_summary": "Fun Bet Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://funbet.com"
   },
   {
     "casino_name": "Hotbet Casino",
@@ -1762,7 +1696,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1771,7 +1705,8 @@ const casinoDataEnhanced = [
     },
     "info": "⚠️ WARNING: Red flags on CasinoGuru. Some payment delays reported. Use bonus code: HOTBET100.",
     "ai_summary": "Hotbet Casino: 100% up to €200...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://hot.bet"
   },
   {
     "casino_name": "Casino Vibes",
@@ -1792,7 +1727,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1801,7 +1736,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Casino Vibes: 100% up to €300 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.casinovibes.com"
   },
   {
     "casino_name": "Gemobet Casino",
@@ -1822,7 +1758,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1831,7 +1767,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins per day are handed out over 5 days.",
     "ai_summary": "Gemobet Casino: 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://gemobet.co"
   },
   {
     "casino_name": "Tuohi Casino",
@@ -1852,7 +1789,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1861,7 +1798,8 @@ const casinoDataEnhanced = [
     },
     "info": "The first deposit awards 1 spin on a prize wheel. No guaranteed wins but a max win of €5000.",
     "ai_summary": "Tuohi Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://tuohi-casino.fi"
   },
   {
     "casino_name": "Pelikioski Casino",
@@ -1882,7 +1820,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1891,7 +1829,8 @@ const casinoDataEnhanced = [
     },
     "info": "The first deposit awards a mystery prize. No guaranteed wins but a max win of €500.",
     "ai_summary": "Pelikioski Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://pelikioskii.fi"
   },
   {
     "casino_name": "Zip Casino",
@@ -1912,7 +1851,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1921,7 +1860,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Zip Casino: 100% up to €1000 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://zipcasino.com"
   },
   {
     "casino_name": "NetBet Casino",
@@ -1942,7 +1882,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1951,7 +1891,8 @@ const casinoDataEnhanced = [
     },
     "info": "500 free spins are handed out in varying amounts over 7 days, with 50 on day one.",
     "ai_summary": "NetBet Casino: 100% up to €500 + 500 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.netbet.com"
   },
   {
     "casino_name": "Spin247 Casino",
@@ -1972,7 +1913,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -1981,7 +1922,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Spin247 Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.spin247.com"
   },
   {
     "casino_name": "Huikee Casino",
@@ -2002,7 +1944,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2011,7 +1953,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Huikee Casino: 150% up to €400 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.huikee.com"
   },
   {
     "casino_name": "ReSpin Casino",
@@ -2032,7 +1975,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2041,7 +1984,8 @@ const casinoDataEnhanced = [
     },
     "info": "This is a 'wager first' bonus where €10 is handed out for every €400 wagered up to a max of €300 in total.",
     "ai_summary": "ReSpin Casino: Up to €300...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://respin.com"
   },
   {
     "casino_name": "Slotti Casino",
@@ -2062,7 +2006,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2071,7 +2015,8 @@ const casinoDataEnhanced = [
     },
     "info": "100 free spins are handed out in batches of 50 on the first day, 25 free spins on the second day, and 25 free spins on the third day.",
     "ai_summary": "Slotti Casino: 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://slotti-kasino.fi"
   },
   {
     "casino_name": "iBet Casino",
@@ -2092,7 +2037,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2101,7 +2046,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "iBet Casino: 10 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.ibet.com"
   },
   {
     "casino_name": "Pistolo Casino",
@@ -2122,7 +2068,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2131,7 +2077,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Pistolo Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://pistolo.com"
   },
   {
     "casino_name": "Legiano Casino",
@@ -2152,7 +2099,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2161,7 +2108,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Legiano Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://legiano.com"
   },
   {
     "casino_name": "Mr Punter",
@@ -2182,7 +2130,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2191,7 +2139,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Mr Punter: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://mrpunter1.com"
   },
   {
     "casino_name": "Lunubet Casino",
@@ -2212,7 +2161,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2221,7 +2170,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Lunubet Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://lunu-bet-casino.com"
   },
   {
     "casino_name": "Lysti Casino",
@@ -2242,7 +2192,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2251,7 +2201,8 @@ const casinoDataEnhanced = [
     },
     "info": "No bonus on offer.",
     "ai_summary": "Lysti Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.lysti.casino"
   },
   {
     "casino_name": "Spinfest Casino",
@@ -2272,7 +2223,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2281,7 +2232,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Spinfest Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://spin-fest.com"
   },
   {
     "casino_name": "Slot it Casino",
@@ -2302,7 +2254,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2311,7 +2263,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Slot it Casino: 100% up to €500...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://slotit.casino"
   },
   {
     "casino_name": "Roby Casino",
@@ -2332,7 +2285,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2341,7 +2294,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Roby Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://robycasino.com"
   },
   {
     "casino_name": "BassBet Casino",
@@ -2362,7 +2316,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2371,7 +2325,8 @@ const casinoDataEnhanced = [
     },
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "BassBet Casino: 100% up to €500 + 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://bassbet.com"
   },
   {
     "casino_name": "Mammona Casino",
@@ -2392,7 +2347,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2401,7 +2356,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Mammona Casino: 100% up to €500 + 50 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.mammonakasino.com"
   },
   {
     "casino_name": "Wheelz Casino",
@@ -2422,7 +2378,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2431,7 +2387,8 @@ const casinoDataEnhanced = [
     },
     "info": "Free spins are given out in batches of 10 per day over a span of 10 days.",
     "ai_summary": "Wheelz Casino: 100% up to €300 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.wheelz.com"
   },
   {
     "casino_name": "Kruuna Casino",
@@ -2452,7 +2409,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2461,7 +2418,8 @@ const casinoDataEnhanced = [
     },
     "info": "No bonus on offer.",
     "ai_summary": "Kruuna Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.kruuna.com"
   },
   {
     "casino_name": "Ninja Casino",
@@ -2482,7 +2440,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2491,7 +2449,8 @@ const casinoDataEnhanced = [
     },
     "info": "No bonus on offer.",
     "ai_summary": "Ninja Casino: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.ninjacasino.com"
   },
   {
     "casino_name": "Power Up Casino",
@@ -2512,7 +2471,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2521,7 +2480,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Power Up Casino: 100% up to €1000 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://powerupcasino.com"
   },
   {
     "casino_name": "N1 Casino",
@@ -2542,7 +2502,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2551,7 +2511,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "N1 Casino: 100% up to €1000 + 150 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.n1casino.com"
   },
   {
     "casino_name": "Bally Bet Casino, USA",
@@ -2572,7 +2533,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2581,7 +2542,8 @@ const casinoDataEnhanced = [
     },
     "info": "One of the following applies: (1) Net Loss exceeds 90% of the first Deposit at any time within seven (7) calendar days after placing the first Deposit and first Wager, the value of their first Deposit, up to a maximum of $100 in Bonus Money is awarded, or (2) if the Net Loss does not exceed 90% of the first Deposit after the conclusion of the seven (7) calendar days after placing the first Deposit and first Wager, the value of the Net Loss, up to a maximum of $100 in Bonus Money is awarded. Bonus bet tokens are non-withdrawable. Only winnings generated from wagers with bonus bet tokens are withdrawable",
     "ai_summary": "Bally Bet Casino, USA: Up to $100 in bonus back + $50 bonus bet tokens...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.ballybet.com"
   },
   {
     "casino_name": "Bet365, USA",
@@ -2602,7 +2564,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2611,7 +2573,8 @@ const casinoDataEnhanced = [
     },
     "info": "Take a spin on the New Player Offer reels for the chance to win five, 10, or 15 bonus spins. You will need to do this 10 out of the next 20 days, and a maximum of 500 spins are up for grabs.",
     "ai_summary": "Bet365, USA: Up to 500 bonus spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.bet365.com"
   },
   {
     "casino_name": "BetMGM, USA",
@@ -2632,7 +2595,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2641,7 +2604,8 @@ const casinoDataEnhanced = [
     },
     "info": "The registration bonus has a 1x wagering requirement.",
     "ai_summary": "BetMGM, USA: $25 registration bonus + 100% up to $1000...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.betmgm.com"
   },
   {
     "casino_name": "BetRivers Casino, USA",
@@ -2662,7 +2626,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2671,7 +2635,8 @@ const casinoDataEnhanced = [
     },
     "info": "Rebate of up to $500 on any losses you sustain in your first 24 hours. The rebate will be paid in bonus credits, and you just need to satisfy a simple 1x playthrough requirement before they convert to withdrawable cash.",
     "ai_summary": "BetRivers Casino, USA: Up to $500 loss rebate...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.betrivers.com"
   },
   {
     "casino_name": "Borgata Online Casino, USA",
@@ -2692,7 +2657,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2701,7 +2666,8 @@ const casinoDataEnhanced = [
     },
     "info": "Any winnings you earn from your $20 bonus can't be withdrawn until you (1) make a deposit, and (2) meet a 1x playthrough requirement on the winnings.",
     "ai_summary": "Borgata Online Casino, USA: $20 registration bonus + 100% up to $1000...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.borgataonline.com"
   },
   {
     "casino_name": "Caesars Palace Online Casino, USA",
@@ -2722,7 +2688,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2731,7 +2697,8 @@ const casinoDataEnhanced = [
     },
     "info": "Wagering requirement applies to both deposit + bonus.",
     "ai_summary": "Caesars Palace Online Casino, USA: 100% up to $2500...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.caesars.com"
   },
   {
     "casino_name": "DraftKings Casino, USA",
@@ -2752,7 +2719,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2761,7 +2728,8 @@ const casinoDataEnhanced = [
     },
     "info": "1x wagering requirement on the $35 first deposit bonus. Wager $5 and get 500 free spins. Wager another $1000 and get $1000 in bonus with a 10x wagering requirement.",
     "ai_summary": "DraftKings Casino, USA: $35 bonus + 500 free spins + $1000 bonus...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.draftkings.com"
   },
   {
     "casino_name": "Fanatics Casino, USA",
@@ -2782,7 +2750,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2791,7 +2759,8 @@ const casinoDataEnhanced = [
     },
     "info": "Wager $10 and get $100 casino bonus with x1 wagering requirement.",
     "ai_summary": "Fanatics Casino, USA: $100 bonus...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.fanatics.com"
   },
   {
     "casino_name": "FanDuel Casino, USA",
@@ -2812,7 +2781,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2821,7 +2790,8 @@ const casinoDataEnhanced = [
     },
     "info": "Free spins are given out in batches of 50 over a span of 7 days.",
     "ai_summary": "FanDuel Casino, USA: $40 bonus + 350 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.fanduel.com"
   },
   {
     "casino_name": "Golden Nugget Casino, USA",
@@ -2842,7 +2812,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2851,7 +2821,8 @@ const casinoDataEnhanced = [
     },
     "info": "Free spins are given out in batches of 50 over a span of 7 days. Lossback up to $1000 for the first 24 hours.",
     "ai_summary": "Golden Nugget Casino, USA: 250 free spins + lossback up to $1000...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.goldennuggetcasino.com"
   },
   {
     "casino_name": "Hard Rock Bet, USA",
@@ -2872,7 +2843,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2881,7 +2852,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Hard Rock Bet, USA: 100% up to $1000 + 500 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.hardrockbet.com"
   },
   {
     "casino_name": "Horseshoe Casino, USA",
@@ -2902,7 +2874,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2911,7 +2883,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Horseshoe Casino, USA: 100% up to $1250...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.horseshoecasino.com"
   },
   {
     "casino_name": "Jackpot City Casino, USA",
@@ -2932,7 +2905,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2941,7 +2914,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Jackpot City Casino, USA: 100% up to $1000 + 20 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.jackpotcitycasino.com"
   },
   {
     "casino_name": "Monopoly Casino, USA",
@@ -2962,7 +2936,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -2971,7 +2945,8 @@ const casinoDataEnhanced = [
     },
     "info": "Refund up to $100 on the first deposit.",
     "ai_summary": "Monopoly Casino, USA: Up to $100 loss back...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://monopolycasino.com"
   },
   {
     "casino_name": "PartyCasino, USA",
@@ -2992,7 +2967,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3001,7 +2976,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "PartyCasino, USA: 200% up to $100...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://casino.partycasino.com"
   },
   {
     "casino_name": "PlayStar Casino, USA",
@@ -3022,7 +2998,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3031,7 +3007,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "PlayStar Casino, USA: 100% up to $500 + 100 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.playstarcasino.com"
   },
   {
     "casino_name": "Spin Palace, USA",
@@ -3052,7 +3029,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3061,7 +3038,8 @@ const casinoDataEnhanced = [
     },
     "info": "20 free spins on sign-up. Note that both the deposit amount and bonus amount has a 30x wagering requirement, thus resulting in the real wagering requirement being higher than 30x.",
     "ai_summary": "Spin Palace, USA: 50% up to $1000 + 20 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.spinpalace.com"
   },
   {
     "casino_name": "Wheel of Fortune Casino, USA",
@@ -3082,7 +3060,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3091,7 +3069,8 @@ const casinoDataEnhanced = [
     },
     "info": "n/a",
     "ai_summary": "Wheel of Fortune Casino, USA: 100% up to $40...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://wheeloffortunecasino.com"
   },
   {
     "casino_name": "Duelbits",
@@ -3112,7 +3091,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3121,7 +3100,8 @@ const casinoDataEnhanced = [
     },
     "info": "50% rakeback offered but requires the player to progress up the Ace's VIP Lounge levels.",
     "ai_summary": "Duelbits: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://duelbits.com"
   },
   {
     "casino_name": "Sportsbet.io",
@@ -3142,7 +3122,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3151,7 +3131,8 @@ const casinoDataEnhanced = [
     },
     "info": "Cryptocurrency casino",
     "ai_summary": "Sportsbet.io: 100% up to 300 USDT...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://sportsbet.io"
   },
   {
     "casino_name": "Bitcasino.io",
@@ -3172,7 +3153,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3181,7 +3162,8 @@ const casinoDataEnhanced = [
     },
     "info": "Cryptocurrency casino",
     "ai_summary": "Bitcasino.io: 100% up to 1500 USDT...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://bitcasino.io"
   },
   {
     "casino_name": "PVP.money",
@@ -3202,7 +3184,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3211,7 +3193,8 @@ const casinoDataEnhanced = [
     },
     "info": "Fully decentralized cryptocurrency casino. No KYC, just connect cryptowallet and play.",
     "ai_summary": "PVP.money: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://pvp.money"
   },
   {
     "casino_name": "Dexbet.win",
@@ -3232,7 +3215,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3241,7 +3224,8 @@ const casinoDataEnhanced = [
     },
     "info": "Fully decentralized cryptocurrency casino. No KYC, just connect cryptowallet and play.",
     "ai_summary": "Dexbet.win: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://dexbet.win"
   },
   {
     "casino_name": "Stake.com",
@@ -3262,7 +3246,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3271,7 +3255,8 @@ const casinoDataEnhanced = [
     },
     "info": "Cryptocurrency casino. Offers daily and weekly races.",
     "ai_summary": "Stake.com: n/a...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://stake.com"
   },
   {
     "casino_name": "Huippu Casino",
@@ -3292,7 +3277,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3301,7 +3286,8 @@ const casinoDataEnhanced = [
     },
     "info": "Cryptocurrency casino. Offers daily and weekly races.",
     "ai_summary": "Huippu Casino: 100% up to €300 + 30 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://www.huippukasino.com"
   },
   {
     "casino_name": "Jellona Casino",
@@ -3322,7 +3308,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3331,7 +3317,8 @@ const casinoDataEnhanced = [
     },
     "info": "Deposit needs to be wagered 5x before free spins are released.",
     "ai_summary": "Jellona Casino: 200 free spins...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://jellonacasino.com"
   },
   {
     "casino_name": "Lyrabet Casino",
@@ -3352,7 +3339,7 @@ const casinoDataEnhanced = [
       "confidence": "medium"
     },
     "trust": {
-      "score": 6.0,
+      "score": 6,
       "max": 10,
       "warnings": []
     },
@@ -3361,7 +3348,8 @@ const casinoDataEnhanced = [
     },
     "info": "This is a 'wager first' bonus, where the bonus if paid out after the full wagering required has been reached with deposited money. More than one deposit is allowed.",
     "ai_summary": "Lyrabet Casino: 200% up to €1000...",
-    "last_updated": "2026-02-13"
+    "last_updated": "2026-02-13",
+    "url": "https://lyrabet.org"
   },
   {
     "casino_name": "Playzee Casino",
@@ -3382,7 +3370,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 8.0,
+      "score": 8,
       "max": 10,
       "warnings": []
     },
@@ -3391,7 +3379,8 @@ const casinoDataEnhanced = [
     },
     "info": "3-deposit package. MGA licensed. Zee Spins loyalty program.",
     "ai_summary": "Playzee Casino: 100% up to €1,500 + 150 free spins. MGA licensed with Zee Spins loyalty program.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.playzee.com"
   },
   {
     "casino_name": "Casoola Casino",
@@ -3421,7 +3410,8 @@ const casinoDataEnhanced = [
     },
     "info": "Robot theme 4-deposit welcome package. MGA licensed with tournaments.",
     "ai_summary": "Casoola Casino: 100% up to €500 + 200 free spins. Cyber-themed MGA casino with tournaments.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.casoola.com"
   },
   {
     "casino_name": "Boom Casino",
@@ -3451,7 +3441,8 @@ const casinoDataEnhanced = [
     },
     "info": "PayNPlay zero wager FS. Estonian licensed. Finnish no-account fast payouts.",
     "ai_summary": "Boom Casino: 100% up to €100 + 100 wager-free spins. PayNPlay with fast Finnish payouts.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.boomcasino.com"
   },
   {
     "casino_name": "Caxino Casino",
@@ -3472,7 +3463,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 8.0,
+      "score": 8,
       "max": 10,
       "warnings": []
     },
@@ -3481,7 +3472,8 @@ const casinoDataEnhanced = [
     },
     "info": "Rootz smart bonuses platform. 500 FS welcome. MGA licensed.",
     "ai_summary": "Caxino Casino: €500 + 500 free spins welcome. Rootz platform with smart bonuses.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.caxino.com"
   },
   {
     "casino_name": "Simple Casino",
@@ -3511,7 +3503,8 @@ const casinoDataEnhanced = [
     },
     "info": "No-account since 2001. MGA licensed instant play.",
     "ai_summary": "Simple Casino: 100% up to €500 + 50 free spins. No-account MGA casino since 2001.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.simplecasino.com"
   },
   {
     "casino_name": "Miami Dice Casino",
@@ -3541,7 +3534,8 @@ const casinoDataEnhanced = [
     },
     "info": "Miami luxury jackpots theme. MGA licensed with 200% match.",
     "ai_summary": "Miami Dice Casino: 200% up to €100 + 50 free spins. Miami-themed MGA casino.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.miamidice.com"
   },
   {
     "casino_name": "Jackpot Village Casino",
@@ -3571,7 +3565,8 @@ const casinoDataEnhanced = [
     },
     "info": "Premium slots jackpots. MGA licensed. Award-winning progressive jackpots.",
     "ai_summary": "Jackpot Village Casino: 100% up to €500. Premium MGA slots with progressive jackpots.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.jackpotvillage.com"
   },
   {
     "casino_name": "Spinz Casino",
@@ -3592,7 +3587,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 8.0,
+      "score": 8,
       "max": 10,
       "warnings": []
     },
@@ -3601,7 +3596,8 @@ const casinoDataEnhanced = [
     },
     "info": "Wager-free FS. Estonian licensed. Finnish popular casino established 2004.",
     "ai_summary": "Spinz Casino: 100% up to €300 + 100 wager-free spins. Estonian licensed Finnish favorite.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.spinz.com"
   },
   {
     "casino_name": "Spin Casino",
@@ -3622,7 +3618,7 @@ const casinoDataEnhanced = [
       "confidence": "high"
     },
     "trust": {
-      "score": 7.0,
+      "score": 7,
       "max": 10,
       "warnings": []
     },
@@ -3631,7 +3627,8 @@ const casinoDataEnhanced = [
     },
     "info": "Classic casino. MGA licensed. Reliable and established operator.",
     "ai_summary": "Spin Casino: 100% up to €400. Classic reliable MGA casino.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.spincasino.com"
   },
   {
     "casino_name": "10Bet Casino",
@@ -3661,7 +3658,8 @@ const casinoDataEnhanced = [
     },
     "info": "Sports + casino hybrid. MGA licensed sportsbook and casino.",
     "ai_summary": "10Bet Casino: 100% up to €100. Sportsbook casino hybrid with MGA license.",
-    "last_updated": "2026-02-16"
+    "last_updated": "2026-02-16",
+    "url": "https://www.10bet.com"
   },
   {
     "casino_name": "NovaFortune Casino",
@@ -3682,16 +3680,20 @@ const casinoDataEnhanced = [
       "confidence": "low"
     },
     "trust": {
-      "score": 5.0,
+      "score": 5,
       "max": 10,
-      "warnings": ["new_casino", "unverified_bonus"]
+      "warnings": [
+        "new_casino",
+        "unverified_bonus"
+      ]
     },
     "geo_restriction": {
       "vpn_friendly": true
     },
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "NovaFortune Casino: 150% up to €500 + 100 free spins. New casino, bonus unverified. 40x wagering.",
-    "last_updated": "2026-03-05"
+    "last_updated": "2026-03-05",
+    "url": "NOT_FOUND"
   },
   {
     "casino_name": "FrostPeak Casino",
@@ -3712,16 +3714,20 @@ const casinoDataEnhanced = [
       "confidence": "low"
     },
     "trust": {
-      "score": 5.0,
+      "score": 5,
       "max": 10,
-      "warnings": ["new_casino", "unverified_bonus"]
+      "warnings": [
+        "new_casino",
+        "unverified_bonus"
+      ]
     },
     "geo_restriction": {
       "vpn_friendly": true
     },
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "FrostPeak Casino: 100% up to €300 + 50 free spins. New casino, bonus unverified. 35x wagering.",
-    "last_updated": "2026-03-05"
+    "last_updated": "2026-03-05",
+    "url": "NOT_FOUND"
   },
   {
     "casino_name": "AetherSpin Casino",
@@ -3742,16 +3748,20 @@ const casinoDataEnhanced = [
       "confidence": "low"
     },
     "trust": {
-      "score": 5.0,
+      "score": 5,
       "max": 10,
-      "warnings": ["new_casino", "unverified_bonus"]
+      "warnings": [
+        "new_casino",
+        "unverified_bonus"
+      ]
     },
     "geo_restriction": {
       "vpn_friendly": true
     },
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "AetherSpin Casino: 200% up to €400 + 75 free spins. New casino, bonus unverified. 45x wagering.",
-    "last_updated": "2026-03-05"
+    "last_updated": "2026-03-05",
+    "url": "NOT_FOUND"
   },
   {
     "casino_name": "VortexVault Casino",
@@ -3772,16 +3782,20 @@ const casinoDataEnhanced = [
       "confidence": "low"
     },
     "trust": {
-      "score": 5.0,
+      "score": 5,
       "max": 10,
-      "warnings": ["new_casino", "unverified_bonus"]
+      "warnings": [
+        "new_casino",
+        "unverified_bonus"
+      ]
     },
     "geo_restriction": {
       "vpn_friendly": true
     },
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "VortexVault Casino: 100% up to €250 + 50 free spins. New casino, bonus unverified. 35x wagering.",
-    "last_updated": "2026-03-05"
+    "last_updated": "2026-03-05",
+    "url": "NOT_FOUND"
   },
   {
     "casino_name": "EchoBet Casino",
@@ -3802,17 +3816,168 @@ const casinoDataEnhanced = [
       "confidence": "low"
     },
     "trust": {
-      "score": 5.0,
+      "score": 5,
       "max": 10,
-      "warnings": ["new_casino", "unverified_bonus"]
+      "warnings": [
+        "new_casino",
+        "unverified_bonus"
+      ]
     },
     "geo_restriction": {
       "vpn_friendly": true
     },
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "EchoBet Casino: 125% up to €350 + 80 free spins. New casino, bonus unverified. 40x wagering.",
-    "last_updated": "2026-03-05"
+    "last_updated": "2026-03-05",
+    "url": "NOT_FOUND"
+  },
+  {
+    "casino_name": "Hurmio Casino",
+    "slug": "hurmio-casino",
+    "bonus": "15% daily cashback + 177 free spins",
+    "bonus_structure": {
+      "cashback": 15,
+      "free_spins": 177
+    },
+    "wagering": {
+      "cashback": "1x",
+      "free_spins": "1x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-03-25",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Daily 15% cashback + 177 FS (1x wagering, min dep 20€)",
+    "ai_summary": "Hurmio Casino: 15% daily cashback + 177 FS (1x)...",
+    "last_updated": "2026-03-25",
+    "url": "https://hurmio.casino"
+  },
+  {
+    "casino_name": "Mainio Casino",
+    "slug": "mainio-casino",
+    "bonus": "100% up to €300 + 25 wager-free spins",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 300,
+      "free_spins": 25
+    },
+    "wagering": {
+      "bonus": "35x",
+      "free_spins": "0x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-03-25",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "100% to €300 + 25 FS no wagering",
+    "ai_summary": "Mainio Casino: 100% up to €300 + 25 wager-free spins...",
+    "last_updated": "2026-03-25",
+    "url": "https://mainio.casino"
+  },
+  {
+    "casino_name": "Ruhtinas Casino",
+    "slug": "ruhtinas-casino",
+    "bonus": "Up to 20% cashback + 300 free spins",
+    "bonus_structure": {
+      "cashback": 20,
+      "free_spins": 300
+    },
+    "wagering": {
+      "cashback": "10x",
+      "free_spins": "10x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-03-25",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "Cashback up to 20% + 300 FS (10x wagering)",
+    "ai_summary": "Ruhtinas Casino: Up to 20% cashback + 300 FS...",
+    "last_updated": "2026-03-25",
+    "url": "https://www.ruhtinascasino.fi"
+  },
+  {
+    "casino_name": "Pikapotti Casino",
+    "slug": "pikapotti-casino",
+    "bonus": "50-500 wager-free free spins",
+    "bonus_structure": {
+      "free_spins": "50-500"
+    },
+    "wagering": {
+      "free_spins": "0x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-03-25",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "50-500 FS no wagering (up to €0.5/spin)",
+    "ai_summary": "Pikapotti Casino: 50-500 wager-free FS...",
+    "last_updated": "2026-03-25",
+    "url": "https://pikapotti.casino"
+  },
+  {
+    "casino_name": "Potmanni Casino",
+    "slug": "potmanni-casino",
+    "bonus": "100 wager-free free spins",
+    "bonus_structure": {
+      "free_spins": 100
+    },
+    "wagering": {
+      "free_spins": "0x"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-03-25",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": true
+    },
+    "info": "100 FS no wagering",
+    "ai_summary": "Potmanni Casino: 100 wager-free FS...",
+    "last_updated": "2026-03-25",
+    "url": "https://potmanni.casino"
   }
 ];
 
-module.exports = { casinoDataEnhanced };
+export default casinoDataEnhanced;
