@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+"""
+Update bonus_enhanced.js with health check results.
+Adds/updates 'health_status' field and marks casinos as defunct after 2 consecutive errors.
+"""
+
+import json
+import sys
+from datetime import datetime
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent
+REPO_ROOT = SCRIPT_DIR.parent
+BONUS_FILE = REPO_ROOT / "api" / "bonus_enhanced.js"
+RESULTS_FILE = Path("/tmp/casino_health_results.json")
+HISTORY_FILE = REPO_ROOT / "scripts" / "health_history.json"
+
+def load_history():
+    """Load previous health check results to detect consecutive errors"""
+    if HISTORY_FILE.exists():
+        with open(HISTORY_FILE) as f:
+            return json.load(f)
+    return {}
+
+def save_history(history):
+    """Save current health check results for next run"""
+    with open(HISTORY_FILE, 'w') as f:
+        json.dump(history, f, indent=2)
+
+def load_bonus_data():
+    """Load current casino data from bonus_enhanced.js"""
+    with open(BONUS_FILE) as f:
+        content = f.read()
+    
+    # Extract JSON array
+    start = content.index('[')
+    end = content.rindex(']') + 1
+    header = content[:start]
+    data = json.loads(content[start:end])
+    
+    return header, data
+
+def save_bonus_data(header, data):
+    """Write updated casino data back to bonus_enhanced.js"""
+    json_str = json.dumps(data, indent=2, ensure_ascii=False)
+    new_content = header + json_str + ';\n\nexport default casinoDataEnhanced;\n'
+    
+    with open(BONUS_FILE, 'w') as f:
+        f.write(new_content)
+
+def main():
+    # Load health check results
+    if not RESULTS_FILE.exists():
+        print(f"Error: {RESULTS_FILE} not found. Run health_check.sh first.")
+        sys.exit(1)
+    
+    with open(RESULTS_FILE) as f:
+        health_results = json.load(f)
+    
+    # Build slug -> status map
+    health_map = {r['slug']: r for r in health_results}
+    
+    # Load previous history
+    history = load_history()
+    
+    # Load casino data
+    header, casinos = load_bonus_data()
+    
+    # Track changes for commit message
+    changes = {
+        'updated': 0,
+        'newly_defunct': 0,
+        'errors': [],
+        'recovered': []
+    }
+    
+    # Update each casino
+    for casino in casinos:
+        slug = casino['slug']
+        
+        if slug not in health_map:
+            continue  # Skip if not in health check results
+        
+        health = health_map[slug]
+        prev_status = history.get(slug, {}).get('status', 'ok')
+        new_status = health['status']
+        
+        # Add/update health_status field
+        old_health = casino.get('health_status', {})
+        casino['health_status'] = {
+            'status': new_status,
+            'last_check': datetime.utcnow().isoformat() + 'Z',
+            'http_code': health.get('http_code'),
+            'error': health.get('error')
+        }
+        
+        # Check for consecutive errors (2 days in a row = defunct)
+        if new_status != 'ok' and prev_status != 'ok' and prev_status == new_status:
+            # 2nd day of same error
+            if not casino.get('defunct', False):
+                casino['defunct'] = True
+                casino['verification']['status'] = 'closed'
+                changes['newly_defunct'] += 1
+                changes['errors'].append(f"{casino['casino_name']}: {new_status} (2nd day, marked defunct)")
+        elif new_status != 'ok' and prev_status == 'ok':
+            # First occurrence of error
+            changes['errors'].append(f"{casino['casino_name']}: {new_status} (1st occurrence)")
+        elif new_status == 'ok' and prev_status != 'ok':
+            # Recovered
+            if casino.get('defunct'):
+                # Don't auto-revive defunct casinos, just note recovery
+                changes['recovered'].append(f"{casino['casino_name']}: recovered but still marked defunct")
+            else:
+                changes['recovered'].append(f"{casino['casino_name']}: recovered")
+        
+        if old_health != casino['health_status']:
+            changes['updated'] += 1
+    
+    # Save updated data
+    save_bonus_data(header, casinos)
+    
+    # Save current results as history for next run
+    new_history = {r['slug']: {'status': r['status'], 'date': datetime.utcnow().isoformat()} 
+                   for r in health_results}
+    save_history(new_history)
+    
+    # Print summary for commit message
+    print(json.dumps(changes, indent=2))
+    
+    return 0 if changes['newly_defunct'] == 0 else 1
+
+if __name__ == '__main__':
+    sys.exit(main())
