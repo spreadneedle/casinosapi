@@ -70,9 +70,70 @@ git revert HEAD
 
 ---
 
+## Auto-Discovery System
+
+**Purpose:** Weekly automated search for new casinos, with validation and auto-add.
+
+### Scripts
+
+1. **`discover_casinos.py`**  
+   - Searches Brave API for new casino candidates
+   - Queries: "new online casino 2026", "crypto casino", etc.
+   - Validates each candidate:
+     - HTTP 200 status check
+     - Not a duplicate (URL/name/slug)
+     - Casino keywords present (casino, slots, bonus)
+     - Quality signals (footer, terms, licensing)
+     - Not a parking/construction page
+   - Calculates confidence score (0.0-1.0)
+   - Output: JSON with candidates, invalid, duplicates
+
+2. **`add_discovered_casinos.py`**  
+   - Reads discovery results from stdin
+   - Creates full casino entries for valid candidates
+   - Adds to `api/bonus_enhanced.js` and `casino_urls.json`
+   - Marks entries as `verification.status: "needs_verification"`
+   - Sets `auto_discovered: true` flag
+
+3. **`run_auto_discovery.sh`** (wrapper)  
+   - Runs discovery → validation → add pipeline
+   - Auto-commits and pushes validated additions
+   - Sends Telegram alert for invalid candidates
+   - Silent if no new casinos found
+
+### Cron Schedule
+
+- **Job:** `grokcasino-auto-discovery`
+- **Schedule:** Mondays at 10:00 AM (Europe/Tallinn)
+- **Model:** Claude Sonnet 4.5
+- **Notifications:** Alerts for invalid candidates + on error
+
+### Validation Criteria
+
+A casino must pass all checks to be auto-added:
+
+- ✅ HTTP 200 status
+- ✅ Not a duplicate URL/name/slug
+- ✅ Contains ≥2 casino keywords
+- ✅ Has footer or legal links
+- ✅ Not a parking/construction page
+- ✅ Confidence score ≥ 0.6
+
+**Manual review needed:**
+- Invalid candidates → Telegram alert with URL + reason
+- Auto-added entries → marked `needs_verification`
+
+### Manual Run
+
+```bash
+cd /home/icem/.openclaw/workspace/grokcasino
+./scripts/run_auto_discovery.sh
+```
+
+---
+
 ## Future Automation
 
-- **Auto-Discovery** (coming soon) — Weekly search for new casinos, auto-add validated entries
 - **User Submissions** (planned) — Form for users to suggest missing casinos
 
 ---
