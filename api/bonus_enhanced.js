@@ -916,9 +916,10 @@ const casinoDataEnhanced = [
       "free_spins": "40x"
     },
     "verification": {
-      "status": "verified",
+      "status": "closed",
       "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "confidence": "medium",
+      "last_checked": "2026-04-27T14:59:45.226179Z"
     },
     "trust": {
       "score": 6,
@@ -931,7 +932,13 @@ const casinoDataEnhanced = [
     "info": "Max win from free spins €20.",
     "ai_summary": "Reipas Casino: 100% up to €500 + 50 free spins...",
     "last_updated": "2026-02-13",
-    "url": "https://reipas-casino.com"
+    "url": "https://reipas-casino.com",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226219Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "Arctic Casino",
@@ -1474,9 +1481,10 @@ const casinoDataEnhanced = [
       "free_spins": "35x"
     },
     "verification": {
-      "status": "verified",
+      "status": "closed",
       "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "confidence": "medium",
+      "last_checked": "2026-04-27T14:59:45.226265Z"
     },
     "trust": {
       "score": 6,
@@ -1489,7 +1497,13 @@ const casinoDataEnhanced = [
     "info": "20 free spins per day are handed out over 5 days in different games.",
     "ai_summary": "Betrix Casino: 100% up to €250 + 50 free spins...",
     "last_updated": "2026-02-13",
-    "url": "https://casinobetrix.de"
+    "url": "https://casinobetrix.de",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226269Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "AllySpin Casino",
@@ -1908,9 +1922,10 @@ const casinoDataEnhanced = [
       "free_spins": "40x"
     },
     "verification": {
-      "status": "verified",
+      "status": "closed",
       "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "confidence": "medium",
+      "last_checked": "2026-04-27T14:59:45.226302Z"
     },
     "trust": {
       "score": 6,
@@ -1923,7 +1938,13 @@ const casinoDataEnhanced = [
     "info": "200 free spins are handed out in amounts of 20 spins per day over a span of 10 days.",
     "ai_summary": "Spin247 Casino: 100% up to €500 + 200 free spins...",
     "last_updated": "2026-02-13",
-    "url": "https://www.spin247.com"
+    "url": "https://www.spin247.com",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226305Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "Huikee Casino",
@@ -2404,9 +2425,10 @@ const casinoDataEnhanced = [
       "free_spins": "n/a"
     },
     "verification": {
-      "status": "needs_verification",
+      "status": "closed",
       "last_verified": "2026-02-13",
-      "confidence": "medium"
+      "confidence": "medium",
+      "last_checked": "2026-04-27T14:59:45.226341Z"
     },
     "trust": {
       "score": 6,
@@ -2419,7 +2441,13 @@ const casinoDataEnhanced = [
     "info": "No bonus on offer.",
     "ai_summary": "Kruuna Casino: n/a...",
     "last_updated": "2026-02-13",
-    "url": "https://www.kruuna.com"
+    "url": "https://www.kruuna.com",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226343Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "Ninja Casino",
@@ -3582,9 +3610,10 @@ const casinoDataEnhanced = [
       "free_spins": "0x"
     },
     "verification": {
-      "status": "verified",
+      "status": "closed",
       "last_verified": "2026-02-16",
-      "confidence": "high"
+      "confidence": "high",
+      "last_checked": "2026-04-27T14:59:45.226434Z"
     },
     "trust": {
       "score": 8,
@@ -3597,7 +3626,13 @@ const casinoDataEnhanced = [
     "info": "Wager-free FS. Estonian licensed. Finnish popular casino established 2004.",
     "ai_summary": "Spinz Casino: 100% up to €300 + 100 wager-free spins. Estonian licensed Finnish favorite.",
     "last_updated": "2026-02-16",
-    "url": "https://www.spinz.com"
+    "url": "https://www.spinz.com",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226437Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "Spin Casino",
@@ -3675,9 +3710,10 @@ const casinoDataEnhanced = [
       "free_spins": "30x"
     },
     "verification": {
-      "status": "needs_verification",
+      "status": "closed",
       "last_verified": "2026-03-05",
-      "confidence": "low"
+      "confidence": "low",
+      "last_checked": "2026-04-27T14:59:45.226446Z"
     },
     "trust": {
       "score": 5,
@@ -3693,7 +3729,13 @@ const casinoDataEnhanced = [
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "NovaFortune Casino: 150% up to €500 + 100 free spins. New casino, bonus unverified. 40x wagering.",
     "last_updated": "2026-03-05",
-    "url": "NOT_FOUND"
+    "url": "NOT_FOUND",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226448Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "FrostPeak Casino",
@@ -3709,9 +3751,10 @@ const casinoDataEnhanced = [
       "free_spins": "35x"
     },
     "verification": {
-      "status": "needs_verification",
+      "status": "closed",
       "last_verified": "2026-03-05",
-      "confidence": "low"
+      "confidence": "low",
+      "last_checked": "2026-04-27T14:59:45.226453Z"
     },
     "trust": {
       "score": 5,
@@ -3727,7 +3770,13 @@ const casinoDataEnhanced = [
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "FrostPeak Casino: 100% up to €300 + 50 free spins. New casino, bonus unverified. 35x wagering.",
     "last_updated": "2026-03-05",
-    "url": "NOT_FOUND"
+    "url": "NOT_FOUND",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226455Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "AetherSpin Casino",
@@ -3743,9 +3792,10 @@ const casinoDataEnhanced = [
       "free_spins": "40x"
     },
     "verification": {
-      "status": "needs_verification",
+      "status": "closed",
       "last_verified": "2026-03-05",
-      "confidence": "low"
+      "confidence": "low",
+      "last_checked": "2026-04-27T14:59:45.226459Z"
     },
     "trust": {
       "score": 5,
@@ -3761,7 +3811,13 @@ const casinoDataEnhanced = [
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "AetherSpin Casino: 200% up to €400 + 75 free spins. New casino, bonus unverified. 45x wagering.",
     "last_updated": "2026-03-05",
-    "url": "NOT_FOUND"
+    "url": "NOT_FOUND",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226462Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "VortexVault Casino",
@@ -3777,9 +3833,10 @@ const casinoDataEnhanced = [
       "free_spins": "30x"
     },
     "verification": {
-      "status": "needs_verification",
+      "status": "closed",
       "last_verified": "2026-03-05",
-      "confidence": "low"
+      "confidence": "low",
+      "last_checked": "2026-04-27T14:59:45.226466Z"
     },
     "trust": {
       "score": 5,
@@ -3795,7 +3852,13 @@ const casinoDataEnhanced = [
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "VortexVault Casino: 100% up to €250 + 50 free spins. New casino, bonus unverified. 35x wagering.",
     "last_updated": "2026-03-05",
-    "url": "NOT_FOUND"
+    "url": "NOT_FOUND",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226468Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "EchoBet Casino",
@@ -3811,9 +3874,10 @@ const casinoDataEnhanced = [
       "free_spins": "35x"
     },
     "verification": {
-      "status": "needs_verification",
+      "status": "closed",
       "last_verified": "2026-03-05",
-      "confidence": "low"
+      "confidence": "low",
+      "last_checked": "2026-04-27T14:59:45.226473Z"
     },
     "trust": {
       "score": 5,
@@ -3829,7 +3893,13 @@ const casinoDataEnhanced = [
     "info": "New online casino. Bonus details pending full verification. Exercise caution.",
     "ai_summary": "EchoBet Casino: 125% up to €350 + 80 free spins. New casino, bonus unverified. 40x wagering.",
     "last_updated": "2026-03-05",
-    "url": "NOT_FOUND"
+    "url": "NOT_FOUND",
+    "defunct": true,
+    "health_status": {
+      "status": "defunct",
+      "last_check": "2026-04-27T14:59:45.226475Z",
+      "error": "DNS_GONE"
+    }
   },
   {
     "casino_name": "Hurmio Casino",
