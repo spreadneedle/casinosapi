@@ -94,21 +94,40 @@ def main():
             'error': health.get('error')
         }
         
-        # Check for consecutive errors (2 days in a row = defunct)
-        if new_status != 'ok' and prev_status != 'ok' and prev_status == new_status:
-            # 2nd day of same error
+        # Determine if this is a hard failure (worthy of defunct marking)
+        hard_failure_codes = ['http_404', 'http_500', 'http_502', 'http_503', 'timeout', 'parking']
+        soft_failure_codes = ['http_403', 'http_405', 'ssl_error']  # Alive but blocking
+        
+        is_hard_failure = new_status in hard_failure_codes
+        is_soft_failure = new_status in soft_failure_codes
+        
+        # Track consecutive HARD failures only (need 3+ days for defunct)
+        consecutive_hard_failures = 0
+        if is_hard_failure:
+            # Count how many days this same hard failure has persisted
+            if prev_status == new_status:
+                prev_consecutive = history.get(slug, {}).get('consecutive_failures', 0)
+                consecutive_hard_failures = prev_consecutive + 1
+            else:
+                consecutive_hard_failures = 1
+        
+        # Mark as defunct only after 3+ days of HARD failures
+        if consecutive_hard_failures >= 3:
             if not casino.get('defunct', False):
                 casino['defunct'] = True
                 casino['verification']['status'] = 'closed'
                 changes['newly_defunct'] += 1
-                changes['errors'].append(f"{casino['casino_name']}: {new_status} (2nd day, marked defunct)")
-        elif new_status != 'ok' and prev_status == 'ok':
-            # First occurrence of error
-            changes['errors'].append(f"{casino['casino_name']}: {new_status} (1st occurrence)")
+                changes['errors'].append(f"{casino['casino_name']}: {new_status} (3+ days hard failure, marked defunct)")
+        elif is_hard_failure and consecutive_hard_failures > 0:
+            # Hard failure but not yet 3 days
+            changes['errors'].append(f"{casino['casino_name']}: {new_status} (day {consecutive_hard_failures}/3)")
+        elif is_soft_failure:
+            # Soft failure (403/405) - note but don't mark defunct
+            if prev_status == 'ok':
+                changes['errors'].append(f"{casino['casino_name']}: {new_status} (geo-block/method-block, not defunct)")
         elif new_status == 'ok' and prev_status != 'ok':
             # Recovered
             if casino.get('defunct'):
-                # Don't auto-revive defunct casinos, just note recovery
                 changes['recovered'].append(f"{casino['casino_name']}: recovered but still marked defunct")
             else:
                 changes['recovered'].append(f"{casino['casino_name']}: recovered")
@@ -119,9 +138,29 @@ def main():
     # Save updated data
     save_bonus_data(header, casinos)
     
-    # Save current results as history for next run
-    new_history = {r['slug']: {'status': r['status'], 'date': datetime.utcnow().isoformat()} 
-                   for r in health_results}
+    # Save current results as history with consecutive failure tracking
+    new_history = {}
+    for r in health_results:
+        slug = r['slug']
+        status = r['status']
+        
+        # Track consecutive failures for hard errors
+        hard_failure_codes = ['http_404', 'http_500', 'http_502', 'http_503', 'timeout', 'parking']
+        if status in hard_failure_codes:
+            prev_consecutive = history.get(slug, {}).get('consecutive_failures', 0)
+            if history.get(slug, {}).get('status') == status:
+                consecutive = prev_consecutive + 1
+            else:
+                consecutive = 1
+        else:
+            consecutive = 0
+        
+        new_history[slug] = {
+            'status': status,
+            'date': datetime.utcnow().isoformat(),
+            'consecutive_failures': consecutive
+        }
+    
     save_history(new_history)
     
     # Print summary for commit message
