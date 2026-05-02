@@ -4068,8 +4068,8 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "Miami luxury jackpots theme. MGA licensed with 200% match.",
-    "ai_summary": "Miami Dice Casino: 200% up to €100 + 50 free spins. Miami-themed MGA casino.",
+    "info": "The welcome bonus at Miami Dice Casino requires players to wager the bonus amount 35 times before any withdrawal can be processed. Free spins winnings are also subject to the same 35x wagering requirement. For example, if you deposit €100 and receive the full €200 bonus, you'll need to wager €7,000 (€200 × 35) to clear the bonus. Players should review the full terms and conditions, including game contributions, maximum bet limits, and time restrictions that apply to this promotional offer.",
+    "ai_summary": "Miami Dice Casino offers new players a 200% match bonus up to €100 plus 50 free spins on their first deposit. Both the bonus funds and free spin winnings carry a 35x wagering requirement that must be completed before withdrawal. This welcome package provides up to €300 in total playing value (€100 deposit + €200 bonus) for eligible new customers.",
     "last_updated": "2026-02-16",
     "url": "https://www.miamidice.com",
     "health_status": {
@@ -4142,8 +4142,8 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "Classic casino. MGA licensed. Reliable and established operator.",
-    "ai_summary": "Spin Casino: 100% up to €400. Classic reliable MGA casino.",
+    "info": "The welcome bonus at Spin Casino matches your first deposit at 100% up to a maximum of €400, providing substantial extra playing funds for new players. Players must wager the bonus amount 35 times before any winnings can be withdrawn. This wagering requirement applies solely to the bonus portion, not the deposit. The offer does not include free spins and focuses exclusively on bonus cash for eligible casino games.",
+    "ai_summary": "Spin Casino offers new players a 100% match bonus up to €400 on their first deposit. The bonus comes with a 35x wagering requirement on the bonus amount, which must be completed before withdrawals can be made. This is a deposit-only bonus with no free spins included.",
     "last_updated": "2026-02-16",
     "url": "https://www.spincasino.com",
     "health_status": {
@@ -4179,8 +4179,8 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "Sports + casino hybrid. MGA licensed sportsbook and casino.",
-    "ai_summary": "10Bet Casino: 100% up to €100. Sportsbook casino hybrid with MGA license.",
+    "info": "The welcome bonus at 10Bet Casino matches your first deposit at 100% up to a maximum of €100. Players must wager the bonus amount 35 times before any winnings can be withdrawn. The bonus is credited automatically upon making a qualifying first deposit. Standard terms and conditions apply, including game weighting contributions and maximum bet limits during wagering.",
+    "ai_summary": "10Bet Casino offers new players a 100% match bonus up to €100 on their first deposit. The bonus carries a 35x wagering requirement that must be completed before withdrawal. This straightforward welcome offer provides a solid starting bankroll for new players.",
     "last_updated": "2026-02-16",
     "url": "https://www.10bet.com",
     "health_status": {
@@ -4288,8 +4288,8 @@ const casinoDataEnhanced = [
     "geo_restriction": {
       "vpn_friendly": true
     },
-    "info": "Ruhtinas Casino's welcome bonus provides players with up to 20% cashback alongside 300 free spins. The cashback portion comes with no wagering requirements, offering immediate value to players. Free spins winnings must be wagered 10 times before withdrawal, which is considerably lower than industry standard requirements. This dual-component bonus structure appeals to both slot enthusiasts and players looking for risk mitigation through cashback rewards.",
-    "ai_summary": "Ruhtinas Casino offers a reward-focused welcome package featuring up to 20% cashback combined with 300 free spins. The cashback has no wagering requirements, while free spins carry a reasonable 10x wagering requirement, making this an attractive offer for players seeking lower playthrough conditions.",
+    "info": "Ruhtinas Casino's welcome offer combines up to 20% cashback with 300 free spins, giving new players multiple ways to boost their gameplay. The cashback carries 10x wagering requirements, while the 300 free spins also require 10x wagering on winnings. This dual-bonus structure appeals to players seeking both immediate spin value and the security of cashback rewards. Players should complete the 10x wagering on both components before requesting withdrawals.",
+    "ai_summary": "Ruhtinas Casino offers a dual-component welcome package featuring up to 20% cashback plus 300 free spins. Both the cashback and free spins come with 10x wagering requirements that must be met before withdrawals. This combination provides players with both bonus spins and a safety net through the cashback feature.",
     "last_updated": "2026-03-25",
     "url": "https://www.ruhtinascasino.fi",
     "health_status": {
