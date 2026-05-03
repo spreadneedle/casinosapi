@@ -90,7 +90,7 @@ def main():
         casino['health_status'] = {
             'status': new_status,
             'last_check': datetime.utcnow().isoformat() + 'Z',
-            'http_code': health.get('http_code'),
+            'http_code': int(health.get('http_code', 0)) if health.get('http_code') else None,
             'error': health.get('error')
         }
         

@@ -72,8 +72,8 @@ check_one() {
         status="http_${http_code}"
     fi
 
-    # Write JSON result
-    printf '{"slug":"%s","url":"%s","status":"%s","http_code":%s,"final_url":"%s","ssl_verify":%s}\n' \
+    # Write JSON result (http_code as string to avoid leading-zero issues)
+    printf '{"slug":"%s","url":"%s","status":"%s","http_code":"%s","final_url":"%s","ssl_verify":%s}\n' \
         "$slug" "$url" "$status" "$http_code" "$final_url" "$ssl_verify" > "$TMPDIR/$idx.json"
 }
 export -f check_one
