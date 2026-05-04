@@ -70,6 +70,7 @@ def main():
     changes = {
         'updated': 0,
         'newly_defunct': 0,
+        'blocked': 0,
         'errors': [],
         'recovered': []
     }
@@ -96,7 +97,7 @@ def main():
         
         # Determine if this is a hard failure (worthy of defunct marking)
         hard_failure_codes = ['http_404', 'http_500', 'http_502', 'http_503', 'timeout', 'parking']
-        soft_failure_codes = ['http_403', 'http_405', 'ssl_error']  # Alive but blocking
+        soft_failure_codes = ['blocked', 'http_403', 'http_405', 'ssl_error']  # Alive but blocking
         
         is_hard_failure = new_status in hard_failure_codes
         is_soft_failure = new_status in soft_failure_codes
@@ -122,9 +123,10 @@ def main():
             # Hard failure but not yet 3 days
             changes['errors'].append(f"{casino['casino_name']}: {new_status} (day {consecutive_hard_failures}/3)")
         elif is_soft_failure:
-            # Soft failure (403/405) - note but don't mark defunct
+            # Soft failure (blocked/403/405/ssl) - note but don't mark defunct
             if prev_status == 'ok':
-                changes['errors'].append(f"{casino['casino_name']}: {new_status} (geo-block/method-block, not defunct)")
+                changes['blocked'] += 1
+                changes['errors'].append(f"{casino['casino_name']}: {new_status} (blocked, not defunct)")
         elif new_status == 'ok' and prev_status != 'ok':
             # Recovered
             if casino.get('defunct'):

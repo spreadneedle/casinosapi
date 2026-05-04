@@ -36,10 +36,13 @@ check_one() {
         return
     fi
 
-    # Curl with short timeout, follow redirects
+    # Curl with browser-like headers, short timeout, follow redirects
     local response http_code final_url ssl_verify
     response=$(curl -sL -o /dev/null \
         -w "HTTP_CODE:%{http_code}|FINAL_URL:%{url_effective}|SSL_VERIFY:%{ssl_verify_result}" \
+        -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+        -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
+        -H "Accept-Language: en-US,en;q=0.9" \
         --max-time "$TIMEOUT" \
         --connect-timeout 3 \
         "$url" 2>&1 || echo "TIMEOUT")
@@ -68,6 +71,9 @@ check_one() {
         status="parking"
     elif [[ "$ssl_verify" != "0" ]]; then
         status="ssl_error"
+    elif [[ "$http_code" == "403" || "$http_code" == "405" || "$http_code" == "415" ]]; then
+        # Bot/WAF block — site is up but rejecting our request
+        status="blocked"
     else
         status="http_${http_code}"
     fi
@@ -95,6 +101,7 @@ echo "]" >> "$RESULTS_FILE"
 
 # Count results
 OK_COUNT=$(jq '[.[] | select(.status == "ok")] | length' "$RESULTS_FILE")
-ERROR_COUNT=$(jq '[.[] | select(.status != "ok" and .status != "defunct")] | length' "$RESULTS_FILE")
+BLOCKED_COUNT=$(jq '[.[] | select(.status == "blocked")] | length' "$RESULTS_FILE")
+ERROR_COUNT=$(jq '[.[] | select(.status != "ok" and .status != "defunct" and .status != "blocked")] | length' "$RESULTS_FILE")
 
-echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] Health check complete. OK: $OK_COUNT, Errors/Timeouts: $ERROR_COUNT"
+echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] Health check complete. OK: $OK_COUNT, Blocked: $BLOCKED_COUNT, Errors: $ERROR_COUNT"
