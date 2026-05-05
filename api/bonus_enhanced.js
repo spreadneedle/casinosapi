@@ -4372,6 +4372,81 @@ const casinoDataEnhanced = [
       "http_code": 200,
       "error": null
     }
+  },
+  {
+    "casino_name": "Eagle Casino & Sports",
+    "slug": "eagle-casino-sports",
+    "bonus": "50 free spins",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": null,
+      "free_spins": 50
+    },
+    "wagering": {
+      "bonus": "n/a",
+      "free_spins": "n/a"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-05-05",
+      "confidence": "medium"
+    },
+    "trust": {
+      "score": 7,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": false,
+      "restricted_countries": [
+        "USA (Michigan only)"
+      ]
+    },
+    "info": "Eagle Casino & Sports is Michigan's online casino and sportsbook platform. New players receive 50 free spins upon registration. The platform offers both casino games and sports betting. Licensed and regulated by the Michigan Gaming Control Board. Available only to players physically located in Michigan.",
+    "ai_summary": "Eagle Casino & Sports offers new Michigan players 50 free spins. This US-focused platform combines online casino games with sportsbook betting. Available exclusively in Michigan with state-regulated operations.",
+    "last_updated": "2026-05-05T09:40:18.838040",
+    "url": "https://playeagle.com",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-05-05T09:40:18.838045Z",
+      "http_code": 200
+    }
+  },
+  {
+    "casino_name": "CasinoCasino.com",
+    "slug": "casinocasino-com",
+    "bonus": "Double bonus - 100% up to €100",
+    "bonus_structure": {
+      "percentage": 100,
+      "max_amount": 100,
+      "free_spins": null
+    },
+    "wagering": {
+      "bonus": "40x",
+      "free_spins": "n/a"
+    },
+    "verification": {
+      "status": "verified",
+      "last_verified": "2026-05-05",
+      "confidence": "high"
+    },
+    "trust": {
+      "score": 8,
+      "max": 10,
+      "warnings": []
+    },
+    "geo_restriction": {
+      "vpn_friendly": false
+    },
+    "info": "CasinoCasino.com is an established online casino operated by L&L Europe Ltd. Licensed by the Malta Gaming Authority (MGA), Swedish Gambling Authority (Spelinspektionen), and UK Gambling Commission. Features a 'double bonus' welcome offer with live casino and sportsbook options.",
+    "ai_summary": "CasinoCasino.com offers a 100% welcome bonus up to €100 with 40x wagering. Licensed by MGA, Spelinspektionen, and UKGC. Features live casino, sportsbook, and games from top providers.",
+    "last_updated": "2026-05-05T09:40:18.838054",
+    "url": "https://www.casinocasino.com",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-05-05T09:40:18.838055Z",
+      "http_code": 200
+    }
   }
 ];
 
