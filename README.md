@@ -1,4 +1,4 @@
-# GrokCasino.online - AI-Optimized Casino Bonus API
+# CasinosAPI.com - AI-Optimized Casino Bonus API
 
 **The world's first casino bonus database optimized for AI consumption.**
 

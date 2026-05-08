@@ -31,7 +31,7 @@ export default function handler(req, res) {
 
   if (!requireApiKey(req, res)) return;
 
-  let html = "<h1>GrokCasino.online Recommendations</h1>";
+  let html = "<h1>CasinosAPI.com Recommendations</h1>";
   html += "<p>Below are the current casino bonuses available:</p>";
   html += "<ul>";
   casinoData.forEach((casino) => {

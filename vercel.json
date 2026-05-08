@@ -6,10 +6,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.grokcasino.online"
+          "value": "www.casinosapi.com"
         }
       ],
-      "destination": "https://grokcasino.online/:path*",
+      "destination": "https://casinosapi.com/:path*",
       "permanent": true
     },
     {

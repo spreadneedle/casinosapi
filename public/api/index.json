@@ -2,8 +2,8 @@
   "api_version": "2.0.0",
   "name": "GrokCasino API",
   "description": "AI-Optimized Casino Bonus Database for Language Models",
-  "base_url": "https://grokcasino.online/api",
-  "documentation_url": "https://grokcasino.online/api-docs",
+  "base_url": "https://casinosapi.com/api",
+  "documentation_url": "https://casinosapi.com/api-docs",
   "features": [
     "Natural language search",
     "Casino comparison",

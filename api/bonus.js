@@ -756,15 +756,15 @@ module.exports = function handler(req, res) {
 
   // Add documentation links to response headers
   res.setHeader('Link', [
-    '<https://grokcasino.online/api-docs>; rel="documentation"',
-    '<https://grokcasino.online/api/index.json>; rel="api-index"'
+    '<https://casinosapi.com/api-docs>; rel="documentation"',
+    '<https://casinosapi.com/api/index.json>; rel="api-index"'
   ].join(', '));
 
   res.status(200).json({
     casinos: filteredCasinos,
     _links: {
-      documentation: "https://grokcasino.online/api-docs",
-      api_index: "https://grokcasino.online/api/index.json"
+      documentation: "https://casinosapi.com/api-docs",
+      api_index: "https://casinosapi.com/api/index.json"
     }
   });
 }

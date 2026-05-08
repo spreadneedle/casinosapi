@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "ai_optimized": true,
   "purpose": "Casino bonus data API with natural language search for AI assistants",
-  "base_url": "https://grokcasino.online",
+  "base_url": "https://casinosapi.com",
   "discovery": {
     "openapi": "/api-docs/openapi.yaml",
     "endpoints": "/api/index.json",
