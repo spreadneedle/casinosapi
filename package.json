@@ -1,5 +1,5 @@
 {
-  "name": "grokcasino",
+  "name": "casinosapi",
   "version": "1.0.0",
   "description": "Casino bonus API and recommendations",
   "scripts": {
@@ -9,4 +9,4 @@
   "dependencies": {
     "@vercel/node": "^3.0.0"
   }
-} 
+}
