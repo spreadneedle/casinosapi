@@ -71,7 +71,7 @@ def fetch_page_content(url, timeout=10):
     """Get page HTML for validation"""
     try:
         resp = requests.get(url, timeout=timeout, headers={
-            'User-Agent': 'Mozilla/5.0 (compatible; GrokCasinoBot/1.0)'
+            'User-Agent': 'Mozilla/5.0 (compatible; CasinosAPIBot/1.0)'
         })
         if resp.status_code == 200:
             return resp.text

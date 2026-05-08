@@ -9,7 +9,7 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 cd "$REPO_ROOT"
 
-echo "=== GrokCasino Health Check Automation ==="
+echo "=== CasinosAPI Health Check Automation ==="
 echo "Started: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 echo ""
 

@@ -11,7 +11,7 @@ TELEGRAM_CHAT="5024563450"
 
 cd "$REPO_ROOT"
 
-echo "=== GrokCasino Auto-Discovery ==="
+echo "=== CasinosAPI Auto-Discovery ==="
 echo "Started: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 echo ""
 
