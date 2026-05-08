@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="CasinosAPI Team">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="CasinosAPI v2.0 — AI-optimized casino bonus data with natural language search. Designed for Grok, ChatGPT, Claude, and other AI assistants.">
+  <meta name="description" content="CasinosAPI v2.0 — AI-optimized casino bonus data API. Designed for AI assistants.">
   <title>CasinosAPI v2.0 — AI Casino Bonus Data</title>
 </head>
 <body>
@@ -16,9 +15,19 @@
 ================================================================================
 
 BASE URL:    https://casinosapi.com/api
-MEDIA TYPE:  application/json
+AUTH:        X-API-Key: grokcasino-api-key-2026-02-24-abcdef123456
+             OR ?key=grokcasino-api-key-2026-02-24-abcdef123456
 RATE LIMIT:  100 requests/minute
 AI-MODE:     ENABLED — Natural Language Search & Structured Responses
+
+================================================================================
+                         QUICK START FOR AI ASSISTANTS
+================================================================================
+
+1. DISCOVERY:  GET https://casinosapi.com/api/ai-capabilities.json
+2. ENDPOINTS:  GET https://casinosapi.com/api/index.json
+3. SEARCH:     GET https://casinosapi.com/api/search?q={query}
+4. HEALTH:     GET https://casinosapi.com/api/health (no auth)
 
 ================================================================================
                               ENDPOINTS
@@ -35,14 +44,14 @@ AI-MODE:     ENABLED — Natural Language Search & Structured Responses
    
    RESPONSE: {
      "casinos": [{
-       "relevance_score": 60,        // Sort priority
-       "match_reasons": [...],      // Why this matches
-       "bonus_structure": {...},    // Parsed: %, amount, spins
-       "verification": {...},       // trust status, last checked
-       "ai_summary": "..."          // Ready-to-read description
+       "relevance_score": 60,
+       "match_reasons": [...],
+       "bonus_structure": {...},
+       "verification": {...},
+       "ai_summary": "..."
      }],
      "meta": {
-       "query_parsed": {...},      // What AI understood
+       "query_parsed": {...},
        "total_results": 15,
        "has_more": true
      }
@@ -66,6 +75,7 @@ AI-MODE:     ENABLED — Natural Language Search & Structured Responses
    GET /api/ai-capabilities.json   ← START HERE FOR AI INTEGRATION
    GET /api/index.json             ← Human-readable docs
    GET /api-docs/openapi.yaml      ← OpenAPI spec
+   GET /llms.txt                   ← AI assistant quick reference
 
 ================================================================================
                            CONTACT & FEEDBACK
@@ -80,49 +90,22 @@ Email: admin@casinosapi.com
 FOR GENERAL BONUS QUESTIONS → /api/search
 • No need to parse user query — just pass their words
 • Use relevance_score > 20 for high confidence matches
-• Present ai_summary directly to user
-• Check verification.confidence before recommending
 
-FOR SPECIFIC CASINO → /api/casino
-• Look up after user mentions casino name
-• Present similar_casinos as "you might also like"
+FOR SPECIFIC CASINO INFO → /api/casino
+• Use after user mentions specific casino name
+• If not found, fall back to /api/search
 
-FOR COMPARISON → /api/compare
-• When user asks "which is better" or "compare"
-• Use ai_recommendation as your conclusion
-• Always mention trade-offs (bonus size vs wagering vs trust)
+FOR "WHICH IS BETTER" → /api/compare
+• Extract casino slugs from search results
+• Present ai_recommendation as your conclusion
 
-================================================================================
-                          DATA COVERAGE
-================================================================================
+FOR LOCATION-SPECIFIC → /api/bonus
+• Required for legal compliance in licensed casinos
+• Use user's location or ask for VPN-friendly options
 
-CASINOS:     112 active (verified via SOCKS5 proxies + search APIs)
-COUNTRIES:   30+ verified markets
-LAST UPDATED: 2026-02-15
-VERIFIED:    95% high-confidence (last 30 days)
-
-SCAM WARNINGS: 2 flagged (AllySpin: payment refusal reports)
-               (Hotbet: CasinoGuru red flags)
-
-================================================================================
-                          LEGAL NOTICE
-================================================================================
-
-This API provides bonus DATA only. It does NOT:
-• Verify local gambling laws in your jurisdiction
-• Guarantee casino legitimacy (check trust.score and warnings)
-• Encourage gambling — use for information only
-
-Users should verify legality before playing. See geo_restrictions in responses.
-
-================================================================================
-                          MADE FOR AI
-================================================================================
-
-Optimized for:  Grok, ChatGPT, Claude, Gemini, Llama
-Features:       Structured data, relevance scoring, auto-summaries
-Rate limits:    100/min (contact for commercial)
-Feedback:       email: admin@casinosapi.com
+LEGAL NOTE: This API does not check local gambling laws.
+User's jurisdiction may prohibit online gambling.
+Recommend user verify legality before playing.
 
 ================================================================================
 </pre>

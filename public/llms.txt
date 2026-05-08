@@ -1,0 +1,80 @@
+# CasinosAPI
+
+> AI-optimized casino bonus data API with natural language search
+
+## API Overview
+
+CasinosAPI provides structured casino bonus data designed for AI assistants. All endpoints return JSON with AI-friendly summaries and relevance scoring.
+
+Base URL: https://casinosapi.com/api
+Authentication: X-API-Key header or ?key= query parameter
+Default key: grokcasino-api-key-2026-02-24-abcdef123456
+Rate limit: 100 requests/minute
+
+## Endpoints
+
+### GET /search
+
+Natural language search for casino bonuses. This is the primary endpoint.
+
+Parameters:
+- q (required): Natural language query
+- location (optional): ISO country code (FI, SE, DE, etc.)
+- limit (optional): Max results, default 20
+
+Examples:
+- /search?q=200% bonus
+- /search?q=no wagering spins&location=FI
+- /search?q=under €500 with 100 spins
+
+Response includes relevance_score, match_reasons, and parsed query parameters.
+
+### GET /casino
+
+Get detailed information about a specific casino.
+
+Parameters:
+- slug: Casino slug (e.g., "cazeus-casino")
+- name: Casino name for partial matching
+
+### GET /compare
+
+Compare multiple casinos side-by-side.
+
+Parameters:
+- casinos: Comma-separated slugs
+
+Returns ai_recommendation and quick_pick options.
+
+### GET /bonus
+
+List all bonuses for a location.
+
+Parameters:
+- location (required): ISO country code
+
+### GET /health
+
+Health check. No authentication required.
+
+## Data Schema
+
+Each casino includes:
+- casino_name, slug, bonus
+- bonus_structure: {percentage, max_amount, free_spins}
+- wagering: {bonus, free_spins}
+- verification: {status, confidence, last_verified}
+- trust: {score, warnings}
+- ai_summary: Pre-computed natural language description
+
+## Best Practices
+
+- Use /search for any user question about bonuses
+- Check verification.confidence before recommending
+- Mention trust.warnings if trust.score < 7
+- Use /compare when user asks "which is better"
+- Filter by location for legal compliance
+
+## Contact
+
+admin@casinosapi.com
