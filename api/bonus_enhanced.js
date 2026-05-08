@@ -1,4 +1,4 @@
-// Enhanced GrokCasino API - AI-Optimized Data
+// Enhanced CasinosAPI API - AI-Optimized Data
 // Generated: 2026-03-25T12:57:16.493Z
 // Casinos: 128
 

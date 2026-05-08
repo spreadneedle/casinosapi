@@ -1,5 +1,5 @@
 {
-  "api_name": "GrokCasino",
+  "api_name": "CasinosAPI",
   "version": "2.0.0",
   "ai_optimized": true,
   "purpose": "Casino bonus data API with natural language search for AI assistants",
