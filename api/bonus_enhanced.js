@@ -1,6 +1,6 @@
 // Enhanced CasinosAPI API - AI-Optimized Data
-// Generated: 2026-03-25T12:57:16.493Z
-// Casinos: 128
+// Generated: 2026-05-11T07:02:12.918261Z
+// Casinos: 125
 
 const casinoDataEnhanced = [
   {
@@ -4449,6 +4449,226 @@ const casinoDataEnhanced = [
       "http_code": 200,
       "error": null
     }
+  },
+  {
+    "casino_name": "New Real Money Online Casinos This Week: Top New Casino Site",
+    "slug": "new-real-money-online-casinos-this-week-top-new-casino-site",
+    "url": "https://www.rotowire.com/article/best-new-us-online-casinos-for-2026-newest-real-money-options-114038",
+    "bonus": "Contact casino for current offers",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": null,
+      "free_spins": null
+    },
+    "wagering": {
+      "bonus": "Check terms",
+      "free_spins": "Check terms"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_checked": "2026-05-11T07:02:12.918035Z",
+      "verified_by": "auto-discovery"
+    },
+    "trust": {
+      "rating": null,
+      "total_reviews": 0,
+      "warning_flags": []
+    },
+    "geo_restriction": {
+      "allowed": [],
+      "restricted": []
+    },
+    "info": {
+      "payment_methods": [],
+      "currencies": [],
+      "languages": [],
+      "live_chat": null,
+      "mobile_app": null
+    },
+    "ai_summary": "New Real Money Online Casinos This Week: Top New Casino Site: Auto-discovered May 2026. Verification pending. None",
+    "last_updated": "2026-05-11T07:02:12.918095Z",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-05-11T07:02:12.918106Z"
+    },
+    "auto_discovered": true,
+    "discovery_confidence": 1.0
+  },
+  {
+    "casino_name": "Best New Online Casinos US (May 10, 2026): Top Real Money Si",
+    "slug": "best-new-online-casinos-us-may-10-2026-top-real-money-si",
+    "url": "https://bookies.com/news/top-new-online-casinos-us-may-10-2026",
+    "bonus": "500 Free Spins",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": null,
+      "free_spins": null
+    },
+    "wagering": {
+      "bonus": "Check terms",
+      "free_spins": "Check terms"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_checked": "2026-05-11T07:02:12.918116Z",
+      "verified_by": "auto-discovery"
+    },
+    "trust": {
+      "rating": null,
+      "total_reviews": 0,
+      "warning_flags": []
+    },
+    "geo_restriction": {
+      "allowed": [],
+      "restricted": []
+    },
+    "info": {
+      "payment_methods": [],
+      "currencies": [],
+      "languages": [],
+      "live_chat": null,
+      "mobile_app": null
+    },
+    "ai_summary": "Best New Online Casinos US (May 10, 2026): Top Real Money Si: Auto-discovered May 2026. Verification pending. 500 Free Spins",
+    "last_updated": "2026-05-11T07:02:12.918127Z",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-05-11T07:02:12.918129Z"
+    },
+    "auto_discovered": true,
+    "discovery_confidence": 1.0
+  },
+  {
+    "casino_name": "New Online Casinos for 2026 | Top 3 Casinos to Join in 2026",
+    "slug": "new-online-casinos-for-2026-top-3-casinos-to-join-in-2026",
+    "url": "https://www.johnnybet.com/new-online-casinos-for",
+    "bonus": "20 free spins",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": null,
+      "free_spins": null
+    },
+    "wagering": {
+      "bonus": "Check terms",
+      "free_spins": "Check terms"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_checked": "2026-05-11T07:02:12.918139Z",
+      "verified_by": "auto-discovery"
+    },
+    "trust": {
+      "rating": null,
+      "total_reviews": 0,
+      "warning_flags": []
+    },
+    "geo_restriction": {
+      "allowed": [],
+      "restricted": []
+    },
+    "info": {
+      "payment_methods": [],
+      "currencies": [],
+      "languages": [],
+      "live_chat": null,
+      "mobile_app": null
+    },
+    "ai_summary": "New Online Casinos for 2026 | Top 3 Casinos to Join in 2026: Auto-discovered May 2026. Verification pending. 20 free spins",
+    "last_updated": "2026-05-11T07:02:12.918147Z",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-05-11T07:02:12.918149Z"
+    },
+    "auto_discovered": true,
+    "discovery_confidence": 1.0
+  },
+  {
+    "casino_name": "Best Bitcoin Casinos with Instant Withdrawals in 2026",
+    "slug": "best-bitcoin-casinos-with-instant-withdrawals-in-2026",
+    "url": "https://tokenist.com/crypto-casinos/best-bitcoin-casinos-with-instant-withdrawals",
+    "bonus": "200% Up To €5000",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": null,
+      "free_spins": null
+    },
+    "wagering": {
+      "bonus": "Check terms",
+      "free_spins": "Check terms"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_checked": "2026-05-11T07:02:12.918153Z",
+      "verified_by": "auto-discovery"
+    },
+    "trust": {
+      "rating": null,
+      "total_reviews": 0,
+      "warning_flags": []
+    },
+    "geo_restriction": {
+      "allowed": [],
+      "restricted": []
+    },
+    "info": {
+      "payment_methods": [],
+      "currencies": [],
+      "languages": [],
+      "live_chat": null,
+      "mobile_app": null
+    },
+    "ai_summary": "Best Bitcoin Casinos with Instant Withdrawals in 2026: Auto-discovered May 2026. Verification pending. 200% Up To €5000",
+    "last_updated": "2026-05-11T07:02:12.918160Z",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-05-11T07:02:12.918162Z"
+    },
+    "auto_discovered": true,
+    "discovery_confidence": 1.0
+  },
+  {
+    "casino_name": "Best No KYC Crypto Casinos in 2026 - Top BTC Casinos Ranked",
+    "slug": "best-no-kyc-crypto-casinos-in-2026-top-btc-casinos-ranked",
+    "url": "https://best.casinosfreefromkyc.com",
+    "bonus": "470% up to $4",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": null,
+      "free_spins": null
+    },
+    "wagering": {
+      "bonus": "Check terms",
+      "free_spins": "Check terms"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_checked": "2026-05-11T07:02:12.918169Z",
+      "verified_by": "auto-discovery"
+    },
+    "trust": {
+      "rating": null,
+      "total_reviews": 0,
+      "warning_flags": []
+    },
+    "geo_restriction": {
+      "allowed": [],
+      "restricted": []
+    },
+    "info": {
+      "payment_methods": [],
+      "currencies": [],
+      "languages": [],
+      "live_chat": null,
+      "mobile_app": null
+    },
+    "ai_summary": "Best No KYC Crypto Casinos in 2026 - Top BTC Casinos Ranked: Auto-discovered May 2026. Verification pending. 470% up to $4",
+    "last_updated": "2026-05-11T07:02:12.918175Z",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-05-11T07:02:12.918178Z"
+    },
+    "auto_discovered": true,
+    "discovery_confidence": 1.0
   }
 ];
 
