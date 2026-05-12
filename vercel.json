@@ -99,6 +99,18 @@
     {
       "source": "/api/casinos",
       "destination": "/api/casinos.js"
+    },
+    {
+      "source": "/api/bot",
+      "destination": "/api/bot.js"
+    },
+    {
+      "source": "/mini-app",
+      "destination": "/public/mini-app/index.html"
+    },
+    {
+      "source": "/mini-app/:path*",
+      "destination": "/public/mini-app/index.html"
     }
   ]
 }
