@@ -86,17 +86,11 @@
     }
     .trust-badge.medium { background: #5d4a00; color: #ffc107; }
     .trust-badge.low { background: #5d1a1a; color: #ef5350; }
-    .health-badge {
-      font-size: 10px;
-      padding: 2px 6px;
-      border-radius: 8px;
-      margin-left: 6px;
-      font-weight: 600;
-    }
-    .health-badge.ok { background: #1a3d1a; color: #4caf50; }
-    .health-badge.error { background: #3d331a; color: #ff9800; }
-    .health-badge.defunct { background: #3d1a1a; color: #f44336; }
     .card-header { position: relative; }
+    .casino-card { border-left: 4px solid transparent; }
+    .casino-card.status-ok { border-left-color: #4caf50; }
+    .casino-card.status-issue { border-left-color: #ff9800; }
+    .casino-card.status-defunct { border-left-color: #f44336; opacity: 0.55; }
     .bonus-line {
       font-size: 14px;
       color: var(--tg-theme-accent-text-color, #7cb342);
@@ -374,13 +368,13 @@
         const maxBonus = c.bonus_structure?.max_amount ? `€${c.bonus_structure.max_amount}` : '';
         const freeSpins = c.bonus_structure?.free_spins ? `${c.bonus_structure.free_spins} FS` : '';
         const health = getHealthStatus(c);
-        const opacity = c.defunct ? 'opacity: 0.6;' : '';
+        const statusClass = c.defunct ? 'status-defunct' : (c.health_status?.status === 'ok' ? 'status-ok' : 'status-issue');
         const usFlag = isUSCasino(c) ? '🇺🇸 ' : '';
 
         return `
-          <div class="casino-card" onclick="showDetail('${c.slug}')" style="${opacity}">
+          <div class="casino-card ${statusClass}" onclick="showDetail('${c.slug}')">
             <div class="card-header">
-              <div class="casino-name">${usFlag}${c.casino_name}<span class="health-badge ${health.class}">${health.label}</span></div>
+              <div class="casino-name">${usFlag}${c.casino_name}</div>
               <div class="trust-badge ${trustClass}">${trustLabel}</div>
             </div>
             <div class="bonus-line">${c.bonus}</div>
