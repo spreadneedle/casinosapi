@@ -228,6 +228,7 @@
     <div class="filters" id="filters">
       <div class="filter-chip active" data-filter="all">All</div>
       <div class="filter-chip" data-filter="active">Active</div>
+      <div class="filter-chip" data-filter="usa">🇺🇸 USA</div>
       <div class="filter-chip" data-filter="bonus">Has Bonus</div>
       <div class="filter-chip" data-filter="freespins">Free Spins</div>
       <div class="filter-chip" data-filter="low-wager">Low Wager</div>
@@ -297,6 +298,12 @@
       return { label: 'Issue', class: 'error' };
     }
 
+    function isUSCasino(c) {
+      return c.casino_name.toLowerCase().includes(', usa') ||
+             c.casino_name.toLowerCase().includes(' usa') ||
+             c.casino_name.toLowerCase().includes(' us ');
+    }
+
     function filterAndSort(casinos) {
       let filtered = casinos;
 
@@ -326,6 +333,9 @@
           break;
         case 'active':
           filtered = filtered.filter(c => !c.defunct && c.health_status?.status === 'ok');
+          break;
+        case 'usa':
+          filtered = filtered.filter(c => isUSCasino(c));
           break;
       }
 
@@ -365,11 +375,12 @@
         const freeSpins = c.bonus_structure?.free_spins ? `${c.bonus_structure.free_spins} FS` : '';
         const health = getHealthStatus(c);
         const opacity = c.defunct ? 'opacity: 0.6;' : '';
+        const usFlag = isUSCasino(c) ? '🇺🇸 ' : '';
 
         return `
           <div class="casino-card" onclick="showDetail('${c.slug}')" style="${opacity}">
             <div class="card-header">
-              <div class="casino-name">${c.casino_name}<span class="health-badge ${health.class}">${health.label}</span></div>
+              <div class="casino-name">${usFlag}${c.casino_name}<span class="health-badge ${health.class}">${health.label}</span></div>
               <div class="trust-badge ${trustClass}">${trustLabel}</div>
             </div>
             <div class="bonus-line">${c.bonus}</div>
@@ -396,8 +407,10 @@
 
       const detailHealth = getHealthStatus(casino);
 
+      const detailUSFlag = isUSCasino(casino) ? '🇺🇸 ' : '';
+
       content.innerHTML = `
-        <div class="detail-title">${casino.casino_name} <span class="health-badge ${detailHealth.class}">${detailHealth.label}</span></div>
+        <div class="detail-title">${detailUSFlag}${casino.casino_name} <span class="health-badge ${detailHealth.class}">${detailHealth.label}</span></div>
         <div class="detail-bonus">${casino.bonus}</div>
 
         <div class="detail-section">
