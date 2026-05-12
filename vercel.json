@@ -102,15 +102,11 @@
     },
     {
       "source": "/mini-app",
-      "destination": "/mini-app/index.html"
+      "destination": "/public/mini-app/index.html"
     },
     {
       "source": "/mini-app/:path*",
-      "destination": "/mini-app/index.html"
-    },
-    {
-      "source": "/public/mini-app",
-      "destination": "/mini-app/index.html"
+      "destination": "/public/mini-app/index.html"
     }
   ]
 }
