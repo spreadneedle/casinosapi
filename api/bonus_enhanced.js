@@ -4682,4 +4682,5 @@ const casinoDataEnhanced = [
   }
 ];
 
-export default casinoDataEnhanced;
+module.exports = { casinoDataEnhanced };
+module.exports.default = casinoDataEnhanced;
