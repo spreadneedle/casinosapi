@@ -1,4 +1,5 @@
 const data = require('./bonus_enhanced');
+const casinoDataEnhanced = data.default || data.casinoDataEnhanced || [];
 const { requireApiKey } = require('./_auth');
 
 module.exports = function handler(req, res) {
@@ -9,7 +10,7 @@ module.exports = function handler(req, res) {
   if (!requireApiKey(req, res)) return;
 
   try {
-    const casinoDataEnhanced = data.default || [];
+    // Use pre-extracted data
     const { healthy_only, limit = 200 } = req.query;
 
     let casinos = casinoDataEnhanced;
