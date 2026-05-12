@@ -103,6 +103,10 @@
     {
       "source": "/mini-app",
       "destination": "/mini-app/index.html"
+    },
+    {
+      "source": "/mini-app/(.*)",
+      "destination": "/mini-app/index.html"
     }
   ]
 }
