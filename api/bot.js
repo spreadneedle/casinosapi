@@ -5,7 +5,7 @@ const { casinoDataEnhanced } = require('./bonus_enhanced');
 
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const API_KEY = process.env.CASINOS_API_KEY || 'grokcasino-api-key-2026-02-24-abcdef123456';
-const MINI_APP_URL = process.env.MINI_APP_URL || 'https://casinosapi.com/mini-app';
+const MINI_APP_URL = process.env.MINI_APP_URL || 'https://casinosapi.com/bonuses';
 
 module.exports = function handler(req, res) {
   if (req.method !== 'POST') {

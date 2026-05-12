@@ -105,6 +105,10 @@
       "destination": "/api/bot.js"
     },
     {
+      "source": "/bonuses",
+      "destination": "/public/mini-app/index.html"
+    },
+    {
       "source": "/mini-app",
       "destination": "/public/mini-app/index.html"
     },
