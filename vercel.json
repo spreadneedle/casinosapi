@@ -16,6 +16,11 @@
       "source": "/api-docs",
       "destination": "/api-docs/openapi.yaml",
       "permanent": true
+    },
+    {
+      "source": "/bonuses",
+      "destination": "/mini-app",
+      "permanent": false
     }
   ],
   "headers": [
