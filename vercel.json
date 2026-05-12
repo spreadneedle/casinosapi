@@ -98,7 +98,7 @@
     },
     {
       "source": "/api/casinos",
-      "destination": "/api/casinos-list.js"
+      "destination": "/api/casinos.js"
     },
     {
       "source": "/mini-app",
