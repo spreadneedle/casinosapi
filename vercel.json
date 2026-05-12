@@ -99,6 +99,10 @@
     {
       "source": "/api/casinos",
       "destination": "/api/casinos.js"
+    },
+    {
+      "source": "/mini-app",
+      "destination": "/mini-app/index.html"
     }
   ]
 }
