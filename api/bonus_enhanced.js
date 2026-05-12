@@ -35,7 +35,7 @@ const casinoDataEnhanced = [
     "url": "https://www.videoslots.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.215890Z",
+      "last_check": "2026-05-12T00:00:13.362363Z",
       "http_code": 403,
       "error": null
     }
@@ -72,7 +72,7 @@ const casinoDataEnhanced = [
     "url": "https://www.boostcasino.net",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215936Z",
+      "last_check": "2026-05-12T00:00:13.362385Z",
       "http_code": 200,
       "error": null
     }
@@ -109,7 +109,7 @@ const casinoDataEnhanced = [
     "url": "https://pommicasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215945Z",
+      "last_check": "2026-05-12T00:00:13.362393Z",
       "http_code": 200,
       "error": null
     }
@@ -146,7 +146,7 @@ const casinoDataEnhanced = [
     "url": "https://www.bethard.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215950Z",
+      "last_check": "2026-05-12T00:00:13.362398Z",
       "http_code": 200,
       "error": null
     }
@@ -183,7 +183,7 @@ const casinoDataEnhanced = [
     "url": "https://shokki.casino",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215954Z",
+      "last_check": "2026-05-12T00:00:13.362402Z",
       "http_code": 200,
       "error": null
     },
@@ -221,7 +221,7 @@ const casinoDataEnhanced = [
     "url": "https://www.tehokasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215958Z",
+      "last_check": "2026-05-12T00:00:13.362406Z",
       "http_code": 200,
       "error": null
     }
@@ -258,7 +258,7 @@ const casinoDataEnhanced = [
     "url": "https://dazzlehand.net",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215962Z",
+      "last_check": "2026-05-12T00:00:13.362409Z",
       "http_code": 200,
       "error": null
     }
@@ -295,7 +295,7 @@ const casinoDataEnhanced = [
     "url": "https://www.21casino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215965Z",
+      "last_check": "2026-05-12T00:00:13.362413Z",
       "http_code": 200,
       "error": null
     }
@@ -332,7 +332,7 @@ const casinoDataEnhanced = [
     "url": "https://wildrobin.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215969Z",
+      "last_check": "2026-05-12T00:00:13.362416Z",
       "http_code": 200,
       "error": null
     }
@@ -369,7 +369,7 @@ const casinoDataEnhanced = [
     "url": "https://cazeus.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215972Z",
+      "last_check": "2026-05-12T00:00:13.362419Z",
       "http_code": 200,
       "error": null
     }
@@ -406,7 +406,7 @@ const casinoDataEnhanced = [
     "url": "https://www.pelataan.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215975Z",
+      "last_check": "2026-05-12T00:00:13.362422Z",
       "http_code": 200,
       "error": null
     }
@@ -443,7 +443,7 @@ const casinoDataEnhanced = [
     "url": "https://pelikaani.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215979Z",
+      "last_check": "2026-05-12T00:00:13.362425Z",
       "http_code": 200,
       "error": null
     }
@@ -480,7 +480,7 @@ const casinoDataEnhanced = [
     "url": "https://bethallcasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215982Z",
+      "last_check": "2026-05-12T00:00:13.362429Z",
       "http_code": 200,
       "error": null
     }
@@ -516,9 +516,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-02-13",
     "url": "https://larabetcasino.com",
     "health_status": {
-      "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215986Z",
-      "http_code": 200,
+      "status": "http_000",
+      "last_check": "2026-05-12T00:00:13.362432Z",
+      "http_code": 0,
       "error": null
     }
   },
@@ -554,7 +554,7 @@ const casinoDataEnhanced = [
     "url": "https://valhallawins.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215989Z",
+      "last_check": "2026-05-12T00:00:13.362436Z",
       "http_code": 200,
       "error": null
     }
@@ -591,7 +591,7 @@ const casinoDataEnhanced = [
     "url": "https://kingmaker.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215993Z",
+      "last_check": "2026-05-12T00:00:13.362439Z",
       "http_code": 200,
       "error": null
     }
@@ -628,7 +628,7 @@ const casinoDataEnhanced = [
     "url": "https://viperwin3.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.215996Z",
+      "last_check": "2026-05-12T00:00:13.362442Z",
       "http_code": 200,
       "error": null
     }
@@ -665,7 +665,7 @@ const casinoDataEnhanced = [
     "url": "https://www.reddice.com",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216000Z",
+      "last_check": "2026-05-12T00:00:13.362445Z",
       "http_code": 0,
       "error": null
     }
@@ -702,7 +702,7 @@ const casinoDataEnhanced = [
     "url": "https://lempicasino-fi.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216003Z",
+      "last_check": "2026-05-12T00:00:13.362449Z",
       "http_code": 200,
       "error": null
     }
@@ -739,7 +739,7 @@ const casinoDataEnhanced = [
     "url": "https://rx.games",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216007Z",
+      "last_check": "2026-05-12T00:00:13.362452Z",
       "http_code": 200,
       "error": null
     }
@@ -776,7 +776,7 @@ const casinoDataEnhanced = [
     "url": "https://kaahaus.com",
     "health_status": {
       "status": "http_307",
-      "last_check": "2026-05-11T00:00:26.216010Z",
+      "last_check": "2026-05-12T00:00:13.362455Z",
       "http_code": 307,
       "error": null
     }
@@ -813,7 +813,7 @@ const casinoDataEnhanced = [
     "url": "https://betizy.io",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216014Z",
+      "last_check": "2026-05-12T00:00:13.362459Z",
       "http_code": 200,
       "error": null
     }
@@ -850,7 +850,7 @@ const casinoDataEnhanced = [
     "url": "https://slotit.casino",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216017Z",
+      "last_check": "2026-05-12T00:00:13.362462Z",
       "http_code": 200,
       "error": null
     },
@@ -888,7 +888,7 @@ const casinoDataEnhanced = [
     "url": "https://www.casumo.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216021Z",
+      "last_check": "2026-05-12T00:00:13.362465Z",
       "http_code": 200,
       "error": null
     }
@@ -925,7 +925,7 @@ const casinoDataEnhanced = [
     "url": "https://lunu-bet-casino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216024Z",
+      "last_check": "2026-05-12T00:00:13.362468Z",
       "http_code": 200,
       "error": null
     }
@@ -962,7 +962,7 @@ const casinoDataEnhanced = [
     "url": "https://epicbet.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216027Z",
+      "last_check": "2026-05-12T00:00:13.362472Z",
       "http_code": 403,
       "error": null
     }
@@ -999,7 +999,7 @@ const casinoDataEnhanced = [
     "url": "https://www.saletti.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216031Z",
+      "last_check": "2026-05-12T00:00:13.362475Z",
       "http_code": 200,
       "error": null
     }
@@ -1036,7 +1036,7 @@ const casinoDataEnhanced = [
     "url": "https://possu-fi.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216034Z",
+      "last_check": "2026-05-12T00:00:13.362479Z",
       "http_code": 200,
       "error": null
     }
@@ -1073,7 +1073,7 @@ const casinoDataEnhanced = [
     "url": "https://winz.io",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216038Z",
+      "last_check": "2026-05-12T00:00:13.362482Z",
       "http_code": 200,
       "error": null
     }
@@ -1112,7 +1112,7 @@ const casinoDataEnhanced = [
     "defunct": false,
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216042Z",
+      "last_check": "2026-05-12T00:00:13.362485Z",
       "http_code": 200,
       "error": null
     }
@@ -1149,7 +1149,7 @@ const casinoDataEnhanced = [
     "url": "https://www.arcticcasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216046Z",
+      "last_check": "2026-05-12T00:00:13.362488Z",
       "http_code": 200,
       "error": null
     }
@@ -1186,7 +1186,7 @@ const casinoDataEnhanced = [
     "url": "https://www.fruta.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216050Z",
+      "last_check": "2026-05-12T00:00:13.362492Z",
       "http_code": 200,
       "error": null
     }
@@ -1223,7 +1223,7 @@ const casinoDataEnhanced = [
     "url": "https://www.dynabet.com",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216053Z",
+      "last_check": "2026-05-12T00:00:13.362495Z",
       "http_code": 0,
       "error": null
     }
@@ -1260,7 +1260,7 @@ const casinoDataEnhanced = [
     "url": "https://www.budsino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216057Z",
+      "last_check": "2026-05-12T00:00:13.362498Z",
       "http_code": 200,
       "error": null
     }
@@ -1296,9 +1296,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-02-13",
     "url": "https://www.thehighroller.com",
     "health_status": {
-      "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216060Z",
-      "http_code": 403,
+      "status": "ok",
+      "last_check": "2026-05-12T00:00:13.362502Z",
+      "http_code": 200,
       "error": null
     }
   },
@@ -1334,7 +1334,7 @@ const casinoDataEnhanced = [
     "url": "https://taikaspins.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216064Z",
+      "last_check": "2026-05-12T00:00:13.362506Z",
       "http_code": 200,
       "error": null
     }
@@ -1371,7 +1371,7 @@ const casinoDataEnhanced = [
     "url": "https://www.casinovice.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216067Z",
+      "last_check": "2026-05-12T00:00:13.362509Z",
       "http_code": 200,
       "error": null
     }
@@ -1408,7 +1408,7 @@ const casinoDataEnhanced = [
     "url": "https://fatpirate.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216071Z",
+      "last_check": "2026-05-12T00:00:13.362512Z",
       "http_code": 200,
       "error": null
     }
@@ -1445,7 +1445,7 @@ const casinoDataEnhanced = [
     "url": "https://www.qbet.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216074Z",
+      "last_check": "2026-05-12T00:00:13.362516Z",
       "http_code": 200,
       "error": null
     }
@@ -1482,7 +1482,7 @@ const casinoDataEnhanced = [
     "url": "https://trustdice.win",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216077Z",
+      "last_check": "2026-05-12T00:00:13.362519Z",
       "http_code": 403,
       "error": null
     }
@@ -1519,7 +1519,7 @@ const casinoDataEnhanced = [
     "url": "https://joycasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216081Z",
+      "last_check": "2026-05-12T00:00:13.362522Z",
       "http_code": 200,
       "error": null
     }
@@ -1556,7 +1556,7 @@ const casinoDataEnhanced = [
     "url": "https://wildsino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216084Z",
+      "last_check": "2026-05-12T00:00:13.362526Z",
       "http_code": 200,
       "error": null
     }
@@ -1593,7 +1593,7 @@ const casinoDataEnhanced = [
     "url": "https://beonbetcasino.nl",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216087Z",
+      "last_check": "2026-05-12T00:00:13.362529Z",
       "http_code": 200,
       "error": null
     },
@@ -1631,7 +1631,7 @@ const casinoDataEnhanced = [
     "url": "https://betlabelcasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216091Z",
+      "last_check": "2026-05-12T00:00:13.362532Z",
       "http_code": 200,
       "error": null
     }
@@ -1668,7 +1668,7 @@ const casinoDataEnhanced = [
     "url": "DEFUNCT",
     "health_status": {
       "status": "defunct",
-      "last_check": "2026-05-11T00:00:26.216094Z",
+      "last_check": "2026-05-12T00:00:13.362535Z",
       "http_code": null,
       "error": "marked_defunct"
     }
@@ -1705,7 +1705,7 @@ const casinoDataEnhanced = [
     "url": "https://paripesa.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216098Z",
+      "last_check": "2026-05-12T00:00:13.362539Z",
       "http_code": 200,
       "error": null
     }
@@ -1744,7 +1744,7 @@ const casinoDataEnhanced = [
     "defunct": false,
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216101Z",
+      "last_check": "2026-05-12T00:00:13.362542Z",
       "http_code": 200,
       "error": null
     }
@@ -1781,7 +1781,7 @@ const casinoDataEnhanced = [
     "url": "https://allyspin.net",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216105Z",
+      "last_check": "2026-05-12T00:00:13.362545Z",
       "http_code": 200,
       "error": null
     }
@@ -1818,7 +1818,7 @@ const casinoDataEnhanced = [
     "url": "https://www.spinaro.casino",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216108Z",
+      "last_check": "2026-05-12T00:00:13.362549Z",
       "http_code": 200,
       "error": null
     }
@@ -1855,7 +1855,7 @@ const casinoDataEnhanced = [
     "url": "https://impressariocasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216112Z",
+      "last_check": "2026-05-12T00:00:13.362552Z",
       "http_code": 200,
       "error": null
     }
@@ -1892,7 +1892,7 @@ const casinoDataEnhanced = [
     "url": "https://www.trivelabet.com",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216115Z",
+      "last_check": "2026-05-12T00:00:13.362555Z",
       "http_code": 0,
       "error": null
     }
@@ -1929,7 +1929,7 @@ const casinoDataEnhanced = [
     "url": "https://magius.casino",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216118Z",
+      "last_check": "2026-05-12T00:00:13.362558Z",
       "http_code": 200,
       "error": null
     },
@@ -1967,7 +1967,7 @@ const casinoDataEnhanced = [
     "url": "https://funbet.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216122Z",
+      "last_check": "2026-05-12T00:00:13.362562Z",
       "http_code": 200,
       "error": null
     }
@@ -2004,7 +2004,7 @@ const casinoDataEnhanced = [
     "url": "https://hot.bet",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216125Z",
+      "last_check": "2026-05-12T00:00:13.362565Z",
       "http_code": 200,
       "error": null
     }
@@ -2041,7 +2041,7 @@ const casinoDataEnhanced = [
     "url": "https://www.casinovibes.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216129Z",
+      "last_check": "2026-05-12T00:00:13.362568Z",
       "http_code": 200,
       "error": null
     }
@@ -2078,7 +2078,7 @@ const casinoDataEnhanced = [
     "url": "https://gemobet.co",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216133Z",
+      "last_check": "2026-05-12T00:00:13.362571Z",
       "http_code": 200,
       "error": null
     }
@@ -2115,7 +2115,7 @@ const casinoDataEnhanced = [
     "url": "https://tuohi-casino.fi",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216136Z",
+      "last_check": "2026-05-12T00:00:13.362574Z",
       "http_code": 200,
       "error": null
     }
@@ -2152,7 +2152,7 @@ const casinoDataEnhanced = [
     "url": "https://pelikioskii.fi",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216139Z",
+      "last_check": "2026-05-12T00:00:13.362578Z",
       "http_code": 200,
       "error": null
     }
@@ -2189,7 +2189,7 @@ const casinoDataEnhanced = [
     "url": "https://zipcasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216143Z",
+      "last_check": "2026-05-12T00:00:13.362581Z",
       "http_code": 200,
       "error": null
     }
@@ -2226,7 +2226,7 @@ const casinoDataEnhanced = [
     "url": "https://www.netbet.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216147Z",
+      "last_check": "2026-05-12T00:00:13.362584Z",
       "http_code": 403,
       "error": null
     }
@@ -2263,7 +2263,7 @@ const casinoDataEnhanced = [
     "url": "https://www.huikee.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216150Z",
+      "last_check": "2026-05-12T00:00:13.362587Z",
       "http_code": 200,
       "error": null
     }
@@ -2300,7 +2300,7 @@ const casinoDataEnhanced = [
     "url": "https://respin.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216154Z",
+      "last_check": "2026-05-12T00:00:13.362591Z",
       "http_code": 403,
       "error": null
     }
@@ -2337,7 +2337,7 @@ const casinoDataEnhanced = [
     "url": "https://slotti-kasino.fi",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216157Z",
+      "last_check": "2026-05-12T00:00:13.362594Z",
       "http_code": 0,
       "error": null
     }
@@ -2374,7 +2374,7 @@ const casinoDataEnhanced = [
     "url": "https://www.ibet.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216161Z",
+      "last_check": "2026-05-12T00:00:13.362597Z",
       "http_code": 200,
       "error": null
     }
@@ -2411,7 +2411,7 @@ const casinoDataEnhanced = [
     "url": "https://pistolo.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216164Z",
+      "last_check": "2026-05-12T00:00:13.362600Z",
       "http_code": 200,
       "error": null
     }
@@ -2448,7 +2448,7 @@ const casinoDataEnhanced = [
     "url": "https://legiano.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216167Z",
+      "last_check": "2026-05-12T00:00:13.362604Z",
       "http_code": 200,
       "error": null
     }
@@ -2485,7 +2485,7 @@ const casinoDataEnhanced = [
     "url": "https://mrpunter1.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216171Z",
+      "last_check": "2026-05-12T00:00:13.362607Z",
       "http_code": 200,
       "error": null
     }
@@ -2522,7 +2522,7 @@ const casinoDataEnhanced = [
     "url": "https://www.lysti.casino",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216174Z",
+      "last_check": "2026-05-12T00:00:13.362610Z",
       "http_code": 0,
       "error": null
     }
@@ -2558,9 +2558,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-02-13",
     "url": "https://spin-fest.com",
     "health_status": {
-      "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216177Z",
-      "http_code": 200,
+      "status": "http_000",
+      "last_check": "2026-05-12T00:00:13.362613Z",
+      "http_code": 0,
       "error": null
     }
   },
@@ -2596,7 +2596,7 @@ const casinoDataEnhanced = [
     "url": "https://robycasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216181Z",
+      "last_check": "2026-05-12T00:00:13.362617Z",
       "http_code": 200,
       "error": null
     }
@@ -2633,7 +2633,7 @@ const casinoDataEnhanced = [
     "url": "https://bassbet.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216184Z",
+      "last_check": "2026-05-12T00:00:13.362620Z",
       "http_code": 200,
       "error": null
     }
@@ -2670,7 +2670,7 @@ const casinoDataEnhanced = [
     "url": "https://www.mammonakasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216188Z",
+      "last_check": "2026-05-12T00:00:13.362623Z",
       "http_code": 200,
       "error": null
     }
@@ -2707,7 +2707,7 @@ const casinoDataEnhanced = [
     "url": "https://www.wheelz.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216191Z",
+      "last_check": "2026-05-12T00:00:13.362626Z",
       "http_code": 403,
       "error": null
     }
@@ -2746,7 +2746,7 @@ const casinoDataEnhanced = [
     "defunct": false,
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216195Z",
+      "last_check": "2026-05-12T00:00:13.362629Z",
       "http_code": 200,
       "error": null
     }
@@ -2783,7 +2783,7 @@ const casinoDataEnhanced = [
     "url": "https://www.ninjacasino.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216198Z",
+      "last_check": "2026-05-12T00:00:13.362632Z",
       "http_code": 403,
       "error": null
     }
@@ -2820,7 +2820,7 @@ const casinoDataEnhanced = [
     "url": "https://powerupcasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216202Z",
+      "last_check": "2026-05-12T00:00:13.362636Z",
       "http_code": 200,
       "error": null
     }
@@ -2857,7 +2857,7 @@ const casinoDataEnhanced = [
     "url": "https://www.n1casino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216205Z",
+      "last_check": "2026-05-12T00:00:13.362639Z",
       "http_code": 200,
       "error": null
     }
@@ -2894,7 +2894,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.ballybet.com",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216209Z",
+      "last_check": "2026-05-12T00:00:13.362642Z",
       "http_code": 0,
       "error": null
     }
@@ -2931,7 +2931,7 @@ const casinoDataEnhanced = [
     "url": "https://www.bet365.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216212Z",
+      "last_check": "2026-05-12T00:00:13.362645Z",
       "http_code": 403,
       "error": null
     }
@@ -2968,7 +2968,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.betmgm.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216216Z",
+      "last_check": "2026-05-12T00:00:13.362649Z",
       "http_code": 403,
       "error": null
     }
@@ -3005,7 +3005,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.betrivers.com",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216219Z",
+      "last_check": "2026-05-12T00:00:13.362652Z",
       "http_code": 0,
       "error": null
     }
@@ -3042,7 +3042,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.borgataonline.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216223Z",
+      "last_check": "2026-05-12T00:00:13.362655Z",
       "http_code": 200,
       "error": null
     }
@@ -3079,7 +3079,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.caesars.com",
     "health_status": {
       "status": "http_503",
-      "last_check": "2026-05-11T00:00:26.216227Z",
+      "last_check": "2026-05-12T00:00:13.362658Z",
       "http_code": 503,
       "error": null
     },
@@ -3117,7 +3117,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.draftkings.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216231Z",
+      "last_check": "2026-05-12T00:00:13.362663Z",
       "http_code": 403,
       "error": null
     }
@@ -3154,7 +3154,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.fanatics.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216235Z",
+      "last_check": "2026-05-12T00:00:13.362666Z",
       "http_code": 200,
       "error": null
     }
@@ -3191,7 +3191,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.fanduel.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216238Z",
+      "last_check": "2026-05-12T00:00:13.362669Z",
       "http_code": 200,
       "error": null
     }
@@ -3228,7 +3228,7 @@ const casinoDataEnhanced = [
     "url": "https://www.goldennuggetcasino.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216242Z",
+      "last_check": "2026-05-12T00:00:13.362673Z",
       "http_code": 403,
       "error": null
     }
@@ -3265,7 +3265,7 @@ const casinoDataEnhanced = [
     "url": "https://www.hardrockbet.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216245Z",
+      "last_check": "2026-05-12T00:00:13.362676Z",
       "http_code": 403,
       "error": null
     }
@@ -3302,7 +3302,7 @@ const casinoDataEnhanced = [
     "url": "https://www.horseshoecasino.com",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216249Z",
+      "last_check": "2026-05-12T00:00:13.362679Z",
       "http_code": 0,
       "error": null
     }
@@ -3339,7 +3339,7 @@ const casinoDataEnhanced = [
     "url": "https://www.jackpotcitycasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216252Z",
+      "last_check": "2026-05-12T00:00:13.362682Z",
       "http_code": 200,
       "error": null
     }
@@ -3376,7 +3376,7 @@ const casinoDataEnhanced = [
     "url": "https://monopolycasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216256Z",
+      "last_check": "2026-05-12T00:00:13.362686Z",
       "http_code": 200,
       "error": null
     }
@@ -3413,7 +3413,7 @@ const casinoDataEnhanced = [
     "url": "https://casino.partycasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216259Z",
+      "last_check": "2026-05-12T00:00:13.362689Z",
       "http_code": 200,
       "error": null
     }
@@ -3450,7 +3450,7 @@ const casinoDataEnhanced = [
     "url": "https://www.playstarcasino.com",
     "health_status": {
       "status": "ssl_error",
-      "last_check": "2026-05-11T00:00:26.216262Z",
+      "last_check": "2026-05-12T00:00:13.362692Z",
       "http_code": 0,
       "error": null
     }
@@ -3487,7 +3487,7 @@ const casinoDataEnhanced = [
     "url": "https://www.spinpalace.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216266Z",
+      "last_check": "2026-05-12T00:00:13.362696Z",
       "http_code": 200,
       "error": null
     }
@@ -3524,7 +3524,7 @@ const casinoDataEnhanced = [
     "url": "https://wheeloffortunecasino.com",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216269Z",
+      "last_check": "2026-05-12T00:00:13.362699Z",
       "http_code": 0,
       "error": null
     }
@@ -3561,7 +3561,7 @@ const casinoDataEnhanced = [
     "url": "https://duelbits.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216273Z",
+      "last_check": "2026-05-12T00:00:13.362702Z",
       "http_code": 403,
       "error": null
     }
@@ -3598,7 +3598,7 @@ const casinoDataEnhanced = [
     "url": "https://sportsbet.io",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216277Z",
+      "last_check": "2026-05-12T00:00:13.362705Z",
       "http_code": 403,
       "error": null
     }
@@ -3635,7 +3635,7 @@ const casinoDataEnhanced = [
     "url": "https://bitcasino.io",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216280Z",
+      "last_check": "2026-05-12T00:00:13.362709Z",
       "http_code": 403,
       "error": null
     }
@@ -3672,7 +3672,7 @@ const casinoDataEnhanced = [
     "url": "https://pvp.money",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216283Z",
+      "last_check": "2026-05-12T00:00:13.362712Z",
       "http_code": 200,
       "error": null
     }
@@ -3709,7 +3709,7 @@ const casinoDataEnhanced = [
     "url": "https://dexbet.win",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216287Z",
+      "last_check": "2026-05-12T00:00:13.362715Z",
       "http_code": 200,
       "error": null
     }
@@ -3746,7 +3746,7 @@ const casinoDataEnhanced = [
     "url": "https://stake.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216290Z",
+      "last_check": "2026-05-12T00:00:13.362718Z",
       "http_code": 403,
       "error": null
     }
@@ -3783,7 +3783,7 @@ const casinoDataEnhanced = [
     "url": "https://www.huippukasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216294Z",
+      "last_check": "2026-05-12T00:00:13.362721Z",
       "http_code": 200,
       "error": null
     }
@@ -3820,7 +3820,7 @@ const casinoDataEnhanced = [
     "url": "https://jellonacasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216297Z",
+      "last_check": "2026-05-12T00:00:13.362725Z",
       "http_code": 200,
       "error": null
     }
@@ -3857,7 +3857,7 @@ const casinoDataEnhanced = [
     "url": "https://lyrabet.org",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216301Z",
+      "last_check": "2026-05-12T00:00:13.362728Z",
       "http_code": 200,
       "error": null
     }
@@ -3894,7 +3894,7 @@ const casinoDataEnhanced = [
     "url": "https://www.playzee.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216305Z",
+      "last_check": "2026-05-12T00:00:13.362731Z",
       "http_code": 200,
       "error": null
     }
@@ -3931,7 +3931,7 @@ const casinoDataEnhanced = [
     "url": "https://www.casoola.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216308Z",
+      "last_check": "2026-05-12T00:00:13.362734Z",
       "http_code": 200,
       "error": null
     }
@@ -3968,7 +3968,7 @@ const casinoDataEnhanced = [
     "url": "https://www.boomcasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216312Z",
+      "last_check": "2026-05-12T00:00:13.362737Z",
       "http_code": 200,
       "error": null
     }
@@ -4005,7 +4005,7 @@ const casinoDataEnhanced = [
     "url": "https://www.caxino.com",
     "health_status": {
       "status": "blocked",
-      "last_check": "2026-05-11T00:00:26.216315Z",
+      "last_check": "2026-05-12T00:00:13.362741Z",
       "http_code": 403,
       "error": null
     }
@@ -4042,7 +4042,7 @@ const casinoDataEnhanced = [
     "url": "https://www.simplecasino.com",
     "health_status": {
       "status": "http_503",
-      "last_check": "2026-05-11T00:00:26.216318Z",
+      "last_check": "2026-05-12T00:00:13.362744Z",
       "http_code": 503,
       "error": null
     },
@@ -4080,7 +4080,7 @@ const casinoDataEnhanced = [
     "url": "https://www.miamidice.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216323Z",
+      "last_check": "2026-05-12T00:00:13.362748Z",
       "http_code": 200,
       "error": null
     }
@@ -4117,7 +4117,7 @@ const casinoDataEnhanced = [
     "url": "https://www.jackpotvillage.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216326Z",
+      "last_check": "2026-05-12T00:00:13.362751Z",
       "http_code": 200,
       "error": null
     }
@@ -4154,7 +4154,7 @@ const casinoDataEnhanced = [
     "url": "https://www.spincasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216329Z",
+      "last_check": "2026-05-12T00:00:13.362754Z",
       "http_code": 200,
       "error": null
     }
@@ -4191,7 +4191,7 @@ const casinoDataEnhanced = [
     "url": "https://www.10bet.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216333Z",
+      "last_check": "2026-05-12T00:00:13.362758Z",
       "http_code": 200,
       "error": null
     }
@@ -4227,7 +4227,7 @@ const casinoDataEnhanced = [
     "url": "https://hurmio.casino",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216336Z",
+      "last_check": "2026-05-12T00:00:13.362761Z",
       "http_code": 0,
       "error": null
     }
@@ -4264,7 +4264,7 @@ const casinoDataEnhanced = [
     "url": "https://mainio.casino",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216340Z",
+      "last_check": "2026-05-12T00:00:13.362764Z",
       "http_code": 200,
       "error": null
     }
@@ -4300,7 +4300,7 @@ const casinoDataEnhanced = [
     "url": "https://www.ruhtinascasino.fi",
     "health_status": {
       "status": "http_000",
-      "last_check": "2026-05-11T00:00:26.216344Z",
+      "last_check": "2026-05-12T00:00:13.362767Z",
       "http_code": 0,
       "error": null
     }
@@ -4334,7 +4334,7 @@ const casinoDataEnhanced = [
     "url": "https://pikapotti.casino",
     "health_status": {
       "status": "ssl_error",
-      "last_check": "2026-05-11T00:00:26.216347Z",
+      "last_check": "2026-05-12T00:00:13.362770Z",
       "http_code": 0,
       "error": null
     }
@@ -4368,7 +4368,7 @@ const casinoDataEnhanced = [
     "url": "https://potmanni.casino",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216350Z",
+      "last_check": "2026-05-12T00:00:13.362774Z",
       "http_code": 200,
       "error": null
     }
@@ -4408,7 +4408,7 @@ const casinoDataEnhanced = [
     "url": "https://playeagle.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216354Z",
+      "last_check": "2026-05-12T00:00:13.362777Z",
       "http_code": 200,
       "error": null
     }
@@ -4445,7 +4445,7 @@ const casinoDataEnhanced = [
     "url": "https://www.casinocasino.com",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T00:00:26.216357Z",
+      "last_check": "2026-05-12T00:00:13.362780Z",
       "http_code": 200,
       "error": null
     }
@@ -4489,7 +4489,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-05-11T07:02:12.918095Z",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T07:02:12.918106Z"
+      "last_check": "2026-05-12T00:00:13.362784Z",
+      "http_code": 200,
+      "error": null
     },
     "auto_discovered": true,
     "discovery_confidence": 1.0
@@ -4533,7 +4535,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-05-11T07:02:12.918127Z",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T07:02:12.918129Z"
+      "last_check": "2026-05-12T00:00:13.362788Z",
+      "http_code": 200,
+      "error": null
     },
     "auto_discovered": true,
     "discovery_confidence": 1.0
@@ -4577,7 +4581,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-05-11T07:02:12.918147Z",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T07:02:12.918149Z"
+      "last_check": "2026-05-12T00:00:13.362791Z",
+      "http_code": 200,
+      "error": null
     },
     "auto_discovered": true,
     "discovery_confidence": 1.0
@@ -4621,7 +4627,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-05-11T07:02:12.918160Z",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T07:02:12.918162Z"
+      "last_check": "2026-05-12T00:00:13.362794Z",
+      "http_code": 200,
+      "error": null
     },
     "auto_discovered": true,
     "discovery_confidence": 1.0
@@ -4665,7 +4673,9 @@ const casinoDataEnhanced = [
     "last_updated": "2026-05-11T07:02:12.918175Z",
     "health_status": {
       "status": "ok",
-      "last_check": "2026-05-11T07:02:12.918178Z"
+      "last_check": "2026-05-12T00:00:13.362798Z",
+      "http_code": 200,
+      "error": null
     },
     "auto_discovered": true,
     "discovery_confidence": 1.0
