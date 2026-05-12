@@ -95,6 +95,10 @@
     {
       "source": "/api/compare",
       "destination": "/api/compare.js"
+    },
+    {
+      "source": "/api/casinos",
+      "destination": "/api/casinos.js"
     }
   ]
 }
