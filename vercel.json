@@ -69,6 +69,10 @@
       "destination": "/public/index.html"
     },
     {
+      "source": "/bonuses",
+      "destination": "/public/mini-app/index.html"
+    },
+    {
       "source": "/bonus",
       "destination": "/api/bonus.js"
     },
@@ -103,10 +107,6 @@
     {
       "source": "/api/bot",
       "destination": "/api/bot.js"
-    },
-    {
-      "source": "/bonuses",
-      "destination": "/public/mini-app/index.html"
     },
     {
       "source": "/mini-app",
