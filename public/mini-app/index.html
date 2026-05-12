@@ -86,6 +86,17 @@
     }
     .trust-badge.medium { background: #5d4a00; color: #ffc107; }
     .trust-badge.low { background: #5d1a1a; color: #ef5350; }
+    .health-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      margin-left: 6px;
+      font-weight: 600;
+    }
+    .health-badge.ok { background: #1a3d1a; color: #4caf50; }
+    .health-badge.error { background: #3d331a; color: #ff9800; }
+    .health-badge.defunct { background: #3d1a1a; color: #f44336; }
+    .card-header { position: relative; }
     .bonus-line {
       font-size: 14px;
       color: var(--tg-theme-accent-text-color, #7cb342);
@@ -216,6 +227,7 @@
     <input type="text" class="search-box" id="searchInput" placeholder="Search casinos...">
     <div class="filters" id="filters">
       <div class="filter-chip active" data-filter="all">All</div>
+      <div class="filter-chip" data-filter="active">Active</div>
       <div class="filter-chip" data-filter="bonus">Has Bonus</div>
       <div class="filter-chip" data-filter="freespins">Free Spins</div>
       <div class="filter-chip" data-filter="low-wager">Low Wager</div>
@@ -260,7 +272,7 @@
 
     async function loadCasinos() {
       try {
-        const res = await fetch(`${API_BASE}/casinos?healthy_only=true&limit=200&key=${API_KEY}`);
+        const res = await fetch(`${API_BASE}/casinos?limit=200&key=${API_KEY}`);
         const data = await res.json();
         allCasinos = data.casinos || [];
         renderCasinos();
@@ -277,6 +289,12 @@
 
     function getBonusAmount(casino) {
       return casino.bonus_structure?.max_amount || 0;
+    }
+
+    function getHealthStatus(c) {
+      if (c.defunct) return { label: 'Defunct', class: 'defunct' };
+      if (c.health_status?.status === 'ok') return { label: 'Active', class: 'ok' };
+      return { label: 'Issue', class: 'error' };
     }
 
     function filterAndSort(casinos) {
@@ -305,6 +323,9 @@
           break;
         case 'high-bonus':
           filtered = filtered.filter(c => getBonusAmount(c) >= 500);
+          break;
+        case 'active':
+          filtered = filtered.filter(c => !c.defunct && c.health_status?.status === 'ok');
           break;
       }
 
@@ -342,11 +363,13 @@
         const wager = c.wagering?.bonus || 'N/A';
         const maxBonus = c.bonus_structure?.max_amount ? `€${c.bonus_structure.max_amount}` : '';
         const freeSpins = c.bonus_structure?.free_spins ? `${c.bonus_structure.free_spins} FS` : '';
+        const health = getHealthStatus(c);
+        const opacity = c.defunct ? 'opacity: 0.6;' : '';
 
         return `
-          <div class="casino-card" onclick="showDetail('${c.slug}')">
+          <div class="casino-card" onclick="showDetail('${c.slug}')" style="${opacity}">
             <div class="card-header">
-              <div class="casino-name">${c.casino_name}</div>
+              <div class="casino-name">${c.casino_name}<span class="health-badge ${health.class}">${health.label}</span></div>
               <div class="trust-badge ${trustClass}">${trustLabel}</div>
             </div>
             <div class="bonus-line">${c.bonus}</div>
@@ -371,8 +394,10 @@
       const percentage = casino.bonus_structure?.percentage || 'N/A';
       const freeSpins = casino.bonus_structure?.free_spins || 0;
 
+      const detailHealth = getHealthStatus(casino);
+
       content.innerHTML = `
-        <div class="detail-title">${casino.casino_name}</div>
+        <div class="detail-title">${casino.casino_name} <span class="health-badge ${detailHealth.class}">${detailHealth.label}</span></div>
         <div class="detail-bonus">${casino.bonus}</div>
 
         <div class="detail-section">
