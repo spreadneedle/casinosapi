@@ -74,16 +74,20 @@
       "destination": "/public/index.html"
     },
     {
+      "source": "/submit",
+      "destination": "/public/submit.html"
+    },
+    {
       "source": "/bonuses",
       "destination": "/public/mini-app/index.html"
     },
     {
-      "source": "/bonus",
-      "destination": "/api/bonus.js"
+      "source": "/mini-app",
+      "destination": "/public/mini-app/index.html"
     },
     {
-      "source": "/recommendations",
-      "destination": "/api/recommendations.js"
+      "source": "/mini-app/:path*",
+      "destination": "/public/mini-app/index.html"
     },
     {
       "source": "/sitemap.xml",
@@ -92,6 +96,14 @@
     {
       "source": "/api/index.json",
       "destination": "/public/api/index.json"
+    },
+    {
+      "source": "/api/bonus",
+      "destination": "/api/bonus.js"
+    },
+    {
+      "source": "/api/recommendations",
+      "destination": "/api/recommendations.js"
     },
     {
       "source": "/api/search",
@@ -122,24 +134,8 @@
       "destination": "/api/review.js"
     },
     {
-      "source": "/submit",
-      "destination": "/public/submit.html"
-    },
-    {
       "source": "/api/bot",
       "destination": "/api/bot.js"
-    },
-    {
-      "source": "/submit",
-      "destination": "/public/submit.html"
-    },
-    {
-      "source": "/mini-app",
-      "destination": "/public/mini-app/index.html"
-    },
-    {
-      "source": "/mini-app/:path*",
-      "destination": "/public/mini-app/index.html"
     }
   ]
 }
