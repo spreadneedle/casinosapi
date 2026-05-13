@@ -1,21 +1,50 @@
+const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-const SUBMISSIONS_FILE = path.join('/tmp', 'submissions.json');
+const SUBMISSIONS_DIR = '/tmp/submissions';
+const GITHUB_REPO = 'philipwallenius/grokcasino.online';
 
-function loadSubmissions() {
-  try {
-    if (fs.existsSync(SUBMISSIONS_FILE)) {
-      return JSON.parse(fs.readFileSync(SUBMISSIONS_FILE, 'utf8'));
+function getPendingSubmissions() {
+  const pending = [];
+  const pendingDir = path.join(SUBMISSIONS_DIR, 'pending');
+  
+  if (!fs.existsSync(pendingDir)) return pending;
+  
+  const files = fs.readdirSync(pendingDir).filter(f => f.endsWith('.json'));
+  for (const file of files) {
+    try {
+      const data = JSON.parse(fs.readFileSync(path.join(pendingDir, file), 'utf8'));
+      pending.push(data);
+    } catch (e) {
+      console.error(`Error reading ${file}:`, e.message);
     }
-  } catch (e) {
-    console.error('Error loading submissions:', e);
   }
-  return { submissions: [] };
+  return pending.sort((a, b) => new Date(b.submitted_at) - new Date(a.submitted_at));
 }
 
-function saveSubmissions(data) {
-  fs.writeFileSync(SUBMISSIONS_FILE, JSON.stringify(data, null, 2));
+function getSubmissionById(id) {
+  const file = path.join(SUBMISSIONS_DIR, 'pending', `${id}.json`);
+  if (!fs.existsSync(file)) return null;
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+function updateSubmission(id, updates) {
+  const file = path.join(SUBMISSIONS_DIR, 'pending', `${id}.json`);
+  if (!fs.existsSync(file)) return false;
+  
+  const sub = JSON.parse(fs.readFileSync(file, 'utf8'));
+  Object.assign(sub, updates);
+  fs.writeFileSync(file, JSON.stringify(sub, null, 2));
+  
+  // If approved, move to approved dir
+  if (updates.status === 'approved' || updates.status === 'auto_approved') {
+    const approvedDir = path.join(SUBMISSIONS_DIR, 'approved');
+    fs.mkdirSync(approvedDir, { recursive: true });
+    fs.renameSync(file, path.join(approvedDir, `${id}.json`));
+  }
+  
+  return true;
 }
 
 function formatSubmission(sub) {
@@ -44,7 +73,12 @@ function formatSubmission(sub) {
   }
   
   text += `\nSubmitted: ${new Date(sub.submitted_at).toLocaleString()}\n`;
-  text += `\n/approve_${sub.id} or /reject_${sub.id} [reason]`;
+  
+  if (sub.status === 'pending') {
+    text += `\n/approve_${sub.id} or /reject_${sub.id} [reason]`;
+  } else {
+    text += `\nStatus: ${sub.status.toUpperCase()}`;
+  }
   
   return text;
 }
@@ -54,23 +88,17 @@ module.exports = function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
-  }
+  if (req.method === 'OPTIONS') return res.status(200).end();
   
   try {
-    const data = loadSubmissions();
     const { action, id, reason, reviewer } = req.query || req.body || {};
     
     // List pending submissions
     if (!action || action === 'list') {
-      const pending = data.submissions.filter(s => s.status === 'pending');
+      const pending = getPendingSubmissions().filter(s => s.status === 'pending');
       
       if (pending.length === 0) {
-        return res.status(200).json({ 
-          message: 'No pending submissions.',
-          count: 0 
-        });
+        return res.status(200).json({ message: 'No pending submissions.', count: 0 });
       }
       
       return res.status(200).json({
@@ -89,10 +117,8 @@ module.exports = function handler(req, res) {
     
     // Get single submission
     if (action === 'get' && id) {
-      const sub = data.submissions.find(s => s.id === id);
-      if (!sub) {
-        return res.status(404).json({ error: 'Submission not found' });
-      }
+      const sub = getSubmissionById(id);
+      if (!sub) return res.status(404).json({ error: 'Submission not found' });
       
       return res.status(200).json({
         submission: sub,
@@ -102,51 +128,39 @@ module.exports = function handler(req, res) {
     
     // Approve submission
     if (action === 'approve' && id) {
-      const sub = data.submissions.find(s => s.id === id);
-      if (!sub) {
-        return res.status(404).json({ error: 'Submission not found' });
-      }
+      const sub = getSubmissionById(id);
+      if (!sub) return res.status(404).json({ error: 'Submission not found' });
+      if (sub.status !== 'pending') return res.status(400).json({ error: `Already ${sub.status}` });
       
-      if (sub.status !== 'pending') {
-        return res.status(400).json({ error: `Already ${sub.status}` });
-      }
-      
-      sub.status = 'approved';
-      sub.reviewed_at = new Date().toISOString();
-      sub.reviewed_by = reviewer || 'admin';
-      sub.review_notes = reason || null;
-      
-      saveSubmissions(data);
+      updateSubmission(id, {
+        status: 'approved',
+        reviewed_at: new Date().toISOString(),
+        reviewed_by: reviewer || 'admin',
+        review_notes: reason || null
+      });
       
       return res.status(200).json({
         success: true,
-        message: `Approved ${sub.id} for ${sub.casino_name}`,
-        submission: sub
+        message: `Approved ${id} for ${sub.casino_name}`
       });
     }
     
     // Reject submission
     if (action === 'reject' && id) {
-      const sub = data.submissions.find(s => s.id === id);
-      if (!sub) {
-        return res.status(404).json({ error: 'Submission not found' });
-      }
+      const sub = getSubmissionById(id);
+      if (!sub) return res.status(404).json({ error: 'Submission not found' });
+      if (sub.status !== 'pending') return res.status(400).json({ error: `Already ${sub.status}` });
       
-      if (sub.status !== 'pending') {
-        return res.status(400).json({ error: `Already ${sub.status}` });
-      }
-      
-      sub.status = 'rejected';
-      sub.reviewed_at = new Date().toISOString();
-      sub.reviewed_by = reviewer || 'admin';
-      sub.review_notes = reason || 'No reason provided';
-      
-      saveSubmissions(data);
+      updateSubmission(id, {
+        status: 'rejected',
+        reviewed_at: new Date().toISOString(),
+        reviewed_by: reviewer || 'admin',
+        review_notes: reason || 'No reason provided'
+      });
       
       return res.status(200).json({
         success: true,
-        message: `Rejected ${sub.id} for ${sub.casino_name}`,
-        submission: sub
+        message: `Rejected ${id} for ${sub.casino_name}`
       });
     }
     

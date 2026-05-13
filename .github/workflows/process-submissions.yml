@@ -1,0 +1,53 @@
+name: Process Casino Submissions
+
+on:
+  push:
+    branches:
+      - submissions
+  workflow_dispatch:
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Checkout submissions branch
+        uses: actions/checkout@v4
+        with:
+          ref: submissions
+          path: submissions-branch
+      
+      - name: Process pending submissions
+        run: |
+          node scripts/merge-submissions.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Commit merged submissions
+        run: |
+          git config user.name "CasinosAPI Bot"
+          git config user.email "submissions@casinosapi.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "[auto] Merge approved submissions"
+          git push origin main
+      
+      - name: Move processed submissions to approved
+        run: |
+          cd submissions-branch
+          mkdir -p submissions/approved
+          for f in submissions/pending/*.json; do
+            [ -f "$f" ] && mv "$f" submissions/approved/
+          done
+          git add -A
+          git diff --cached --quiet || git commit -m "[auto] Move processed submissions to approved"
+          git push origin submissions
