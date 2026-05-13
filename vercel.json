@@ -110,6 +110,10 @@
       "destination": "/api/casinos.js"
     },
     {
+      "source": "/api/country",
+      "destination": "/api/country_filter.js"
+    },
+    {
       "source": "/api/bot",
       "destination": "/api/bot.js"
     },

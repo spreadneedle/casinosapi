@@ -1,0 +1,99 @@
+{
+  "_comment": "License to accepted countries mapping. Uses ISO 3166-1 alpha-2 country codes. 'ALL' means all non-sanctioned countries. 'EU' means EU/EEA member states.",
+  "_sanctioned_countries": ["IR", "KP", "SY", "CU", "AF", "MM", "RU", "BY"],
+  "_notes": {
+    "MGA": "Malta Gaming Authority - covers EU/EEA broadly. Individual casinos may block locally-regulated markets (SE, UK, DE, DK, BE, NL) but many still accept them.",
+    "UKGC": "UK Gambling Commission - UK primarily. UK players also play at MGA/Curacao casinos.",
+    "Spelinspektionen": "Swedish Gambling Authority - Sweden only. But Swedes play at MGA/Curacao/Estonian casinos too.",
+    "Estonian": "Estonian license - Estonia, Finland primarily. EU mutual recognition means broader EU acceptance.",
+    "Curacao": "Curacao eGaming - accepts virtually all non-sanctioned countries except US/Israel typically.",
+    "Anjouan": "Anjouan (Comoros) - same as Curacao, very permissive.",
+    "Kahnawake": "Kahnawake (Canada) - Canada-focused but accepts others.",
+    "USA_State": "US state-specific license - that state only via geo-location.",
+    "Offshore": "Generic offshore - same as Curacao/Anjouan."
+  },
+  "licenses": {
+    "MGA": {
+      "primary_markets": ["FI", "NO", "IS", "IE", "AT", "CH", "LI", "MC", "SM", "AD", "VA"],
+      "eu_eea": ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU", "MT", "NL", "NO", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "CH"],
+      "commonly_accepted": "ALL_EXCEPT_US_ISRAEL_SANCTIONED",
+      "typically_blocks": ["US", "IL", "AU"],
+      "notes": "MGA casinos vary widely. Some block SE/UK/DE/DK/BE/NL due to local licensing, many don't. Default to broad availability."
+    },
+    "UKGC": {
+      "primary_markets": ["GB", "JE", "GG", "IM"],
+      "commonly_accepted": ["GB", "JE", "GG", "IM"],
+      "typically_blocks": ["US", "AU", "ZA", "SG"],
+      "notes": "UKGC license is UK-only. UK players also play MGA/Curacao."
+    },
+    "Spelinspektionen": {
+      "primary_markets": ["SE"],
+      "commonly_accepted": ["SE"],
+      "typically_blocks": ["US", "IL", "AU"],
+      "notes": "Swedish license is Sweden-only. But Swedes play everywhere."
+    },
+    "Estonian": {
+      "primary_markets": ["EE", "FI"],
+      "commonly_accepted": "ALL_EXCEPT_US_ISRAEL_SANCTIONED",
+      "typically_blocks": ["US", "IL", "AU"],
+      "notes": "Estonian license = EU valid. Most Estonian casinos target FI/EE but accept broader EU."
+    },
+    "Curacao": {
+      "primary_markets": ["CA", "NZ", "BR", "MX", "IN", "JP", "ZA", "NG", "KE", "GH"],
+      "commonly_accepted": "ALL_EXCEPT_US_ISRAEL_SANCTIONED",
+      "typically_blocks": ["US", "IL", "AU", "GB", "SE", "DE", "FR", "IT", "ES", "NL", "BE", "DK"],
+      "notes": "Curacao = broad international. Many block major regulated markets (US, UK, EU big-5, AU) but accept rest of world. Individual casino policy varies massively."
+    },
+    "Anjouan": {
+      "primary_markets": ["CA", "NZ", "BR", "MX", "IN", "JP", "ZA", "NG", "KE", "GH"],
+      "commonly_accepted": "ALL_EXCEPT_US_ISRAEL_SANCTIONED",
+      "typically_blocks": ["US", "IL", "AU", "GB", "SE", "DE", "FR", "IT", "ES", "NL", "BE", "DK"],
+      "notes": "Same as Curacao - very permissive, blocks vary by casino."
+    },
+    "Kahnawake": {
+      "primary_markets": ["CA"],
+      "commonly_accepted": ["CA", "US"],
+      "typically_blocks": ["IL", "AU", "GB"],
+      "notes": "Canada-focused. Some accept US players (gray area)."
+    },
+    "USA_State": {
+      "primary_markets": [],
+      "commonly_accepted": "STATE_SPECIFIC",
+      "typically_blocks": "ALL_EXCEPT_LICENSED_STATE",
+      "notes": "Geo-fenced to specific US state. Physical location verified."
+    },
+    "Offshore": {
+      "primary_markets": ["CA", "NZ", "BR", "MX", "IN", "JP", "ZA"],
+      "commonly_accepted": "ALL_EXCEPT_US_ISRAEL_SANCTIONED",
+      "typically_blocks": ["US", "IL", "AU", "GB"],
+      "notes": "Generic offshore = same as Curacao/Anjouan."
+    }
+  },
+  "country_overrides": {
+    "_comment": "Specific country behaviors that override license defaults",
+    "US": {
+      "notes": "Most non-US-licensed casinos block US due to UIGEA. Exceptions: some Curacao/Kahnawake accept US. US state-licensed = state only.",
+      "accepted_by": ["USA_State", "Kahnawake", "some_Curacao"]
+    },
+    "IL": {
+      "notes": "Israel commonly blocked by most offshore casinos.",
+      "accepted_by": ["MGA", "UKGC", "Estonian"]
+    },
+    "AU": {
+      "notes": "Australia has strict IGA. Most offshore casinos block AU.",
+      "accepted_by": ["some_Curacao", "some_MGA"]
+    },
+    "SE": {
+      "notes": "Sweden has local license but Swedes play at MGA/Curacao/Estonian casinos widely.",
+      "accepted_by": ["MGA", "Curacao", "Anjouan", "Estonian", "Spelinspektionen"]
+    },
+    "UK": {
+      "notes": "UK has UKGC but UK players play MGA/Curacao too.",
+      "accepted_by": ["UKGC", "MGA", "Curacao", "Anjouan", "Estonian"]
+    },
+    "DE": {
+      "notes": "Germany has GGL but many MGA casinos still accept Germans.",
+      "accepted_by": ["MGA", "Curacao", "Anjouan", "Estonian"]
+    }
+  }
+}

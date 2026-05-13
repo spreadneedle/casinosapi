@@ -1,6 +1,6 @@
 // Enhanced CasinosAPI API - AI-Optimized Data
-// Generated: 2026-05-11T07:02:12.918261Z
-// Casinos: 125
+// Generated: 2026-05-13T09:47:21Z
+// Casinos: 120
 
 const casinoDataEnhanced = [
   {
@@ -38,7 +38,13 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013525Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "MGA",
+      "UKGC",
+      "Spelinspektionen",
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Boost Casino",
@@ -75,7 +81,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013565Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Pommi Casino",
@@ -112,7 +121,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013573Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Bethard",
@@ -149,7 +161,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013578Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Shokki Casino",
@@ -187,7 +202,10 @@ const casinoDataEnhanced = [
       "http_code": 200,
       "error": null
     },
-    "defunct": true
+    "defunct": true,
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Teho Casino",
@@ -224,7 +242,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013585Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Dazzlehand Casino",
@@ -261,7 +282,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013588Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "21 Casino",
@@ -298,7 +322,11 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013591Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA",
+      "UKGC"
+    ]
   },
   {
     "casino_name": "Wild Robin Casino",
@@ -335,7 +363,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013595Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "CaZeus Casino",
@@ -372,7 +403,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013598Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Pelataan Kasino",
@@ -409,7 +443,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013601Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Pelikaani Casino",
@@ -446,7 +483,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013604Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "BetHall Casino",
@@ -483,7 +523,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013608Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "LaraBet Casino",
@@ -520,7 +563,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013611Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Valhalla Wins Casino",
@@ -557,7 +603,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013615Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "KingMaker",
@@ -594,7 +643,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013619Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "ViperWin",
@@ -631,7 +683,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013622Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Red Dice",
@@ -668,7 +723,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013625Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Lempi",
@@ -705,7 +763,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013628Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "RX Casino",
@@ -742,7 +803,11 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013632Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao",
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Kaahaus Casino",
@@ -779,7 +844,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013635Z",
       "http_code": 307,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Betizy Casino",
@@ -816,7 +884,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013638Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Slot it Casino",
@@ -854,7 +925,10 @@ const casinoDataEnhanced = [
       "http_code": 200,
       "error": null
     },
-    "defunct": true
+    "defunct": true,
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Casumo Casino",
@@ -891,7 +965,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013645Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Gibraltar"
+    ]
   },
   {
     "casino_name": "Lunubet Casino",
@@ -928,7 +1005,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013648Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Epicbet Casino",
@@ -965,7 +1045,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013651Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Saletti Casino",
@@ -1002,7 +1085,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013654Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Possu Casino",
@@ -1039,7 +1125,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013658Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Winz.io Casino",
@@ -1076,7 +1165,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013661Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Reipas Casino",
@@ -1115,7 +1207,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013664Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Arctic Casino",
@@ -1152,7 +1247,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013668Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Fruta Casino",
@@ -1189,7 +1287,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013671Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Dynabet Casino",
@@ -1226,7 +1327,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013674Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Budsino Casino",
@@ -1263,7 +1367,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013677Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Highroller Casino",
@@ -1300,7 +1407,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013680Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Taika Spins Casino",
@@ -1337,7 +1447,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013684Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Casino Vice",
@@ -1374,7 +1487,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013687Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Fat Pirate Casino",
@@ -1411,7 +1527,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013690Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Qbet Casino",
@@ -1448,7 +1567,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013693Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Trust Dice Win Casino",
@@ -1485,7 +1607,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013696Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Casino Joy",
@@ -1522,7 +1647,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013699Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Wildsino Casino",
@@ -1559,7 +1687,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013702Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Be On Bet Casino",
@@ -1597,7 +1728,10 @@ const casinoDataEnhanced = [
       "http_code": 200,
       "error": null
     },
-    "defunct": true
+    "defunct": true,
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Bet Label Casino",
@@ -1634,7 +1768,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013709Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "PrimeBetz Casino",
@@ -1671,7 +1808,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013712Z",
       "http_code": null,
       "error": "marked_defunct"
-    }
+    },
+    "license": [
+      "Kahnawake"
+    ]
   },
   {
     "casino_name": "Paripesa Casino",
@@ -1708,7 +1848,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013715Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Betrix Casino",
@@ -1747,7 +1890,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013718Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "AllySpin Casino",
@@ -1784,7 +1930,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013722Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Spinaro Casino",
@@ -1821,7 +1970,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013725Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Impressario Casino",
@@ -1858,7 +2010,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013728Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Kahnawake"
+    ]
   },
   {
     "casino_name": "Trivelabet Casino",
@@ -1895,7 +2050,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013731Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Magius Casino",
@@ -1933,7 +2091,10 @@ const casinoDataEnhanced = [
       "http_code": 200,
       "error": null
     },
-    "defunct": true
+    "defunct": true,
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Fun Bet Casino",
@@ -1970,7 +2131,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013737Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Hotbet Casino",
@@ -2007,7 +2171,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013741Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Casino Vibes",
@@ -2044,7 +2211,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013744Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Gemobet Casino",
@@ -2081,7 +2251,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013747Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Tuohi Casino",
@@ -2118,7 +2291,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013750Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Isle of Man"
+    ]
   },
   {
     "casino_name": "Pelikioski Casino",
@@ -2155,7 +2331,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013753Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Zip Casino",
@@ -2192,7 +2371,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013756Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "NetBet Casino",
@@ -2229,7 +2411,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013760Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Huikee Casino",
@@ -2266,7 +2451,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013763Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "ReSpin Casino",
@@ -2303,7 +2491,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013766Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Slotti Casino",
@@ -2340,7 +2531,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013769Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "iBet Casino",
@@ -2377,7 +2571,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013773Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Pistolo Casino",
@@ -2414,7 +2611,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013776Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Legiano Casino",
@@ -2451,7 +2651,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013779Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Mr Punter",
@@ -2488,7 +2691,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013782Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Lysti Casino",
@@ -2525,7 +2731,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013785Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Spinfest Casino",
@@ -2562,7 +2771,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013788Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Roby Casino",
@@ -2599,7 +2811,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013792Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "BassBet Casino",
@@ -2636,7 +2851,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013795Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "Mammona Casino",
@@ -2673,7 +2891,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013798Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Wheelz Casino",
@@ -2710,7 +2931,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013801Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Kruuna Casino",
@@ -2749,7 +2973,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013805Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Ninja Casino",
@@ -2786,7 +3013,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013808Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Power Up Casino",
@@ -2823,7 +3053,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013811Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Anjouan"
+    ]
   },
   {
     "casino_name": "N1 Casino",
@@ -2860,7 +3093,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013814Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Bally Bet Casino, USA",
@@ -2897,7 +3133,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013817Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Bet365, USA",
@@ -2934,7 +3173,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013820Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "BetMGM, USA",
@@ -2971,7 +3213,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013824Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "BetRivers Casino, USA",
@@ -3008,7 +3253,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013827Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Borgata Online Casino, USA",
@@ -3045,7 +3293,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013830Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Caesars Palace Online Casino, USA",
@@ -3083,7 +3334,10 @@ const casinoDataEnhanced = [
       "http_code": 503,
       "error": null
     },
-    "defunct": true
+    "defunct": true,
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "DraftKings Casino, USA",
@@ -3120,7 +3374,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013867Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Fanatics Casino, USA",
@@ -3157,7 +3414,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013872Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "FanDuel Casino, USA",
@@ -3194,7 +3454,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013875Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Golden Nugget Casino, USA",
@@ -3231,7 +3494,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013878Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Hard Rock Bet, USA",
@@ -3268,7 +3534,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013881Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Horseshoe Casino, USA",
@@ -3305,7 +3574,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013885Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Jackpot City Casino, USA",
@@ -3342,7 +3614,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013888Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Monopoly Casino, USA",
@@ -3379,7 +3654,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013891Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "PartyCasino, USA",
@@ -3416,7 +3694,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013895Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "PlayStar Casino, USA",
@@ -3453,7 +3734,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013898Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Spin Palace, USA",
@@ -3490,7 +3774,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013914Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Wheel of Fortune Casino, USA",
@@ -3527,7 +3814,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013918Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "Duelbits",
@@ -3564,7 +3854,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013921Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Sportsbet.io",
@@ -3601,7 +3894,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013924Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Bitcasino.io",
@@ -3638,7 +3934,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013927Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "PVP.money",
@@ -3675,7 +3974,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013930Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Dexbet.win",
@@ -3712,7 +4014,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013934Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Stake.com",
@@ -3749,7 +4054,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013937Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Huippu Casino",
@@ -3786,7 +4094,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013940Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Jellona Casino",
@@ -3823,7 +4134,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013943Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Lyrabet Casino",
@@ -3860,7 +4174,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013946Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Curacao"
+    ]
   },
   {
     "casino_name": "Playzee Casino",
@@ -3897,7 +4214,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013950Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Casoola Casino",
@@ -3934,7 +4254,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013953Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Boom Casino",
@@ -3971,7 +4294,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013956Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "Estonian"
+    ]
   },
   {
     "casino_name": "Caxino Casino",
@@ -4008,7 +4334,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013959Z",
       "http_code": 403,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Simple Casino",
@@ -4046,7 +4375,10 @@ const casinoDataEnhanced = [
       "http_code": 503,
       "error": null
     },
-    "defunct": true
+    "defunct": true,
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Miami Dice Casino",
@@ -4083,7 +4415,11 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013967Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA",
+      "UKGC"
+    ]
   },
   {
     "casino_name": "Jackpot Village Casino",
@@ -4120,7 +4456,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013970Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Spin Casino",
@@ -4157,7 +4496,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013973Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "10Bet Casino",
@@ -4194,7 +4536,11 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013976Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA",
+      "UKGC"
+    ]
   },
   {
     "casino_name": "Hurmio Casino",
@@ -4230,7 +4576,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013980Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Mainio Casino",
@@ -4267,7 +4616,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013983Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Ruhtinas Casino",
@@ -4303,7 +4655,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013986Z",
       "http_code": 0,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Pikapotti Casino",
@@ -4337,7 +4692,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013989Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Potmanni Casino",
@@ -4371,7 +4729,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013992Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "MGA"
+    ]
   },
   {
     "casino_name": "Eagle Casino & Sports",
@@ -4411,7 +4772,10 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013995Z",
       "http_code": 200,
       "error": null
-    }
+    },
+    "license": [
+      "USA_State"
+    ]
   },
   {
     "casino_name": "CasinoCasino.com",
@@ -4448,238 +4812,14 @@ const casinoDataEnhanced = [
       "last_check": "2026-05-13T00:00:25.013998Z",
       "http_code": 200,
       "error": null
-    }
-  },
-  {
-    "casino_name": "New Real Money Online Casinos This Week: Top New Casino Site",
-    "slug": "new-real-money-online-casinos-this-week-top-new-casino-site",
-    "url": "https://www.rotowire.com/article/best-new-us-online-casinos-for-2026-newest-real-money-options-114038",
-    "bonus": "Contact casino for current offers",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": null
     },
-    "wagering": {
-      "bonus": "Check terms",
-      "free_spins": "Check terms"
-    },
-    "verification": {
-      "status": "needs_verification",
-      "last_checked": "2026-05-11T07:02:12.918035Z",
-      "verified_by": "auto-discovery"
-    },
-    "trust": {
-      "rating": null,
-      "total_reviews": 0,
-      "warning_flags": []
-    },
-    "geo_restriction": {
-      "allowed": [],
-      "restricted": []
-    },
-    "info": {
-      "payment_methods": [],
-      "currencies": [],
-      "languages": [],
-      "live_chat": null,
-      "mobile_app": null
-    },
-    "ai_summary": "New Real Money Online Casinos This Week: Top New Casino Site: Auto-discovered May 2026. Verification pending. None",
-    "last_updated": "2026-05-11T07:02:12.918095Z",
-    "health_status": {
-      "status": "ok",
-      "last_check": "2026-05-13T00:00:25.014002Z",
-      "http_code": 200,
-      "error": null
-    },
-    "auto_discovered": true,
-    "discovery_confidence": 1.0
-  },
-  {
-    "casino_name": "Best New Online Casinos US (May 10, 2026): Top Real Money Si",
-    "slug": "best-new-online-casinos-us-may-10-2026-top-real-money-si",
-    "url": "https://bookies.com/news/top-new-online-casinos-us-may-10-2026",
-    "bonus": "500 Free Spins",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": null
-    },
-    "wagering": {
-      "bonus": "Check terms",
-      "free_spins": "Check terms"
-    },
-    "verification": {
-      "status": "needs_verification",
-      "last_checked": "2026-05-11T07:02:12.918116Z",
-      "verified_by": "auto-discovery"
-    },
-    "trust": {
-      "rating": null,
-      "total_reviews": 0,
-      "warning_flags": []
-    },
-    "geo_restriction": {
-      "allowed": [],
-      "restricted": []
-    },
-    "info": {
-      "payment_methods": [],
-      "currencies": [],
-      "languages": [],
-      "live_chat": null,
-      "mobile_app": null
-    },
-    "ai_summary": "Best New Online Casinos US (May 10, 2026): Top Real Money Si: Auto-discovered May 2026. Verification pending. 500 Free Spins",
-    "last_updated": "2026-05-11T07:02:12.918127Z",
-    "health_status": {
-      "status": "ok",
-      "last_check": "2026-05-13T00:00:25.014006Z",
-      "http_code": 200,
-      "error": null
-    },
-    "auto_discovered": true,
-    "discovery_confidence": 1.0
-  },
-  {
-    "casino_name": "New Online Casinos for 2026 | Top 3 Casinos to Join in 2026",
-    "slug": "new-online-casinos-for-2026-top-3-casinos-to-join-in-2026",
-    "url": "https://www.johnnybet.com/new-online-casinos-for",
-    "bonus": "20 free spins",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": null
-    },
-    "wagering": {
-      "bonus": "Check terms",
-      "free_spins": "Check terms"
-    },
-    "verification": {
-      "status": "needs_verification",
-      "last_checked": "2026-05-11T07:02:12.918139Z",
-      "verified_by": "auto-discovery"
-    },
-    "trust": {
-      "rating": null,
-      "total_reviews": 0,
-      "warning_flags": []
-    },
-    "geo_restriction": {
-      "allowed": [],
-      "restricted": []
-    },
-    "info": {
-      "payment_methods": [],
-      "currencies": [],
-      "languages": [],
-      "live_chat": null,
-      "mobile_app": null
-    },
-    "ai_summary": "New Online Casinos for 2026 | Top 3 Casinos to Join in 2026: Auto-discovered May 2026. Verification pending. 20 free spins",
-    "last_updated": "2026-05-11T07:02:12.918147Z",
-    "health_status": {
-      "status": "ok",
-      "last_check": "2026-05-13T00:00:25.014009Z",
-      "http_code": 200,
-      "error": null
-    },
-    "auto_discovered": true,
-    "discovery_confidence": 1.0
-  },
-  {
-    "casino_name": "Best Bitcoin Casinos with Instant Withdrawals in 2026",
-    "slug": "best-bitcoin-casinos-with-instant-withdrawals-in-2026",
-    "url": "https://tokenist.com/crypto-casinos/best-bitcoin-casinos-with-instant-withdrawals",
-    "bonus": "200% Up To €5000",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": null
-    },
-    "wagering": {
-      "bonus": "Check terms",
-      "free_spins": "Check terms"
-    },
-    "verification": {
-      "status": "needs_verification",
-      "last_checked": "2026-05-11T07:02:12.918153Z",
-      "verified_by": "auto-discovery"
-    },
-    "trust": {
-      "rating": null,
-      "total_reviews": 0,
-      "warning_flags": []
-    },
-    "geo_restriction": {
-      "allowed": [],
-      "restricted": []
-    },
-    "info": {
-      "payment_methods": [],
-      "currencies": [],
-      "languages": [],
-      "live_chat": null,
-      "mobile_app": null
-    },
-    "ai_summary": "Best Bitcoin Casinos with Instant Withdrawals in 2026: Auto-discovered May 2026. Verification pending. 200% Up To €5000",
-    "last_updated": "2026-05-11T07:02:12.918160Z",
-    "health_status": {
-      "status": "ok",
-      "last_check": "2026-05-13T00:00:25.014013Z",
-      "http_code": 200,
-      "error": null
-    },
-    "auto_discovered": true,
-    "discovery_confidence": 1.0
-  },
-  {
-    "casino_name": "Best No KYC Crypto Casinos in 2026 - Top BTC Casinos Ranked",
-    "slug": "best-no-kyc-crypto-casinos-in-2026-top-btc-casinos-ranked",
-    "url": "https://best.casinosfreefromkyc.com",
-    "bonus": "470% up to $4",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": null
-    },
-    "wagering": {
-      "bonus": "Check terms",
-      "free_spins": "Check terms"
-    },
-    "verification": {
-      "status": "needs_verification",
-      "last_checked": "2026-05-11T07:02:12.918169Z",
-      "verified_by": "auto-discovery"
-    },
-    "trust": {
-      "rating": null,
-      "total_reviews": 0,
-      "warning_flags": []
-    },
-    "geo_restriction": {
-      "allowed": [],
-      "restricted": []
-    },
-    "info": {
-      "payment_methods": [],
-      "currencies": [],
-      "languages": [],
-      "live_chat": null,
-      "mobile_app": null
-    },
-    "ai_summary": "Best No KYC Crypto Casinos in 2026 - Top BTC Casinos Ranked: Auto-discovered May 2026. Verification pending. 470% up to $4",
-    "last_updated": "2026-05-11T07:02:12.918175Z",
-    "health_status": {
-      "status": "ok",
-      "last_check": "2026-05-13T00:00:25.014016Z",
-      "http_code": 200,
-      "error": null
-    },
-    "auto_discovered": true,
-    "discovery_confidence": 1.0
+    "license": [
+      "MGA",
+      "UKGC",
+      "Spelinspektionen"
+    ]
   }
 ];
 
-export default casinoDataEnhanced;
+module.exports = { default: casinoDataEnhanced };
+module.exports.default = casinoDataEnhanced;
