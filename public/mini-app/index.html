@@ -201,6 +201,7 @@
       gap: 8px;
       margin-bottom: 12px;
       font-size: 12px;
+      align-items: center;
     }
     .sort-bar select {
       background: var(--tg-theme-secondary-bg-color, #1a1a1a);
@@ -209,6 +210,31 @@
       border-radius: 8px;
       padding: 4px 10px;
       font-size: 12px;
+    }
+    .country-select {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      align-items: center;
+    }
+    .country-select select {
+      flex: 1;
+      background: var(--tg-theme-secondary-bg-color, #1a1a1a);
+      color: var(--tg-theme-text-color, #fff);
+      border: 1px solid var(--tg-theme-hint-color, #333);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .country-select select:focus {
+      outline: none;
+      border-color: var(--tg-theme-button-color, #2481cc);
+    }
+    .country-select label {
+      font-size: 14px;
+      opacity: 0.8;
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -227,6 +253,39 @@
       <div class="filter-chip" data-filter="freespins">Free Spins</div>
       <div class="filter-chip" data-filter="low-wager">Low Wager</div>
       <div class="filter-chip" data-filter="high-bonus">High Bonus</div>
+    </div>
+    <div class="country-select">
+      <label>🌍</label>
+      <select id="countrySelect">
+        <option value="">All Countries</option>
+        <option value="FI">🇫🇮 Finland</option>
+        <option value="SE">🇸🇪 Sweden</option>
+        <option value="NO">🇳🇴 Norway</option>
+        <option value="DE">🇩🇪 Germany</option>
+        <option value="UK">🇬🇧 United Kingdom</option>
+        <option value="IE">🇮🇪 Ireland</option>
+        <option value="CA">🇨🇦 Canada</option>
+        <option value="US">🇺🇸 United States</option>
+        <option value="AU">🇦🇺 Australia</option>
+        <option value="NZ">🇳🇿 New Zealand</option>
+        <option value="EE">🇪🇪 Estonia</option>
+        <option value="DK">🇩🇰 Denmark</option>
+        <option value="NL">🇳🇱 Netherlands</option>
+        <option value="BE">🇧🇪 Belgium</option>
+        <option value="FR">🇫🇷 France</option>
+        <option value="ES">🇪🇸 Spain</option>
+        <option value="IT">🇮🇹 Italy</option>
+        <option value="PT">🇵🇹 Portugal</option>
+        <option value="AT">🇦🇹 Austria</option>
+        <option value="CH">🇨🇭 Switzerland</option>
+        <option value="PL">🇵🇱 Poland</option>
+        <option value="CZ">🇨🇿 Czech Republic</option>
+        <option value="JP">🇯🇵 Japan</option>
+        <option value="IN">🇮🇳 India</option>
+        <option value="BR">🇧🇷 Brazil</option>
+        <option value="MX">🇲🇽 Mexico</option>
+        <option value="ZA">🇿🇦 South Africa</option>
+      </select>
     </div>
     <div class="sort-bar">
       <span>Sort:</span>
@@ -257,6 +316,7 @@
     let allCasinos = [];
     let currentFilter = 'all';
     let currentSort = 'name';
+    let currentCountry = '';
 
     // Init Telegram WebApp
     const tg = window.Telegram?.WebApp;
@@ -267,7 +327,8 @@
 
     async function loadCasinos() {
       try {
-        const res = await fetch(`${API_BASE}/casinos?limit=200&key=${API_KEY}`);
+        const countryParam = currentCountry ? `&country=${currentCountry}` : '';
+        const res = await fetch(`${API_BASE}/casinos?limit=200${countryParam}&key=${API_KEY}`);
         const data = await res.json();
         allCasinos = data.casinos || [];
         renderCasinos();
@@ -370,6 +431,10 @@
         const health = getHealthStatus(c);
         const statusClass = c.defunct ? 'status-defunct' : (c.health_status?.status === 'ok' ? 'status-ok' : 'status-issue');
         const usFlag = isUSCasino(c) ? '🇺🇸 ' : '';
+        const licenseBadges = (c.license || []).map(l => {
+          const flags = { 'MGA': '🇲🇹', 'Curacao': '🇨🇼', 'UKGC': '🇬🇧', 'Estonian': '🇪🇪', 'Spelinspektionen': '🇸🇪', 'USA_State': '🇺🇸', 'Anjouan': '🇰🇲', 'Kahnawake': '🇨🇦', 'Gibraltar': '🇬🇮' };
+          return `<span style="font-size:10px;opacity:0.6;margin-right:4px;">${flags[l] || '🏛️'} ${l}</span>`;
+        }).join('');
 
         return `
           <div class="casino-card ${statusClass}" onclick="showDetail('${c.slug}')">
@@ -383,6 +448,7 @@
               ${freeSpins ? `<span>🎰 ${freeSpins}</span>` : ''}
               <span>🔄 ${wager}</span>
             </div>
+            <div style="margin-top:6px;">${licenseBadges}</div>
           </div>
         `;
       }).join('');
@@ -456,6 +522,14 @@
         ` : ''}
 
         <div class="detail-section">
+          <h3>License</h3>
+          <p>${(casino.license || ['Unknown']).map(l => {
+            const flags = { 'MGA': '🇲🇹', 'Curacao': '🇨🇼', 'UKGC': '🇬🇧', 'Estonian': '🇪🇪', 'Spelinspektionen': '🇸🇪', 'USA_State': '🇺🇸', 'Anjouan': '🇰🇲', 'Kahnawake': '🇨🇦', 'Gibraltar': '🇬🇮' };
+            return `${flags[l] || '🏛️'} ${l}`;
+          }).join('<br>')}</p>
+        </div>
+
+        <div class="detail-section">
           <h3>Verification</h3>
           <p>Status: ${casino.verification?.status || 'Unknown'}<br>
           Last verified: ${casino.verification?.last_verified || 'N/A'}<br>
@@ -496,6 +570,11 @@
         currentFilter = e.target.dataset.filter;
         renderCasinos();
       }
+    });
+
+    document.getElementById('countrySelect').addEventListener('change', (e) => {
+      currentCountry = e.target.value;
+      loadCasinos();
     });
 
     if (tg) {
