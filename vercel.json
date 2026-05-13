@@ -70,12 +70,12 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/public/index.html"
-    },
-    {
       "source": "/submit",
       "destination": "/public/submit.html"
+    },
+    {
+      "source": "/",
+      "destination": "/public/index.html"
     },
     {
       "source": "/bonuses",
