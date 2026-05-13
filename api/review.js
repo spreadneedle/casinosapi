@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SUBMISSIONS_FILE = path.join(__dirname, '..', 'submissions.json');
+const SUBMISSIONS_FILE = path.join('/tmp', 'submissions.json');
 
 function loadSubmissions() {
   try {

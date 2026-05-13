@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const SUBMISSIONS_FILE = path.join(__dirname, '..', 'submissions.json');
+const SUBMISSIONS_FILE = path.join('/tmp', 'submissions.json');
 const RATE_LIMIT_MINUTES = 60;
 const MAX_SUBMISSIONS_PER_EMAIL_PER_MONTH = 5;
 
