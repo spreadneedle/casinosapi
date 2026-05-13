@@ -71,31 +71,31 @@
   "rewrites": [
     {
       "source": "/submit",
-      "destination": "/public/submit.html"
+      "destination": "/submit.html"
     },
     {
       "source": "/",
-      "destination": "/public/index.html"
+      "destination": "/index.html"
     },
     {
       "source": "/bonuses",
-      "destination": "/public/mini-app/index.html"
+      "destination": "/mini-app/index.html"
     },
     {
       "source": "/mini-app",
-      "destination": "/public/mini-app/index.html"
+      "destination": "/mini-app/index.html"
     },
     {
       "source": "/mini-app/:path*",
-      "destination": "/public/mini-app/index.html"
+      "destination": "/mini-app/index.html"
     },
     {
       "source": "/sitemap.xml",
-      "destination": "/public/sitemap.xml"
+      "destination": "/sitemap.xml"
     },
     {
       "source": "/api/index.json",
-      "destination": "/public/api/index.json"
+      "destination": "/api/index.json"
     },
     {
       "source": "/api/bonus",
