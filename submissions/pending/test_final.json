@@ -1,0 +1,20 @@
+{
+  "id": "sub_final_test",
+  "type": "correction",
+  "casino_name": "Videoslots",
+  "casino_url": "https://www.videoslots.com",
+  "submitter_email": "support@videoslots.com",
+  "domain_match": true,
+  "changes": {
+    "bonus": {
+      "old": "100% up to €200",
+      "new": "100% up to €250"
+    }
+  },
+  "risk_score": 0,
+  "risk_level": "low",
+  "status": "approved",
+  "submitted_at": "2026-05-13T21:00:00Z",
+  "reviewed_at": "2026-05-13T21:05:00Z",
+  "reviewed_by": "system"
+}
