@@ -3,140 +3,304 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="CasinosAPI v2.0 — AI-optimized casino bonus data API. Designed for AI assistants.">
-  <title>CasinosAPI v2.0 — AI Casino Bonus Data</title>
+  <meta name="description" content="CasinosAPI — Compare casino bonuses, free spins and wagering requirements across 120+ online casinos. Find the best deals for your country.">
+  <title>CasinosAPI — Casino Bonus Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0f;--bg2:#111118;--bg3:#16161f;--bg4:#1c1c28;--bdr:#2a2a3a;--bdr2:#1e1e2e;--t1:#e8e8f0;--t2:#9090a8;--t3:#606078;--ac:#7c6cf0;--ac-g:rgba(124,108,240,.25);--ac-s:rgba(124,108,240,.12);--grn:#00d68f;--gld:#ffd43b;--red:#ff6b6b;--org:#ffa94d;--cyn:#22d3ee;--r:12px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--t1);line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr2)}
+    .ni{max-width:1100px;margin:0 auto;padding:0 20px;height:56px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700}
+    .bico{width:32px;height:32px;background:linear-gradient(135deg,var(--ac),#a855f7);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:#fff}
+    .brand em{font-style:normal;color:var(--ac)}
+    .nlinks{display:flex;gap:4px}
+    .nlinks a{font-size:13px;font-weight:500;color:var(--t2);padding:7px 14px;border-radius:8px;transition:all .2s}
+    .nlinks a:hover{color:var(--t1);background:var(--bg3)}
+    .nlinks .cta{background:var(--ac);color:#fff}
+    .nlinks .cta:hover{background:#6b5bd9}
+    .hero{padding:120px 20px 60px;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-250px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(ellipse,var(--ac-g),transparent 70%);pointer-events:none}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;background:var(--ac-s);border:1px solid rgba(124,108,240,.2);border-radius:100px;font-size:12px;font-weight:500;color:var(--ac);margin-bottom:20px}
+    .pulse{width:7px;height:7px;background:var(--grn);border-radius:50%;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
+    .hero h1{font-size:clamp(32px,5.5vw,56px);font-weight:900;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px}
+    .grad{background:linear-gradient(135deg,var(--ac),#a855f7,var(--cyn));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero p{font-size:clamp(15px,2vw,18px);color:var(--t2);max-width:520px;margin:0 auto 32px}
+    .hbtns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:var(--r);font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all .2s;font-family:inherit}
+    .bp{background:var(--ac);color:#fff;box-shadow:0 4px 16px var(--ac-g)}
+    .bp:hover{background:#6b5bd9;transform:translateY(-1px)}
+    .bs{background:var(--bg3);color:var(--t1);border:1px solid var(--bdr)}
+    .bs:hover{background:var(--bg4)}
+    .stats{display:flex;justify-content:center;gap:40px;margin-top:48px;flex-wrap:wrap}
+    .stn{font-size:28px;font-weight:800;letter-spacing:-1px}
+    .stl{font-size:12px;color:var(--t3);margin-top:2px}
+    .sw{max-width:620px;margin:0 auto 48px;padding:0 20px}
+    .sbox{background:var(--bg3);border:1px solid var(--bdr);border-radius:16px;padding:5px;display:flex;transition:border-color .2s}
+    .sbox:focus-within{border-color:var(--ac);box-shadow:0 0 0 3px var(--ac-s)}
+    .sbox input{flex:1;background:none;border:none;color:var(--t1);font-size:15px;padding:10px 16px;outline:none;font-family:inherit;min-width:0}
+    .sbox input::placeholder{color:var(--t3)}
+    .sbox button{padding:10px 20px;background:var(--ac);color:#fff;border:none;border-radius:var(--r);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;flex-shrink:0}
+    .sbox button:hover{background:#6b5bd9}
+    .cbar{max-width:1100px;margin:0 auto;padding:0 20px 32px}
+    .cscr{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;align-items:center}
+    .cscr::-webkit-scrollbar{display:none}
+    .cscr>span{font-size:13px;font-weight:600;color:var(--t2);white-space:nowrap;flex-shrink:0;padding:7px 0}
+    .cc{display:flex;align-items:center;gap:5px;padding:7px 14px;background:var(--bg3);border:1px solid var(--bdr2);border-radius:100px;font-size:12px;font-weight:500;color:var(--t2);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .2s}
+    .cc:hover{background:var(--bg4);border-color:var(--bdr);color:var(--t1)}
+    .cc.on{background:var(--ac-s);border-color:var(--ac);color:var(--ac)}
+    .sec{max-width:1100px;margin:0 auto;padding:0 20px 56px}
+    .sh{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px}
+    .sh h2{font-size:22px;font-weight:800;letter-spacing:-.5px}
+    .sh small{font-size:13px;color:var(--t3)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+    .card{background:var(--bg3);border:1px solid var(--bdr2);border-radius:14px;padding:18px;transition:all .25s;cursor:pointer;position:relative;overflow:hidden}
+    .card:hover{border-color:var(--bdr);background:var(--bg4);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.4)}
+    .cr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+    .cn{font-size:16px;font-weight:700}
+    .cu{font-size:11px;color:var(--t3);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px}
+    .tr{padding:4px 10px;border-radius:100px;font-size:11px;font-weight:600;flex-shrink:0}
+    .th{background:rgba(0,214,143,.12);color:var(--grn)}
+    .tm{background:rgba(255,212,59,.12);color:var(--gld)}
+    .tl{background:rgba(255,107,107,.12);color:var(--red)}
+    .bl{font-size:17px;font-weight:800;letter-spacing:-.3px;margin-bottom:6px}
+    .bts{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+    .bt{font-size:12px;color:var(--t2)}
+    .bt b{color:var(--t1);font-weight:600}
+    .cf{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+    .lb{display:inline-flex;padding:3px 9px;background:var(--bg);border-radius:100px;font-size:10px;font-weight:500;color:var(--t2)}
+    .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+    .dok{background:var(--grn)}.dow{background:var(--org)}.dob{background:var(--red)}
+    .cl{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--ac),#a855f7);transform:scaleX(0);transition:transform .3s;transform-origin:left}
+    .card:hover .cl{transform:scaleX(1)}
+    .abox{background:var(--bg2);border:1px solid var(--bdr2);border-radius:14px;padding:28px}
+    .abox h3{font-size:18px;font-weight:700;margin-bottom:12px}
+    .abox pre{background:var(--bg);border:1px solid var(--bdr2);border-radius:10px;padding:16px;font-size:13px;color:var(--cyn);overflow-x:auto;line-height:1.7;margin-bottom:16px;font-family:'SF Mono',Monaco,monospace}
+    .abox p{font-size:14px;color:var(--t2)}
+    footer{border-top:1px solid var(--bdr2);padding:40px 20px;text-align:center}
+    footer p{font-size:13px;color:var(--t3)}
+    footer a{color:var(--ac)}
+    .ld{text-align:center;padding:40px;color:var(--t3)}
+    .spin{display:inline-block;width:24px;height:24px;border:3px solid var(--bdr);border-top-color:var(--ac);border-radius:50%;animation:sp .8s linear infinite}
+    @keyframes sp{to{transform:rotate(360deg)}}
+    .empty{text-align:center;padding:48px 20px;color:var(--t3);font-size:15px}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}.nlinks .hm{display:none}.stats{gap:24px}}
+  </style>
 </head>
 <body>
-<pre style="white-space: pre-wrap; font-family: monospace; padding: 20px;">
-================================================================================
-                          CASINOSAPI v2.0
-                    AI-Optimized Casino Bonus Intelligence
-================================================================================
 
-BASE URL:    https://casinosapi.com/api
-AUTH:        X-API-Key: grokcasino-api-key-2026-02-24-abcdef123456
-             OR ?key=grokcasino-api-key-2026-02-24-abcdef123456
-RATE LIMIT:  100 requests/minute
-AI-MODE:     ENABLED — Natural Language Search & Structured Responses
+<nav>
+  <div class="ni">
+    <a href="/" class="brand"><div class="bico">C</div>Casinos<em>API</em></a>
+    <div class="nlinks">
+      <a href="#casinos" class="hm">Browse</a>
+      <a href="#api" class="hm">API</a>
+      <a href="https://t.me/casinosapi_bot" class="cta">Telegram Bot</a>
+    </div>
+  </div>
+</nav>
 
-================================================================================
-                         QUICK START FOR AI ASSISTANTS
-================================================================================
+<section class="hero">
+  <div class="badge"><span class="pulse"></span> Live data from <span id="total-count">120</span>+ casinos</div>
+  <h1>Find the <span class="grad">Best Casino Bonuses</span></h1>
+  <p>Compare welcome bonuses, free spins, and wagering requirements across 120+ online casinos. Filtered for your country.</p>
+  <div class="hbtns">
+    <a href="#casinos" class="btn bp">Browse Casinos</a>
+    <a href="#api" class="btn bs">API Docs</a>
+  </div>
+  <div class="stats">
+    <div><div class="stn" id="stat-casinos">&mdash;</div><div class="stl">Active Casinos</div></div>
+    <div><div class="stn" id="stat-bonus">&mdash;</div><div class="stl">Avg Bonus Match</div></div>
+    <div><div class="stn" id="stat-spins">&mdash;</div><div class="stl">Total Free Spins</div></div>
+  </div>
+</section>
 
-1. DISCOVERY:  GET https://casinosapi.com/api/ai-capabilities.json
-2. ENDPOINTS:  GET https://casinosapi.com/api/index.json
-3. SEARCH:     GET https://casinosapi.com/api/search?q={query}
-4. HEALTH:     GET https://casinosapi.com/api/health (no auth)
+<div class="sw">
+  <div class="sbox">
+    <input type="text" id="search-input" placeholder="Search casinos, bonuses, or features..." onkeydown="if(event.key==='Enter')doSearch()">
+    <button onclick="doSearch()">Search</button>
+  </div>
+</div>
 
-================================================================================
-                              ENDPOINTS
-================================================================================
+<div class="cbar">
+  <div class="cscr">
+    <span>Country:</span>
+    <div class="cc on" data-cc="">All</div>
+    <div class="cc" data-cc="FI">&#127467;&#127470; Finland</div>
+    <div class="cc" data-cc="SE">&#127480;&#127466; Sweden</div>
+    <div class="cc" data-cc="NO">&#127475;&#127476; Norway</div>
+    <div class="cc" data-cc="DE">&#127465;&#127466; Germany</div>
+    <div class="cc" data-cc="GB">&#127468;&#127463; UK</div>
+    <div class="cc" data-cc="EE">&#127466;&#127466; Estonia</div>
+    <div class="cc" data-cc="CA">&#127464;&#127462; Canada</div>
+    <div class="cc" data-cc="US">&#127482;&#127480; USA</div>
+    <div class="cc" data-cc="AU">&#127462;&#127482; Australia</div>
+    <div class="cc" data-cc="NZ">&#127475;&#127487; New Zealand</div>
+  </div>
+</div>
 
-1. SEARCH — Natural Language Casino Discovery
-   GET /api/search?q={query}&location={cc}&limit={n}
-   
-   QUERY EXAMPLES:
-   • "200% bonus"              → Finds all 200% match bonuses
-   • "under €500 no wagering"  → Low wager, affordable bonuses
-   • "100 free spins"          → Free spins focus
-   • "fins+estonia"            → Geo-filtered results
-   
-   RESPONSE: {
-     "casinos": [{
-       "relevance_score": 60,
-       "match_reasons": [...],
-       "bonus_structure": {...},
-       "verification": {...},
-       "ai_summary": "..."
-     }],
-     "meta": {
-       "query_parsed": {...},
-       "total_results": 15,
-       "has_more": true
-     }
-   }
+<section class="sec" id="casinos">
+  <div class="sh">
+    <h2 id="section-title">All Casinos</h2>
+    <small id="section-count"></small>
+  </div>
+  <div id="casino-grid" class="grid">
+    <div class="ld"><div class="spin"></div><br>Loading casinos...</div>
+  </div>
+</section>
 
-2. CASINO DETAIL — Specific Casino Information
-   GET /api/casino?slug={slug}
-   GET /api/casino?name={name}
-   
-   Includes similar_casinos for alternatives.
+<section class="sec" id="api">
+  <div class="sh"><h2>API Access</h2></div>
+  <div class="abox">
+    <h3>Quick Start</h3>
+    <pre>GET https://casinosapi.com/api/casinos
+    ?key=YOUR_API_KEY
+    &amp;limit=10
 
-3. COMPARE — Side-by-Side Analysis
-   GET /api/compare?casinos={slug1},{slug2},{slug3}
-   
-   Returns:
-   • ai_recommendation — Pre-computed suggestion
-   • quick_pick — Best value, easiest wagering, most trusted
-   • Detailed comparisons for each aspect
+GET https://casinosapi.com/api/search
+    ?q=200%25+bonus+finland
+    &amp;key=YOUR_API_KEY
 
-4. COUNTRY FILTER — Find Casinos by Location
-   GET /api/casinos?country={cc}
-   GET /api/country?country={cc}
-   
-   COUNTRY CODES (ISO 3166-1 alpha-2):
-   • FI = Finland    • SE = Sweden     • DE = Germany
-   • UK = UK         • NO = Norway     • CA = Canada
-   • US = USA        • EE = Estonia    • IE = Ireland
-   • And 100+ more...
-   
-   EXAMPLES:
-   • /api/casinos?country=FI     → Finnish-licensed + MGA casinos
-   • /api/casinos?country=SE     → Swedish-licensed + MGA casinos
-   • /api/casinos?country=US     → US state-licensed only
-   • /api/casinos?country=DE     → MGA casinos accepting Germany
-   
-   FILTERS:
-   • Add &healthy_only=true for active casinos only
-   • Add &limit=50 to cap results
+GET https://casinosapi.com/api/country
+    ?country=FI
+    &amp;key=YOUR_API_KEY</pre>
+    <p>Full API documentation available at <a href="/api/ai-capabilities.json" style="color:var(--cyn)">/api/ai-capabilities.json</a>. Rate limit: 100 req/min.</p>
+  </div>
+</section>
 
-5. DISCOVERY — AI Capability Manifest
-   GET /api/ai-capabilities.json   ← START HERE FOR AI INTEGRATION
-   GET /api/index.json             ← Human-readable docs
-   GET /api-docs/openapi.yaml      ← OpenAPI spec
-   GET /llms.txt                   ← AI assistant quick reference
+<footer>
+  <p>CasinosAPI &copy; 2026 &middot; <a href="https://t.me/casinosapi_bot">Telegram Bot</a> &middot; <a href="/api/health">API Status</a></p>
+  <p style="margin-top:8px;font-size:11px;color:var(--t3)">Data refreshed daily. Gamble responsibly.</p>
+</footer>
 
-================================================================================
-                           CONTACT & FEEDBACK
-================================================================================
+<script>
+const API = 'https://casinosapi.com/api';
+const KEY = 'grokcasino-api-key-2026-02-24-abcdef123456';
+let allCasinos = [];
+let currentCountry = '';
 
-Email: admin@casinosapi.com
+async function fetchCasinos(country) {
+  let url = country
+    ? API + '/country?country=' + country + '&key=' + KEY
+    : API + '/casinos?key=' + KEY;
+  const res = await fetch(url);
+  const data = await res.json();
+  return data.casinos || [];
+}
 
-================================================================================
-                          AI INTEGRATION GUIDE
-================================================================================
+function trustClass(score) {
+  if (score >= 7) return 'th';
+  if (score >= 5) return 'tm';
+  return 'tl';
+}
 
-FOR GENERAL BONUS QUESTIONS → /api/search
-• No need to parse user query — just pass their words
-• Use relevance_score > 20 for high confidence matches
+function healthDot(hs) {
+  if (!hs) return '';
+  if (hs.status === 'ok') return '<span class="dot dok" title="Online"></span>';
+  if (hs.status === 'blocked') return '<span class="dot dow" title="Geo-blocked"></span>';
+  return '<span class="dot dob" title="' + (hs.status || 'Error') + '"></span>';
+}
 
-FOR SPECIFIC CASINO INFO → /api/casino
-• Use after user mentions specific casino name
-• If not found, fall back to /api/search
+function renderCard(c) {
+  const ts = c.trust ? c.trust.score : 0;
+  const tc = trustClass(ts);
+  const url = c.url ? c.url.replace(/^https?:\/\/(www\.)?/, '') : '';
+  const bonus = c.bonus || 'No bonus info';
+  const wager = c.wagering ? c.wagering.bonus || '—' : '—';
+  const spins = c.bonus_structure ? (c.bonus_structure.free_spins || 0) : 0;
+  const licenses = (c.license || []).map(l => '<span class="lb">' + l + '</span>').join('');
+  const hd = healthDot(c.health_status);
 
-FOR "WHICH IS BETTER" → /api/compare
-• Extract casino slugs from search results
-• Present ai_recommendation as your conclusion
+  return '<div class="card" onclick="window.open(\'' + (c.url || '#') + '\',\'_blank\')">'
+    + '<div class="cr"><div><div class="cn">' + c.casino_name + '</div>'
+    + '<div class="cu">' + url + '</div></div>'
+    + '<span class="tr ' + tc + '">' + ts + '/10</span></div>'
+    + '<div class="bl">' + bonus + '</div>'
+    + '<div class="bts">'
+    + '<span class="bt">Wagering: <b>' + wager + '</b></span>'
+    + (spins ? '<span class="bt">Free spins: <b>' + spins + '</b></span>' : '')
+    + '</div>'
+    + '<div class="cf">' + hd + licenses + '</div>'
+    + '<div class="cl"></div></div>';
+}
 
-FOR LOCATION-SPECIFIC → /api/casinos?country={cc}
-• Filter by user's country for relevant results
-• Combines license data with country acceptance rules
-• Use &healthy_only=true for active casinos only
+function renderGrid(casinos) {
+  const grid = document.getElementById('casino-grid');
+  if (!casinos.length) {
+    grid.innerHTML = '<div class="empty">No casinos found for this filter.</div>';
+    return;
+  }
+  grid.innerHTML = casinos.map(renderCard).join('');
+  document.getElementById('section-count').textContent = casinos.length + ' casinos';
+}
 
-LEGAL NOTE: This API does not check local gambling laws.
-User's jurisdiction may prohibit online gambling.
-Recommend user verify legality before playing.
+function updateStats(casinos) {
+  document.getElementById('stat-casinos').textContent = casinos.length;
+  let totalPct = 0, pctCount = 0, totalSpins = 0;
+  casinos.forEach(c => {
+    if (c.bonus_structure) {
+      if (c.bonus_structure.percentage) { totalPct += c.bonus_structure.percentage; pctCount++; }
+      if (c.bonus_structure.free_spins) totalSpins += c.bonus_structure.free_spins;
+    }
+  });
+  document.getElementById('stat-bonus').textContent = pctCount ? Math.round(totalPct / pctCount) + '%' : '—';
+  document.getElementById('stat-spins').textContent = totalSpins.toLocaleString();
+}
 
-COUNTRY FILTER LOGIC:
-• MGA casinos → Available in most EU countries
-• Curacao/Anjouan → International (block US/UK/AU/IL)
-• UKGC → UK only (but UK players use MGA too)
-• Spelinspektionen → Sweden only
-• Estonian → Estonia + Finland + EU
-• USA State → Specific US state only
+async function loadCasinos(country) {
+  currentCountry = country || '';
+  const grid = document.getElementById('casino-grid');
+  grid.innerHTML = '<div class="ld"><div class="spin"></div><br>Loading...</div>';
 
-================================================================================
-</pre>
+  try {
+    const casinos = await fetchCasinos(country);
+    allCasinos = casinos;
+    renderGrid(casinos);
+    if (!country) {
+      updateStats(casinos);
+      document.getElementById('total-count').textContent = casinos.length;
+    }
+    document.getElementById('section-title').textContent = country ? 'Casinos in ' + getCountryName(country) : 'All Casinos';
+  } catch (e) {
+    grid.innerHTML = '<div class="empty">Failed to load casinos. Try again later.</div>';
+  }
+}
+
+function getCountryName(cc) {
+  const m = {FI:'Finland',SE:'Sweden',NO:'Norway',DE:'Germany',GB:'United Kingdom',EE:'Estonia',CA:'Canada',US:'USA',AU:'Australia',NZ:'New Zealand'};
+  return m[cc] || cc;
+}
+
+function doSearch() {
+  const q = document.getElementById('search-input').value.trim().toLowerCase();
+  if (!q) { renderGrid(allCasinos); return; }
+  const filtered = allCasinos.filter(c => {
+    const name = (c.casino_name || '').toLowerCase();
+    const bonus = (c.bonus || '').toLowerCase();
+    const info = (c.ai_summary || '').toLowerCase();
+    return name.includes(q) || bonus.includes(q) || info.includes(q);
+  });
+  renderGrid(filtered);
+  document.getElementById('section-title').textContent = 'Search: "' + q + '"';
+}
+
+// Country buttons
+document.querySelectorAll('.cc').forEach(el => {
+  el.addEventListener('click', () => {
+    document.querySelectorAll('.cc').forEach(b => b.classList.remove('on'));
+    el.classList.add('on');
+    loadCasinos(el.dataset.cc);
+  });
+});
+
+// Init
+loadCasinos();
+</script>
 </body>
 </html>
