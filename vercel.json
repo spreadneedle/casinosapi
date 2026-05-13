@@ -114,6 +114,18 @@
       "destination": "/api/country_filter.js"
     },
     {
+      "source": "/api/submit",
+      "destination": "/api/submit.js"
+    },
+    {
+      "source": "/api/review",
+      "destination": "/api/review.js"
+    },
+    {
+      "source": "/submit",
+      "destination": "/public/submit.html"
+    },
+    {
       "source": "/api/bot",
       "destination": "/api/bot.js"
     },
