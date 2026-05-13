@@ -1,0 +1,24 @@
+{
+  "id": "sub_test_123",
+  "type": "correction",
+  "casino_name": "Boost Casino",
+  "casino_url": "https://www.boostcasino.net",
+  "submitter_email": "marketing@boostcasino.net",
+  "submitter_role": "Affiliate Manager",
+  "domain_match": true,
+  "changes": {
+    "bonus": {
+      "old": "100% up to €250",
+      "new": "150% up to €500"
+    }
+  },
+  "proof_url": "https://www.boostcasino.net/terms",
+  "notes": "Summer campaign update",
+  "risk_score": 0,
+  "risk_level": "low",
+  "status": "approved",
+  "submitted_at": "2026-05-13T12:00:00Z",
+  "reviewed_at": "2026-05-13T12:05:00Z",
+  "reviewed_by": "system",
+  "review_notes": "Auto-approved: low risk + domain match"
+}
