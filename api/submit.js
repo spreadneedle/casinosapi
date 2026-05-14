@@ -182,14 +182,8 @@ module.exports = async function handler(req, res) {
       review_notes: null
     };
     
-    // Auto-approve low risk + domain match
-    const autoApprove = riskLevel === 'low' && domainMatch;
-    if (autoApprove) {
-      submission.status = 'auto_approved';
-      submission.reviewed_at = new Date().toISOString();
-      submission.reviewed_by = 'system';
-      submission.review_notes = 'Auto-approved: low risk + domain match';
-    }
+    // All submissions require manual review - no auto-approval
+    const autoApprove = false;
     
     // Commit to GitHub
     const commitResult = await commitSubmissionToGitHub(submission);
@@ -209,11 +203,7 @@ module.exports = async function handler(req, res) {
         risk_level: riskLevel,
         domain_match: domainMatch,
         auto_approved: autoApprove,
-        message: autoApprove 
-          ? '✅ Auto-approved! Your submission will be merged shortly.'
-          : domainMatch 
-            ? '⏳ Submission received. Under review (domain verified).'
-            : '⏳ Submission received. Additional verification required.'
+        message: '⏳ Submission received. Pending manual review.'
       }
     });
     
