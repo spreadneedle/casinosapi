@@ -1,0 +1,23 @@
+{
+  "id": "sub_e5b48165c126dddf",
+  "type": "new",
+  "casino_name": "Scamsino",
+  "casino_url": "https://scamsino.com",
+  "submitter_email": "admin@scamsino.com",
+  "submitter_role": "Test",
+  "domain_match": true,
+  "changes": {
+    "bonus": {
+      "new": "100% up to €100"
+    }
+  },
+  "proof_url": "https://scamsino.com/terms",
+  "notes": "Test submission",
+  "risk_score": 0,
+  "risk_level": "low",
+  "status": "auto_approved",
+  "submitted_at": "2026-05-14T12:37:04.087Z",
+  "reviewed_at": "2026-05-14T12:37:04.090Z",
+  "reviewed_by": "system",
+  "review_notes": "Auto-approved: low risk + domain match"
+}
