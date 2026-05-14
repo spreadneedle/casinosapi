@@ -103,7 +103,7 @@
       <a href="#casinos" class="hm">Browse</a>
       <a href="/submit" class="hm">Submit Casino</a>
       <a href="#api" class="hm">API</a>
-      <a href="https://t.me/casinosapi_bot" class="cta">Telegram Bot</a>
+      <a href="https://t.me/casinosapi_bot" class="cta" rel="nofollow noopener">Telegram Bot</a>
     </div>
   </div>
 </nav>
@@ -177,7 +177,7 @@ GET https://casinosapi.com/api/country
 </section>
 
 <footer>
-  <p>CasinosAPI &copy; 2026 &middot; <a href="/submit">Submit Casino</a> &middot; <a href="https://t.me/casinosapi_bot">Telegram Bot</a> &middot; <a href="/api/health">API Status</a> &middot; <a href="mailto:contact@casinosapi.com">contact@casinosapi.com</a></p>
+  <p>CasinosAPI &copy; 2026 &middot; <a href="/submit">Submit Casino</a> &middot; <a href="https://t.me/casinosapi_bot" rel="nofollow noopener">Telegram Bot</a> &middot; <a href="/api/health">API Status</a> &middot; <a href="mailto:contact@casinosapi.com">contact@casinosapi.com</a></p>
   <p style="margin-top:8px;font-size:11px;color:var(--t3)">Data refreshed daily. Gamble responsibly.</p>
 </footer>
 
@@ -219,7 +219,7 @@ function renderCard(c) {
   const licenses = (c.license || []).map(l => '<span class="lb">' + l + '</span>').join('');
   const hd = healthDot(c.health_status);
 
-  return '<div class="card" onclick="window.open(\'' + (c.url || '#') + '\',\'_blank\')">'
+  return '<div class="card" onclick="window.open(\'' + (c.url || '#') + '\',\'_blank\',\'noopener\')">'
     + '<div class="cr"><div><div class="cn">' + c.casino_name + '</div>'
     + '<div class="cu">' + url + '</div></div>'
     + '<span class="tr ' + tc + '">' + ts + '/10</span></div>'
