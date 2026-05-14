@@ -1,8 +1,9 @@
-const { execSync } = require('child_process');
+const https = require('https');
 const crypto = require('crypto');
 
 const GITHUB_REPO = 'philipwallenius/grokcasino.online';
 const GITHUB_BRANCH = 'submissions';
+const GITHUB_TOKEN = process.env.GH_PAT;
 
 function generateId() {
   return 'sub_' + crypto.randomBytes(8).toString('hex');
@@ -55,57 +56,95 @@ function getRiskLevel(score) {
   return 'high';
 }
 
-function createSubmissionFile(submission) {
+// GitHub API helper
+function githubApi(path, method = 'GET', data = null) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'api.github.com',
+      path: `/repos/${GITHUB_REPO}${path}`,
+      method,
+      headers: {
+        'Authorization': `token ${GITHUB_TOKEN}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'User-Agent': 'CasinosAPI-Submission-Bot',
+        'Content-Type': 'application/json'
+      }
+    };
+    
+    if (data) {
+      const jsonData = JSON.stringify(data);
+      options.headers['Content-Length'] = Buffer.byteLength(jsonData);
+    }
+    
+    const req = https.request(options, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        try {
+          const json = JSON.parse(body);
+          if (res.statusCode >= 200 && res.statusCode < 300) {
+            resolve(json);
+          } else {
+            reject(new Error(`GitHub API ${res.statusCode}: ${json.message || body}`));
+          }
+        } catch {
+          reject(new Error(`GitHub API ${res.statusCode}: ${body}`));
+        }
+      });
+    });
+    
+    req.on('error', reject);
+    if (data) req.write(JSON.stringify(data));
+    req.end();
+  });
+}
+
+async function getFileSha(path, branch) {
+  try {
+    const data = await githubApi(`/contents/${path}?ref=${branch}`);
+    return data.sha;
+  } catch {
+    return null; // File doesn't exist
+  }
+}
+
+async function commitSubmissionToGitHub(submission) {
   const filename = `submissions/pending/${submission.id}.json`;
-  const content = JSON.stringify(submission, null, 2);
+  const content = Buffer.from(JSON.stringify(submission, null, 2)).toString('base64');
+  const message = `[submission] ${submission.type}: ${submission.casino_name} (${submission.risk_level} risk)`;
   
   try {
-    // Create directory if needed
-    execSync('mkdir -p submissions/pending submissions/approved', { cwd: '/tmp' });
+    // Check if file already exists
+    const sha = await getFileSha(filename, GITHUB_BRANCH);
     
-    // Write file
-    const filepath = `/tmp/${filename}`;
-    require('fs').writeFileSync(filepath, content);
+    // Create or update file
+    const data = {
+      message,
+      content,
+      branch: GITHUB_BRANCH
+    };
+    if (sha) data.sha = sha;
     
-    // Git operations
-    const git = (cmd) => execSync(cmd, { cwd: '/tmp', encoding: 'utf8' });
+    await githubApi(`/contents/${filename}`, 'PUT', data);
     
-    try {
-      git('git init');
-      git(`git remote add origin https://github.com/${GITHUB_REPO}.git 2>/dev/null || true`);
-      git(`git config user.email "submissions@casinosapi.com"`);
-      git(`git config user.name "CasinosAPI Bot"`);
-      
-      // Try to fetch and checkout branch
-      try {
-        git(`git fetch origin ${GITHUB_BRANCH}`);
-        git(`git checkout ${GITHUB_BRANCH}`);
-      } catch {
-        git(`git checkout -b ${GITHUB_BRANCH}`);
-      }
-      
-      git('git add .');
-      git(`git commit -m "[submission] ${submission.type}: ${submission.casino_name} (${submission.risk_level} risk)"`);
-      
-      // Note: Push would need auth token - we'll handle this via GitHub Actions or manual
-      return { success: true, filename, filepath };
-    } catch (gitErr) {
-      console.log('Git error (expected in serverless):', gitErr.message);
-      return { success: true, filename, filepath, gitError: true };
-    }
+    return { success: true, filename };
   } catch (e) {
-    console.error('File creation error:', e);
+    console.error('GitHub commit error:', e.message);
     return { success: false, error: e.message };
   }
 }
 
-module.exports = function handler(req, res) {
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  
+  if (!GITHUB_TOKEN) {
+    return res.status(500).json({ error: 'GitHub token not configured' });
+  }
   
   try {
     const body = req.body || {};
@@ -143,9 +182,6 @@ module.exports = function handler(req, res) {
       review_notes: null
     };
     
-    // Create file (in /tmp for now)
-    const fileResult = createSubmissionFile(submission);
-    
     // Auto-approve low risk + domain match
     const autoApprove = riskLevel === 'low' && domainMatch;
     if (autoApprove) {
@@ -155,8 +191,15 @@ module.exports = function handler(req, res) {
       submission.review_notes = 'Auto-approved: low risk + domain match';
     }
     
-    // TODO: Send Telegram notification
-    // TODO: If auto-approved, queue for merge into dataset
+    // Commit to GitHub
+    const commitResult = await commitSubmissionToGitHub(submission);
+    
+    if (!commitResult.success) {
+      return res.status(500).json({ 
+        error: 'Failed to save submission',
+        details: commitResult.error
+      });
+    }
     
     res.status(201).json({
       success: true,
@@ -176,6 +219,6 @@ module.exports = function handler(req, res) {
     
   } catch (e) {
     console.error('Submission error:', e);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Internal server error', details: e.message });
   }
 };
