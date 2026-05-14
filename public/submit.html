@@ -51,7 +51,7 @@
   
   <div class="container">
     <h1>Submit Casino Data</h1>
-    <p class="subtitle">Add a new casino or correct existing information. All submissions are reviewed before going live.</p>
+    <p class="subtitle">Add a new casino or correct existing information. <strong>All submissions require manual review</strong> before going live.</p>
     
     <div id="message"></div>
     
@@ -83,7 +83,7 @@
         <div class="form-group">
           <label>Your Email *</label>
           <input type="email" id="submitterEmail" placeholder="you@casino.com" required>
-          <p class="hint" id="domainHint">Use your casino domain email for faster approval</p>
+          <p class="hint" id="domainHint">Use your casino domain email for faster review</p>
         </div>
         <div class="form-group">
           <label>Your Role</label>
@@ -110,7 +110,7 @@ License: Added MGA"></textarea>
         <textarea id="notes" placeholder="Any context that might help with the review..."></textarea>
       </div>
       
-      <button type="submit" class="btn" id="submitBtn">Submit for Review</button>
+      <button type="submit" class="btn" id="submitBtn">Submit for Manual Review</button>
     </form>
     
     <div class="security-note">
@@ -175,7 +175,7 @@ License: Added MGA"></textarea>
         if (res.ok && data.success) {
           showMessage('success', 
             `Submission received! ID: ${data.submission.id}`,
-            data.submission.message
+            '⏳ Your submission is pending manual review. You will be notified once it has been processed.'
           );
           document.getElementById('submitForm').reset();
         } else {
@@ -218,9 +218,9 @@ License: Added MGA"></textarea>
         const emailDomain = email.split('@')[1].toLowerCase();
         
         if (urlDomain === emailDomain || urlDomain.endsWith('.' + emailDomain)) {
-          hint.innerHTML = '<span class="match">✓ Email domain matches casino domain — fast-track approval</span>';
+          hint.innerHTML = '<span class="match">✓ Email domain matches casino domain — speeds up review</span>';
         } else {
-          hint.innerHTML = '<span class="nomatch">⚠ Email domain does not match — additional verification required</span>';
+          hint.innerHTML = '<span class="nomatch">⚠ Email domain does not match — additional verification may be required</span>';
         }
       } catch {
         hint.innerHTML = 'Use your casino domain email for faster approval';
