@@ -18,13 +18,45 @@ BONUS_FILE = REPO_ROOT / "api" / "bonus_enhanced.js"
 URLS_FILE = REPO_ROOT / "casino_urls.json"
 
 # Search queries for discovery (rotate through these)
+# Use -review/-best/-top/-list to avoid affiliate/review sites
 SEARCH_QUERIES = [
-    "new online casino 2026",
-    "best new crypto casino",
-    "licensed online casino 2026",
-    "new casino no deposit bonus",
-    "new slot casino finland",
+    "new online casino welcome bonus 2026 -review -best -top -list -askgamblers",
+    "crypto casino register deposit bonus -review -comparison -guide",
+    "online casino free spins welcome bonus 2026 -casino.org -gambling.com",
+    "new casino launch 2026 sign up bonus -affiliate -rated",
+    "new slot casino finland welcome bonus -review -top10",
 ]
+
+# Review/affiliate/media sites to skip entirely
+REVIEW_BLOCKLIST = {
+    'askgamblers.com', 'casino.org', 'casinomeister.com',
+    'vegasslotsonline.com', 'casinotopsites.com', 'gambling.com',
+    'casinoreviews.com', 'bonus.com', 'gamblingsites.com',
+    'onlinecasinoground.nl', 'casinoguru.com', 'slotcatalog.com',
+    'casinowow.com', 'gamingintelligence.com', 'igamingbusiness.com',
+    'yogonet.com', 'sbcnews.co.uk', 'casinobeats.com',
+    'youtube.com', 'reddit.com', 'medium.com', 'trustpilot.com',
+    'wikipedia.org', 'quora.com', 'facebook.com', 'twitter.com',
+    'x.com', 'instagram.com', 'tiktok.com', 'pinterest.com',
+    'linkedin.com', 'news.ycombinator.com',
+    'bonusfinder.com', 'casinoratings.com', 'toplist.com',
+    'oddschecker.com', 'gambling911.com', 'gamblingnews.com',
+    'calvinayre.com', 'europeangaming.eu', 'focusgn.com',
+    'casinosanalyzer.com', 'casinobonusca.com', 'casinoalpha.com',
+    'chipy.com', 'latestcasinobonuses.com', 'lcb.org',
+    'thepogg.com', 'wizardofodds.com', 'johnslots.com',
+    'slotswise.com', 'casinogrounds.com', 'bigwinboard.com',
+    # Press release / news wire sites
+    'globenewswire.com', 'prnewswire.com', 'businesswire.com',
+    'newswire.com', 'prweb.com', 'accesswire.com',
+    # More review/affiliate sites
+    'slotozilla.com', 'casinobonusesfinder.com', 'nodepositexplorer.com',
+    'newcasinos.com', 'allfreechips.com', 'freespinny.com',
+    'cryptoslate.com', 'tokenist.com', 'coinstats.app',
+    'bitcoinist.com', 'coingape.com', 'cryptonews.com',
+    'coindesk.com', 'cointelegraph.com', 'decrypt.co',
+    'pokertube.com', 'pokernews.com',
+}
 
 def load_existing_casinos():
     """Load current casino database to check for duplicates"""
@@ -79,9 +111,20 @@ def fetch_page_content(url, timeout=10):
     except:
         return None
 
+def is_review_site(url):
+    """Check if URL belongs to a review/affiliate/media site"""
+    domain = urlparse(url).netloc.lower().replace('www.', '')
+    # Check exact match and parent domain
+    parts = domain.split('.')
+    for i in range(len(parts) - 1):
+        check = '.'.join(parts[i:])
+        if check in REVIEW_BLOCKLIST:
+            return True, domain
+    return False, domain
+
 def validate_casino_page(html, url):
     """
-    Check if page looks like a real casino.
+    Check if page looks like a real casino (not a review/affiliate site).
     Returns (is_valid, confidence, reason)
     """
     if not html:
@@ -95,10 +138,39 @@ def validate_casino_page(html, url):
     if keyword_count < 2:
         return False, 0.1, "Missing casino keywords"
     
+    # BAD: Review/affiliate signals (strong negative)
+    review_signals = [
+        'casino review', 'our rating', 'editor\'s pick', 'top 10 casino',
+        'best casinos', 'casino comparison', 'we review', 'read review',
+        'visit casino', 'claim bonus at', 'affiliate', 'our experts',
+        'casino list', 'ranked by', 'our picks', 'tested by',
+        'top rated casinos', 'recommended casinos', 'casino ratings',
+    ]
+    review_count = sum(1 for sig in review_signals if sig in html_lower)
+    if review_count >= 3:
+        return False, 0.15, f"Review/affiliate site ({review_count} signals)"
+    
+    # GOOD: Actual casino signals (sign-up, deposit, game providers)
+    casino_signals = [
+        'sign up', 'register', 'create account', 'open account',
+        'deposit', 'withdrawal', 'cashier', 'my account',
+        'responsible gambling', '18+', 'gamble responsibly',
+    ]
+    casino_signal_count = sum(1 for sig in casino_signals if sig in html_lower)
+    
+    # GOOD: Game provider names
+    game_providers = [
+        'netent', 'microgaming', 'pragmatic play', 'play\'n go',
+        'evolution', 'yggdrasil', 'red tiger', 'big time gaming',
+        'nolimit city', 'push gaming', 'thunderkick', 'quickspin',
+        'relax gaming', 'hacksaw', 'elk studios', 'isoftbet',
+    ]
+    provider_count = sum(1 for prov in game_providers if prov in html_lower)
+    
     # Good signal: Footer with legal stuff
     has_footer = 'footer' in html_lower or 'copyright' in html_lower
     has_terms = 'terms' in html_lower or 'privacy' in html_lower
-    has_license = any(lic in html_lower for lic in ['curaçao', 'curacao', 'malta', 'mga', 'ukgc', 'license'])
+    has_license = any(lic in html_lower for lic in ['curaçao', 'curacao', 'malta', 'mga', 'ukgc', 'license', 'spelinspektionen'])
     
     # Bad signals
     has_under_construction = 'under construction' in html_lower or 'coming soon' in html_lower
@@ -113,15 +185,18 @@ def validate_casino_page(html, url):
     
     # Calculate confidence
     confidence = 0.4  # base for having keywords
-    if has_footer: confidence += 0.15
-    if has_terms: confidence += 0.15
-    if has_license: confidence += 0.3
+    if has_footer: confidence += 0.1
+    if has_terms: confidence += 0.1
+    if has_license: confidence += 0.2
+    if casino_signal_count >= 2: confidence += 0.2  # sign-up, deposit etc.
+    if provider_count >= 1: confidence += 0.15  # game providers present
+    if review_count >= 1: confidence -= 0.15  # some review signals = penalty
     
     # Check for basic quality signals
     if len(html) < 5000:  # Too short
         confidence -= 0.2
     
-    is_valid = confidence >= 0.6
+    is_valid = confidence >= 0.65
     reason = "Looks legit" if is_valid else f"Low confidence ({confidence:.2f})"
     
     return is_valid, confidence, reason
@@ -201,6 +276,12 @@ def main():
             
             # Skip if obviously not a casino
             if not url or not any(kw in url.lower() + title.lower() for kw in ['casino', 'bet', 'slot']):
+                continue
+            
+            # Skip review/affiliate sites
+            blocked, domain = is_review_site(url)
+            if blocked:
+                print(f"    ⏭️  Skipped review site: {domain}")
                 continue
             
             # Normalize URL
