@@ -735,6 +735,21 @@ const casinoData = [
   "trust_score": 7.5,
   "verification": "verified",
   "ai_summary": "Sportsbook casino hybrid"
+},
+  {
+  "casino_name": "Noppa Casino",
+  "bonus": "Wager-free bonuses",
+  "wagering_requirement_bonus": "0x",
+  "wagering_requirement_free_spins": "0x",
+  "free_spin_value": "n/a",
+  "info": "Kierrätysvapaa (wager-free) Finnish casino. Isle of Man GSC licensed (OGRA, Aug 2024). Operated by Rusg Beithe Ventures Limited.",
+  "licenses": [
+    5
+  ],
+  "updated": "2026-06-01",
+  "trust_score": 7.5,
+  "verification": "verified",
+  "ai_summary": "Wager-free Finnish casino with Isle of Man GSC license"
 }
 ];
 
