@@ -8,6 +8,68 @@
   <link rel="canonical" href="https://casinosapi.com/">
   <title>CasinosAPI — Casino Bonus Finder</title>
   <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebAPI",
+        "@id": "https://casinosapi.com/#webapi",
+        "name": "CasinosAPI",
+        "description": "AI-optimized casino bonus data API with natural language search. Returns structured JSON with pre-computed AI summaries, relevance scoring, license data, and trust signals across 120+ licensed online casinos.",
+        "url": "https://casinosapi.com",
+        "documentation": "https://casinosapi.com/api-docs/openapi.yaml",
+        "termsOfService": "https://casinosapi.com/about.html",
+        "provider": {
+          "@type": "Organization",
+          "name": "CasinosAPI",
+          "url": "https://casinosapi.com",
+          "email": "admin@casinosapi.com"
+        }
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://casinosapi.com/#dataset",
+        "name": "Casino Bonus Dataset",
+        "description": "Structured data on welcome bonuses, free spins, wagering requirements, licenses, and trust scores for 120+ licensed online casinos. Updated continuously and filterable by country.",
+        "url": "https://casinosapi.com",
+        "keywords": ["casino bonuses", "free spins", "wagering requirements", "gambling licenses", "casino data API"],
+        "creator": {
+          "@type": "Organization",
+          "name": "CasinosAPI",
+          "url": "https://casinosapi.com"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://casinosapi.com/api/casinos"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://casinosapi.com/api/search"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://casinosapi.com/#website",
+        "name": "CasinosAPI",
+        "url": "https://casinosapi.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://casinosapi.com/api/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">

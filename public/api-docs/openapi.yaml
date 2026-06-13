@@ -1,26 +1,133 @@
 openapi: 3.0.0
 info:
-  title: GrokCasino API
+  title: CasinosAPI
   description: |
-    API for accessing casino bonus information and recommendations.
-    This API is designed to be both human and AI-friendly, with clear documentation
-    and examples for AI integration.
-  version: 1.0.0
+    AI-optimized casino bonus data API with natural language search.
+    Returns structured JSON with pre-computed AI summaries, relevance scoring,
+    and trust signals. Designed to be consumed by AI assistants and agents
+    as well as human-facing applications.
+  version: 2.0.0
   contact:
-    email: support@grokcasino.online
+    email: admin@casinosapi.com
 
 servers:
-  - url: https://grokcasino.online/api
+  - url: https://casinosapi.com/api
     description: Production server
 
 paths:
+  /search:
+    get:
+      summary: Natural language search for casino bonuses
+      description: |
+        Primary endpoint. Accepts a natural language query and returns matching
+        casinos ranked by relevance, with match_reasons and parsed query parameters.
+      operationId: searchCasinos
+      tags:
+        - Search
+      parameters:
+        - name: q
+          in: query
+          description: Natural language query (e.g. "200% bonus no wagering")
+          required: true
+          schema:
+            type: string
+            example: 200% bonus no wagering
+        - name: location
+          in: query
+          description: Two-letter country code (ISO 3166-1 alpha-2)
+          required: false
+          schema:
+            type: string
+            pattern: '^[A-Z]{2}$'
+            example: FI
+        - name: limit
+          in: query
+          description: Maximum number of results
+          required: false
+          schema:
+            type: integer
+            default: 20
+            maximum: 100
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '429':
+          description: Too many requests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /casino:
+    get:
+      summary: Get detailed information about a specific casino
+      operationId: getCasino
+      tags:
+        - Casino
+      parameters:
+        - name: slug
+          in: query
+          description: Casino slug identifier (e.g. "cazeus-casino")
+          required: false
+          schema:
+            type: string
+            example: cazeus-casino
+        - name: name
+          in: query
+          description: Casino name for partial matching
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Casino'
+        '404':
+          description: Casino not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /compare:
+    get:
+      summary: Compare multiple casinos side-by-side
+      description: Returns an ai_recommendation and quick_pick options.
+      operationId: compareCasinos
+      tags:
+        - Compare
+      parameters:
+        - name: casinos
+          in: query
+          description: Comma-separated casino slugs
+          required: true
+          schema:
+            type: string
+            example: cazeus-casino,another-casino
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompareResponse'
+
   /bonus:
     get:
-      summary: Get casino bonus information for a specific country
-      description: |
-        Returns a list of casino bonuses available in the specified country.
-        This endpoint is particularly useful for AI systems that need to provide
-        accurate and up-to-date casino bonus information to users.
+      summary: List all bonuses for a location
       operationId: getCasinoBonuses
       tags:
         - Bonuses
@@ -32,7 +139,7 @@ paths:
           schema:
             type: string
             pattern: '^[A-Z]{2}$'
-            example: US
+            example: FI
       responses:
         '200':
           description: Successful response
@@ -40,32 +147,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BonusResponse'
-          headers:
-            X-RateLimit-Limit:
-              schema:
-                type: integer
-              description: Maximum requests per minute
-            X-RateLimit-Remaining:
-              schema:
-                type: integer
-              description: Remaining requests in the current window
-            X-RateLimit-Reset:
-              schema:
-                type: string
-                format: date-time
-              description: Time when the rate limit resets
-            Link:
-              schema:
-                type: string
-              description: Links to API documentation
         '400':
           description: Bad request - Invalid country code
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '405':
-          description: Method not allowed
           content:
             application/json:
               schema:
@@ -76,14 +159,82 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-          headers:
-            Retry-After:
+
+  /country:
+    get:
+      summary: List casinos filtered by country / license acceptance
+      operationId: getByCountry
+      tags:
+        - Country
+      parameters:
+        - name: country
+          in: query
+          description: Two-letter country code (ISO 3166-1 alpha-2)
+          required: true
+          schema:
+            type: string
+            pattern: '^[A-Z]{2}$'
+            example: SE
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
               schema:
-                type: integer
-              description: Number of seconds to wait before retrying
+                $ref: '#/components/schemas/BonusResponse'
+
+  /health:
+    get:
+      summary: API health check
+      description: No authentication required.
+      operationId: healthCheck
+      tags:
+        - System
+      responses:
+        '200':
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
 
 components:
   schemas:
+    SearchResponse:
+      type: object
+      properties:
+        query:
+          type: string
+        parsed:
+          type: object
+          description: Parsed query parameters extracted from the natural language query
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Casino'
+        _links:
+          $ref: '#/components/schemas/Links'
+      required:
+        - results
+
+    CompareResponse:
+      type: object
+      properties:
+        casinos:
+          type: array
+          items:
+            $ref: '#/components/schemas/Casino'
+        ai_recommendation:
+          type: string
+        quick_pick:
+          type: object
+      required:
+        - casinos
+
     BonusResponse:
       type: object
       properties:
@@ -92,17 +243,22 @@ components:
           items:
             $ref: '#/components/schemas/Casino'
         _links:
-          type: object
-          properties:
-            documentation:
-              type: string
-              format: uri
-            api_index:
-              type: string
-              format: uri
+          $ref: '#/components/schemas/Links'
       required:
         - casinos
-        - _links
+
+    Links:
+      type: object
+      properties:
+        documentation:
+          type: string
+          format: uri
+        api_index:
+          type: string
+          format: uri
+        capabilities:
+          type: string
+          format: uri
 
     Casino:
       type: object
@@ -110,38 +266,69 @@ components:
         casino_name:
           type: string
           description: Name of the casino
+        slug:
+          type: string
+          description: URL-safe identifier
         bonus:
           type: string
           description: Description of the bonus offer
-        wagering_requirement_bonus:
+        bonus_structure:
+          type: object
+          properties:
+            percentage:
+              type: number
+            max_amount:
+              type: number
+            free_spins:
+              type: integer
+        wagering:
+          type: object
+          properties:
+            bonus:
+              type: string
+              description: Wagering requirement for the bonus (e.g. "35x")
+            free_spins:
+              type: string
+        verification:
+          type: object
+          properties:
+            status:
+              type: string
+            confidence:
+              type: number
+            last_verified:
+              type: string
+              format: date
+        trust:
+          type: object
+          properties:
+            score:
+              type: number
+            warnings:
+              type: array
+              items:
+                type: string
+        ai_summary:
           type: string
-          description: Wagering requirement for the bonus (e.g., "35x")
-        wagering_requirement_free_spins:
-          type: string
-          description: Wagering requirement for free spins
-        free_spin_value:
-          type: string
-          description: Value of each free spin
-        info:
-          type: string
-          description: Additional information about the bonus
+          description: Pre-computed natural language description for AI consumption
         licenses:
           type: array
           items:
             type: string
           description: List of gambling licenses held by the casino
+        relevance_score:
+          type: number
+          description: Relevance to the search query (search endpoint only)
+        match_reasons:
+          type: array
+          items:
+            type: string
         updated:
           type: string
           format: date
-          description: Last update date of the bonus information
       required:
         - casino_name
         - bonus
-        - wagering_requirement_bonus
-        - wagering_requirement_free_spins
-        - free_spin_value
-        - licenses
-        - updated
 
     Error:
       type: object
@@ -157,30 +344,39 @@ components:
       type: apiKey
       in: header
       name: X-API-Key
-      description: API key for authentication
+      description: |
+        OPTIONAL. No API key is required to use this API; all read endpoints are
+        public. An X-API-Key header or ?key= query parameter is accepted for
+        future tiering/attribution but is not needed. Rate limited to 100
+        requests/minute per IP (HTTP 429 with Retry-After when exceeded).
 
-security:
-  - apiKey: []
+# No global security requirement: the API is open by default.
+security: []
 
 x-ai-guidelines:
   description: |
     Guidelines for AI systems using this API:
-    1. Always include a User-Agent header identifying your AI system
-    2. Handle rate limiting by respecting the X-RateLimit headers
-    3. Use the _links in responses to discover additional documentation
-    4. Validate country codes before making requests
-    5. Cache responses when appropriate to avoid hitting rate limits
+    1. Use /search for any user question about bonuses (it parses natural language).
+    2. Always include a descriptive User-Agent header identifying your AI system.
+    3. Respect the X-RateLimit headers and the 100 req/min limit.
+    4. Check verification.confidence before recommending a casino.
+    5. Surface trust.warnings to the user when trust.score < 7.
+    6. Use /compare when the user asks "which is better".
+    7. Filter by location for legal/compliance relevance.
+    8. Use the _links in responses to discover additional documentation.
   examples:
-    - description: "Example of an AI system making a request"
+    - description: "AI assistant searching for a bonus"
       request: |
-        GET /api/bonus?location=US
-        User-Agent: Grok-AI/1.0
+        GET /api/search?q=200%25+bonus+no+wagering&location=FI
+        User-Agent: MyAssistant/1.0
         Accept: application/json
       response: |
         {
-          "casinos": [...],
+          "query": "200% bonus no wagering",
+          "results": [...],
           "_links": {
-            "documentation": "https://grokcasino.online/api-docs",
-            "api_index": "https://grokcasino.online/api/index.json"
+            "documentation": "https://casinosapi.com/api-docs",
+            "api_index": "https://casinosapi.com/api/index.json",
+            "capabilities": "https://casinosapi.com/api/ai-capabilities.json"
           }
-        } 
+        }

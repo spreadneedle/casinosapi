@@ -1,0 +1,22 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "casinosapi",
+  "name_for_human": "CasinosAPI",
+  "description_for_model": "AI-optimized casino bonus data API. Use the /search endpoint with a natural language query (parameter q) for any user question about casino bonuses, free spins, or wagering requirements. Optionally pass location (ISO 3166-1 alpha-2 country code) to filter by legal/compliance relevance. Each result includes a pre-computed ai_summary, relevance_score, match_reasons, license data, and a trust object. Surface trust.warnings when trust.score < 7 and check verification.confidence before recommending. Use /compare for 'which is better' questions and /casino for details on a specific casino.",
+  "description_for_human": "Compare casino bonuses, free spins, and wagering requirements across 120+ licensed online casinos.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://casinosapi.com/api-docs/openapi.yaml"
+  },
+  "discovery": {
+    "capabilities": "https://casinosapi.com/api/ai-capabilities.json",
+    "llms_txt": "https://casinosapi.com/llms.txt",
+    "api_index": "https://casinosapi.com/api/index.json"
+  },
+  "logo_url": "https://casinosapi.com/favicon.png",
+  "contact_email": "admin@casinosapi.com",
+  "legal_info_url": "https://casinosapi.com/about.html"
+}

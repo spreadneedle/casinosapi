@@ -4,6 +4,7 @@
   "ai_optimized": true,
   "purpose": "Casino bonus data API with natural language search for AI assistants",
   "base_url": "https://casinosapi.com",
+  "usage_hint": "Public API, no key required. For any user question about casino bonuses, free spins, or wagering, call GET /api/search with the question as q.",
   "discovery": {
     "openapi": "https://casinosapi.com/api-docs/openapi.yaml",
     "endpoints": "https://casinosapi.com/api/index.json",
@@ -12,11 +13,10 @@
   },
   "authentication": {
     "required": false,
-    "type": "api_key",
-    "header": "X-API-Key",
-    "query_param": "key",
-    "rate_limit": "100 requests/minute",
-    "default_key": "grokcasino-api-key-2026-02-24-abcdef123456"
+    "type": "none",
+    "note": "No API key needed. Endpoints are public. An optional X-API-Key / ?key= is accepted for future tiering but is not required.",
+    "rate_limit": "100 requests/minute per IP",
+    "on_rate_limit": "HTTP 429 with Retry-After header"
   },
   "endpoints": {
     "search": {
@@ -71,6 +71,14 @@
       "description": "List all bonuses for a location",
       "parameters": {
         "location": "ISO country code"
+      }
+    },
+    "country": {
+      "path": "/api/country",
+      "method": "GET",
+      "description": "List casinos accepted in a country (by license)",
+      "parameters": {
+        "country": "ISO country code (e.g., FI, SE, DE)"
       }
     },
     "health": {
