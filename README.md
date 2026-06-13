@@ -1,201 +1,98 @@
-# CasinosAPI.com - AI-Optimized Casino Bonus API
+# CasinosAPI
 
-**The world's first casino bonus database optimized for AI consumption.**
+**AI-native casino bonus data API with natural-language search.**
+No signup. No API key. No auth. Just `GET` the endpoints and use the JSON.
 
-Perfect for Grok, ChatGPT, Claude, and other AI assistants to answer user questions about online casino bonuses.
-
----
-
-## 🚀 Quick Start for AI Systems
-
-### Search with Natural Language
-```
-GET /api/search?q=200% bonus&location=FI
-```
-
-**Example Response:**
-```json
-{
-  "meta": {
-    "query": "200% bonus",
-    "total_results": 5,
-    "processing_ms": 45
-  },
-  "casinos": [
-    {
-      "casino_name": "CaZeus Casino",
-      "slug": "cazeus",
-      "bonus": "200% up to €1750 + 150 free spins",
-      "relevance_score": 60,
-      "match_reasons": ["Exact 200% match", "200 free spins"],
-      "verification": {
-        "status": "verified",
-        "last_verified": "2026-02-13",
-        "confidence": "high"
-      },
-      "ai_summary": "Updated 2026. 200% match with 35x wagering. Crypto friendly."
-    }
-  ]
-}
-```
+🌐 **Live:** https://casinosapi.com
+📖 **For LLMs:** https://casinosapi.com/llms.txt
+🔧 **OpenAPI:** https://casinosapi.com/api-docs/openapi.yaml
 
 ---
 
-## 🎯 AI-Optimized Endpoints
+## What it is
 
-### 1. `/api/search` - Natural Language Search
+CasinosAPI returns structured, AI-ready data on welcome bonuses, free spins,
+wagering requirements, gambling licenses, and trust signals for **120+ licensed
+online casinos**. Every response includes a pre-computed `ai_summary`
+(natural-language description), relevance scoring, and trust warnings — so an
+assistant can answer a user's question from a single call.
 
-Query parameters:
-- `q` (required) - Natural language query
-- `location` (optional) - Country code (e.g., FI, SE, DE)
-- `limit` (optional) - Max results (default: 20)
+It's designed to be **discovered and consumed by LLMs and autonomous agents**,
+not just humans.
 
-**Example Queries:**
-- `/api/search?q=200% bonus`
-- `/api/search?q=no wagering spins&location=FI`
-- `/api/search?q=under €500 with 100 spins`
-- `/api/search?q=150% estonia crypto`
-
----
-
-### 2. `/api/casino` - Detailed Casino Profile
-
-Get full details for a specific casino:
-
-**Parameters:**
-- `slug` - Casino slug (e.g., `cazeus`)
-- `name` - Casino name (supports partial matching)
-
-**Examples:**
-- `/api/casino?slug=cazeus`
-- `/api/casino?name=CaZeus`
-
-**Response includes:**
-- Full bonus structure (percentage, max amount, free spins)
-- Wagering requirements
-- Verification status (verified/needs_check/suspicious)
-- Trust score (0-10)
-- Similar casinos
-- AI-generated summary
-
----
-
-### 3. `/api/compare` - Side-by-Side Comparison
-
-Compare up to 5 casinos at once:
-
-**Example:**
-- `/api/compare?casinos=cazeus,dynabet,videoslots`
-
-**Response includes:**
-- Best for bonus amount
-- Lowest wagering requirements
-- Highest trust score
-- AI recommendation
-
----
-
-## 📊 Data Structure
-
-Each casino includes:
-
-```json
-{
-  "casino_name": "CaZeus Casino",
-  "slug": "cazeus",
-  "bonus": "200% up to €1750 + 150 free spins",
-  "bonus_structure": {
-    "percentage": 200,
-    "max_amount": 1750,
-    "free_spins": 150
-  },
-  "wagering": {
-    "bonus": "35x",
-    "free_spins": "40x",
-    "max_win": null,
-    "time_limit": "7 days"
-  },
-  "verification": {
-    "status": "verified",
-    "last_verified": "2026-02-13",
-    "confidence": "high"
-  },
-  "trust": {
-    "score": 7.5,
-    "max": 10,
-    "warnings": []
-  },
-  "ai_summary": "Updated 2026. 200% match..."
-}
-```
-
----
-
-## 🛠️ Setup
+## Quick start
 
 ```bash
-npm install
-npm start      # Production
-npm run dev    # Development with auto-reload
+# Natural-language search (primary endpoint)
+curl "https://casinosapi.com/api/search?q=200%25%20bonus%20no%20wagering&location=FI"
+
+# One casino in detail
+curl "https://casinosapi.com/api/casino?slug=videoslots"
+
+# Compare casinos
+curl "https://casinosapi.com/api/compare?casinos=videoslots,cazeus-casino"
+
+# All bonuses for a country
+curl "https://casinosapi.com/api/bonus?location=SE"
+
+# Health check
+curl "https://casinosapi.com/api/health"
 ```
+
+No key required. Rate limit: **100 requests/minute per IP** (HTTP 429 with
+`Retry-After` when exceeded).
+
+## Endpoints
+
+| Endpoint | Description | Key params |
+|---|---|---|
+| `GET /api/search` | Natural-language bonus search (primary) | `q` (required), `location`, `limit` |
+| `GET /api/casino` | Details for one casino | `slug` or `name` |
+| `GET /api/compare` | Compare casinos side-by-side | `casinos` (comma-separated slugs) |
+| `GET /api/bonus` | All bonuses for a country | `location` |
+| `GET /api/country` | Casinos accepted in a country (by license) | `country` |
+| `GET /api/health` | Health check | — |
+
+## Response schema (per casino)
+
+```jsonc
+{
+  "casino_name": "Videoslots",
+  "slug": "videoslots",
+  "bonus": "100% up to €200 + 11 free spins",
+  "bonus_structure": { "percentage": 100, "max_amount": 200, "free_spins": 11 },
+  "wagering": { "bonus": "35x", "free_spins": "no wagering requirement" },
+  "verification": { "status": "verified", "confidence": "medium", "last_verified": "2026-02-13" },
+  "trust": { "score": 6, "max": 10, "warnings": [] },
+  "ai_summary": "New players at Videoslots can claim a 100% deposit match...",
+  "licenses": ["MGA"],
+  "relevance_score": 0.92,        // search endpoint only
+  "match_reasons": ["..."],       // search endpoint only
+  "updated": "2026-02-13"
+}
+```
+
+## Notes for AI assistants
+
+- Use `/api/search` for any user question about bonuses — it parses natural language.
+- Check `verification.confidence` before recommending a casino.
+- Surface `trust.warnings` to the user when `trust.score < 7`.
+- Use `/api/compare` for "which is better" questions.
+- Filter by `location` for legal/compliance relevance.
+- This is informational data, not advice to gamble. Always include responsible-gambling context.
+
+## Discovery files
+
+- [`/llms.txt`](https://casinosapi.com/llms.txt) — LLM-readable overview
+- [`/api/ai-capabilities.json`](https://casinosapi.com/api/ai-capabilities.json) — machine-readable capabilities
+- [`/api/index.json`](https://casinosapi.com/api/index.json) — endpoint index
+- [`/.well-known/ai-plugin.json`](https://casinosapi.com/.well-known/ai-plugin.json) — plugin manifest
+- [`/api-docs/openapi.yaml`](https://casinosapi.com/api-docs/openapi.yaml) — OpenAPI 3.0 spec
+
+## License
+
+Data provided as-is for informational purposes. 18+. Please gamble responsibly.
 
 ---
 
-## 🤖 Integration for AI Assistants
-
-### Suggested System Prompt:
-
-```
-You have access to GrokCasino API for casino bonus information.
-
-When users ask about casino bonuses:
-1. Use /api/search?q={user_query}&location={user_country}
-2. Present top 3-5 results with relevance scores
-3. Highlight wagering requirements and trust scores
-4. Mention verification status
-5. Suggest comparison if multiple casinos match
-
-Example flows:
-- "Find me 200% bonuses" → /api/search?q=200% bonus
-- "Best Finnish casino" → /api/search?q=&location=FI (by trust score)
-- "Compare Videoslots and Casumo" → /api/compare?casinos=videoslots,casumo
-```
-
-### Rate Limits
-- 100 requests/minute
-- Contact for higher limits (mention AI use case)
-
-### Suggested User Agents
-- `Grok-AI/1.0`
-- `ChatGPT-Plugin/1.0`
-- `Claude/1.0`
-- `Perplexity/1.0`
-
----
-
-## 📈 Stats
-
-- **Total Casinos:** 112
-- **Verified:** 105 (2026-02-13)
-- **API Version:** 2.0.0
-- **Data Updated:** Daily
-
----
-
-## 💪 Why This API?
-
-| Feature | GrokCasino | Other Sources |
-|---------|-----------|-------------
-| AI-optimized responses | ✅ Yes | ❌ No |
-| Natural language search | ✅ Yes | ❌ No |
-| Verification status | ✅ Yes | ⚠️ Partial |
-| Trust scores | ✅ Yes | ❌ No |
-| Bonus parsing (%, €, spins) | ✅ Structured | ⚠️ Text only |
-| Comparison tool | ✅ Yes | ❌ No |
-
-Built by AI, for AI. 🌲
-# Force redeploy L 14 veebr 2026 12:27:36 EET
-# Build triggered 2026-02-15 06:43:19 UTC
-# Test auto-deploy P 15 veebr 2026 16:36:52 EET
-# Deploy test P 15 veebr 2026 20:23:51 EET
-# Deploy trigger
+_Contact: admin@casinosapi.com_
