@@ -260,12 +260,6 @@ async function fetchCasinos(country) {
   return data.casinos || [];
 }
 
-function trustClass(score) {
-  if (score >= 7) return 'th';
-  if (score >= 5) return 'tm';
-  return 'tl';
-}
-
 function healthDot(hs) {
   if (!hs) return '';
   if (hs.status === 'ok') return '<span class="dot dok" title="Online"></span>';
@@ -274,8 +268,6 @@ function healthDot(hs) {
 }
 
 function renderCard(c) {
-  const ts = c.trust ? c.trust.score : 0;
-  const tc = trustClass(ts);
   const url = c.url ? c.url.replace(/^https?:\/\/(www\.)?/, '') : '';
   const bonus = c.bonus || 'No bonus info';
   const wager = c.wagering ? c.wagering.bonus || '—' : '—';
@@ -285,8 +277,7 @@ function renderCard(c) {
 
   return '<div class="card" onclick="window.open(\'' + (c.url || '#') + '\',\'_blank\',\'noopener\')">'
     + '<div class="cr"><div><div class="cn">' + c.casino_name + '</div>'
-    + '<div class="cu">' + url + '</div></div>'
-    + '<span class="tr ' + tc + '">' + ts + '/10</span></div>'
+    + '<div class="cu">' + url + '</div></div></div>'
     + '<div class="bl">' + bonus + '</div>'
     + '<div class="bts">'
     + '<span class="bt">Wagering: <b>' + wager + '</b></span>'

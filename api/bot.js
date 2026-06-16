@@ -90,8 +90,7 @@ async function handleMessage(msg) {
     let reply = '🆕 *New Casinos*\n\n';
     newCasinos.forEach((c, i) => {
       reply += `${i + 1}. *${c.name}*\n`;
-      reply += `   📝 ${c.ai_summary}\n`;
-      reply += `   ⭐ Trust: ${c.trust_score}/10\n\n`;
+      reply += `   📝 ${c.ai_summary}\n\n`;
     });
     reply += `📱 [Browse all in Mini App](${MINI_APP_URL})`;
 
@@ -183,7 +182,7 @@ async function handleInlineQuery(inlineQuery) {
       title: c.name,
       description: c.ai_summary?.substring(0, 100) || 'Casino details',
       input_message_content: {
-        message_text: `🎰 *${c.name}*\n💰 ${c.bonus?.text || 'No bonus info'}\n⭐ Trust: ${c.trust_score}/10\n🔗 ${c.url || 'N/A'}`,
+        message_text: `🎰 *${c.name}*\n💰 ${c.bonus?.text || 'No bonus info'}\n🔗 ${c.url || 'N/A'}`,
         parse_mode: 'Markdown'
       },
       reply_markup: {

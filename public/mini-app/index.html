@@ -422,9 +422,6 @@
       }
 
       document.getElementById('casinoList').innerHTML = filtered.map(c => {
-        const trust = c.trust?.score || 0;
-        const trustClass = trust >= 7 ? '' : trust >= 5 ? 'medium' : 'low';
-        const trustLabel = trust >= 7 ? 'High' : trust >= 5 ? 'Medium' : 'Low';
         const wager = c.wagering?.bonus || 'N/A';
         const maxBonus = c.bonus_structure?.max_amount ? `€${c.bonus_structure.max_amount}` : '';
         const freeSpins = c.bonus_structure?.free_spins ? `${c.bonus_structure.free_spins} FS` : '';
@@ -440,7 +437,6 @@
           <div class="casino-card ${statusClass}" onclick="showDetail('${c.slug}')">
             <div class="card-header">
               <div class="casino-name">${usFlag}${c.casino_name}</div>
-              <div class="trust-badge ${trustClass}">${trustLabel}</div>
             </div>
             <div class="bonus-line">${c.bonus}</div>
             <div class="meta-row">
@@ -487,10 +483,6 @@
             <div class="wagering-item">
               <div class="label">Free Spins</div>
               <div class="value">${freeSpins || 'None'}</div>
-            </div>
-            <div class="wagering-item">
-              <div class="label">Trust Score</div>
-              <div class="value">${casino.trust?.score || 'N/A'}/10</div>
             </div>
           </div>
         </div>
