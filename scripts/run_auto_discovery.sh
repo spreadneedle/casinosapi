@@ -16,8 +16,9 @@ echo "Started: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 echo ""
 
 # Step 1: Run discovery (Python script)
+# The script logs to stdout and prints JSON at the end; extract just the JSON object.
 echo "Step 1: Searching for new casinos..."
-"$SCRIPT_DIR/discover_casinos.py" > "$DISCOVERY_RESULTS"
+"$SCRIPT_DIR/discover_casinos.py" | sed -n '/^{/,$p' > "$DISCOVERY_RESULTS" || true
 
 # Check if we found anything
 CANDIDATES=$(jq -r '.candidates | length' "$DISCOVERY_RESULTS")
@@ -55,7 +56,7 @@ if [[ "$CANDIDATES" -gt 0 ]]; then
     echo ""
     echo "Step 3: Adding $CANDIDATES valid casinos to database..."
     
-    ADD_RESULTS=$(cat "$DISCOVERY_RESULTS" | "$SCRIPT_DIR/add_discovered_casinos.py")
+    ADD_RESULTS=$(cat "$DISCOVERY_RESULTS" | "$SCRIPT_DIR/add_discovered_casinos.py" | sed -n '/^{/,$p')
     echo "$ADD_RESULTS"
     
     ADDED_COUNT=$(echo "$ADD_RESULTS" | jq -r '.count')
