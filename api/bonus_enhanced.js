@@ -1,6 +1,6 @@
 // Enhanced CasinosAPI API - AI-Optimized Data
-// Generated: 2026-05-13T09:47:21Z
-// Casinos: 120
+// Generated: 2026-06-29T19:50:21.945118Z
+// Casinos: 121
 
 const casinoDataEnhanced = [
   {
@@ -4821,6 +4821,50 @@ const casinoDataEnhanced = [
       "UKGC",
       "Spelinspektionen"
     ]
+  },
+  {
+    "casino_name": "Best Crypto Casino Bonuses 2026 - Welcome Offers Up to 5 BTC",
+    "slug": "best-crypto-casino-bonuses-2026-welcome-offers-up-to-5-btc",
+    "url": "https://www.bitcoin.com/gambling/casino/bonus",
+    "bonus": "100% up to $20",
+    "bonus_structure": {
+      "percentage": null,
+      "max_amount": null,
+      "free_spins": null
+    },
+    "wagering": {
+      "bonus": "Check terms",
+      "free_spins": "Check terms"
+    },
+    "verification": {
+      "status": "needs_verification",
+      "last_checked": "2026-06-29T19:50:21.944790Z",
+      "verified_by": "auto-discovery"
+    },
+    "trust": {
+      "rating": null,
+      "total_reviews": 0,
+      "warning_flags": []
+    },
+    "geo_restriction": {
+      "allowed": [],
+      "restricted": []
+    },
+    "info": {
+      "payment_methods": [],
+      "currencies": [],
+      "languages": [],
+      "live_chat": null,
+      "mobile_app": null
+    },
+    "ai_summary": "Best Crypto Casino Bonuses 2026 - Welcome Offers Up to 5 BTC: Auto-discovered June 2026. Verification pending. 100% up to $20",
+    "last_updated": "2026-06-29T19:50:21.944904Z",
+    "health_status": {
+      "status": "ok",
+      "last_check": "2026-06-29T19:50:21.944921Z"
+    },
+    "auto_discovered": true,
+    "discovery_confidence": 0.9999999999999999
   }
 ];
 
