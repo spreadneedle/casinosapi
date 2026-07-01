@@ -3337,7 +3337,6 @@ const casinoDataEnhanced = [
       "http_code": 503,
       "error": null
     },
-    "defunct": true,
     "license": [
       "USA_State"
     ]
