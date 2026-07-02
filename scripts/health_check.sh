@@ -71,8 +71,8 @@ check_one() {
         status="parking"
     elif [[ "$ssl_verify" != "0" ]]; then
         status="ssl_error"
-    elif [[ "$http_code" == "403" || "$http_code" == "405" || "$http_code" == "415" ]]; then
-        # Bot/WAF block — site is up but rejecting our request
+    elif [[ "$http_code" == "403" || "$http_code" == "405" || "$http_code" == "415" || "$http_code" == "503" ]]; then
+        # Bot/WAF/geo block — site is up but rejecting our request
         status="blocked"
     else
         status="http_${http_code}"
