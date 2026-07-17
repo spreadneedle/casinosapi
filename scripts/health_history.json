@@ -1,637 +1,637 @@
 {
   "videoslots": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973241",
+    "date": "2026-07-17T00:00:15.926912",
     "consecutive_failures": 0
   },
   "boost-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973254",
+    "date": "2026-07-17T00:00:15.926924",
     "consecutive_failures": 0
   },
   "pommi-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973271",
+    "date": "2026-07-17T00:00:15.926929",
     "consecutive_failures": 0
   },
   "bethard": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973275",
+    "date": "2026-07-17T00:00:15.926933",
     "consecutive_failures": 0
   },
   "shokki-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973297",
+    "date": "2026-07-17T00:00:15.926937",
     "consecutive_failures": 0
   },
   "teho-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973301",
+    "date": "2026-07-17T00:00:15.926940",
     "consecutive_failures": 0
   },
   "dazzlehand-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973305",
+    "date": "2026-07-17T00:00:15.926944",
     "consecutive_failures": 0
   },
   "21-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973308",
+    "date": "2026-07-17T00:00:15.926947",
     "consecutive_failures": 0
   },
   "wild-robin-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973312",
+    "date": "2026-07-17T00:00:15.926951",
     "consecutive_failures": 0
   },
   "cazeus-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973315",
+    "date": "2026-07-17T00:00:15.926954",
     "consecutive_failures": 0
   },
   "pelataan-kasino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973319",
+    "date": "2026-07-17T00:00:15.926958",
     "consecutive_failures": 0
   },
   "pelikaani-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973323",
+    "date": "2026-07-17T00:00:15.926961",
     "consecutive_failures": 0
   },
   "bethall-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973326",
+    "date": "2026-07-17T00:00:15.926965",
     "consecutive_failures": 0
   },
   "larabet-casino": {
-    "status": "http_000",
-    "date": "2026-07-16T00:00:13.973330",
+    "status": "ok",
+    "date": "2026-07-17T00:00:15.926968",
     "consecutive_failures": 0
   },
   "valhalla-wins-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973333",
+    "date": "2026-07-17T00:00:15.926971",
     "consecutive_failures": 0
   },
   "kingmaker": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973337",
+    "date": "2026-07-17T00:00:15.926975",
     "consecutive_failures": 0
   },
   "viperwin": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973340",
+    "date": "2026-07-17T00:00:15.926978",
     "consecutive_failures": 0
   },
   "red-dice": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973344",
+    "date": "2026-07-17T00:00:15.926982",
     "consecutive_failures": 0
   },
   "lempi": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973347",
+    "date": "2026-07-17T00:00:15.926985",
     "consecutive_failures": 0
   },
   "rx-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973351",
+    "date": "2026-07-17T00:00:15.926988",
     "consecutive_failures": 0
   },
   "kaahaus-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973354",
+    "date": "2026-07-17T00:00:15.926992",
     "consecutive_failures": 0
   },
   "betizy-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973358",
+    "date": "2026-07-17T00:00:15.926995",
     "consecutive_failures": 0
   },
   "slot-it-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973362",
+    "date": "2026-07-17T00:00:15.926999",
     "consecutive_failures": 0
   },
   "casumo-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973365",
+    "date": "2026-07-17T00:00:15.927002",
     "consecutive_failures": 0
   },
   "lunubet-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973369",
+    "date": "2026-07-17T00:00:15.927006",
     "consecutive_failures": 0
   },
   "epicbet-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973372",
+    "date": "2026-07-17T00:00:15.927009",
     "consecutive_failures": 0
   },
   "saletti-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973376",
+    "date": "2026-07-17T00:00:15.927012",
     "consecutive_failures": 0
   },
   "possu-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973379",
+    "date": "2026-07-17T00:00:15.927016",
     "consecutive_failures": 0
   },
   "winz-io-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973383",
+    "date": "2026-07-17T00:00:15.927019",
     "consecutive_failures": 0
   },
   "reipas-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973386",
+    "date": "2026-07-17T00:00:15.927022",
     "consecutive_failures": 0
   },
   "arctic-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973389",
+    "date": "2026-07-17T00:00:15.927026",
     "consecutive_failures": 0
   },
   "fruta-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973393",
+    "date": "2026-07-17T00:00:15.927029",
     "consecutive_failures": 0
   },
   "dynabet-casino": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973396",
+    "date": "2026-07-17T00:00:15.927032",
     "consecutive_failures": 0
   },
   "budsino-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973400",
+    "date": "2026-07-17T00:00:15.927061",
     "consecutive_failures": 0
   },
   "highroller-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973403",
+    "date": "2026-07-17T00:00:15.927065",
     "consecutive_failures": 0
   },
   "taika-spins-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973407",
+    "date": "2026-07-17T00:00:15.927069",
     "consecutive_failures": 0
   },
   "casino-vice": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973410",
+    "date": "2026-07-17T00:00:15.927072",
     "consecutive_failures": 0
   },
   "fat-pirate-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973414",
+    "date": "2026-07-17T00:00:15.927076",
     "consecutive_failures": 0
   },
   "qbet-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973417",
+    "date": "2026-07-17T00:00:15.927079",
     "consecutive_failures": 0
   },
   "trust-dice-win-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973420",
+    "date": "2026-07-17T00:00:15.927083",
     "consecutive_failures": 0
   },
   "casino-joy": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973424",
+    "date": "2026-07-17T00:00:15.927086",
     "consecutive_failures": 0
   },
   "wildsino-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973427",
+    "date": "2026-07-17T00:00:15.927102",
     "consecutive_failures": 0
   },
   "be-on-bet-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973431",
+    "date": "2026-07-17T00:00:15.927105",
     "consecutive_failures": 0
   },
   "bet-label-casino": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973435",
+    "date": "2026-07-17T00:00:15.927110",
     "consecutive_failures": 0
   },
   "primebetz-casino": {
     "status": "defunct",
-    "date": "2026-07-16T00:00:13.973439",
+    "date": "2026-07-17T00:00:15.927113",
     "consecutive_failures": 0
   },
   "paripesa-casino": {
     "status": "http_203",
-    "date": "2026-07-16T00:00:13.973442",
+    "date": "2026-07-17T00:00:15.927117",
     "consecutive_failures": 0
   },
   "betrix-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973446",
+    "date": "2026-07-17T00:00:15.927120",
     "consecutive_failures": 0
   },
   "allyspin-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973449",
+    "date": "2026-07-17T00:00:15.927123",
     "consecutive_failures": 0
   },
   "spinaro-casino": {
     "status": "ssl_error",
-    "date": "2026-07-16T00:00:13.973452",
+    "date": "2026-07-17T00:00:15.927127",
     "consecutive_failures": 0
   },
   "impressario-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973456",
+    "date": "2026-07-17T00:00:15.927130",
     "consecutive_failures": 0
   },
   "trivelabet-casino": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973459",
+    "date": "2026-07-17T00:00:15.927133",
     "consecutive_failures": 0
   },
   "magius-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973463",
+    "date": "2026-07-17T00:00:15.927136",
     "consecutive_failures": 0
   },
   "fun-bet-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973466",
+    "date": "2026-07-17T00:00:15.927140",
     "consecutive_failures": 0
   },
   "hotbet-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973469",
+    "date": "2026-07-17T00:00:15.927143",
     "consecutive_failures": 0
   },
   "casino-vibes": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973473",
+    "date": "2026-07-17T00:00:15.927147",
     "consecutive_failures": 0
   },
   "gemobet-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973476",
+    "date": "2026-07-17T00:00:15.927150",
     "consecutive_failures": 0
   },
   "tuohi-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973480",
+    "date": "2026-07-17T00:00:15.927153",
     "consecutive_failures": 0
   },
   "pelikioski-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973483",
+    "date": "2026-07-17T00:00:15.927157",
     "consecutive_failures": 0
   },
   "zip-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973487",
+    "date": "2026-07-17T00:00:15.927160",
     "consecutive_failures": 0
   },
   "netbet-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973490",
+    "date": "2026-07-17T00:00:15.927164",
     "consecutive_failures": 0
   },
   "huikee-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973494",
+    "date": "2026-07-17T00:00:15.927167",
     "consecutive_failures": 0
   },
   "respin-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973497",
+    "date": "2026-07-17T00:00:15.927170",
     "consecutive_failures": 0
   },
   "slotti-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973501",
+    "date": "2026-07-17T00:00:15.927174",
     "consecutive_failures": 0
   },
   "ibet-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973504",
+    "date": "2026-07-17T00:00:15.927177",
     "consecutive_failures": 0
   },
   "pistolo-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973507",
+    "date": "2026-07-17T00:00:15.927180",
     "consecutive_failures": 0
   },
   "legiano-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973511",
+    "date": "2026-07-17T00:00:15.927184",
     "consecutive_failures": 0
   },
   "mr-punter": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973514",
+    "date": "2026-07-17T00:00:15.927187",
     "consecutive_failures": 0
   },
   "lysti-casino": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973518",
+    "date": "2026-07-17T00:00:15.927190",
     "consecutive_failures": 0
   },
   "spinfest-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973521",
+    "date": "2026-07-17T00:00:15.927194",
     "consecutive_failures": 0
   },
   "roby-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973525",
+    "date": "2026-07-17T00:00:15.927197",
     "consecutive_failures": 0
   },
   "bassbet-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973528",
+    "date": "2026-07-17T00:00:15.927201",
     "consecutive_failures": 0
   },
   "mammona-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973531",
+    "date": "2026-07-17T00:00:15.927204",
     "consecutive_failures": 0
   },
   "wheelz-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973535",
+    "date": "2026-07-17T00:00:15.927207",
     "consecutive_failures": 0
   },
   "kruuna-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973538",
+    "date": "2026-07-17T00:00:15.927211",
     "consecutive_failures": 0
   },
   "ninja-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973542",
+    "date": "2026-07-17T00:00:15.927214",
     "consecutive_failures": 0
   },
   "power-up-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973545",
+    "date": "2026-07-17T00:00:15.927217",
     "consecutive_failures": 0
   },
   "n1-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973548",
+    "date": "2026-07-17T00:00:15.927221",
     "consecutive_failures": 0
   },
   "bally-bet-casino--usa": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973552",
+    "date": "2026-07-17T00:00:15.927224",
     "consecutive_failures": 0
   },
   "bet365--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973555",
+    "date": "2026-07-17T00:00:15.927227",
     "consecutive_failures": 0
   },
   "betmgm--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973559",
+    "date": "2026-07-17T00:00:15.927231",
     "consecutive_failures": 0
   },
   "betrivers-casino--usa": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973562",
+    "date": "2026-07-17T00:00:15.927234",
     "consecutive_failures": 0
   },
   "borgata-online-casino--usa": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973566",
+    "date": "2026-07-17T00:00:15.927237",
     "consecutive_failures": 0
   },
   "caesars-palace-online-casino--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973569",
+    "date": "2026-07-17T00:00:15.927241",
     "consecutive_failures": 0
   },
   "draftkings-casino--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973573",
+    "date": "2026-07-17T00:00:15.927244",
     "consecutive_failures": 0
   },
   "fanatics-casino--usa": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973576",
+    "date": "2026-07-17T00:00:15.927247",
     "consecutive_failures": 0
   },
   "fanduel-casino--usa": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973579",
+    "date": "2026-07-17T00:00:15.927251",
     "consecutive_failures": 0
   },
   "golden-nugget-casino--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973584",
+    "date": "2026-07-17T00:00:15.927255",
     "consecutive_failures": 0
   },
   "hard-rock-bet--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973587",
+    "date": "2026-07-17T00:00:15.927259",
     "consecutive_failures": 0
   },
   "horseshoe-casino--usa": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973591",
+    "date": "2026-07-17T00:00:15.927262",
     "consecutive_failures": 0
   },
   "jackpot-city-casino--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973595",
+    "date": "2026-07-17T00:00:15.927266",
     "consecutive_failures": 0
   },
   "monopoly-casino--usa": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973598",
+    "date": "2026-07-17T00:00:15.927269",
     "consecutive_failures": 0
   },
   "partycasino--usa": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973601",
+    "date": "2026-07-17T00:00:15.927272",
     "consecutive_failures": 0
   },
   "playstar-casino--usa": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973605",
+    "date": "2026-07-17T00:00:15.927275",
     "consecutive_failures": 0
   },
   "spin-palace--usa": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973608",
+    "date": "2026-07-17T00:00:15.927279",
     "consecutive_failures": 0
   },
   "wheel-of-fortune-casino--usa": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973612",
+    "date": "2026-07-17T00:00:15.927282",
     "consecutive_failures": 0
   },
   "duelbits": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973615",
+    "date": "2026-07-17T00:00:15.927286",
     "consecutive_failures": 0
   },
   "sportsbet-io": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973619",
+    "date": "2026-07-17T00:00:15.927290",
     "consecutive_failures": 0
   },
   "bitcasino-io": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973622",
+    "date": "2026-07-17T00:00:15.927293",
     "consecutive_failures": 0
   },
   "pvp-money": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973626",
+    "date": "2026-07-17T00:00:15.927297",
     "consecutive_failures": 0
   },
   "dexbet-win": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973629",
+    "date": "2026-07-17T00:00:15.927300",
     "consecutive_failures": 0
   },
   "stake-com": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973633",
+    "date": "2026-07-17T00:00:15.927303",
     "consecutive_failures": 0
   },
   "huippu-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973636",
+    "date": "2026-07-17T00:00:15.927307",
     "consecutive_failures": 0
   },
   "jellona-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973640",
+    "date": "2026-07-17T00:00:15.927310",
     "consecutive_failures": 0
   },
   "lyrabet-casino": {
     "status": "http_000",
-    "date": "2026-07-16T00:00:13.973643",
+    "date": "2026-07-17T00:00:15.927313",
     "consecutive_failures": 0
   },
   "playzee-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973646",
+    "date": "2026-07-17T00:00:15.927317",
     "consecutive_failures": 0
   },
   "casoola-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973650",
+    "date": "2026-07-17T00:00:15.927320",
     "consecutive_failures": 0
   },
   "boom-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973653",
+    "date": "2026-07-17T00:00:15.927323",
     "consecutive_failures": 0
   },
   "caxino-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973657",
+    "date": "2026-07-17T00:00:15.927327",
     "consecutive_failures": 0
   },
   "simple-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973660",
+    "date": "2026-07-17T00:00:15.927330",
     "consecutive_failures": 0
   },
   "miami-dice-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973664",
+    "date": "2026-07-17T00:00:15.927333",
     "consecutive_failures": 0
   },
   "jackpot-village-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973667",
+    "date": "2026-07-17T00:00:15.927337",
     "consecutive_failures": 0
   },
   "spin-casino": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973671",
+    "date": "2026-07-17T00:00:15.927340",
     "consecutive_failures": 0
   },
   "10bet-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973674",
+    "date": "2026-07-17T00:00:15.927343",
     "consecutive_failures": 0
   },
   "hurmio-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973677",
+    "date": "2026-07-17T00:00:15.927347",
     "consecutive_failures": 0
   },
   "mainio-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973681",
+    "date": "2026-07-17T00:00:15.927350",
     "consecutive_failures": 0
   },
   "ruhtinas-casino": {
     "status": "ssl_error",
-    "date": "2026-07-16T00:00:13.973684",
+    "date": "2026-07-17T00:00:15.927354",
     "consecutive_failures": 0
   },
   "pikapotti-casino": {
     "status": "ssl_error",
-    "date": "2026-07-16T00:00:13.973688",
+    "date": "2026-07-17T00:00:15.927357",
     "consecutive_failures": 0
   },
   "potmanni-casino": {
-    "status": "ok",
-    "date": "2026-07-16T00:00:13.973691",
+    "status": "http_000",
+    "date": "2026-07-17T00:00:15.927361",
     "consecutive_failures": 0
   },
   "eagle-casino-sports": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973695",
+    "date": "2026-07-17T00:00:15.927364",
     "consecutive_failures": 0
   },
   "casinocasino-com": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973698",
+    "date": "2026-07-17T00:00:15.927367",
     "consecutive_failures": 0
   },
   "new-real-money-online-casinos-this-week-top-new-casino-site": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973702",
+    "date": "2026-07-17T00:00:15.927371",
     "consecutive_failures": 0
   },
   "best-new-online-casinos-us-may-10-2026-top-real-money-si": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973705",
+    "date": "2026-07-17T00:00:15.927374",
     "consecutive_failures": 0
   },
   "new-online-casinos-for-2026-top-3-casinos-to-join-in-2026": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973709",
+    "date": "2026-07-17T00:00:15.927378",
     "consecutive_failures": 0
   },
   "best-bitcoin-casinos-with-instant-withdrawals-in-2026": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973712",
+    "date": "2026-07-17T00:00:15.927381",
     "consecutive_failures": 0
   },
   "best-no-kyc-crypto-casinos-in-2026-top-btc-casinos-ranked": {
     "status": "blocked",
-    "date": "2026-07-16T00:00:13.973715",
+    "date": "2026-07-17T00:00:15.927384",
     "consecutive_failures": 0
   },
   "noppa-casino": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973719",
+    "date": "2026-07-17T00:00:15.927388",
     "consecutive_failures": 0
   },
   "best-crypto-casino-bonuses-2026-welcome-offers-up-to-5-btc": {
     "status": "ok",
-    "date": "2026-07-16T00:00:13.973722",
+    "date": "2026-07-17T00:00:15.927391",
     "consecutive_failures": 0
   }
 }
