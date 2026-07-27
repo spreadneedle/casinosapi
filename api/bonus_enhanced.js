@@ -4866,50 +4866,6 @@ const casinoDataEnhanced = [
     },
     "auto_discovered": true,
     "discovery_confidence": 0.9999999999999999
-  },
-  {
-    "casino_name": "The Movie Waffler",
-    "slug": "the-movie-waffler",
-    "url": "https://www.themoviewaffler.com/2026/07/how-online-casino-welcome-bonuses-work-in-2026.html",
-    "bonus": "Contact casino for current offers",
-    "bonus_structure": {
-      "percentage": null,
-      "max_amount": null,
-      "free_spins": null
-    },
-    "wagering": {
-      "bonus": "Check terms",
-      "free_spins": "Check terms"
-    },
-    "verification": {
-      "status": "needs_verification",
-      "last_checked": "2026-07-27T07:00:13.328806Z",
-      "verified_by": "auto-discovery"
-    },
-    "trust": {
-      "rating": null,
-      "total_reviews": 0,
-      "warning_flags": []
-    },
-    "geo_restriction": {
-      "allowed": [],
-      "restricted": []
-    },
-    "info": {
-      "payment_methods": [],
-      "currencies": [],
-      "languages": [],
-      "live_chat": null,
-      "mobile_app": null
-    },
-    "ai_summary": "The Movie Waffler: Auto-discovered July 2026. Verification pending. None",
-    "last_updated": "2026-07-27T07:00:13.328866Z",
-    "health_status": {
-      "status": "ok",
-      "last_check": "2026-07-27T07:00:13.328876Z"
-    },
-    "auto_discovered": true,
-    "discovery_confidence": 1.0
   }
 ];
 
