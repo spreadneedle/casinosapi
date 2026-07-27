@@ -145,10 +145,15 @@ def validate_casino_page(html, url):
         'visit casino', 'claim bonus at', 'affiliate', 'our experts',
         'casino list', 'ranked by', 'our picks', 'tested by',
         'top rated casinos', 'recommended casinos', 'casino ratings',
+        # Editorial/blog/media signals — sponsored articles about casinos
+        # score high on casino keywords but are not casinos
+        'sponsored', 'guest post', 'press release', 'posted by',
+        'published by', 'movie review', 'film review', 'movie news',
+        'film news', 'tv series', 'box office', 'trailer',
     ]
     review_count = sum(1 for sig in review_signals if sig in html_lower)
-    if review_count >= 3:
-        return False, 0.15, f"Review/affiliate site ({review_count} signals)"
+    if review_count >= 2:
+        return False, 0.15, f"Review/affiliate/editorial site ({review_count} signals)"
     
     # GOOD: Actual casino signals (sign-up, deposit, game providers)
     casino_signals = [
@@ -200,6 +205,29 @@ def validate_casino_page(html, url):
     reason = "Looks legit" if is_valid else f"Low confidence ({confidence:.2f})"
     
     return is_valid, confidence, reason
+
+def is_article_url(url):
+    """
+    Reject URLs that point to an article/blog post rather than a casino homepage.
+    Real casinos want you at their domain root or a shallow landing path.
+    """
+    path = urlparse(url).path.lower()
+    if not path or path == '/':
+        return False
+    # Date-based paths: /2026/07/some-post, /2026-07-27-post
+    if re.search(r'/20\d{2}[/\-](0?[1-9]|1[0-2])', path):
+        return True
+    # Static page suffixes on deep paths: /blog/x.html, /2026/07/post.html
+    if re.search(r'\.(html?|php|aspx?)$', path):
+        return True
+    # Editorial path segments
+    if any(seg in path for seg in ['/blog', '/news', '/article', '/post', '/story', '/guide']):
+        return True
+    # Deep paths (3+ segments) are almost never casino homepages
+    segments = [s for s in path.split('/') if s]
+    if len(segments) >= 3:
+        return True
+    return False
 
 def extract_casino_info(url, html):
     """Extract casino name and bonus info from page"""
@@ -282,6 +310,16 @@ def main():
             blocked, domain = is_review_site(url)
             if blocked:
                 print(f"    ⏭️  Skipped review site: {domain}")
+                continue
+            
+            # Skip article/blog-post URLs (e.g. sponsored posts on media sites)
+            if is_article_url(url):
+                print(f"    ⏭️  Skipped article URL: {url}")
+                invalid.append({
+                    'url': url,
+                    'title': title,
+                    'reason': 'Article/blog-post URL, not a casino homepage'
+                })
                 continue
             
             # Normalize URL
